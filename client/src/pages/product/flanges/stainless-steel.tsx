@@ -287,7 +287,7 @@ export default function StainlessSteelFlanges() {
                 </Link>
                 <a href="tel:+919819322576" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center" data-testid="button-call-now">
                   <Phone className="mr-2 w-5 h-5" />
-                  Call: +91 91932 25757
+                  Call: +91 98193 22576
                 </a>
               </div>
             </div>
@@ -619,7 +619,7 @@ export default function StainlessSteelFlanges() {
                 <Phone className="w-6 h-6 text-orange-400" />
                 <div>
                   <p className="font-semibold">Call Us Now</p>
-                  <p className="text-blue-100">+91 91932 25757</p>
+                  <p className="text-blue-100">+91 9819322576</p>
                 </div>
               </div>
               <div className="flex items-center justify-center space-x-3" data-testid="contact-email">

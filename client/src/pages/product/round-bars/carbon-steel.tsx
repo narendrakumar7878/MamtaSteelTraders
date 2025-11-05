@@ -264,7 +264,7 @@ export default function CarbonSteelRoundBars() {
                     Request Detailed Quote
                   </Link>
                   <a href="tel:+919819322576" className="border-2 border-white text-white hover:bg-white hover:text-navy-primary font-semibold py-3 px-8 rounded-lg transition-colors">
-                    Call: +91 99674 44008
+                    Call: +91 9819322576
                   </a>
                 </div>
               </div>

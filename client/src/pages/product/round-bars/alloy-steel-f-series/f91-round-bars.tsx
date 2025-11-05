@@ -373,7 +373,7 @@ export default function F91RoundBars() {
                 </Link>
                 <a href="tel:+919819322576" className="bg-gold-primary hover:bg-gold-secondary text-navy-primary px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center justify-center" data-testid="button-call-now">
                   <Phone className="w-5 h-5 mr-2" />
-                  +91 99674 44008
+                  +91 98193 22576
                 </a>
               </div>
             </div>

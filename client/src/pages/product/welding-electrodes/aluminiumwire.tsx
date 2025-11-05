@@ -464,7 +464,7 @@ export default function AluminiumWire() {
               </a>
               <a href="tel:+919819322576" className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center" data-testid="button-call-direct">
                 <Phone className="mr-2 w-5 h-5" />
-                +91 99674 49008
+                +91 98193 22576
               </a>
             </div>
           </div>
