@@ -5,6 +5,10 @@ import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Phone, Mail, Factory, Award, Truck, Shield, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
+import ss304Plate from "@/assets/SS 304 PLATE  MAMTA STEEL TRADERS.jpg";
+import alloySteelPlates from "@/assets/alloy-steel-plates.jpg";
+import carbonSteelPlates from "@/assets/carbon-steel-plates-sheets.jpg";
+import chequeredPlates from "@/assets/chequered-steel-plates.jpg";
 
 const alloySteelGrades = [
   {
