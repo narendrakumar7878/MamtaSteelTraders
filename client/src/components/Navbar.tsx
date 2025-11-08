@@ -49,8 +49,10 @@ export default function Navbar() {
   // Desktop dropdown states
   const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
   const [isTechnicalDropdownOpen, setIsTechnicalDropdownOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const technicalDropdownRef = useRef<HTMLDivElement>(null);
+  const navbarRef = useRef<HTMLElement>(null);
   const [location] = useLocation();
 
   const toggleMobileMenu = () => {
@@ -139,6 +141,21 @@ export default function Navbar() {
     setIsTechnicalDropdownOpen(false);
   }, [location]);
 
+  // Handle scroll to make navbar sticky
+  useEffect(() => {
+    const handleScroll = () => {
+      if (navbarRef.current) {
+        const navbarPosition = navbarRef.current.getBoundingClientRect().top;
+        setIsSticky(navbarPosition <= 0);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const toggleProductsDropdown = () => {
     setIsProductsDropdownOpen(!isProductsDropdownOpen);
     setIsTechnicalDropdownOpen(false); // Close other dropdown
@@ -150,8 +167,10 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-navy-secondary text-white sticky top-0 z-50 shadow-lg">
-      <div className="w-full max-w-7xl mx-auto px-2 sm:px-3 lg:px-4 xl:px-6">
+    <>
+      {isSticky && <div className="h-16" />}
+      <nav ref={navbarRef} className={`bg-navy-secondary text-white shadow-lg ${isSticky ? 'fixed top-0 left-0 right-0 z-50' : ''}`}>
+        <div className="w-full max-w-7xl mx-auto px-2 sm:px-3 lg:px-4 xl:px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo (Mobile) */}
           <div className="flex items-center md:hidden">
@@ -1061,5 +1080,6 @@ export default function Navbar() {
         )}
       </div>
     </nav>
+    </>
   );
 }
