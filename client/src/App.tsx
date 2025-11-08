@@ -326,13 +326,11 @@ function App() {
           </Helmet>
           
           <div className="min-h-screen flex flex-col overflow-x-hidden">
-            <div className="fixed top-0 left-0 right-0 z-50 w-full">
-              <TopBar />
-              <MainHeader />
-              <div className="h-[2px] bg-[#f39c12] w-full" />
-              <Navbar />
-            </div>
-            <main className="flex-1 pt-[180px] sm:pt-[200px] lg:pt-[220px]">
+            <TopBar />
+            <MainHeader />
+            <div className="h-[2px] bg-[#f39c12] w-full" />
+            <Navbar />
+            <main className="flex-1">
               <Router />
             </main>
             <Footer />
