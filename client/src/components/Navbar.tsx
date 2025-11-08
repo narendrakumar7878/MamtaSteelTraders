@@ -143,13 +143,23 @@ export default function Navbar() {
 
   // Handle scroll to make navbar sticky
   useEffect(() => {
+    let navbarOffsetTop = 0;
+    
     const handleScroll = () => {
       if (navbarRef.current) {
-        const navbarPosition = navbarRef.current.getBoundingClientRect().top;
-        setIsSticky(navbarPosition <= 0);
+        if (!navbarOffsetTop && window.scrollY === 0) {
+          navbarOffsetTop = navbarRef.current.offsetTop;
+        }
+        
+        if (window.scrollY >= navbarOffsetTop && window.scrollY > 0) {
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
       }
     };
 
+    handleScroll();
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
