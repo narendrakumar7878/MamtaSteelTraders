@@ -306,6 +306,34 @@ function App() {
             <link rel="dns-prefetch" href="https://www.google-analytics.com" />
             <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
             
+            {/* ========== ADVANCED WORLDWIDE SEO FEATURES ========== */}
+            {/* NOTE: geo tags and hreflang tags are already in index.html - no duplication */}
+            
+            {/* Additional Performance Optimization */}
+            <link rel="preconnect" href="https://mamtasteeltraders.com" />
+            <link rel="dns-prefetch" href="https://mamtasteeltraders.com" />
+            
+            {/* Resource Hints for Faster Loading */}
+            <link rel="preload" as="font" type="font/woff2" crossOrigin="anonymous" />
+            <link rel="preload" as="style" href="/src/index.css" />
+            
+            {/* Advanced Audience & Business Targeting (unique to App.tsx) */}
+            <meta name="target" content="all" />
+            <meta name="audience" content="B2B, Industrial Buyers, Engineers, Contractors, Procurement Managers, Manufacturing Companies" />
+            
+            {/* Business Classification for Better Discovery */}
+            <meta name="business-type" content="Manufacturer, Supplier, Exporter, Wholesaler, Stockist" />
+            <meta name="company-size" content="Medium Enterprise" />
+            <meta name="establishment-year" content="2005" />
+            
+            {/* Advanced Content Classification */}
+            <meta name="page-topic" content="Steel Manufacturing, Industrial Supplies, B2B Commerce, Metal Products" />
+            <meta name="subject" content="Stainless Steel, Carbon Steel, Alloy Steel Products Supply" />
+            
+            {/* Copyright & Legal */}
+            <meta name="copyright" content={`© ${new Date().getFullYear()} Mamta Steel Traders. All Rights Reserved.`} />
+            <meta name="author" content="Mamta Steel Traders" />
+            
             {/* Global Structured Data Schemas */}
             <script type="application/ld+json">
               {JSON.stringify(globalSchemas, null, 2)}

@@ -38,7 +38,75 @@ export const siteConfig = {
     // Long-tail Keywords
     "best steel supplier mumbai", "cheap steel supplier india", "wholesale steel mumbai",
     "stainless steel 304 price mumbai", "carbon steel pipes manufacturer india",
-    "alloy steel plates exporter", "seamless pipes supplier mumbai"
+    "alloy steel plates exporter", "seamless pipes supplier mumbai",
+    
+    // ========== ADVANCED INTERNATIONAL & AI-FRIENDLY KEYWORDS ==========
+    // Worldwide Market Keywords
+    "steel supplier USA", "steel exporter UK", "steel manufacturer UAE", "steel trader Saudi Arabia",
+    "steel supplier Australia", "steel exporter Canada", "steel supplier Singapore", "steel trader Malaysia",
+    "international steel exporter India", "worldwide steel supplier", "global steel manufacturer",
+    
+    // AI Search & Voice Search Keywords (Question-based)
+    "where to buy stainless steel pipes", "who sells steel flanges near me", "best steel supplier in my area",
+    "how to order steel products online", "what is the price of SS 304 pipes", "which steel grade is best",
+    "why choose Mamta Steel Traders", "when to use SS 316L vs 304", "compare steel grades",
+    
+    // Long-tail Commercial Keywords
+    "buy stainless steel pipes online India", "order carbon steel plates Mumbai",
+    "request steel quotation India", "get steel price quote Mumbai", "steel bulk order discount",
+    "wholesale steel supplier near me", "industrial steel products Mumbai stockist",
+    
+    // Location-specific Worldwide Keywords
+    "steel supplier Middle East", "steel exporter Gulf countries", "steel manufacturer Asia Pacific",
+    "steel trader North America", "steel supplier Europe", "steel exporter Africa",
+    "Mumbai steel supplier worldwide delivery", "India steel exporter international shipping",
+    
+    // Industry-specific Application Keywords
+    "oil gas steel pipes supplier", "petrochemical steel products India", "chemical processing steel Mumbai",
+    "marine grade steel supplier", "pharmaceutical steel manufacturer", "food grade stainless steel India",
+    "construction steel supplier Mumbai", "power plant steel products", "refinery steel supplier",
+    
+    // Technical Specification Keywords
+    "ASTM A312 pipes supplier India", "ASME B16.5 flanges Mumbai", "API 5L pipes manufacturer",
+    "DIN 2448 tubes supplier", "EN 10216 pipes India", "JIS G3459 tubes Mumbai",
+    "mill test certificate steel", "material test report India", "third party inspection steel",
+    
+    // Product Combination Keywords
+    "pipes and flanges supplier", "tubes and fittings manufacturer", "plates and sheets stockist",
+    "bars and fasteners supplier", "complete piping solution Mumbai", "turnkey steel supply India",
+    
+    // Comparative & Competitive Keywords
+    "best quality steel India", "reliable steel supplier Mumbai", "trusted steel manufacturer",
+    "ISO certified steel company India", "reputed steel trader Mumbai", "authorized steel dealer",
+    "genuine steel products India", "original steel supplier Mumbai", "verified steel manufacturer",
+    
+    // E-commerce & Digital Keywords
+    "buy steel online India", "steel products online Mumbai", "order steel products website",
+    "steel supplier online quote", "instant steel quotation India", "digital steel catalog Mumbai",
+    
+    // Seasonal & Time-based Keywords
+    "steel price today", "current steel rates Mumbai", "latest steel prices India",
+    "steel market rates today", "updated steel quotation", "real time steel prices",
+    
+    // Business Size Keywords
+    "small quantity steel supplier", "bulk steel order Mumbai", "wholesale steel rates India",
+    "retail steel supplier Mumbai", "large order steel exporter", "custom steel requirements India",
+    
+    // Emergency & Urgent Keywords
+    "urgent steel supply Mumbai", "emergency steel delivery India", "same day steel Mumbai",
+    "express steel delivery India", "quick steel supply Mumbai", "fast delivery steel India",
+    
+    // Quality & Certification Keywords
+    "certified steel products India", "quality steel supplier Mumbai", "ISO approved steel India",
+    "NABL certified steel Mumbai", "BIS approved steel India", "government approved steel supplier",
+    
+    // Sustainability Keywords
+    "eco friendly steel India", "sustainable steel products Mumbai", "green steel supplier India",
+    "recycled steel Mumbai", "environmentally friendly steel products",
+    
+    // Technology Keywords
+    "advanced steel manufacturing India", "modern steel facility Mumbai", "state of art steel plant",
+    "precision steel cutting Mumbai", "CNC machined steel India", "laser cut steel Mumbai"
   ],
   author: "Mamta Steel Traders",
   language: "en-IN",
