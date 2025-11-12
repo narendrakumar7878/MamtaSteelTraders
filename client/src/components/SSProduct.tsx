@@ -35,7 +35,7 @@ export default function SSProduct() {
     "@type": "Organization",
     "name": "Mamta Steel Traders",
     "description": "Major Importer, Stockist, Supplier of Stainless Steel, Alloy Steel, Carbon Steel & Mild Steel Grades",
-    "url": "https://mamtasteel.com",
+    "url": "https://mamtasteeltraders.com",
     "industry": "Steel Manufacturing and Supply",
     "products": [
       {

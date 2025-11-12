@@ -630,36 +630,6 @@ export default function Contact() {
                       </div>
                     </motion.div>
 
-                    {/* Email */}
-                    {/* <motion.div variants={fadeInUp} className="group">
-                      <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 group-hover:border-[#f39c12]/30">
-                        <div className="flex items-start">
-                          <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-[#0d2b4e] to-[#2563eb] rounded-lg sm:rounded-xl flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                            <Mail className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
-                          </div>
-                          <div className="flex-1 min-w-0">
-                            <h3 className="text-base sm:text-lg font-semibold text-[#0d2b4e] mb-2 sm:mb-3">Email</h3>
-                            <div className="flex items-center justify-between gap-2">
-                              <a 
-                                href="mailto:mamtasteeltraders@gmail.com" 
-                                className="text-gray-600 hover:text-[#f39c12] transition-colors duration-200 text-sm sm:text-base lg:text-lg font-medium truncate"
-                                data-testid="link-general-email"
-                              >
-                                mamtasteeltraders@gmail.com
-                              </a>
-                              <button
-                                onClick={() => copyToClipboard('mamtasteeltraders@gmail.com', 'Email')}
-                                className="p-2 text-gray-400 hover:text-[#f39c12] transition-colors duration-200 flex-shrink-0 min-h-[44px] min-w-[44px] flex items-center justify-center"
-                                title="Copy email"
-                                data-testid="button-copy-general-email"
-                              >
-                                {copySuccess === 'Email' ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </motion.div> */}
 
                     {/* Address */}
                     <motion.div variants={fadeInUp} className="group">
