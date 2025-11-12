@@ -124,11 +124,11 @@ export default function Contact() {
     try {
       // Form submission - In real app, integrate with EmailJS or backend API to send to your-email@example.com
       // Data being sent: Name, Client Company Name, Email, Phone, Message
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      await new Promise(resolve => setTimeout(resolve, 1000));
 
       toast({
-        title: "Success!",
-        description: "Your message has been sent successfully. We'll get back to you soon!",
+        title: "Website in Development Mode",
+        description: "The website is currently in development mode. You can contact us directly through our contact details and email mentioned above.",
       });
 
       // Reset form
