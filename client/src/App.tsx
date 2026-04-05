@@ -5,11 +5,11 @@ import { HelmetProvider, Helmet } from "react-helmet-async";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { useContactScrollToTop } from "@/hooks/useScrollToTop";
-import { 
-  siteConfig, 
-  getOrganizationSchema, 
-  getLocalBusinessSchema, 
-  getWebsiteSchema 
+import {
+  siteConfig,
+  getOrganizationSchema,
+  getLocalBusinessSchema,
+  getWebsiteSchema
 } from "@/lib/seo-config";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
@@ -115,6 +115,48 @@ import HighSpeedSteelRoundBars from "@/pages/product/round-bars/high-speed-steel
 import GenericRoundBarListingWrapper from "@/pages/product/round-bars/GenericRoundBarListingWrapper";
 import AlloySteelFSeries from "@/pages/product/round-bars/alloy-steel-f-series";
 
+// Alloy Steel Round Bar Grade Detail Pages
+import Grade17711RoundBar from "@/pages/product/round-bars/alloy-steel-round/1-7711-round-bar";
+import Grade100Cr6RoundBar from "@/pages/product/round-bars/alloy-steel-round/100cr6-round-bar";
+import Grade15CDV6RoundBars from "@/pages/product/round-bars/alloy-steel-round/15cdv6-round-bars";
+import Grade16MnCr5RoundBar from "@/pages/product/round-bars/alloy-steel-round/16mncr5-round-bar";
+import Grade17CrNiMo6RoundBars from "@/pages/product/round-bars/alloy-steel-round/17crni-mo6-round-bars";
+import Grade18CrNiMo76RoundBars from "@/pages/product/round-bars/alloy-steel-round/18crni-mo7-6-round-bars";
+import Grade20MnCr5RoundBars from "@/pages/product/round-bars/alloy-steel-round/20mncr5-round-bars";
+import Grade20NiCrMo22RoundBars from "@/pages/product/round-bars/alloy-steel-round/20nicrmo2-2-round-bars";
+import Grade25CrMo4RoundBar from "@/pages/product/round-bars/alloy-steel-round/25crmo4-round-bar";
+import Grade30CrNiMo8RoundBars from "@/pages/product/round-bars/alloy-steel-round/30crni-mo8-round-bars";
+import Grade31CrMoV9RoundBars from "@/pages/product/round-bars/alloy-steel-round/31crmo-v9-round-bars";
+import Grade34CrNiMo6RoundBars from "@/pages/product/round-bars/alloy-steel-round/34crni-mo6-round-bars";
+import Grade39NiCrMo3RoundBars from "@/pages/product/round-bars/alloy-steel-round/39nicr-mo3-round-bars";
+import Grade40Cr7Al10Mo2RoundBars from "@/pages/product/round-bars/alloy-steel-round/40cr7al10mo2-round-bars";
+import Grade40CrMoV46RoundBars from "@/pages/product/round-bars/alloy-steel-round/40crmo-v4-6-round-bars";
+import Grade41Cr4RoundBars from "@/pages/product/round-bars/alloy-steel-round/41cr4-round-bars";
+import Grade4130RoundBars from "@/pages/product/round-bars/alloy-steel-round/4130-round-bars";
+import Grade4140RoundBars from "@/pages/product/round-bars/alloy-steel-round/4140-round-bars";
+import Grade4150RoundBars from "@/pages/product/round-bars/alloy-steel-round/4150-round-bars";
+import Grade42CrMo4RoundBars from "@/pages/product/round-bars/alloy-steel-round/42crmo4-round-bars";
+import Grade4340RoundBars from "@/pages/product/round-bars/alloy-steel-round/4340-round-bars";
+import Grade4340VRoundBars from "@/pages/product/round-bars/alloy-steel-round/4340v-round-bars";
+import Grade8740RoundBars from "@/pages/product/round-bars/alloy-steel-round/8740-round-bars";
+import Grade9310RoundBars from "@/pages/product/round-bars/alloy-steel-round/9310-round-bars";
+import Grade905M39RoundBars from "@/pages/product/round-bars/alloy-steel-round/905m39-round-bars";
+import Grade12L14RoundBars from "@/pages/product/round-bars/alloy-steel-round/12l14-round-bars";
+import Grade1144RoundBars from "@/pages/product/round-bars/alloy-steel-round/1144-round-bars";
+import Grade35CrMoRoundBars from "@/pages/product/round-bars/alloy-steel-round/35crmo-round-bars";
+import Grade8620BrightBars from "@/pages/product/round-bars/alloy-steel-round/8620-bright-bars";
+import GradeAISI8620RoundBars from "@/pages/product/round-bars/alloy-steel-round/aisi-8620-round-bars";
+import GradeA193GradeB7RoundBar from "@/pages/product/round-bars/alloy-steel-round/a193-grade-b7-round-bar";
+import GradeEN8RoundBars from "@/pages/product/round-bars/alloy-steel-round/en8-round-bars";
+import GradeEN9RoundBars from "@/pages/product/round-bars/alloy-steel-round/en9-round-bars";
+import GradeEN19RoundBars from "@/pages/product/round-bars/alloy-steel-round/en19-round-bars";
+import GradeEN24RoundBars from "@/pages/product/round-bars/alloy-steel-round/en24-round-bars";
+import GradeSCM440RoundBars from "@/pages/product/round-bars/alloy-steel-round/scm440-round-bars";
+import GradeSNCM420RoundBars from "@/pages/product/round-bars/alloy-steel-round/sncm420-round-bars";
+import Grade50CrMo4RoundBars from "@/pages/product/round-bars/alloy-steel-round/50crmo4-round-bars";
+import Grade36NiCrMo4RoundBars from "@/pages/product/round-bars/alloy-steel-round/36nicrmo4-round-bars";
+import Grade38NiCrMo4RoundBars from "@/pages/product/round-bars/alloy-steel-round/38nicrmo4-round-bars";
+
 // F Series Round Bars
 import F11RoundBars from "@/pages/product/round-bars/alloy-steel-f-series/f11-round-bars";
 import F22RoundBars from "@/pages/product/round-bars/alloy-steel-f-series/f22-round-bars";
@@ -141,7 +183,7 @@ import Footer from "@/components/Footer";
 function Router() {
   // Enable scroll-to-top behavior for Contact page
   useContactScrollToTop();
-  
+
   return (
     <Switch>
       <Route path="/" component={Home} />
@@ -161,14 +203,14 @@ function Router() {
       <Route path="/fittings" component={Fittings} />
       <Route path="/fasteners" component={Fasteners} />
       <Route path="/angleschannels" component={AnglesChannels} />
-      
+
       {/* Product Category Routes */}
       <Route path="/product/pipes-tubes/stainless-steel-pipes-tubes" component={StainlessSteelPipesAndTubes} />
       <Route path="/product/pipes-tubes/carbon-steel" component={CarbonSteelPipes} />
       <Route path="/product/pipes-tubes/alloy-steel-pipe" component={AlloySteelPipes} />
       <Route path="/product/plates-sheets/stainless-steel-plates" component={StainlessSteelPlates} />
       <Route path="/product/round-bars/stainless-steel-round-bars" component={StainlessSteelRoundBars} />
-      
+
       {/* Flange Routes */}
       <Route path="/product/flanges/stainless-steel" component={StainlessSteelFlanges} />
       <Route path="/product/flanges/carbon-steel" component={CarbonSteelFlanges} />
@@ -176,30 +218,30 @@ function Router() {
       <Route path="/product/flanges/nickel-alloy" component={NickelAlloyFlanges} />
       <Route path="/product/flanges/inconel" component={InconelFlanges} />
       <Route path="/product/flanges/incoloy" component={IncoloyFlanges} />
-      
+
       {/* Fitting Routes */}
       <Route path="/product/fittings/buttweld-fittings" component={ButtweldFittings} />
       <Route path="/product/fittings/forged-fittings" component={ForgedFittings} />
-      
+
       {/* Welding Electrode Routes */}
       <Route path="/product/welding-electrodes/stainless-steel-electrode" component={StainlessSteelElectrodes} />
       <Route path="/product/welding-electrodes/ercuni-wire-copper-nickel" component={ERCuNiWire} />
       <Route path="/product/welding-electrodes/aluminiumwire" component={AluminiumWire} />
-      
+
       {/* Galvanized Routes */}
       <Route path="/product/galvanized/hot-dip-galvanized-angles" component={HotDipGalvanizedAngles} />
       <Route path="/product/galvanized/hot-dip-galvanized-channels" component={HotDipGalvanizedChannels} />
-      
+
       {/* Pin Routes */}
       <Route path="/product/pins/pto-pins" component={PTOPins} />
       <Route path="/product/pins/pipe-linch-pin" component={PipeLinchPin} />
-      
+
       <Route path="/product/fasteners/high-tensile" component={HighTensileFasteners} />
       <Route path="/product/fasteners/ss-bolts" component={StainlessSteelBolts} />
       <Route path="/product/fasteners/ss-nuts" component={StainlessSteelNuts} />
       <Route path="/product/fasteners/ss-screws" component={StainlessSteelScrews} />
       <Route path="/product/fasteners/ss-washers" component={StainlessSteelWashers} />
-      
+
       {/* Additional Pipe & Tubes Routes */}
       <Route path="/product/pipes-tubes/nickel-alloy" component={NickelAlloyPipes} />
       <Route path="/product/pipes-tubes/inconel" component={InconelPipes} />
@@ -215,23 +257,65 @@ function Router() {
       <Route path="/product/pipes-tubes/welded-wear-resistant-pipe-ar400" component={WeldedWearResistantPipes} />
       <Route path="/product/pipes-tubes/plate-welded-pipes" component={PlateWeldedPipes} />
       <Route path="/product/pipes-tubes/large-od-seamless-pipes" component={LargeODSeamlessPipes} />
-      
+
       {/* Additional Plates & Sheets Routes */}
       <Route path="/product/plates-sheets/alloy-steel-plates" component={AlloySteelPlates} />
       <Route path="/product/plates-sheets/aluminium-alloy" component={AluminiumAlloyPlates} />
       <Route path="/product/plates-sheets/carbon-steel" component={CarbonSteelPlates} />
       <Route path="/product/plates-sheets/copper-nickel" component={CopperNickelPlates} />
       <Route path="/product/plates-sheets/duplex-super-duplex" component={DuplexSuperDuplexPlates} />
-      
+
       {/* Round Bars Main Page Route */}
       <Route path="/product/round-bars/round-bars" component={RoundBarsMain} />
-      
+
       {/* Generic Round Bar Listing Route */}
       <Route path="/product/round-bars/generic-listing" component={GenericRoundBarListingWrapper} />
-      
+
       {/* Alloy Steel F-Series Route */}
       <Route path="/product/round-bars/alloy-steel-f-series" component={AlloySteelFSeries} />
-      
+
+      {/* Alloy Steel Round Bar Grade Detail Routes – MUST come before the listing route below */}
+      <Route path="/product/round-bars/alloy-steel-round/1-7711-round-bar" component={Grade17711RoundBar} />
+      <Route path="/product/round-bars/alloy-steel-round/100cr6-round-bar" component={Grade100Cr6RoundBar} />
+      <Route path="/product/round-bars/alloy-steel-round/15cdv6-round-bars" component={Grade15CDV6RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/16mncr5-round-bar" component={Grade16MnCr5RoundBar} />
+      <Route path="/product/round-bars/alloy-steel-round/17crni-mo6-round-bars" component={Grade17CrNiMo6RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/18crni-mo7-6-round-bars" component={Grade18CrNiMo76RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/20mncr5-round-bars" component={Grade20MnCr5RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/20nicrmo2-2-round-bars" component={Grade20NiCrMo22RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/25crmo4-round-bar" component={Grade25CrMo4RoundBar} />
+      <Route path="/product/round-bars/alloy-steel-round/30crni-mo8-round-bars" component={Grade30CrNiMo8RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/31crmo-v9-round-bars" component={Grade31CrMoV9RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/34crni-mo6-round-bars" component={Grade34CrNiMo6RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/39nicr-mo3-round-bars" component={Grade39NiCrMo3RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/40cr7al10mo2-round-bars" component={Grade40Cr7Al10Mo2RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/40crmo-v4-6-round-bars" component={Grade40CrMoV46RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/41cr4-round-bars" component={Grade41Cr4RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/4130-round-bars" component={Grade4130RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/4140-round-bars" component={Grade4140RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/4150-round-bars" component={Grade4150RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/42crmo4-round-bars" component={Grade42CrMo4RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/4340-round-bars" component={Grade4340RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/4340v-round-bars" component={Grade4340VRoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/8740-round-bars" component={Grade8740RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/9310-round-bars" component={Grade9310RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/905m39-round-bars" component={Grade905M39RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/12l14-round-bars" component={Grade12L14RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/1144-round-bars" component={Grade1144RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/35crmo-round-bars" component={Grade35CrMoRoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/8620-bright-bars" component={Grade8620BrightBars} />
+      <Route path="/product/round-bars/alloy-steel-round/aisi-8620-round-bars" component={GradeAISI8620RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/a193-grade-b7-round-bar" component={GradeA193GradeB7RoundBar} />
+      <Route path="/product/round-bars/alloy-steel-round/en8-round-bars" component={GradeEN8RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/en9-round-bars" component={GradeEN9RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/en19-round-bars" component={GradeEN19RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/en24-round-bars" component={GradeEN24RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/scm440-round-bars" component={GradeSCM440RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/sncm420-round-bars" component={GradeSNCM420RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/50crmo4-round-bars" component={Grade50CrMo4RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/36nicrmo4-round-bars" component={Grade36NiCrMo4RoundBars} />
+      <Route path="/product/round-bars/alloy-steel-round/38nicrmo4-round-bars" component={Grade38NiCrMo4RoundBars} />
+
       {/* Additional Round Bars Routes */}
       <Route path="/product/round-bars/alloy-steel-round" component={AlloySteelRound} />
       <Route path="/product/round-bars/aluminium-alloy" component={AluminiumAlloyRound} />
@@ -250,18 +334,18 @@ function Router() {
       <Route path="/product/round-bars/nickel-alloy" component={NickelAlloyRoundBars} />
       <Route path="/product/round-bars/cobalt" component={CobaltRoundBars} />
       <Route path="/product/round-bars/high-speed-steel" component={HighSpeedSteelRoundBars} />
-      
+
       {/* F Series Round Bars Routes */}
       <Route path="/product/round-bars/f11-round-bars" component={F11RoundBars} />
       <Route path="/product/round-bars/f22-round-bars" component={F22RoundBars} />
       <Route path="/product/round-bars/f91-round-bars" component={F91RoundBars} />
-      
+
       {/* Cold Work Tool Steels Routes */}
       <Route path="/product/cold-work-tool-steels/o1-tool-steel" component={AISIO1RoundBars} />
       <Route path="/product/cold-work-tool-steels/d2-tool-steel" component={HCHCRD2RoundBars} />
       <Route path="/product/cold-work-tool-steels/a2-tool-steel" component={A2ToolSteel} />
       <Route path="/product/cold-work-tool-steels/d3-tool-steel" component={D3ToolSteel} />
-      
+
       {/* Additional Flange Routes */}
       <Route path="/product/flanges/blind-flanges" component={BlindFlanges} />
       <Route path="/product/flanges/lap-joint-flanges" component={LapJointFlanges} />
@@ -269,7 +353,7 @@ function Router() {
       <Route path="/product/flanges/socket-weld-flanges" component={SocketWeldFlanges} />
       <Route path="/product/flanges/threaded-flanges" component={ThreadedFlanges} />
       <Route path="/product/flanges/weld-neck-flanges" component={WeldNeckFlanges} />
-      
+
       <Route path="/solutions" component={Solutions} />
       <Route path="/certificate" component={Certificate} />
       <Route path="/contact" component={Contact} />
@@ -297,62 +381,62 @@ function App() {
             <html lang="en-IN" />
             <meta charSet="utf-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-            
+
             {/* Preconnect to Important Domains */}
             <link rel="preconnect" href="https://fonts.googleapis.com" />
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-            
+
             {/* DNS Prefetch for Performance */}
             <link rel="dns-prefetch" href="https://www.google-analytics.com" />
             <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-            
+
             {/* ========== ADVANCED WORLDWIDE SEO FEATURES ========== */}
             {/* NOTE: geo tags and hreflang tags are already in index.html - no duplication */}
-            
+
             {/* Additional Performance Optimization */}
             <link rel="preconnect" href="https://mamtasteeltraders.com" />
             <link rel="dns-prefetch" href="https://mamtasteeltraders.com" />
-            
+
             {/* Resource Hints for Faster Loading */}
             <link rel="preload" as="font" type="font/woff2" crossOrigin="anonymous" />
             <link rel="preload" as="style" href="/src/index.css" />
-            
+
             {/* Advanced Audience & Business Targeting (unique to App.tsx) */}
             <meta name="target" content="all" />
             <meta name="audience" content="B2B, Industrial Buyers, Engineers, Contractors, Procurement Managers, Manufacturing Companies" />
-            
+
             {/* Business Classification for Better Discovery */}
             <meta name="business-type" content="Manufacturer, Supplier, Exporter, Wholesaler, Stockist" />
             <meta name="company-size" content="Medium Enterprise" />
             <meta name="establishment-year" content="2005" />
-            
+
             {/* Advanced Content Classification */}
             <meta name="page-topic" content="Steel Manufacturing, Industrial Supplies, B2B Commerce, Metal Products" />
             <meta name="subject" content="Stainless Steel, Carbon Steel, Alloy Steel Products Supply" />
-            
+
             {/* Copyright & Legal */}
             <meta name="copyright" content={`© ${new Date().getFullYear()} Mamta Steel Traders. All Rights Reserved.`} />
             <meta name="author" content="Mamta Steel Traders" />
-            
+
             {/* Global Structured Data Schemas */}
             <script type="application/ld+json">
               {JSON.stringify(globalSchemas, null, 2)}
             </script>
-            
+
             {/* Additional SEO Enhancements */}
             <meta name="referrer" content="origin-when-cross-origin" />
             <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-            
+
             {/* Manifest for PWA */}
             <link rel="manifest" href="/manifest.json" />
-            
+
             {/* Favicon and Icons */}
             <link rel="icon" type="image/x-icon" href="/favicon.ico" />
             <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
             <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
             <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
           </Helmet>
-          
+
           <div className="min-h-screen flex flex-col overflow-x-hidden">
             <TopBar />
             <MainHeader />

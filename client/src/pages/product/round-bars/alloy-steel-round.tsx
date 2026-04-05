@@ -9,288 +9,288 @@ export default function AlloySteelRoundBars() {
       id: 1,
       title: "1.7711 Round Bar",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "1.7711 Round Bars",
-      link: "/contact"
+      alt: "1.7711 / 20MoCr4 Round Bars",
+      link: "/product/round-bars/alloy-steel-round/1-7711-round-bar"
     },
     {
       id: 2,
       title: "100Cr6 Round Bar",
       image: alloys_steel_mamta_steel_traders_img,
       alt: "100CR6 Bearing Steel Round bar 52100",
-      link: "/contact"
+      link: "/product/round-bars/alloy-steel-round/100cr6-round-bar"
     },
     {
       id: 3,
       title: "15CDV6 Round Bars (1.7734)",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "15CDV6 Round Bars 1.7734",
-      link: "/contact"
+      alt: "15CDV6 Round Bars 1.7734 Aerospace Cr-Mo-V Steel",
+      link: "/product/round-bars/alloy-steel-round/15cdv6-round-bars"
     },
     {
       id: 4,
       title: "16MnCr5 Round Bar",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "16MnCr5 Round Bar Stockist Supplier",
-      link: "/contact"
+      alt: "16MnCr5 Round Bar 1.7131 Case Hardening Steel",
+      link: "/product/round-bars/alloy-steel-round/16mncr5-round-bar"
     },
     {
       id: 5,
       title: "17CrNiMo6 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "17CrNiMo6 Round bars",
-      link: "/contact"
+      alt: "17CrNiMo6 Round bars Ni-Cr-Mo Gear Steel",
+      link: "/product/round-bars/alloy-steel-round/17crni-mo6-round-bars"
     },
     {
       id: 6,
       title: "18CrNiMo7-6 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "18CrNiMo7-6 / 1.6587 Round bars",
-      link: "/contact"
+      alt: "18CrNiMo7-6 / 1.6587 Round bars Wind Turbine Gear Steel",
+      link: "/product/round-bars/alloy-steel-round/18crni-mo7-6-round-bars"
     },
     {
       id: 7,
       title: "20MnCr5 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "20MnCr5 Round Bars Suppliers Stockist",
-      link: "/contact"
+      alt: "20MnCr5 Round Bars 1.7147 Case Hardening Steel",
+      link: "/product/round-bars/alloy-steel-round/20mncr5-round-bars"
     },
     {
       id: 8,
-      title: "20MnCr5 Round Bar",
+      title: "20NiCrMo2-2 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "20MnCr5 Round Bar Supplier Stockist",
-      link: "/contact"
+      alt: "20NiCrMo2-2 / SAE 8620 Round Bars Case Hardening",
+      link: "/product/round-bars/alloy-steel-round/20nicrmo2-2-round-bars"
     },
     {
       id: 9,
-      title: "20NiCrMo2-2 Round Bars",
+      title: "25CrMo4 Round Bar",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "20NiCrMo2-2 Round Bars",
-      link: "/contact"
+      alt: "25CrMo4 / 1.7218 / AISI 4130 Round Bar",
+      link: "/product/round-bars/alloy-steel-round/25crmo4-round-bar"
     },
     {
       id: 10,
-      title: "25CrMo4 Round Bar",
+      title: "30CrNiMo8 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "25CrMo4 Round Bar",
-      link: "/contact"
+      alt: "30CrNiMo8 / 1.6580 Ultra High Tensile Round Bars",
+      link: "/product/round-bars/alloy-steel-round/30crni-mo8-round-bars"
     },
     {
       id: 11,
-      title: "30CrNiMo8 Round Bars",
+      title: "31CrMoV9 Round Bar",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "30CrNiMo8 Round Bars",
-      link: "/contact"
+      alt: "31CrMoV9 / 1.8519 Nitriding Steel Round Bar",
+      link: "/product/round-bars/alloy-steel-round/31crmo-v9-round-bars"
     },
     {
       id: 12,
-      title: "31CrMoV9 Round Bar",
+      title: "34CrNiMo6 Round Bar",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "31CrMoV9 Round Bar",
-      link: "/contact"
+      alt: "34CrNiMo6 / 1.6582 High Strength Round Bar",
+      link: "/product/round-bars/alloy-steel-round/34crni-mo6-round-bars"
     },
     {
       id: 13,
-      title: "34CrNiMo6 Round Bar",
+      title: "39NiCrMo3 Round Bars / 1.6510",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "34CrNiMo6 Round Bar",
-      link: "/contact"
+      alt: "39NiCrMo3 / 1.6510 / 40NCD3 Round Bars",
+      link: "/product/round-bars/alloy-steel-round/39nicr-mo3-round-bars"
     },
     {
       id: 14,
-      title: "39NiCrMo3 Round Bars / 1.6510",
+      title: "40Cr7Al10Mo2 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "39NiCrMo3 Round Bars / 1.6510 Round Bars",
-      link: "/contact"
+      alt: "40Cr7Al10Mo2 / 41CrAlMo7 Nitriding Steel Round Bars",
+      link: "/product/round-bars/alloy-steel-round/40cr7al10mo2-round-bars"
     },
     {
       id: 15,
-      title: "40Cr7Al10Mo2 Round Bars",
+      title: "40CrMoV4-6 Round Bar",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "40Cr7Al10Mo2 Round Bars",
-      link: "/contact"
+      alt: "40CrMoV4-6 Cr-Mo-V Alloy Steel Round Bar",
+      link: "/product/round-bars/alloy-steel-round/40crmo-v4-6-round-bars"
     },
     {
       id: 16,
-      title: "40CrMoV4-6 Round Bar",
+      title: "4140 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "40CrMoV4-6 Round Bar",
-      link: "/contact"
+      alt: "SAE 4140 AISI 4140 Round Bars EN19 1.7225 42CrMo4",
+      link: "/product/round-bars/alloy-steel-round/4140-round-bars"
     },
     {
       id: 17,
-      title: "4140 Round Bars",
+      title: "41Cr4 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "SAE 4140 AISI 4140 Round Bars EN19 1.7225 42CRMO4",
-      link: "/contact"
+      alt: "41Cr4 / 1.7035 / AISI 5140 Chrome Steel Round Bars",
+      link: "/product/round-bars/alloy-steel-round/41cr4-round-bars"
     },
     {
       id: 18,
-      title: "41Cr4 Round Bars",
+      title: "4340 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "41Cr4 Round Bars EN18",
-      link: "/contact"
+      alt: "AISI 4340 / EN24 High Strength Round Bars",
+      link: "/product/round-bars/alloy-steel-round/4340-round-bars"
     },
     {
       id: 19,
-      title: "4340 Round Bars",
+      title: "8620 Bright Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "4340 Round Bars High Strength",
-      link: "/contact"
+      alt: "AISI 8620 / 21NiCrMo2 Bright Round Bar",
+      link: "/product/round-bars/alloy-steel-round/aisi-8620-round-bars"
     },
     {
       id: 20,
-      title: "8620 Bright Bars",
+      title: "905M39 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "8620 Bright Round Bar",
-      link: "/contact"
+      alt: "905M39 / EN30B Round Bars BS 970",
+      link: "/product/round-bars/alloy-steel-round/905m39-round-bars"
     },
     {
       id: 21,
-      title: "905M39 Round Bars",
-      image: alloys_steel_mamta_steel_traders_img,
-      alt: "905M39 Round Bars BS 970",
-      link: "/contact"
-    },
-    {
-      id: 22,
       title: "A193 Grade B7 Round Bar",
       image: alloys_steel_mamta_steel_traders_img,
       alt: "ASTM A193 Grade B7 Round Bars",
-      link: "/contact"
+      link: "/product/round-bars/alloy-steel-round/a193-grade-b7-round-bar"
+    },
+    {
+      id: 22,
+      title: "AISI 8620 Round Bars",
+      image: alloys_steel_mamta_steel_traders_img,
+      alt: "SAE 8620 Round Bars, AISI 8620, 1.6523, 20NiCrMo2-2",
+      link: "/product/round-bars/alloy-steel-round/aisi-8620-round-bars"
     },
     {
       id: 23,
-      title: "AISI 8620 Round Bars",
+      title: "42CrMo4 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "SAE 8620 Round Bars, AISI 8620, 1.6523",
-      link: "/contact"
+      alt: "42CrMo4 Round Bars EN19 / 1.7225 / 4140",
+      link: "/product/round-bars/alloy-steel-round/42crmo4-round-bars"
     },
     {
       id: 24,
-      title: "42CrMo4 Round Bars",
+      title: "EN8 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "42CrMo4 Round Bars EN19",
-      link: "/contact"
+      alt: "EN8 / C45 / 1045 Carbon Steel Round Bars",
+      link: "/product/round-bars/alloy-steel-round/en8-round-bars"
     },
     {
       id: 25,
-      title: "EN8 Round Bars",
+      title: "EN9 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "EN8 Carbon Steel Round Bars",
-      link: "/contact"
+      alt: "EN9 / C55 / 1055 Carbon Steel Round Bars",
+      link: "/product/round-bars/alloy-steel-round/en9-round-bars"
     },
     {
       id: 26,
-      title: "EN9 Round Bars",
+      title: "EN19 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "EN9 Carbon Steel Round Bars",
-      link: "/contact"
+      alt: "EN19 / 42CrMo4 / 4140 Alloy Steel Round Bars",
+      link: "/product/round-bars/alloy-steel-round/en19-round-bars"
     },
     {
       id: 27,
-      title: "EN19 Round Bars",
+      title: "EN24 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "EN19 Alloy Steel Round Bars",
-      link: "/contact"
+      alt: "EN24 / 4340 / 817M40 Alloy Steel Round Bars",
+      link: "/product/round-bars/alloy-steel-round/en24-round-bars"
     },
     {
       id: 28,
-      title: "EN24 Round Bars",
+      title: "4130 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "EN24 Alloy Steel Round Bars",
-      link: "/contact"
+      alt: "AISI 4130 / 25CrMo4 Chromoly Steel Round Bars",
+      link: "/product/round-bars/alloy-steel-round/4130-round-bars"
     },
     {
       id: 29,
-      title: "4130 Round Bars",
+      title: "4150 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "4130 Chromoly Steel Round Bars",
-      link: "/contact"
+      alt: "AISI 4150 / 50CrMo4 High Carbon Chrome Moly Round Bars",
+      link: "/product/round-bars/alloy-steel-round/4150-round-bars"
     },
     {
       id: 30,
-      title: "4150 Round Bars",
+      title: "4340V Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "4150 Alloy Steel Round Bars",
-      link: "/contact"
+      alt: "4340V / AMS 6414 Vanadium Modified 4340 Steel Bars",
+      link: "/product/round-bars/alloy-steel-round/4340v-round-bars"
     },
     {
       id: 31,
-      title: "4340V Round Bars",
+      title: "8740 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "4340V Vacuum Melted Steel Bars",
-      link: "/contact"
+      alt: "AISI 8740 / AMS 6322 Aerospace Ni-Cr-Mo Round Bars",
+      link: "/product/round-bars/alloy-steel-round/8740-round-bars"
     },
     {
       id: 32,
-      title: "8740 Round Bars",
+      title: "9310 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "8740 Alloy Steel Round Bars",
-      link: "/contact"
+      alt: "SAE 9310 / AMS 6265 Aerospace Case Hardening Steel Bars",
+      link: "/product/round-bars/alloy-steel-round/9310-round-bars"
     },
     {
       id: 33,
-      title: "9310 Round Bars",
+      title: "12L14 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "9310 Case Hardening Steel Bars",
-      link: "/contact"
+      alt: "12L14 / 9SMnPb28 Free Machining Leaded Steel Bars",
+      link: "/product/round-bars/alloy-steel-round/12l14-round-bars"
     },
     {
       id: 34,
-      title: "12L14 Round Bars",
+      title: "1144 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "12L14 Free Machining Steel Bars",
-      link: "/contact"
+      alt: "1144 / Stressproof AISI 1144 Free Machining Steel Bars",
+      link: "/product/round-bars/alloy-steel-round/1144-round-bars"
     },
     {
       id: 35,
-      title: "1144 Round Bars",
+      title: "35CrMo Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "1144 Stress Proof Steel Bars",
-      link: "/contact"
+      alt: "35CrMo / 34CrMo4 / SCM435 Chrome Moly Round Bars",
+      link: "/product/round-bars/alloy-steel-round/35crmo-round-bars"
     },
     {
       id: 36,
-      title: "35CrMo Round Bars",
+      title: "SCM440 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "35CrMo Alloy Steel Round Bars",
-      link: "/contact"
+      alt: "JIS SCM440 / 42CrMo4 / 4140 Chrome Moly Steel Bars",
+      link: "/product/round-bars/alloy-steel-round/scm440-round-bars"
     },
     {
       id: 37,
-      title: "SCM440 Round Bars",
+      title: "SNCM420 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "SCM440 JIS Alloy Steel Bars",
-      link: "/contact"
+      alt: "JIS SNCM420 / 8620 / 21NiCrMo2 Case Hardening Steel",
+      link: "/product/round-bars/alloy-steel-round/sncm420-round-bars"
     },
     {
       id: 38,
-      title: "SNCM420 Round Bars",
+      title: "50CrMo4 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "SNCM420 Case Hardening Steel",
-      link: "/contact"
+      alt: "50CrMo4 / 1.7228 / AISI 4150 High Carbon Chrome Moly Bars",
+      link: "/product/round-bars/alloy-steel-round/50crmo4-round-bars"
     },
     {
       id: 39,
-      title: "50CrMo4 Round Bars",
+      title: "36NiCrMo4 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "50CrMo4 Alloy Steel Round Bars",
-      link: "/contact"
+      alt: "36NiCrMo4 / 1.6511 / 35NCD4 Ni-Cr-Mo Steel Bars",
+      link: "/product/round-bars/alloy-steel-round/36nicrmo4-round-bars"
     },
     {
       id: 40,
-      title: "36NiCrMo4 Round Bars",
+      title: "38NiCrMo4 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "36NiCrMo4 High Tensile Steel Bars",
-      link: "/contact"
+      alt: "38NiCrMo4 / 1.6562 / 8740 High Strength Steel Bars",
+      link: "/product/round-bars/alloy-steel-round/38nicrmo4-round-bars"
     },
     {
       id: 41,
-      title: "38NiCrMo4 Round Bars",
+      title: "1.7711 / 20MoCr4 Round Bar",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "38NiCrMo4 High Strength Steel Bars",
-      link: "/contact"
+      alt: "1.7711 / 20MoCr4 Chromium Molybdenum Steel Bars",
+      link: "/product/round-bars/alloy-steel-round/1-7711-round-bar"
     }
   ];
 
@@ -305,7 +305,7 @@ export default function AlloySteelRoundBars() {
 
   const applications = [
     "Automotive Components and Drive Shafts",
-    "Aerospace and Defense Applications", 
+    "Aerospace and Defense Applications",
     "Oil and Gas Equipment Manufacturing",
     "Heavy Machinery and Industrial Equipment",
     "High-Strength Fasteners and Bolts",

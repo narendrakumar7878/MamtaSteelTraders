@@ -173,7 +173,7 @@ export default function Contact() {
     <>
       <Helmet>
         <title>Contact Mamta Steel Traders | Steel Supplier & Manufacturer India | Get Quote</title>
-        <meta name="description" content="Contact Mamta Steel Traders - Leading steel supplier & manufacturer in Mumbai, India. Get instant quotes for stainless steel, carbon steel, alloy steel. Office: 022-67521213, Prakash Parmar: +91 9819322575, Naresh Parmar: +91 9152958210. Email: mamtasteeltraders@gmail.com, info@mamtasteeltraders.com. ISO certified with pan India delivery." />
+        <meta name="description" content="Contact Mamta Steel Traders - Leading steel supplier & manufacturer in Mumbai, India. Get instant quotes for stainless steel, carbon steel, alloy steel. Office: 022-67521213, Prakash Parmar: +91 9819322576, Naresh Parmar: +91 9152958210. Email: mamtasteeltraders@gmail.com, info@mamtasteeltraders.com. ISO certified with pan India delivery." />
         <meta name="keywords" content="contact steel supplier India, steel manufacturer contact, Mamta Steel Traders contact, Mumbai steel supplier, steel quotes India, bulk steel order India, price list steel, technical support steel, steel inquiry Mumbai, buy steel India, industrial steel supplier contact, stainless steel supplier contact, carbon steel supplier contact, alloy steel supplier contact, steel trader Mumbai contact, steel exporter India contact, get steel quote, steel price inquiry, Prakash Parmar steel, Naresh Parmar steel, mamtasteeltraders email, mamtasteeltraders phone, steel supplier near me, best steel supplier India, ISO certified steel supplier, steel manufacturer Mumbai, wholesale steel supplier, steel distributor contact" />
 
         {/* Enhanced SEO Meta Tags */}
@@ -189,7 +189,7 @@ export default function Contact() {
         {/* Open Graph Tags for Social Media */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Contact Mamta Steel Traders - Steel Supplier India" />
-        <meta property="og:description" content="Get instant quotes for stainless steel, carbon steel & alloy steel. Contact Prakash Parmar: +91 9819322575, Naresh Parmar: +91 9152958210. ISO certified supplier with pan India delivery." />
+        <meta property="og:description" content="Get instant quotes for stainless steel, carbon steel & alloy steel. Contact Prakash Parmar: +91 9819322576, Naresh Parmar: +91 9152958210. ISO certified supplier with pan India delivery." />
         <meta property="og:url" content="https://mamtasteeltraders.com/contact" />
         <meta property="og:site_name" content="Mamta Steel Traders" />
         <meta property="og:locale" content="en_US" />
@@ -223,7 +223,7 @@ export default function Contact() {
               "@type": "LocalBusiness",
               "name": "Mamta Steel Traders",
               "image": "https://mamtasteeltraders.com/logo.png",
-              "telephone": ["+91-22-67521213", "+91-9819322575", "+91-9152958210"],
+              "telephone": ["+91-22-67521213", "+91-9819322576", "+91-9152958210"],
               "email": ["mamtasteeltraders@gmail.com", "info@mamtasteeltraders.com"],
               "address": {
                 "@type": "PostalAddress",
@@ -283,7 +283,7 @@ export default function Contact() {
               },
               {
                 "@type": "ContactPoint",
-                "telephone": "+91-9819322575",
+                "telephone": "+91-9819322576",
                 "contactType": "sales",
                 "name": "Prakash Parmar",
                 "email": "prakash@mamtasteeltraders.com",
@@ -317,7 +317,7 @@ export default function Contact() {
                 "name": "How can I contact Mamta Steel Traders?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "You can contact us via phone at Office: 022-67521213, Prakash Parmar: +91 9819322575, Naresh Parmar: +91 9152958210, or email us at mamtasteeltraders@gmail.com or info@mamtasteeltraders.com. We are available Monday to Saturday from 9:30 AM to 8:30 PM."
+                  "text": "You can contact us via phone at Office: 022-67521213, Prakash Parmar: +91 9819322576, Naresh Parmar: +91 9152958210, or email us at mamtasteeltraders@gmail.com or info@mamtasteeltraders.com. We are available Monday to Saturday from 9:30 AM to 8:30 PM."
                 }
               },
               {
@@ -349,7 +349,7 @@ export default function Contact() {
                 "name": "How do I get a quote for steel products?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "You can get a quote by calling us at +91 9819322575 (Prakash Parmar) or +91 9152958210 (Naresh Parmar), emailing us at mamtasteeltraders@gmail.com, or filling out the contact form on this page with your requirements."
+                  "text": "You can get a quote by calling us at +91 9819322576 (Prakash Parmar) or +91 9152958210 (Naresh Parmar), emailing us at mamtasteeltraders@gmail.com, or filling out the contact form on this page with your requirements."
                 }
               }
             ]
@@ -359,7 +359,7 @@ export default function Contact() {
 
       <SEOHead
         title="Contact Mamta Steel Traders - Steel Supplier India | Get Quote, Price List, Technical Support"
-        description="Contact Mamta Steel Traders for bulk steel orders, price quotes, technical specifications. Call Prakash Parmar +91 9819322575, Naresh Parmar +91 9152958210. Email: mamtasteeltraders@gmail.com. Best steel supplier in India for SS pipes, MS plates, flanges, fittings. Quick response, competitive prices, pan India delivery."
+        description="Contact Mamta Steel Traders for bulk steel orders, price quotes, technical specifications. Call Prakash Parmar +91 9819322576, Naresh Parmar +91 9152958210. Email: mamtasteeltraders@gmail.com. Best steel supplier in India for SS pipes, MS plates, flanges, fittings. Quick response, competitive prices, pan India delivery."
         keywords="contact steel supplier India, steel quotes India, bulk steel order, price list steel, technical support steel, Mumbai steel trader contact, Mamta Steel contact, steel inquiry India, buy steel India, steel manufacturer contact, industrial steel supplier contact"
         canonicalUrl="https://mamtasteeltraders.com/contact"
         structuredData={{
@@ -369,14 +369,14 @@ export default function Contact() {
           "mainEntity": {
             "@type": "LocalBusiness",
             "name": "Mamta Steel Traders",
-            "telephone": ["+91-9819322575", "+91-9152958210"],
+            "telephone": ["+91-9819322576", "+91-9152958210"],
             "email": "mamtasteeltraders@gmail.com",
             "openingHours": "Mo-Sa 09:30-20:30",
             "priceRange": "₹₹₹",
             "contactPoint": [
               {
                 "@type": "ContactPoint",
-                "telephone": "+91-9819322575",
+                "telephone": "+91-9819322576",
                 "contactType": "sales",
                 "name": "Prakash Parmar",
                 "areaServed": "IN",
@@ -559,14 +559,14 @@ export default function Contact() {
                             <div className="space-y-2">
                               <div className="flex items-center justify-between gap-2">
                                 <a 
-                                  href="tel:+919819322575" 
+                                  href="tel:+919819322576" 
                                   className="text-gray-600 hover:text-[#f39c12] transition-colors duration-200 text-sm sm:text-base lg:text-lg font-medium truncate"
                                   data-testid="link-prakash-phone"
                                 >
                                   +91 9819322576
                                 </a>
                                 <button
-                                  onClick={() => copyToClipboard('+919819322575', 'Phone')}
+                                  onClick={() => copyToClipboard('+919819322576', 'Phone')}
                                   className="p-2 text-gray-400 hover:text-[#f39c12] transition-colors duration-200 flex-shrink-0 min-h-[44px] min-w-[44px] flex items-center justify-center"
                                   title="Copy phone number"
                                   data-testid="button-copy-prakash-phone"
