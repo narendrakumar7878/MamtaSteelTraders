@@ -1,12 +1,19 @@
 import ProductSEO from "@/components/ProductSEO";
-import { ArrowRight, Phone, Mail, CheckCircle, Shield, Award } from "lucide-react";
+import { ArrowRight, ArrowLeft, Phone, Mail, CheckCircle, Shield, Award } from "lucide-react";
 import { Link } from "wouter";
 
 export default function NickelAlloyRoundBars() {
+  const nickelGrades = [
+    { name: "Nickel 200 (UNS N02200)", path: "/product/round-bars/nickel-alloy/nickel-200", desc: "Commercially pure nickel with excellent caustic resistance." },
+    { name: "Nickel 201 (UNS N02201)", path: "/product/round-bars/nickel-alloy/nickel-201", desc: "Low carbon pure nickel for high-temperature service above 315°C." },
+    { name: "Alloy 20 (UNS N08020)", path: "/product/round-bars/nickel-alloy/alloy-20", desc: "Maximum resistance to sulfuric acid and chloride stress corrosion." },
+    { name: "Alloy 800 (UNS N08800)", path: "/product/round-bars/nickel-alloy/alloy-800", desc: "High-temperature strength and oxidation/carburization resistance." },
+    { name: "Alloy 825 (UNS N08825)", path: "/product/round-bars/nickel-alloy/alloy-825", desc: "Exceptional resistance to reducing and oxidizing acids." }
+  ];
+
   const specifications = [
     "ASTM B166 - Standard Specification for Nickel-Chromium-Iron Alloys",
     "ASTM B564 - Standard Specification for Nickel Alloy Forgings",
-    "Various Nickel Alloy Grades Available",
     "Size Range: 6mm to 350mm diameter", 
     "Length: Up to 6000mm",
     "Condition: Solution Annealed, Aged"
@@ -26,9 +33,9 @@ export default function NickelAlloyRoundBars() {
   return (
     <>
       <ProductSEO
-        title="Nickel Alloy Round Bars - High Performance Alloys | Mamta Steel Traders"
-        description="Premium nickel alloy round bars for demanding applications. Excellent high-temperature strength and corrosion resistance. ASTM B166, B564 compliant for aerospace and chemical processing."
-        keywords="nickel alloy round bars, nickel alloy bars, high temperature alloys, corrosion resistant alloys, ASTM B166, ASTM B564"
+        title="Nickel Alloy Round Bars - High Performance Alloys | Pan India Supplier"
+        description="Premium nickel alloy round bars including Nickel 200, 201, Alloy 20, 800, and 825. Excellent high-temperature strength and acid corrosion resistance. Pan India ISO certified supplier."
+        keywords="nickel alloy round bars mumbai, nickel 200 supplier india, alloy 20 bars price pan india, high temperature industrial alloys, corrosion resistant nickel rods, ASTM B564 forgings"
         canonicalUrl="/product/round-bars/nickel-alloy"
       />
 
@@ -53,19 +60,24 @@ export default function NickelAlloyRoundBars() {
           </div>
         </div>
 
-        {/* Breadcrumb */}
+        {/* Breadcrumb & Navigation */}
         <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
-          <div className="container mx-auto px-4 py-4">
-            <nav className="flex items-center space-x-2 text-sm">
-              <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary transition-colors">Home</Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <Link href="/products" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary transition-colors">Products</Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <Link href="/product/round-bars/round-bars" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary transition-colors">Round Bars</Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <span className="text-navy-primary font-medium">Nickel Alloy</span>
+          <div className="container mx-auto px-4 py-4 font-black">
+            <nav className="flex items-center space-x-2 text-sm flex-wrap text-black font-black uppercase italic font-black">
+              <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-colors italic tracking-tighter uppercase font-black italic">Home</Link>
+              <ArrowRight className="w-4 h-4 text-gray-400 font-extrabold" />
+              <Link href="/products" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-colors italic tracking-tighter uppercase font-black italic font-black">Products</Link>
+              <ArrowRight className="w-4 h-4 text-gray-400 font-extrabold" />
+              <Link href="/product/round-bars/round-bars" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-colors italic tracking-tighter uppercase font-black italic font-black">Round Bars</Link>
+              <ArrowRight className="w-4 h-4 text-gray-400 font-extrabold" />
+              <span className="text-navy-primary dark:text-gold-primary underline decoration-gold-primary decoration-2 underline-offset-4 italic tracking-tighter uppercase font-black italic">Nickel Alloy</span>
             </nav>
           </div>
+        </div>
+        <div className="container mx-auto px-4 py-4">
+           <Link href="/product/round-bars/round-bars" className="inline-flex items-center text-navy-primary dark:text-gold-primary hover:underline font-black uppercase text-xs italic tracking-tighter italic font-black">
+              <ArrowLeft className="w-3 h-3 mr-2 font-black" /> Back to Round Bars
+           </Link>
         </div>
 
         {/* Main Content */}
@@ -112,10 +124,35 @@ export default function NickelAlloyRoundBars() {
               </div>
             </div>
 
+            {/* Available Grades Section */}
+            <div className="mb-16">
+              <h3 className="text-3xl font-black text-navy-primary dark:text-white mb-8 italic tracking-tighter uppercase text-center underline decoration-gold-primary decoration-4 underline-offset-8">Available Nickel Alloy Grades</h3>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {nickelGrades.map((grade, index) => (
+                  <Link 
+                    key={index} 
+                    href={grade.path}
+                    className="group bg-white dark:bg-gray-800 rounded-[2rem] shadow-xl border border-gray-100 dark:border-gray-700 p-8 hover:shadow-gold-primary/20 transition-all transform hover:-translate-y-2 cursor-pointer border-b-4 border-b-gold-primary"
+                  >
+                    <div className="flex justify-between items-start mb-4">
+                      <h4 className="text-xl font-black text-navy-primary dark:text-white italic tracking-tighter uppercase group-hover:text-gold-primary transition-colors">{grade.name}</h4>
+                      <div className="bg-navy-primary group-hover:bg-gold-primary text-white group-hover:text-navy-primary p-2 rounded-lg transition-all transform group-hover:rotate-12">
+                        <ArrowRight className="w-5 h-5" />
+                      </div>
+                    </div>
+                    <p className="text-gray-500 dark:text-gray-400 italic font-black uppercase text-[10px] tracking-tighter mb-4 h-12 overflow-hidden">{grade.desc}</p>
+                    <div className="flex items-center text-navy-primary dark:text-gold-primary font-black uppercase text-[10px] tracking-widest italic group-hover:underline">
+                      View Technical Specs
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
             {/* Specifications Grid */}
             <div className="grid md:grid-cols-2 gap-8 mb-16">
-              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-6">Technical Specifications</h3>
+              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 h-fit">
+                <h3 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-6 italic tracking-tighter uppercase border-b-2 border-gold-primary/20 pb-2">Technical Standards</h3>
                 <div className="space-y-3">
                   {specifications.map((spec, index) => (
                     <div key={index} className="flex items-start">

@@ -226,7 +226,7 @@ export default function Navbar() {
                       <ChevronRight className="w-4 h-4 text-navy-primary" />
                     </div>
                     {/* Pipes & Tubes Submenu */}
-                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60">
+                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60 max-h-[70vh] overflow-y-auto scrollbar-hide">
                       <div className="py-2">
                         <Link href="/product/pipes-tubes/stainless-steel-pipes-tubes" className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-sm transition-colors duration-200" data-testid="link-stainless-steel-pipes">
                           Stainless Steel Pipes & Tubes
@@ -293,7 +293,7 @@ export default function Navbar() {
                       <ChevronRight className="w-4 h-4 text-navy-primary" />
                     </div>
                     {/* Plates & Sheets Submenu */}
-                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60">
+                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60 max-h-[70vh] overflow-y-auto scrollbar-hide">
                       <div className="py-2">
                         <Link href="/product/plates-sheets/stainless-steel-plates" className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-sm transition-colors duration-200" data-testid="link-stainless-steel-plates">
                           Stainless Steel Plates
@@ -327,7 +327,7 @@ export default function Navbar() {
                       <ChevronRight className="w-4 h-4 text-navy-primary" />
                     </div>
                     {/* Round Bars Submenu */}
-                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60">
+                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60 max-h-[70vh] overflow-y-auto scrollbar-hide">
                       <div className="py-2">
                         <Link href="/product/round-bars/round-bars" className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-sm font-semibold text-navy-primary transition-colors duration-200" data-testid="link-all-round-bars">
                           All Round Bars
@@ -339,25 +339,38 @@ export default function Navbar() {
                         <Link href="/product/round-bars/alloy-steel-f-series" className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-sm transition-colors duration-200" data-testid="link-alloy-steel-f-series">
                           Alloy Steel F Series
                         </Link>
+                        {/* F-Series Individual (Accordion Fix for scrollable parent) */}
                         <div className="relative group/sub2">
                           <div className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center justify-between text-sm transition-colors duration-200" data-testid="submenu-f-series-individual">
                             <span className="text-xs text-gray-600">F Series Individual</span>
-                            <ChevronRight className="w-3 h-3 text-navy-primary" />
+                            <ChevronDown className={`w-3 h-3 text-navy-primary transition-transform duration-300 group-hover/sub2:rotate-180`} />
                           </div>
-                          <div className="absolute left-full top-0 bg-white text-gray-800 min-w-60 rounded-lg shadow-xl opacity-0 invisible group-hover/sub2:opacity-100 group-hover/sub2:visible transition-all duration-300 z-70">
-                            <div className="py-2">
-                              <Link href="/product/round-bars/f11-round-bars" className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-xs transition-colors duration-200" data-testid="link-f11-round-bars">
-                                F11 Round Bars
+                          <div className="max-h-0 overflow-hidden group-hover/sub2:max-h-96 transition-all duration-500 ease-in-out bg-gray-50 dark:bg-gray-800 px-4 border-l-2 border-gold-primary ml-2">
+                            <div className="py-1 flex flex-col space-y-1">
+                              <Link href="/product/round-bars/f5-round-bars" className="py-1 hover:text-gold-primary cursor-pointer text-xs transition-colors duration-200 flex items-center" data-testid="link-f5-round-bars">
+                                <span className="w-2 h-2 rounded-full bg-gold-primary mr-2"></span> F5 Round Bars
                               </Link>
-                              <Link href="/product/round-bars/f22-round-bars" className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-xs transition-colors duration-200" data-testid="link-f22-round-bars">
-                                F22 Round Bars
+                              <Link href="/product/round-bars/f9-round-bars" className="py-1 hover:text-gold-primary cursor-pointer text-xs transition-colors duration-200 flex items-center" data-testid="link-f9-round-bars">
+                                <span className="w-2 h-2 rounded-full bg-gold-primary mr-2"></span> F9 Round Bars
                               </Link>
-                              <Link href="/product/round-bars/f91-round-bars" className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-xs transition-colors duration-200" data-testid="link-f91-round-bars">
-                                F91 Round Bars
+                              <Link href="/product/round-bars/f11-round-bars" className="py-1 hover:text-gold-primary cursor-pointer text-xs transition-colors duration-200 flex items-center" data-testid="link-f11-round-bars">
+                                <span className="w-2 h-2 rounded-full bg-gold-primary mr-2"></span> F11 Round Bars
+                              </Link>
+                              <Link href="/product/round-bars/f12-round-bars" className="py-1 hover:text-gold-primary cursor-pointer text-xs transition-colors duration-200 flex items-center" data-testid="link-f12-round-bars">
+                                <span className="w-2 h-2 rounded-full bg-gold-primary mr-2"></span> F12 Round Bars
+                              </Link>
+                              <Link href="/product/round-bars/f22-round-bars" className="py-1 hover:text-gold-primary cursor-pointer text-xs transition-colors duration-200 flex items-center" data-testid="link-f22-round-bars">
+                                <span className="w-2 h-2 rounded-full bg-gold-primary mr-2"></span> F22 Round Bars
+                              </Link>
+                              <Link href="/product/round-bars/f91-round-bars" className="py-1 hover:text-gold-primary cursor-pointer text-xs transition-colors duration-200 flex items-center" data-testid="link-f91-round-bars">
+                                <span className="w-2 h-2 rounded-full bg-gold-primary mr-2"></span> F91 Round Bars
                               </Link>
                             </div>
                           </div>
                         </div>
+                        <Link href="/product/round-bars/aluminium" className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-sm transition-colors duration-200" data-testid="link-aluminium-round">
+                          Aluminium
+                        </Link>
                         <Link href="/product/round-bars/aluminium-alloy" className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-sm transition-colors duration-200" data-testid="link-aluminium-alloy-round">
                           Aluminium Alloy
                         </Link>
@@ -396,7 +409,7 @@ export default function Navbar() {
                       <ChevronRight className="w-4 h-4 text-navy-primary" />
                     </div>
                     {/* Cold Work Tool Steels Submenu */}
-                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60">
+                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60 max-h-[70vh] overflow-y-auto scrollbar-hide">
                       <div className="py-2">
                         <Link href="/product/cold-work-tool-steels/o1-tool-steel" className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-sm transition-colors duration-200" data-testid="link-aisi-o1">
                           O1 Tool Steel
@@ -424,7 +437,7 @@ export default function Navbar() {
                       <ChevronRight className="w-4 h-4 text-navy-primary" />
                     </div>
                     {/* Flanges Submenu */}
-                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60">
+                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60 max-h-[70vh] overflow-y-auto scrollbar-hide">
                       <div className="py-2">
                         <Link href="/product/flanges/stainless-steel" className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-sm transition-colors duration-200" data-testid="link-stainless-steel-flanges">
                           Stainless Steel
@@ -458,7 +471,7 @@ export default function Navbar() {
                       <ChevronRight className="w-4 h-4 text-navy-primary" />
                     </div>
                     {/* Fasteners Submenu */}
-                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60">
+                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60 max-h-[70vh] overflow-y-auto scrollbar-hide">
                       <div className="py-2">
                         <Link href="/product/fasteners/high-tensile" className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-sm transition-colors duration-200" data-testid="link-high-tensile">
                           High Tensile
@@ -489,7 +502,7 @@ export default function Navbar() {
                       <ChevronRight className="w-4 h-4 text-navy-primary" />
                     </div>
                     {/* Fittings Submenu */}
-                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60">
+                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60 max-h-[70vh] overflow-y-auto scrollbar-hide">
                       <div className="py-2">
                         <Link href="/product/fittings/buttweld-fittings" className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-sm transition-colors duration-200" data-testid="link-buttweld-fittings">
                           Buttweld Fittings
@@ -511,7 +524,7 @@ export default function Navbar() {
                       <ChevronRight className="w-4 h-4 text-navy-primary" />
                     </div>
                     {/* Welding Electrodes Submenu */}
-                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60">
+                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60 max-h-[70vh] overflow-y-auto scrollbar-hide">
                       <div className="py-2">
                         <Link href="/product/welding-electrodes/stainless-steel-electrode" className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-sm transition-colors duration-200" data-testid="link-stainless-electrode">
                           Stainless Steel Electrode
@@ -536,7 +549,7 @@ export default function Navbar() {
                       <ChevronRight className="w-4 h-4 text-navy-primary" />
                     </div>
                     {/* Galvanized Submenu */}
-                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60">
+                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60 max-h-[70vh] overflow-y-auto scrollbar-hide">
                       <div className="py-2">
                         <Link href="/product/galvanized/hot-dip-galvanized-angles" className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-sm transition-colors duration-200" data-testid="link-galvanized-angles">
                           Hot Dip Galvanized Angles
@@ -558,7 +571,7 @@ export default function Navbar() {
                       <ChevronRight className="w-4 h-4 text-navy-primary" />
                     </div>
                     {/* Pins Submenu */}
-                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60">
+                    <div className="absolute left-full top-0 bg-white text-gray-800 min-w-80 rounded-lg shadow-xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-60 max-h-[70vh] overflow-y-auto scrollbar-hide">
                       <div className="py-2">
                         <Link href="/product/pins/pto-pins" className="px-4 py-2 hover:bg-gray-100 cursor-pointer flex items-center text-sm transition-colors duration-200" data-testid="link-pto-pins">
                           PTO Pins
@@ -793,8 +806,17 @@ export default function Navbar() {
                             Alloy Steel F Series
                           </Link>
                           <div className="ml-2 space-y-1">
+                            <Link href="/product/round-bars/f5-round-bars" className="flex items-center py-1 text-xs text-gray-600 hover:text-gold-primary" onClick={toggleMobileMenu} data-testid="mobile-link-f5-round-bars">
+                              • F5 Round Bars
+                            </Link>
+                            <Link href="/product/round-bars/f9-round-bars" className="flex items-center py-1 text-xs text-gray-600 hover:text-gold-primary" onClick={toggleMobileMenu} data-testid="mobile-link-f9-round-bars">
+                              • F9 Round Bars
+                            </Link>
                             <Link href="/product/round-bars/f11-round-bars" className="flex items-center py-1 text-xs text-gray-600 hover:text-gold-primary" onClick={toggleMobileMenu} data-testid="mobile-link-f11-round-bars">
                               • F11 Round Bars
+                            </Link>
+                            <Link href="/product/round-bars/f12-round-bars" className="flex items-center py-1 text-xs text-gray-600 hover:text-gold-primary" onClick={toggleMobileMenu} data-testid="mobile-link-f12-round-bars">
+                              • F12 Round Bars
                             </Link>
                             <Link href="/product/round-bars/f22-round-bars" className="flex items-center py-1 text-xs text-gray-600 hover:text-gold-primary" onClick={toggleMobileMenu} data-testid="mobile-link-f22-round-bars">
                               • F22 Round Bars
@@ -803,6 +825,9 @@ export default function Navbar() {
                               • F91 Round Bars
                             </Link>
                           </div>
+                          <Link href="/product/round-bars/aluminium" className="flex items-center py-1 text-xs hover:text-gold-primary" onClick={toggleMobileMenu} data-testid="mobile-link-aluminium-round">
+                            Aluminium
+                          </Link>
                           <Link href="/product/round-bars/aluminium-alloy" className="flex items-center py-1 text-xs hover:text-gold-primary" onClick={toggleMobileMenu} data-testid="mobile-link-aluminium-alloy-round">
                             Aluminium Alloy
                           </Link>

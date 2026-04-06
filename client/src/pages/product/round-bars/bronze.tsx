@@ -1,154 +1,90 @@
 import ProductSEO from "@/components/ProductSEO";
 import { ArrowRight, Phone, Mail, CheckCircle, Shield, Award } from "lucide-react";
+import copper_mamta_steel_traders_img from "@/assets/COPPER MAMTA STEEL TRADERS.jpg";
 import { Link } from "wouter";
 
 export default function BronzeRoundBars() {
-  const specifications = [
-    "ASTM B124 - Standard Specification for Copper and Copper Alloy Forging Rod, Bar, and Shapes",
-    "ASTM B150 - Standard Specification for Aluminum Bronze Rod, Bar, and Shapes", 
-    "Size Range: 6mm to 300mm diameter",
-    "Length: Up to 6000mm",
-    "Condition: Hard Drawn, Soft Annealed",
-    "Finish: Mill Finish, Polished"
-  ];
-
-  const applications = [
-    "Marine Hardware",
-    "Pump Components", 
-    "Valve Parts",
-    "Bearings and Bushings",
-    "Electrical Components",
-    "Architectural Applications",
-    "Fasteners",
-    "Marine Propellers"
+  const products = [
+    {
+      id: 1,
+      title: "PB1 Phosphor Bronze",
+      image: copper_mamta_steel_traders_img,
+      link: "/product/round-bars/bronze/pb1-phosphor-bronze",
+      description: "High performance phosphor bronze with excellent fatigue resistance and corrosion resistance."
+    },
+    {
+      id: 2,
+      title: "SAE 660 Bearing Bronze",
+      image: copper_mamta_steel_traders_img,
+      link: "/product/round-bars/bronze/sae-660-bearing-bronze",
+      description: "The industry standard for plain bearings. Excellent anti-friction properties and high strength."
+    },
+    {
+      id: 3,
+      title: "LG2 Gunmetal Bronze",
+      image: copper_mamta_steel_traders_img,
+      link: "/product/round-bars/bronze/lg2-gunmetal-bronze",
+      description: "Excellent casting and machining properties. Widely used for valves, pumps and marine fittings."
+    },
+    {
+      id: 4,
+      title: "AB2 Aluminium Bronze",
+      image: copper_mamta_steel_traders_img,
+      link: "/product/round-bars/bronze/ab2-aluminium-bronze",
+      description: "Exceptional resistance to seawater corrosion. High strength and durability for marine propellers."
+    }
   ];
 
   return (
     <>
       <ProductSEO
-        title="Bronze Round Bars - Marine Grade | ASTM B124, B150 | Mamta Steel Traders"
-        description="High-quality bronze round bars for marine and industrial applications. Excellent corrosion resistance and machinability. ASTM B124, B150 compliant with various bronze alloys available."
-        keywords="bronze round bars, marine bronze, ASTM B124, ASTM B150, bronze bars, marine hardware, pump components, valve parts"
+        title="Bronze Round Bars - PB1, SAE 660, LG2, AB2 | Industrial & Marine | Mamta Steel Traders"
+        description="Premium bronze round bars including Phosphor Bronze (PB1), Bearing Bronze (SAE 660), and Gunmetal (LG2). ISO certified bronze supplier in Mumbai."
+        keywords="bronze round bars, PB1 bronze, SAE 660 bronze, LG2 gunmetal, bronze supplier Mumbai"
         canonicalUrl="/product/round-bars/bronze"
       />
 
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-        {/* Hero Section */}
-        <div className="bg-gradient-to-br from-navy-primary via-navy-secondary to-slate-800 text-white relative overflow-hidden">
-          <div className="container mx-auto px-4 py-16 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-heading md:text-heading font-bold mb-6">Bronze Round Bars</h1>
-              <p className="text-xl mb-8 text-gray-200">Traditional Bronze for Marine and Industrial Applications</p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact" className="bg-gold-primary hover:bg-gold-secondary text-navy-primary px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center justify-center">
-                  <Mail className="w-5 h-5 mr-2" />
-                  Get Quote
-                </Link>
-                <a href="tel:+919819322576" className="border-2 border-white hover:bg-white hover:text-navy-primary px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center justify-center">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call Now
-                </a>
-              </div>
+        <nav className="bg-white dark:bg-gray-800 py-4 border-b border-gray-200 dark:border-gray-700">
+          <div className="container mx-auto px-4">
+            <div className="flex items-center space-x-2 text-sm text-gray-600 dark:text-gray-400">
+              <Link href="/" className="hover:text-navy-primary">Home</Link>
+              <ArrowRight className="w-4 h-4" />
+              <Link href="/product/round-bars/round-bars" className="hover:text-navy-primary">Round Bars</Link>
+              <ArrowRight className="w-4 h-4" />
+              <span className="text-navy-primary dark:text-gold-primary font-medium">Bronze</span>
             </div>
           </div>
-        </div>
+        </nav>
 
-        {/* Breadcrumb */}
-        <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
-          <div className="container mx-auto px-4 py-4">
-            <nav className="flex items-center space-x-2 text-sm">
-              <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary transition-colors">Home</Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <Link href="/products" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary transition-colors">Products</Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <Link href="/product/round-bars/round-bars" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary transition-colors">Round Bars</Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <span className="text-navy-primary font-medium">Bronze</span>
-            </nav>
+        <section className="bg-gradient-to-r from-navy-primary to-navy-secondary text-white py-16">
+          <div className="container mx-auto px-4 text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Bronze Round Bars</h1>
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto">High-performance bronze alloys for bearings, hardware, and seawater-facing applications.</p>
           </div>
-        </div>
+        </section>
 
-        {/* Main Content */}
-        <div className="container mx-auto px-4 py-16">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 mb-16">
-              <div>
-                <h2 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-6">Bronze Round Bars Overview</h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                  Bronze round bars offer excellent corrosion resistance, superior machinability, and attractive appearance. 
-                  Ideal for marine applications, bronze provides reliable performance in harsh environments.
-                </p>
-                <div className="space-y-4">
-                  <div className="flex items-start">
-                    <CheckCircle className="w-6 h-6 text-green-500 mr-3 mt-0.5" />
-                    <div>
-                      <h3 className="font-semibold text-slate-800 dark:text-gray-100">Corrosion Resistance</h3>
-                      <p className="text-gray-600 dark:text-gray-300">Excellent resistance to saltwater and marine environments</p>
-                    </div>
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+              {products.map((product) => (
+                <div key={product.id} className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all">
+                  <div className="relative h-48 overflow-hidden">
+                    <img src={product.image} alt={product.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                    <div className="absolute top-4 left-4 bg-gold-primary text-navy-primary px-3 py-1 rounded-full text-xs font-bold">Premium Alloy</div>
                   </div>
-                  <div className="flex items-start">
-                    <Shield className="w-6 h-6 text-blue-500 mr-3 mt-0.5" />
-                    <div>
-                      <h3 className="font-semibold text-slate-800 dark:text-gray-100">Machinability</h3>
-                      <p className="text-gray-600 dark:text-gray-300">Superior machining characteristics for complex parts</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <Award className="w-6 h-6 text-gold-primary mr-3 mt-0.5" />
-                    <div>
-                      <h3 className="font-semibold text-slate-800 dark:text-gray-100">Proven Performance</h3>
-                      <p className="text-gray-600 dark:text-gray-300">Decades of reliable service in marine applications</p>
-                    </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-navy-primary dark:text-gray-100 mb-3">{product.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 h-12 overflow-hidden">{product.description}</p>
+                    <Link href={product.link} className="bg-navy-primary hover:bg-navy-secondary text-white px-6 py-2 rounded-lg font-bold flex items-center justify-center transition-colors">
+                      View Grade Details <ArrowRight className="w-4 h-4 ml-2" />
+                    </Link>
                   </div>
                 </div>
-              </div>
-              <div className="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop&crop=center"
-                  alt="High-quality bronze round bars for marine applications"
-                  className="w-full h-96 object-cover rounded-xl shadow-lg"
-                  loading="lazy"
-                />
-              </div>
-            </div>
-
-            {/* Specifications Grid */}
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
-              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-6">Technical Specifications</h3>
-                <div className="space-y-3">
-                  {specifications.map((spec, index) => (
-                    <div key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-navy-primary rounded-full mr-3 mt-2"></div>
-                      <span className="text-gray-700 dark:text-gray-300">{spec}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-6">Key Applications</h3>
-                <div className="space-y-3">
-                  {applications.map((application, index) => (
-                    <div key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-gold-primary rounded-full mr-3 mt-2"></div>
-                      <span className="text-gray-700 dark:text-gray-300">{application}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-4">Need Bronze Solutions?</h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">Contact our experts for technical support</p>
-              <Link href="/contact" className="bg-navy-primary hover:bg-navy-secondary text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center justify-center">
-                <Mail className="w-5 h-5 mr-2" />
-                Get Quote
-              </Link>
+              ))}
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </>
   );

@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import ProductSEO from "@/components/ProductSEO";
+import { ArrowRight, ArrowLeft } from "lucide-react";
 import mamta_steel_traders000_img from "@/assets/MAMTA STEEL TRADERS000.jpg";
 
 const precipitationHardeningProducts = [
@@ -9,7 +10,8 @@ const precipitationHardeningProducts = [
     image: mamta_steel_traders000_img,
     description: "Premium 17-4 PH (630) precipitation hardening stainless steel round bars with excellent strength and corrosion resistance.",
     specifications: ["17-4 PH", "AISI 630", "High Strength", "Corrosion Resistant"],
-    applications: ["Aerospace components", "Chemical processing", "Nuclear applications", "High-strength fasteners"]
+    applications: ["Aerospace components", "Chemical processing", "Nuclear applications", "High-strength fasteners"],
+    path: "/product/round-bars/precipitation-hardening-steel/17-4ph-round-bars"
   },
   {
     id: 2,
@@ -17,7 +19,8 @@ const precipitationHardeningProducts = [
     image: mamta_steel_traders000_img,
     description: "High-performance AISI 630 (1.4542, 17-4PH) precipitation hardening stainless steel with superior mechanical properties.",
     specifications: ["AISI 630", "1.4542", "17-4PH", "PH Stainless Steel"],
-    applications: ["Pump shafts", "Valve components", "Aircraft fittings", "Marine hardware"]
+    applications: ["Pump shafts", "Valve components", "Aircraft fittings", "Marine hardware"],
+    path: "/product/round-bars/precipitation-hardening-steel/aisi-630-round-bars"
   },
   {
     id: 3,
@@ -25,7 +28,8 @@ const precipitationHardeningProducts = [
     image: mamta_steel_traders000_img,
     description: "Aerospace-grade AMS 5629 13-8Mo (XM13, 1.4534, UNS S13800) with exceptional strength and toughness for critical applications.",
     specifications: ["AMS 5629", "13-8Mo", "XM13", "1.4534", "S13800"],
-    applications: ["Aerospace structures", "Landing gear", "Missile components", "High-performance applications"]
+    applications: ["Aerospace structures", "Landing gear", "Missile components", "High-performance applications"],
+    path: "/product/round-bars/precipitation-hardening-steel/13-8mo-round-bars"
   },
   {
     id: 4,
@@ -33,7 +37,8 @@ const precipitationHardeningProducts = [
     image: mamta_steel_traders000_img,
     description: "Aerospace-specification AMS 5643 17-4PH (1.4542, AISI 630) round bars for demanding aerospace and defense applications.",
     specifications: ["AMS 5643", "17-4PH", "1.4542", "AISI 630"],
-    applications: ["Aerospace fasteners", "Jet engine parts", "Defense applications", "High-stress components"]
+    applications: ["Aerospace fasteners", "Jet engine parts", "Defense applications", "High-stress components"],
+    path: "/product/round-bars/precipitation-hardening-steel/ams-5643-round-bars"
   },
   {
     id: 5,
@@ -41,7 +46,8 @@ const precipitationHardeningProducts = [
     image: mamta_steel_traders000_img,
     description: "Premium AMS 5659 15-5PH (XM12, UNS S15500, 1.4545) with superior strength-to-weight ratio for aerospace applications.",
     specifications: ["AMS 5659", "15-5PH", "XM12", "S15500", "1.4545"],
-    applications: ["Aerospace components", "High-strength bolts", "Springs", "Structural parts"]
+    applications: ["Aerospace components", "High-strength bolts", "Springs", "Structural parts"],
+    path: "/product/round-bars/precipitation-hardening-steel/15-5ph-round-bars"
   },
   {
     id: 6,
@@ -49,7 +55,8 @@ const precipitationHardeningProducts = [
     image: mamta_steel_traders000_img,
     description: "High-temperature Inconel X750 precipitation hardening superalloy wire and rods for extreme temperature applications.",
     specifications: ["Inconel X750", "Superalloy", "High Temperature", "Spring Properties"],
-    applications: ["Gas turbines", "Jet engines", "High-temperature springs", "Nuclear reactors"]
+    applications: ["Gas turbines", "Jet engines", "High-temperature springs", "Nuclear reactors"],
+    path: "/product/round-bars/precipitation-hardening-steel/inconel-x750-ph-bars"
   }
 ];
 
@@ -93,26 +100,23 @@ export default function PrecipitationHardeningSteel() {
       />
       
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-        {/* Breadcrumb */}
-        <nav className="bg-white shadow-sm border-b" aria-label="Breadcrumb">
-          <div className="container mx-auto px-4 py-3">
-            <ol className="flex items-center space-x-2 text-sm text-gray-600">
-              <li>
-                <Link href="/" className="hover:text-blue-600 transition-colors" data-testid="breadcrumb-home">
-                  Home
-                </Link>
-              </li>
-              <li className="text-gray-400">/</li>
-              <li>
-                <Link href="/product/round-bars/round-bars" className="hover:text-blue-600 transition-colors" data-testid="breadcrumb-products">
-                  Round Bars
-                </Link>
-              </li>
-              <li className="text-gray-400">/</li>
-              <li className="text-gray-900 font-medium">Precipitation Hardening Steel</li>
-            </ol>
-          </div>
-        </nav>
+        {/* Breadcrumb & Navigation */}
+        <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+           <div className="container mx-auto px-4 py-4 font-black">
+              <nav className="flex items-center space-x-2 text-sm flex-wrap text-black font-black uppercase italic font-black">
+                 <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-colors italic tracking-tighter uppercase font-black italic">Home</Link>
+                 <ArrowRight className="w-4 h-4 text-gray-400 font-extrabold" />
+                 <Link href="/product/round-bars/round-bars" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-colors italic tracking-tighter uppercase font-black italic font-black">Round Bars</Link>
+                 <ArrowRight className="w-4 h-4 text-gray-400 font-extrabold" />
+                 <span className="text-navy-primary dark:text-gold-primary underline decoration-gold-primary decoration-2 underline-offset-4 italic tracking-tighter uppercase font-black italic">Precipitation Hardening Steel</span>
+              </nav>
+           </div>
+        </div>
+        <div className="container mx-auto px-4 py-4">
+           <Link href="/product/round-bars/round-bars" className="inline-flex items-center text-navy-primary dark:text-gold-primary hover:underline font-black uppercase text-xs italic tracking-tighter italic font-black">
+              <ArrowLeft className="w-3 h-3 mr-2 font-black" /> Back to Round Bars
+           </Link>
+        </div>
 
         {/* Hero Section */}
         <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-900 text-white py-16">
@@ -194,11 +198,11 @@ export default function PrecipitationHardeningSteel() {
                       </ul>
                     </div>
                     <Link 
-                      href="/contact"
+                      href={product.path}
                       className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded font-medium transition-colors text-center block"
                       data-testid={`quote-button-${product.id}`}
                     >
-                      Get Quote
+                      Details
                     </Link>
                   </div>
                 </div>

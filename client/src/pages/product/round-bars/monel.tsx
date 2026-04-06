@@ -1,12 +1,23 @@
 import ProductSEO from "@/components/ProductSEO";
-import { ArrowRight, Phone, Mail, CheckCircle, Shield, Award } from "lucide-react";
+import { ArrowRight, ArrowLeft, Phone, Mail, CheckCircle, Shield, Award } from "lucide-react";
 import { Link } from "wouter";
 
 export default function MonelRoundBars() {
+  const monelGrades = [
+    { 
+      name: "Monel 400 (UNS N04400)", 
+      path: "/product/round-bars/monel/monel-400-round-bars",
+      desc: "Standard marine grade with excellent seawater resistance."
+    },
+    { 
+      name: "Monel K-500 (UNS N05500)", 
+      path: "/product/round-bars/monel/monel-k500-round-bars",
+      desc: "Age-hardened version with superior strength and non-magnetic properties."
+    }
+  ];
+
   const specifications = [
     "ASTM B164 - Standard Specification for Nickel-Copper Alloy Rod, Bar, and Wire",
-    "Monel 400 (UNS N04400)", 
-    "Monel K-500 (UNS N05500)",
     "Size Range: 6mm to 350mm diameter",
     "Length: Up to 6000mm",
     "Condition: Hot Finished, Cold Drawn"
@@ -26,9 +37,9 @@ export default function MonelRoundBars() {
   return (
     <>
       <ProductSEO
-        title="Monel Round Bars - 400, K-500 | Marine Grade Nickel-Copper Alloy | Mamta Steel Traders"
-        description="Premium Monel round bars for marine and chemical applications. Excellent corrosion resistance in seawater. Monel 400, K-500 grades available. ASTM B164 compliant."
-        keywords="monel round bars, monel 400, monel K-500, nickel copper alloy, marine grade, seawater resistant, ASTM B164"
+        title="Monel Round Bars - 400, K-500 | Pan India Supplier | Mamta Steel Traders"
+        description="Premium Monel round bars for marine and chemical applications. Excellent corrosion resistance in seawater and acids. Monel 400, K-500 grades available. ISO certified Pan India supplier."
+        keywords="monel round bars mumbai, monel 400 supplier india, monel k500 price pan india, marine grade nickel copper alloy, seawater resistant bars, ASTM B164 monel rods"
         canonicalUrl="/product/round-bars/monel"
       />
 
@@ -53,19 +64,24 @@ export default function MonelRoundBars() {
           </div>
         </div>
 
-        {/* Breadcrumb */}
+        {/* Breadcrumb & Navigation */}
         <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
-          <div className="container mx-auto px-4 py-4">
-            <nav className="flex items-center space-x-2 text-sm">
-              <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary transition-colors">Home</Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <Link href="/products" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary transition-colors">Products</Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <Link href="/product/round-bars/round-bars" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary transition-colors">Round Bars</Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <span className="text-navy-primary font-medium">Monel</span>
+          <div className="container mx-auto px-4 py-4 font-black">
+            <nav className="flex items-center space-x-2 text-sm flex-wrap text-black font-black uppercase italic font-black">
+              <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-colors italic tracking-tighter uppercase font-black italic">Home</Link>
+              <ArrowRight className="w-4 h-4 text-gray-400 font-extrabold" />
+              <Link href="/products" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-colors italic tracking-tighter uppercase font-black italic font-black">Products</Link>
+              <ArrowRight className="w-4 h-4 text-gray-400 font-extrabold" />
+              <Link href="/product/round-bars/round-bars" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-colors italic tracking-tighter uppercase font-black italic font-black">Round Bars</Link>
+              <ArrowRight className="w-4 h-4 text-gray-400 font-extrabold" />
+              <span className="text-navy-primary dark:text-gold-primary underline decoration-gold-primary decoration-2 underline-offset-4 italic tracking-tighter uppercase font-black italic">Monel</span>
             </nav>
           </div>
+        </div>
+        <div className="container mx-auto px-4 py-4">
+           <Link href="/product/round-bars/round-bars" className="inline-flex items-center text-navy-primary dark:text-gold-primary hover:underline font-black uppercase text-xs italic tracking-tighter italic font-black">
+              <ArrowLeft className="w-3 h-3 mr-2 font-black" /> Back to Round Bars
+           </Link>
         </div>
 
         {/* Main Content */}
@@ -112,10 +128,35 @@ export default function MonelRoundBars() {
               </div>
             </div>
 
+            {/* Available Grades Section */}
+            <div className="mb-16">
+              <h3 className="text-3xl font-black text-navy-primary dark:text-white mb-8 italic tracking-tighter uppercase text-center underline decoration-gold-primary decoration-4 underline-offset-8">Available Monel Grades</h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                {monelGrades.map((grade, index) => (
+                  <Link 
+                    key={index} 
+                    href={grade.path}
+                    className="group bg-white dark:bg-gray-800 rounded-[2rem] shadow-xl border border-gray-100 dark:border-gray-700 p-8 hover:shadow-gold-primary/20 transition-all transform hover:-translate-y-2 cursor-pointer border-b-4 border-b-gold-primary"
+                  >
+                    <div className="flex justify-between items-start mb-4">
+                      <h4 className="text-2xl font-black text-navy-primary dark:text-white italic tracking-tighter uppercase group-hover:text-gold-primary transition-colors">{grade.name}</h4>
+                      <div className="bg-navy-primary group-hover:bg-gold-primary text-white group-hover:text-navy-primary p-2 rounded-lg transition-all transform group-hover:rotate-12">
+                        <ArrowRight className="w-5 h-5" />
+                      </div>
+                    </div>
+                    <p className="text-gray-500 dark:text-gray-400 italic font-black uppercase text-xs tracking-tighter mb-4">{grade.desc}</p>
+                    <div className="flex items-center text-navy-primary dark:text-gold-primary font-black uppercase text-[10px] tracking-widest italic group-hover:underline">
+                      View Technical Specifications
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
             {/* Specifications Grid */}
             <div className="grid md:grid-cols-2 gap-8 mb-16">
-              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-6">Technical Specifications</h3>
+              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 h-fit">
+                <h3 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-6 italic tracking-tighter uppercase border-b-2 border-gold-primary/20 pb-2">Technical Standards</h3>
                 <div className="space-y-3">
                   {specifications.map((spec, index) => (
                     <div key={index} className="flex items-start">

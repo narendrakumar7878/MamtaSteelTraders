@@ -1,15 +1,15 @@
 import ProductSEO from "@/components/ProductSEO";
-import { ArrowRight, Phone, Mail, MapPin, Star, CheckCircle, TrendingUp, Shield, Award } from "lucide-react";
+import { ArrowRight, ArrowLeft, Phone, Mail, MapPin, Star, CheckCircle, TrendingUp, Shield, Award } from "lucide-react";
 import { Link } from "wouter";
 
 export default function InconelRoundBars() {
   const inconelGrades = [
-    "Inconel 600 (UNS N06600)",
-    "Inconel 601 (UNS N06601)",
-    "Inconel 625 (UNS N06625)",
-    "Inconel 718 (UNS N07718)",
-    "Inconel 825 (UNS N08825)",
-    "Inconel X-750 (UNS N07750)"
+    { name: "Inconel 600 (UNS N06600)", path: "/product/round-bars/inconel/inconel-600-round-bars" },
+    { name: "Inconel 601 (UNS N06601)", path: "/product/round-bars/inconel/inconel-601-round-bars" },
+    { name: "Inconel 625 (UNS N06625)", path: "/product/round-bars/inconel/inconel-625-round-bars" },
+    { name: "Inconel 718 (UNS N07718)", path: "/product/round-bars/inconel/inconel-718-round-bars" },
+    { name: "Inconel 825 (UNS N08825)", path: "/product/round-bars/inconel/inconel-825-round-bars" },
+    { name: "Inconel X-750 (UNS N07750)", path: "/product/round-bars/inconel/inconel-x750-round-bars" }
   ];
 
   const specifications = [
@@ -73,9 +73,9 @@ export default function InconelRoundBars() {
   return (
     <>
       <ProductSEO
-        title="Inconel Round Bars - 600, 625, 718, X-750 | High Temperature Nickel Alloy Bars | Mamta Steel Traders"
-        description="Premium Inconel round bars for high-temperature applications. Grades: Inconel 600, 625, 718, X-750. Excellent oxidation resistance, high strength. ASTM B166, B564, B637 compliant for aerospace, gas turbine, and nuclear applications."
-        keywords="inconel round bars, inconel 600, inconel 625, inconel 718, inconel X-750, high temperature alloy, nickel alloy bars, aerospace materials, gas turbine components, ASTM B166"
+        title="Inconel Round Bars - 600, 601, 625, 718, 825, X-750 | Pan India Supplier | Mamta Steel Traders"
+        description="Premium Inconel round bars for high-temperature and aerospace applications. Serving Pan India and Global markets. Grades: Inconel 600, 601, 625, 718, 825, X-750. ASTM B166, B564, B637 certified nickel alloy bars."
+        keywords="inconel round bars mumbai, pan india inconel supplier, inconel 600 bars price, inconel 625 stockist india, inconel 718 aerospace grade, inconel 825 acid resistant bars, X-750 springs steel, nickel superalloys india, high temperature alloy Mumbai"
         canonicalUrl="/product/round-bars/inconel"
       />
 
@@ -105,25 +105,22 @@ export default function InconelRoundBars() {
           </div>
         </div>
 
-        {/* Breadcrumb */}
+        {/* Breadcrumb & Navigation */}
         <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
-          <div className="container mx-auto px-4 py-4">
-            <nav className="flex items-center space-x-2 text-sm">
-              <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary dark:hover:text-gold-primary transition-colors" data-testid="breadcrumb-home">
-                Home
-              </Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <Link href="/products" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary dark:hover:text-gold-primary transition-colors" data-testid="breadcrumb-products">
-                Products
-              </Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <Link href="/product/round-bars/round-bars" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary dark:hover:text-gold-primary transition-colors" data-testid="breadcrumb-round-bars">
-                Round Bars
-              </Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <span className="text-navy-primary dark:text-gold-primary font-medium" data-testid="breadcrumb-current">Inconel</span>
-            </nav>
-          </div>
+           <div className="container mx-auto px-4 py-4 font-black">
+              <nav className="flex items-center space-x-2 text-sm flex-wrap text-black font-black uppercase italic font-black">
+                 <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-colors italic tracking-tighter uppercase font-black italic">Home</Link>
+                 <ArrowRight className="w-4 h-4 text-gray-400 font-extrabold" />
+                 <Link href="/product/round-bars/round-bars" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-colors italic tracking-tighter uppercase font-black italic font-black">Round Bars</Link>
+                 <ArrowRight className="w-4 h-4 text-gray-400 font-extrabold" />
+                 <span className="text-navy-primary dark:text-gold-primary underline decoration-gold-primary decoration-2 underline-offset-4 italic tracking-tighter uppercase font-black italic">Inconel Series</span>
+              </nav>
+           </div>
+        </div>
+        <div className="container mx-auto px-4 py-4">
+           <Link href="/product/round-bars/round-bars" className="inline-flex items-center text-navy-primary dark:text-gold-primary hover:underline font-black uppercase text-xs italic tracking-tighter italic font-black">
+              <ArrowLeft className="w-3 h-3 mr-2 font-black" /> Back to Round Bars
+           </Link>
         </div>
 
         {/* Main Content */}
@@ -180,9 +177,14 @@ export default function InconelRoundBars() {
               </h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {inconelGrades.map((grade, index) => (
-                  <div key={index} className="bg-gradient-to-r from-red-600 to-orange-600 text-white p-4 rounded-lg text-center">
-                    <span className="font-semibold" data-testid={`grade-${index}`}>{grade}</span>
-                  </div>
+                  <Link 
+                    key={index} 
+                    href={grade.path}
+                    className="bg-gradient-to-r from-red-600 to-orange-600 hover:from-orange-600 hover:to-red-600 text-white p-4 rounded-lg text-center transition-all transform hover:scale-105 active:scale-95 shadow-md cursor-pointer block"
+                    data-testid={`grade-link-${index}`}
+                  >
+                    <span className="font-semibold" data-testid={`grade-${index}`}>{grade.name}</span>
+                  </Link>
                 ))}
               </div>
             </div>

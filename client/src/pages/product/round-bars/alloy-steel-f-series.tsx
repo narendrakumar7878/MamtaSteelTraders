@@ -7,45 +7,45 @@ export default function AlloySteelFSeries() {
   const products = [
     {
       id: 1,
-      title: "1.7380 Round Bars (F22)",
+      title: "F5 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "1.7380 Round Bars F22",
-      link: "/contact"
+      alt: "ASTM A182 F5 Round Bars 5Cr-0.5Mo",
+      link: "/product/round-bars/f5-round-bars"
     },
     {
       id: 2,
-      title: "9Cr1Mo Round Bar (F91)",
+      title: "F9 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "9Cr1Mo Round Bar T91 P91 F91",
-      link: "/contact"
+      alt: "ASTM A182 F9 Round Bar 9Cr-1Mo",
+      link: "/product/round-bars/f9-round-bars"
     },
     {
       id: 3,
       title: "F11 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "F11 Round Bars, ASTM A182 F11 Round Bars",
-      link: "/contact"
+      alt: "ASTM A182 F11 Round Bars 1.25Cr-0.5Mo",
+      link: "/product/round-bars/f11-round-bars"
     },
     {
       id: 4,
-      title: "F22 Round Bars",
+      title: "F12 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "ASTM A182 F22 Round Bars",
-      link: "/contact"
+      alt: "ASTM A182 F12 Round Bars 1Cr-0.5Mo",
+      link: "/product/round-bars/f12-round-bars"
     },
     {
       id: 5,
-      title: "F91 Round Bars",
+      title: "F22 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "ASTM A182 F91 Round Bars",
-      link: "/contact"
+      alt: "ASTM A182 F22 Round Bars 2.25Cr-1Mo",
+      link: "/product/round-bars/f22-round-bars"
     },
     {
       id: 6,
-      title: "X10CrMoVNb9-1 Round Bar",
+      title: "F91 Round Bars",
       image: alloys_steel_mamta_steel_traders_img,
-      alt: "X10CrMoVNb9-1 Round Bar 1.4903",
-      link: "/contact"
+      alt: "ASTM A182 F91 Round Bars 9Cr-1Mo-V",
+      link: "/product/round-bars/f91-round-bars"
     }
   ];
 

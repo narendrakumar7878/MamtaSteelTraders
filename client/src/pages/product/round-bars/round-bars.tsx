@@ -31,10 +31,15 @@ export default function RoundBarsMain() {
   // Define which pages exist vs need generic listing
   const existingPages = [
     "alloy-20",
+    "alloy-steel-f-series",
     "alloy-steel-round",
+    "aluminium",
     "aluminium-alloy",
+    "aluminium-bronze",
+    "boron-grades",
     "bronze",
     "carbon-steel",
+    "cold-work-tool-steels",
     "cobalt",
     "copper-nickel",
     "duplex-super-duplex",
@@ -43,11 +48,13 @@ export default function RoundBarsMain() {
     "high-speed-steel",
     "hot-work-steel",
     "inconel",
+    "manganese-bronze",
     "monel",
     "nickel-alloy",
     "precipitation-hardening-steel",
     "stainless-steel-round-bars",
     "titanium",
+    "tool-steel",
   ];
 
   const handleCategoryClick = (category: any) => {
@@ -116,18 +123,19 @@ export default function RoundBarsMain() {
     },
     {
       title: "Boron Grades",
-      count: "1",
+      count: "4",
       image: steelBarsRods,
       link: "/product/round-bars/boron-grades",
       description: "High-strength boron grade round bars",
     },
     {
       title: "Bronze",
-      count: "1",
+      count: "4",
       image: copperBar,
       link: "/product/round-bars/bronze",
       description: "Traditional bronze round bars for marine applications",
     },
+
     {
       title: "Carbon Steel",
       count: "43",

@@ -6,49 +6,49 @@ import { Link } from "wouter";
 export default function CarbonSteelRoundBars() {
   // All 43 Carbon Steel Products from Textron Steel Alloys
   const carbonSteelProducts = [
-    { id: 1, title: "100Cr6 Round Bar", image: cs_mamta_steel_traders_img, alt: "100CR6 Bearing Steel Round bar 52100", desc: "Bearing steel with high hardness and wear resistance" },
-    { id: 2, title: "15C8 Round Bars", image: cs_mamta_steel_traders_img, alt: "IS 1875 15C8 Round Bars", desc: "Indian standard carbon steel for general engineering" },
-    { id: 3, title: "16MnCr5 Round Bar", image: cs_mamta_steel_traders_img, alt: "16MnCr5 Round Bar Stockist Supplier", desc: "Case hardening steel for gear applications" },
-    { id: 4, title: "20C8 Round Bars", image: cs_mamta_steel_traders_img, alt: "20C8 Round Bars IS 1875 1570", desc: "Low carbon steel for machining applications" },
-    { id: 5, title: "20MnCr5 Round Bars", image: cs_mamta_steel_traders_img, alt: "20MnCr5 Round Bars Suppliers", desc: "Case hardening steel with excellent toughness" },
-    { id: 6, title: "20MnCr5 Round Bar (Cut Piece)", image: cs_mamta_steel_traders_img, alt: "20MnCr5 Round Bar Flat Cut Piece", desc: "Pre-cut pieces for immediate machining" },
-    { id: 7, title: "38MnVS6 Round Bars", image: cs_mamta_steel_traders_img, alt: "38MnVS6 Round Bars 1.1303", desc: "Free cutting steel with sulfur addition" },
-    { id: 8, title: "40C10S18 Round Bars", image: cs_mamta_steel_traders_img, alt: "40C10S18 Round Bars IS 4431", desc: "Free cutting steel for precision turning" },
-    { id: 9, title: "4140 Round Bars", image: cs_mamta_steel_traders_img, alt: "SAE 4140 AISI 4140 Round Bars EN19", desc: "Chromium molybdenum alloy steel" },
-    { id: 10, title: "42CrMo4 Round Bars", image: cs_mamta_steel_traders_img, alt: "42CrMo4 Round Bar 1.7225", desc: "High tensile strength alloy steel" },
-    { id: 11, title: "44SMn28 Round Bar", image: cs_mamta_steel_traders_img, alt: "44SMn28 Round Bar 1.0762", desc: "Free cutting steel with manganese" },
-    { id: 12, title: "51CrV4 Round Bars", image: cs_mamta_steel_traders_img, alt: "51CrV4 50CrV4 6150 Spring Steel", desc: "Spring steel with chromium and vanadium" },
-    { id: 13, title: "805M20 Round Bars", image: cs_mamta_steel_traders_img, alt: "805M20 20NiCrMo2-2 1.6523", desc: "Nickel chrome molybdenum steel" },
-    { id: 14, title: "A105 Round Bars", image: cs_mamta_steel_traders_img, alt: "A105 Round Bars Hot Rolled", desc: "Forging grade carbon steel" },
-    { id: 15, title: "AISI 1144 Round Bar", image: cs_mamta_steel_traders_img, alt: "AISI 1144 Carbon Steel Round Bar", desc: "Free machining carbon steel" },
-    { id: 16, title: "AISI 8620 Round Bar", image: cs_mamta_steel_traders_img, alt: "SAE 8620 AISI 8620 20NiCrMo2-2", desc: "Case hardening nickel chrome steel" },
-    { id: 17, title: "AISI/SAE 4140 Round Bar", image: cs_mamta_steel_traders_img, alt: "AISI SAE 4140 Round Bars Stockist", desc: "Versatile alloy steel for machining" },
-    { id: 18, title: "ASTM A193 B16 Round Bars", image: cs_mamta_steel_traders_img, alt: "ASTM A193 B16 Round Bars", desc: "High temperature fastener steel" },
-    { id: 19, title: "B16 Round Bar", image: cs_mamta_steel_traders_img, alt: "B16 Bright Black Round Bars", desc: "Bright finished high temperature steel" },
-    { id: 20, title: "C40 Round Bar", image: cs_mamta_steel_traders_img, alt: "C40 Carbon Steel Round Bar", desc: "Medium carbon steel for machining" },
-    { id: 21, title: "C45 Round Bars", image: cs_mamta_steel_traders_img, alt: "C45 EN8D Round Bars JSW SAIL", desc: "Popular medium carbon steel grade" },
-    { id: 22, title: "C55 Round Bars / EN9", image: cs_mamta_steel_traders_img, alt: "C55 EN9 070M55 Round Bars", desc: "High carbon steel for tools" },
-    { id: 23, title: "EN19 Hex Bar", image: cs_mamta_steel_traders_img, alt: "EN19 HEX SAE 4140 42CRMO4", desc: "Hexagonal bars for special applications" },
-    { id: 24, title: "EN1A Leaded / EN1APb", image: cs_mamta_steel_traders_img, alt: "EN1A Leaded EN1APb Round Hex", desc: "Free cutting steel with lead addition" },
-    { id: 25, title: "EN1A Non Leaded", image: cs_mamta_steel_traders_img, alt: "EN1A Non Leaded Round Hex Bars", desc: "Mild steel for general engineering" },
-    { id: 26, title: "EN24 Round Bars", image: cs_mamta_steel_traders_img, alt: "EN24 Round Bar Stockist Supplier", desc: "Nickel chrome molybdenum alloy steel" },
-    { id: 27, title: "EN31 Round Bars", image: cs_mamta_steel_traders_img, alt: "EN31 Bright Black VD Route", desc: "High carbon chromium bearing steel" },
-    { id: 28, title: "EN353 Round Bars", image: cs_mamta_steel_traders_img, alt: "EN353 Case Hardening Steel", desc: "Case hardening steel for gears" },
-    { id: 29, title: "EN36C Round Bar / 832M13", image: cs_mamta_steel_traders_img, alt: "EN36C 832M13 14NiCrMo13-4", desc: "Heavy duty case hardening steel" },
-    { id: 30, title: "EN41B Round Bars", image: cs_mamta_steel_traders_img, alt: "EN41B Round Bars Musco Forged", desc: "Chrome molybdenum steel for shafts" },
-    { id: 31, title: "EN47 Round Bar", image: cs_mamta_steel_traders_img, alt: "EN47 Spring Steel Round Bar", desc: "Silicon manganese spring steel" },
-    { id: 32, title: "EN8 Round Bars", image: cs_mamta_steel_traders_img, alt: "EN8 Round Bars Suppliers", desc: "Mild steel for general machining" },
-    { id: 33, title: "EN8M / EN8DM", image: cs_mamta_steel_traders_img, alt: "EN8M EN8DM Round Bar", desc: "Modified mild steel grades" },
-    { id: 34, title: "EN9 Round Bars", image: cs_mamta_steel_traders_img, alt: "EN9 Round Bars Suppliers", desc: "Medium carbon steel C55 grade" },
-    { id: 35, title: "ETG100 Round Bars", image: cs_mamta_steel_traders_img, alt: "ETG100 ETG88 Free Cutting Steel", desc: "Free cutting steel for precision turning" },
-    { id: 36, title: "S355J2 Round Bars", image: cs_mamta_steel_traders_img, alt: "S355J2 ST52-3 1.0577", desc: "Structural steel with good weldability" },
-    { id: 37, title: "SAE 1018 Round Bars", image: cs_mamta_steel_traders_img, alt: "SAE 1018 Forged Rolled Bright", desc: "Low carbon steel for case hardening" },
-    { id: 38, title: "SAE 4340 / AISI 4340", image: cs_mamta_steel_traders_img, alt: "SAE 4340 AISI 4340 AMS 6415", desc: "Ultra-high strength alloy steel" },
-    { id: 39, title: "SAE 52100 Steel", image: cs_mamta_steel_traders_img, alt: "SAE 52100 Bearing Steel", desc: "High carbon chromium bearing steel" },
-    { id: 40, title: "SAE 8620 Round Bars", image: cs_mamta_steel_traders_img, alt: "SAE 8620 1.6523 20NiCrMo2-2", desc: "Case hardening steel for gears" },
-    { id: 41, title: "SCM420 Round Bars", image: cs_mamta_steel_traders_img, alt: "SCM420 18CrMo4 1.7243", desc: "Japanese standard alloy steel" },
-    { id: 42, title: "ST52.3 Round Bar", image: cs_mamta_steel_traders_img, alt: "ST52-3 1.0580 E355", desc: "German standard structural steel" },
-    { id: 43, title: "SUM43 Round Bars", image: cs_mamta_steel_traders_img, alt: "SUM43 JIS G 4804", desc: "Japanese free cutting steel grade" }
+    { id: 1, title: "100Cr6 Round Bar", image: cs_mamta_steel_traders_img, alt: "100CR6 Bearing Steel Round bar 52100", desc: "Bearing steel with high hardness and wear resistance", path: "/product/round-bars/carbon-steel/100cr6-round-bars" },
+    { id: 2, title: "15C8 Round Bars", image: cs_mamta_steel_traders_img, alt: "IS 1875 15C8 Round Bars", desc: "Indian standard carbon steel for general engineering", path: "/product/round-bars/carbon-steel/15c8-round-bars" },
+    { id: 3, title: "16MnCr5 Round Bar", image: cs_mamta_steel_traders_img, alt: "16MnCr5 Round Bar Stockist Supplier", desc: "Case hardening steel for gear applications", path: "/product/round-bars/carbon-steel/16mncr5-round-bars" },
+    { id: 4, title: "20C8 Round Bars", image: cs_mamta_steel_traders_img, alt: "20C8 Round Bars IS 1875 1570", desc: "Low carbon steel for machining applications", path: "/product/round-bars/carbon-steel/20c8-round-bars" },
+    { id: 5, title: "20MnCr5 Round Bars", image: cs_mamta_steel_traders_img, alt: "20MnCr5 Round Bars Suppliers", desc: "Case hardening steel with excellent toughness", path: "/product/round-bars/carbon-steel/20mncr5-round-bars" },
+    { id: 6, title: "20MnCr5 Round Bar (Cut Piece)", image: cs_mamta_steel_traders_img, alt: "20MnCr5 Round Bar Flat Cut Piece", desc: "Pre-cut pieces for immediate machining", path: "/product/round-bars/carbon-steel/20mncr5-cut-piece" },
+    { id: 7, title: "38MnVS6 Round Bars", image: cs_mamta_steel_traders_img, alt: "38MnVS6 Round Bars 1.1303", desc: "Free cutting steel with sulfur addition", path: "/product/round-bars/carbon-steel/38mnvs6-round-bars" },
+    { id: 8, title: "40C10S18 Round Bars", image: cs_mamta_steel_traders_img, alt: "40C10S18 Round Bars IS 4431", desc: "Free cutting steel for precision turning", path: "/product/round-bars/carbon-steel/40c10s18-round-bars" },
+    { id: 9, title: "4140 Round Bars", image: cs_mamta_steel_traders_img, alt: "SAE 4140 AISI 4140 Round Bars EN19", desc: "Chromium molybdenum alloy steel", path: "/product/round-bars/carbon-steel/4140-round-bars" },
+    { id: 10, title: "42CrMo4 Round Bars", image: cs_mamta_steel_traders_img, alt: "42CrMo4 Round Bar 1.7225", desc: "High tensile strength alloy steel", path: "/product/round-bars/carbon-steel/42crmo4-round-bars" },
+    { id: 11, title: "44SMn28 Round Bar", image: cs_mamta_steel_traders_img, alt: "44SMn28 Round Bar 1.0762", desc: "Free cutting steel with manganese", path: "/product/round-bars/carbon-steel/44smn28-round-bars" },
+    { id: 12, title: "51CrV4 Round Bars", image: cs_mamta_steel_traders_img, alt: "51CrV4 50CrV4 6150 Spring Steel", desc: "Spring steel with chromium and vanadium", path: "/product/round-bars/carbon-steel/51crv4-round-bars" },
+    { id: 13, title: "805M20 Round Bars", image: cs_mamta_steel_traders_img, alt: "805M20 20NiCrMo2-2 1.6523", desc: "Nickel chrome molybdenum steel", path: "/product/round-bars/carbon-steel/805m20-round-bars" },
+    { id: 14, title: "A105 Round Bars", image: cs_mamta_steel_traders_img, alt: "A105 Round Bars Hot Rolled", desc: "Forging grade carbon steel", path: "/product/round-bars/carbon-steel/a105-round-bars" },
+    { id: 15, title: "AISI 1144 Round Bar", image: cs_mamta_steel_traders_img, alt: "AISI 1144 Carbon Steel Round Bar", desc: "Free machining carbon steel", path: "/product/round-bars/carbon-steel/aisi-1144-round-bar" },
+    { id: 16, title: "AISI 8620 Round Bar", image: cs_mamta_steel_traders_img, alt: "SAE 8620 AISI 8620 20NiCrMo2-2", desc: "Case hardening nickel chrome steel", path: "/product/round-bars/carbon-steel/aisi-8620-round-bar" },
+    { id: 17, title: "AISI/SAE 4140 Round Bar", image: cs_mamta_steel_traders_img, alt: "AISI SAE 4140 Round Bars Stockist", desc: "Versatile alloy steel for machining", path: "/product/round-bars/carbon-steel/aisi-sae-4140-round-bar" },
+    { id: 18, title: "ASTM A193 B16 Round Bars", image: cs_mamta_steel_traders_img, alt: "ASTM A193 B16 Round Bars", desc: "High temperature fastener steel", path: "/product/round-bars/carbon-steel/astm-a193-b16-round-bars" },
+    { id: 19, title: "B16 Round Bar", image: cs_mamta_steel_traders_img, alt: "B16 Bright Black Round Bars", desc: "Bright finished high temperature steel", path: "/product/round-bars/carbon-steel/b16-round-bar" },
+    { id: 20, title: "C40 Round Bar", image: cs_mamta_steel_traders_img, alt: "C40 Carbon Steel Round Bar", desc: "Medium carbon steel for machining", path: "/product/round-bars/carbon-steel/c40-round-bar" },
+    { id: 21, title: "C45 Round Bars", image: cs_mamta_steel_traders_img, alt: "C45 EN8D Round Bars JSW SAIL", desc: "Popular medium carbon steel grade", path: "/product/round-bars/carbon-steel/c45-round-bars" },
+    { id: 22, title: "C55 Round Bars / EN9", image: cs_mamta_steel_traders_img, alt: "C55 EN9 070M55 Round Bars", desc: "High carbon steel for tools", path: "/product/round-bars/carbon-steel/c55-en9-round-bars" },
+    { id: 23, title: "EN19 Hex Bar", image: cs_mamta_steel_traders_img, alt: "EN19 HEX SAE 4140 42CRMO4", desc: "Hexagonal bars for special applications", path: "/product/round-bars/carbon-steel/en19-hex-bar" },
+    { id: 24, title: "EN1A Leaded / EN1APb", image: cs_mamta_steel_traders_img, alt: "EN1A Leaded EN1APb Round Hex", desc: "Free cutting steel with lead addition", path: "/product/round-bars/carbon-steel/en1a-leaded-round-bars" },
+    { id: 25, title: "EN1A Non Leaded", image: cs_mamta_steel_traders_img, alt: "EN1A Non Leaded Round Hex Bars", desc: "Mild steel for general engineering", path: "/product/round-bars/carbon-steel/en1a-non-leaded-round-bars" },
+    { id: 26, title: "EN24 Round Bars", image: cs_mamta_steel_traders_img, alt: "EN24 Round Bar Stockist Supplier", desc: "Nickel chrome molybdenum alloy steel", path: "/product/round-bars/carbon-steel/en24-round-bars" },
+    { id: 27, title: "EN31 Round Bars", image: cs_mamta_steel_traders_img, alt: "EN31 Bright Black VD Route", desc: "High carbon chromium bearing steel", path: "/product/round-bars/carbon-steel/en31-round-bars" },
+    { id: 28, title: "EN353 Round Bars", image: cs_mamta_steel_traders_img, alt: "EN353 Case Hardening Steel", desc: "Case hardening steel for gears", path: "/product/round-bars/carbon-steel/en353-round-bars" },
+    { id: 29, title: "EN36C Round Bar / 832M13", image: cs_mamta_steel_traders_img, alt: "EN36C 832M13 14NiCrMo13-4", desc: "Heavy duty case hardening steel", path: "/product/round-bars/carbon-steel/en36c-round-bar" },
+    { id: 30, title: "EN41B Round Bars", image: cs_mamta_steel_traders_img, alt: "EN41B Round Bars Musco Forged", desc: "Chrome molybdenum steel for shafts", path: "/product/round-bars/carbon-steel/en41b-round-bars" },
+    { id: 31, title: "EN47 Round Bar", image: cs_mamta_steel_traders_img, alt: "EN47 Spring Steel Round Bar", desc: "Silicon manganese spring steel", path: "/product/round-bars/carbon-steel/en47-round-bar" },
+    { id: 32, title: "EN8 Round Bars", image: cs_mamta_steel_traders_img, alt: "EN8 Round Bars Suppliers", desc: "Mild steel for general machining", path: "/product/round-bars/carbon-steel/en8-round-bars" },
+    { id: 33, title: "EN8M / EN8DM", image: cs_mamta_steel_traders_img, alt: "EN8M EN8DM Round Bar", desc: "Modified mild steel grades", path: "/product/round-bars/carbon-steel/en8m-en8dm-round-bar" },
+    { id: 34, title: "EN9 Round Bars", image: cs_mamta_steel_traders_img, alt: "EN9 Round Bars Suppliers", desc: "Medium carbon steel C55 grade", path: "/product/round-bars/carbon-steel/en9-round-bars" },
+    { id: 35, title: "ETG100 Round Bars", image: cs_mamta_steel_traders_img, alt: "ETG100 ETG88 Free Cutting Steel", desc: "Free cutting steel for precision turning", path: "/product/round-bars/carbon-steel/etg100-round-bars" },
+    { id: 36, title: "S355J2 Round Bars", image: cs_mamta_steel_traders_img, alt: "S355J2 ST52-3 1.0577", desc: "Structural steel with good weldability", path: "/product/round-bars/carbon-steel/s355j2-round-bars" },
+    { id: 37, title: "SAE 1018 Round Bars", image: cs_mamta_steel_traders_img, alt: "SAE 1018 Forged Rolled Bright", desc: "Low carbon steel for case hardening", path: "/product/round-bars/carbon-steel/sae-1018-round-bars" },
+    { id: 38, title: "SAE 4340 / AISI 4340", image: cs_mamta_steel_traders_img, alt: "SAE 4340 AISI 4340 AMS 6415", desc: "Ultra-high strength alloy steel", path: "/product/round-bars/carbon-steel/sae-4340-round-bar" },
+    { id: 39, title: "SAE 52100 Steel", image: cs_mamta_steel_traders_img, alt: "SAE 52100 Bearing Steel", desc: "High carbon chromium bearing steel", path: "/product/round-bars/carbon-steel/sae-52100-steel-round-bars" },
+    { id: 40, title: "SAE 8620 Round Bars", image: cs_mamta_steel_traders_img, alt: "SAE 8620 1.6523 20NiCrMo2-2", desc: "Case hardening steel for gears", path: "/product/round-bars/carbon-steel/sae-8620-round-bars" },
+    { id: 41, title: "SCM420 Round Bars", image: cs_mamta_steel_traders_img, alt: "SCM420 18CrMo4 1.7243", desc: "Japanese standard alloy steel", path: "/product/round-bars/carbon-steel/scm420-round-bars" },
+    { id: 42, title: "ST52.3 Round Bar", image: cs_mamta_steel_traders_img, alt: "ST52-3 1.0580 E355", desc: "German standard structural steel", path: "/product/round-bars/carbon-steel/st52.3-round-bar" },
+    { id: 43, title: "SUM43 Round Bars", image: cs_mamta_steel_traders_img, alt: "SUM43 JIS G 4804", desc: "Japanese free cutting steel grade", path: "/product/round-bars/carbon-steel/sum43-round-bars" }
   ];
 
   const specifications = [
@@ -214,22 +214,26 @@ export default function CarbonSteelRoundBars() {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
                 {carbonSteelProducts.map((product) => (
                   <div key={product.id} className="bg-white rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow duration-300 overflow-hidden group" data-testid={`product-${product.id}`}>
-                    <div className="relative overflow-hidden h-40">
-                      <img 
-                        src={product.image} 
-                        alt={product.alt}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        loading="lazy"
-                      />
-                      <div className="absolute top-2 left-2 bg-navy-primary text-white px-2 py-1 rounded text-xs font-semibold">
-                        Grade {product.id}
+                    <Link href={product.path} className="block cursor-pointer">
+                      <div className="relative overflow-hidden h-40">
+                        <img 
+                          src={product.image} 
+                          alt={product.alt}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          loading="lazy"
+                        />
+                        <div className="absolute top-2 left-2 bg-navy-primary text-white px-2 py-1 rounded text-xs font-semibold">
+                          Grade {product.id}
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                     
                     <div className="p-4">
-                      <h3 className="text-lg font-bold text-navy-primary mb-2 line-clamp-1" data-testid={`product-title-${product.id}`}>
-                        {product.title}
-                      </h3>
+                      <Link href={product.path} className="block cursor-pointer">
+                        <h3 className="text-lg font-bold text-navy-primary mb-2 line-clamp-1 hover:text-gold-primary transition-colors" data-testid={`product-title-${product.id}`}>
+                          {product.title}
+                        </h3>
+                      </Link>
                       <p className="text-gray-600 mb-3 text-sm line-clamp-2 leading-relaxed">
                         {product.desc}
                       </p>
@@ -240,11 +244,11 @@ export default function CarbonSteelRoundBars() {
                           <span>In Stock</span>
                         </div>
                         <Link 
-                          href="/contact" 
+                          href={product.path} 
                           className="bg-gold-primary hover:bg-gold-secondary text-navy-primary px-3 py-1 rounded font-semibold transition-colors text-sm"
                           data-testid={`product-cta-${product.id}`}
                         >
-                          Quote
+                          View Details
                         </Link>
                       </div>
                     </div>

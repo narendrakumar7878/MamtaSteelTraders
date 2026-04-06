@@ -66,6 +66,55 @@ export default function HighSpeedSteelRoundBars() {
           </div>
         </div>
 
+        {/* Grade Catalog Section */}
+        <section className="py-20 bg-white dark:bg-gray-800 border-y border-gray-100 dark:border-gray-700">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-black text-navy-primary dark:text-white mb-4 italic tracking-tighter uppercase underline decoration-gold-primary decoration-4 underline-offset-8 italic">High Speed Steel Grade Catalog</h2>
+              <p className="text-gray-500 dark:text-gray-400 font-medium italic uppercase tracking-tighter italic">Select a grade to view full metallurgical profiles and thermal treatment charts.</p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {[
+                {
+                  name: "HSS M2",
+                  path: "/product/round-bars/high-speed-steel/m2-hss-round-bars",
+                  desc: "The standard W-Mo high speed steel with excellent toughness and wear resistance.",
+                  specs: ["UNS T11302", "Standard HSS"]
+                },
+                {
+                  name: "HSS M35",
+                  path: "/product/round-bars/high-speed-steel/m35-hss-round-bars",
+                  desc: "Cobalt-alloyed (5%) HSS offering superior red hardness for heavy duty cutting.",
+                  specs: ["5% Cobalt", "Red Hardness"]
+                },
+                {
+                  name: "HSS M42",
+                  path: "/product/round-bars/high-speed-steel/m42-hss-round-bars",
+                  desc: "Super Cobalt (8%) HSS designed for extreme hardness and superalloy machining.",
+                  specs: ["8% Cobalt", "70 HRC Max"]
+                }
+              ].map((grade, idx) => (
+                <div key={idx} className="group bg-gray-50 dark:bg-gray-700/50 rounded-[2.5rem] p-8 border border-gray-100 dark:border-gray-600 hover:border-gold-primary transition-all shadow-lg hover:shadow-2xl flex flex-col h-full transform hover:scale-[1.02] duration-300 italic">
+                  <div className="mb-6 relative">
+                    <span className="bg-navy-primary text-white text-[10px] px-3 py-1 rounded-full uppercase font-black tracking-widest italic tracking-tighter italic">Premium Grade</span>
+                    <h3 className="text-3xl font-black text-navy-primary dark:text-gold-primary mt-4 italic tracking-tighter uppercase italic tracking-tighter italic">{grade.name}</h3>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm mb-6 italic font-medium uppercase tracking-tighter italic leading-relaxed h-12 overflow-hidden">{grade.desc}</p>
+                  <div className="flex flex-wrap gap-2 mb-8 mt-auto italic tracking-tighter italic">
+                    {grade.specs.map((s, i) => (
+                      <span key={i} className="bg-white dark:bg-gray-600 text-navy-primary dark:text-white text-[10px] px-3 py-1 rounded-full font-bold italic tracking-tighter italic border border-gray-100 dark:border-gray-500">{s}</span>
+                    ))}
+                  </div>
+                  <Link href={grade.path} className="w-full bg-navy-primary hover:bg-navy-secondary text-white py-4 rounded-2xl font-black text-center transition-all italic tracking-tighter uppercase h-fit overflow-hidden italic tracking-tighter uppercase text-lg group-hover:scale-105 shadow-xl">
+                    View Details
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <div className="container mx-auto px-4 py-16">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 mb-16">

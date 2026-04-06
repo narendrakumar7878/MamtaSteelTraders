@@ -1,15 +1,15 @@
 import ProductSEO from "@/components/ProductSEO";
-import { ArrowRight, Phone, Mail, MapPin, Star, CheckCircle, TrendingUp, Shield, Award } from "lucide-react";
+import { ArrowRight, ArrowLeft, Phone, Mail, MapPin, Star, CheckCircle, TrendingUp, Shield, Award } from "lucide-react";
 import { Link } from "wouter";
 
 export default function TitaniumRoundBars() {
   const titaniumGrades = [
-    "Grade 1 (Pure Titanium)",
-    "Grade 2 (Pure Titanium)",
-    "Grade 3 (Pure Titanium)",
-    "Grade 5 (Ti-6Al-4V)",
-    "Grade 7 (Ti-0.2Pd)",
-    "Grade 12 (Ti-0.3Mo-0.8Ni)"
+    { name: "Grade 1 (Pure Titanium)", path: "/product/round-bars/titanium/titanium-grade-1" },
+    { name: "Grade 2 (Pure Titanium)", path: "/product/round-bars/titanium/titanium-grade-2" },
+    { name: "Grade 3 (Pure Titanium)", path: "/product/round-bars/titanium/titanium-grade-3" },
+    { name: "Grade 5 (Ti-6Al-4V)", path: "/product/round-bars/titanium/titanium-grade-5" },
+    { name: "Grade 7 (Ti-0.2Pd)", path: "/product/round-bars/titanium/titanium-grade-7" },
+    { name: "Grade 12 (Ti-0.3Mo-0.8Ni)", path: "/product/round-bars/titanium/titanium-grade-12" }
   ];
 
   const specifications = [
@@ -128,25 +128,30 @@ export default function TitaniumRoundBars() {
           </div>
         </div>
 
-        {/* Breadcrumb */}
+        {/* Breadcrumb & Navigation */}
         <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
-          <div className="container mx-auto px-4 py-4">
-            <nav className="flex items-center space-x-2 text-sm">
-              <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary dark:hover:text-gold-primary transition-colors" data-testid="breadcrumb-home">
+          <div className="container mx-auto px-4 py-4 font-black">
+            <nav className="flex items-center space-x-2 text-sm flex-wrap text-black font-black uppercase italic font-black">
+              <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-colors italic tracking-tighter uppercase font-black italic">
                 Home
               </Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <Link href="/products" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary dark:hover:text-gold-primary transition-colors" data-testid="breadcrumb-products">
+              <ArrowRight className="w-4 h-4 text-gray-400 font-extrabold" />
+              <Link href="/products" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-colors italic tracking-tighter uppercase font-black italic font-black">
                 Products
               </Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <Link href="/product/round-bars/round-bars" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary dark:hover:text-gold-primary transition-colors" data-testid="breadcrumb-round-bars">
+              <ArrowRight className="w-4 h-4 text-gray-400 font-extrabold" />
+              <Link href="/product/round-bars/round-bars" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-colors italic tracking-tighter uppercase font-black italic font-black">
                 Round Bars
               </Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <span className="text-navy-primary dark:text-gold-primary font-medium" data-testid="breadcrumb-current">Titanium</span>
+              <ArrowRight className="w-4 h-4 text-gray-400 font-extrabold" />
+              <span className="text-navy-primary dark:text-gold-primary underline decoration-gold-primary decoration-2 underline-offset-4 italic tracking-tighter uppercase font-black italic">Titanium</span>
             </nav>
           </div>
+        </div>
+        <div className="container mx-auto px-4 py-4">
+           <Link href="/product/round-bars/round-bars" className="inline-flex items-center text-navy-primary dark:text-gold-primary hover:underline font-black uppercase text-xs italic tracking-tighter italic font-black">
+              <ArrowLeft className="w-3 h-3 mr-2 font-black" /> Back to Round Bars
+           </Link>
         </div>
 
         {/* Main Content */}
@@ -189,10 +194,28 @@ export default function TitaniumRoundBars() {
               <h3 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-6" data-testid="text-grades-title">
                 Available Titanium Grades
               </h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {titaniumGrades.map((grade, index) => (
-                  <div key={index} className="bg-gradient-to-r from-gray-600 to-gray-800 text-white p-4 rounded-lg text-center">
-                    <span className="font-semibold" data-testid={`grade-${index}`}>{grade}</span>
+                  <div 
+                    key={index} 
+                    className="group bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-2xl p-6 hover:shadow-2xl hover:border-gold-primary transition-all duration-300 transform hover:-translate-y-2 flex flex-col justify-between"
+                  >
+                    <div>
+                      <h4 className="text-xl font-bold text-navy-primary dark:text-gold-primary mb-3 italic tracking-tight" data-testid={`grade-name-${index}`}>
+                        {grade.name}
+                      </h4>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm mb-6 italic">
+                        Available in various sizes and heat-treated conditions for global industrial and aerospace standards.
+                      </p>
+                    </div>
+                    <Link 
+                      href={grade.path}
+                      className="w-full bg-navy-primary text-white py-3 rounded-xl font-bold hover:bg-navy-secondary transition-all text-center flex items-center justify-center gap-2 group-hover:scale-105"
+                      data-testid={`grade-link-${index}`}
+                    >
+                      View Grade Details
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
                   </div>
                 ))}
               </div>

@@ -5,12 +5,13 @@ import { useLocation } from 'wouter';
  * Hook that scrolls to top when navigating to specific routes
  * @param targetRoutes - Array of routes that should trigger scroll to top
  */
-export function useScrollToTop(targetRoutes: string[] = ['/contact']) {
+export function useScrollToTop(targetRoutes: string[] = []) {
   const [location] = useLocation();
 
   useEffect(() => {
-    // Check if current route is in the target routes
-    if (targetRoutes.includes(location)) {
+    // If targetRoutes is empty, scroll to top on every route change
+    // Otherwise, only scroll to top if current route is in targetRoutes
+    if (targetRoutes.length === 0 || targetRoutes.includes(location)) {
       // Scroll to top instantly without smooth scrolling to avoid janky behavior
       window.scrollTo({
         top: 0,
@@ -19,6 +20,13 @@ export function useScrollToTop(targetRoutes: string[] = ['/contact']) {
       });
     }
   }, [location, targetRoutes]);
+}
+
+/**
+ * Hook that scrolls to top on EVERY route change
+ */
+export function useGlobalScrollToTop() {
+  return useScrollToTop([]);
 }
 
 /**

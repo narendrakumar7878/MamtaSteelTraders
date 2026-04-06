@@ -1,435 +1,161 @@
 import ProductSEO from "@/components/ProductSEO";
-import { ArrowRight, Phone, Mail, MapPin, Star, CheckCircle, TrendingUp, Shield, Award, Thermometer, Gauge, Factory, Settings } from "lucide-react";
+import { ArrowLeft, ArrowRight, Phone, Mail, CheckCircle, Shield, Award, Activity, Microscope, Zap, Thermometer, Settings } from "lucide-react";
 import { Link } from "wouter";
 
 export default function D2ToolSteel() {
-  const specifications = [
-    "ASTM A681 - Standard Specification for Tool Steels",
-    "DIN 1.2379 (X153CrMoV12) - European Standard",
-    "EN X153CrMoV12 - European Norm",
-    "JIS SKD11 - Japanese Industrial Standard",
-    "AISI D2 / HCHCR-D2 - High Carbon High Chromium Die Steel",
-    "UNS T30402 - Unified Numbering System",
-    "AFNOR Z160CDV12 - French Standard",
-    "B.S. BD 2 - British Standard",
-    "Available Forms: Round bars, flats, squares, plates, blocks",
-    "Size Range: Round 20-450mm, Square 50-155mm, Flats 20-150mm thickness"
+  const chemicalComposition = [
+    { element: "Carbon (C)", value: "1.40 – 1.60%" },
+    { element: "Chromium (Cr)", value: "11.0 – 13.0%" },
+    { element: "Molybdenum (Mo)", value: "0.70 – 1.20%" },
+    { element: "Vanadium (V)", value: "0.15 – 0.35%" },
+    { element: "Manganese (Mn)", value: "0.20 – 0.60%" },
+    { element: "Silicon (Si)", value: "0.10 – 0.60%" }
   ];
 
-  const applications = [
-    "Stamping and Blanking Dies for Stainless Steel",
-    "Cold Forming Dies and Tools",
-    "Thread Rolling Dies and Tools",
-    "Drawing Dies for Wire and Tube Production",
-    "Slitting Knives and Shear Blades",
-    "Forming Rolls and Punches",
-    "Deep Drawing Dies and Cupping Dies",
-    "Trimmer Dies and Cutting Tools",
-    "Cold Extrusion Dies",
-    "Broaches and Plug Gauges",
-    "Circular Cutters for Cold Rolled Strip",
-    "Master Hobs for Cold Hobbing",
-    "Plastic Moulds and Cut Moulds",
-    "Brick and Tile Mould Liners",
-    "Tyre Shredders and Chipper Knives",
-    "Paper Cutting Machine Blades"
+  const equivalentGrades = [
+    { country: "USA (AISI)", grade: "D2" },
+    { country: "Germany (DIN)", grade: "1.2379 / X153CrMoV12" },
+    { country: "Japan (JIS)", grade: "SKD11" },
+    { country: "France (AFNOR)", grade: "Z160CDV12" }
   ];
 
-  const features = [
-    { icon: Shield, title: "Superior Wear Resistance", desc: "Exceptional abrasion resistance due to high chromium carbide content and vanadium addition" },
-    { icon: TrendingUp, title: "Deep Hardening Capability", desc: "Through-hardening capability for large sections with excellent core properties" },
-    { icon: Award, title: "Dimensional Stability", desc: "Minimal distortion during heat treatment with excellent size holding properties" },
-    { icon: CheckCircle, title: "Good Machinability", desc: "Good machinability in annealed condition for complex tooling manufacture" },
-    { icon: Thermometer, title: "Corrosion Resistance", desc: "Better corrosion resistance when polished compared to other tool steels" },
-    { icon: Gauge, title: "High Toughness", desc: "Superior toughness properties due to molybdenum and vanadium content" }
-  ];
-
-  const properties = [
-    {
-      property: "Carbon Content",
-      value: "1.40-1.60%",
-      description: "High carbon for maximum hardness and wear resistance"
-    },
-    {
-      property: "Chromium Content",
-      value: "11.00-13.00%",
-      description: "Forms hard wear-resistant carbides and provides corrosion resistance"
-    },
-    {
-      property: "Hardness (HRC)",
-      value: "58-62",
-      description: "After proper heat treatment and tempering"
-    },
-    {
-      property: "Working Hardness",
-      value: "58-62 HRC",
-      description: "Typical working hardness range for tooling applications"
-    },
-    {
-      property: "Annealed Hardness",
-      value: "≤255 HB",
-      description: "Brinell hardness in annealed condition for machining"
-    },
-    {
-      property: "Vanadium Content",
-      value: "0.15-0.35%",
-      description: "Provides grain refinement and enhanced wear resistance"
-    }
-  ];
-
-  const heatTreatment = [
-    {
-      process: "Annealing",
-      temperature: "800-840°C",
-      procedure: "Heat slowly to temperature, hold until uniformly heated (20-30 min after equalization), then cool slowly in furnace at ≤25°C/hour. Resulting hardness ≤255 HB for optimal machinability."
-    },
-    {
-      process: "Hardening",
-      temperature: "980-1040°C",
-      procedure: "Preheat at 650-750°C and 800-850°C. Heat uniformly to austenitizing temperature, soak 20-30 min after equalization. Air cool or gas quench preferred. Use controlled atmosphere to prevent decarburization."
-    },
-    {
-      process: "Tempering",
-      temperature: "150-520°C",
-      procedure: "Double temper immediately after hardening (mandatory for tools). 150-200°C for maximum hardness (60-62 HRC), 450-520°C for balanced properties (54-58 HRC). Hold for 2+ hours each temper cycle."
-    }
+  const thermalSpecs = [
+    { process: "Forging", temp: "1050 – 850°C", desc: "Heat slowly and uniformly. Do not forge below 850°C." },
+    { process: "Annealing", temp: "800 – 850°C", desc: "Slow furnace cooling. Max hardness 255 HB." },
+    { process: "Hardening", temp: "1000 – 1040°C", desc: "Air or oil quench. Preheat in two stages." },
+    { process: "Tempering", temp: "150 – 520°C", desc: "Double tempering is mandatory for stability." }
   ];
 
   return (
     <>
       <ProductSEO
-        title="D2 Tool Steel - HCHCR-D2 High Carbon High Chromium Steel Supplier Mumbai | DIN 1.2379"
-        description="Premium HCHCR-D2 tool steel supplier in Mumbai. High carbon high chromium die steel with superior wear resistance. ASTM A681, DIN 1.2379, SKD11 certified. Stockist, dealer, trader of D2 round bars, flats, squares for stamping dies, blanking tools, cold forming applications."
-        keywords="D2 tool steel, HCHCR-D2 steel, DIN 1.2379, X153CrMoV12, cold work tool steel, high carbon high chromium steel, stamping dies, D2 steel supplier Mumbai, tool steel stockist, D2 round bars, D2 flats, KNL D2, tool steel dealer Mumbai, precision tool steel"
-        category="Cold Work Tool Steels"
-        productName="D2 Tool Steel - HCHCR-D2 High Carbon High Chromium Die Steel"
-        specifications={specifications}
+        title="D2 Tool Steel (HCHCR) Round Bars & Flats | DIN 1.2379 | SKD11 | Mumbai India"
+        description="Premium HCHCR-D2 tool steel supplier in Mumbai. High carbon high chromium die steel with superior wear resistance. AISI D2, DIN 1.2379 certified. Stockist of D2 round bars and flats for stamping dies."
+        keywords="D2 tool steel, HCHCR round bars, DIN 1.2379 steel, SKD11 equivalent Mumbai, high carbon high chrome steel, stamping die steel, tool steel supplier India"
         canonicalUrl="/product/cold-work-tool-steels/d2-tool-steel"
       />
 
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 font-bold tracking-tighter italic">
         {/* Breadcrumb Navigation */}
-        <nav className="bg-white py-4 border-b border-gray-200" data-testid="breadcrumb-nav">
-          <div className="container mx-auto px-4">
-            <div className="flex items-center space-x-2 text-sm text-gray-600">
-              <Link href="/" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-home">Home</Link>
-              <ArrowRight className="w-4 h-4" />
-              <Link href="/product" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-products">Products</Link>
-              <ArrowRight className="w-4 h-4" />
-              <Link href="/product/cold-work-tool-steels" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-cold-work">Cold Work Tool Steels</Link>
-              <ArrowRight className="w-4 h-4" />
-              <span className="text-navy-primary font-medium" data-testid="breadcrumb-current">D2 Tool Steel</span>
-            </div>
-          </div>
-        </nav>
+        <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+           <div className="container mx-auto px-4 py-4">
+              <nav className="flex items-center space-x-2 text-sm flex-wrap gap-y-1">
+                 <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary transition-all">Home</Link>
+                 <ArrowRight className="w-4 h-4 text-gray-400" />
+                 <Link href="/product/round-bars/round-bars" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary transition-all">Round Bars</Link>
+                 <ArrowRight className="w-4 h-4 text-gray-400" />
+                 <Link href="/product/cold-work-tool-steels" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary transition-all">Cold Work Tool Steels</Link>
+                 <ArrowRight className="w-4 h-4 text-gray-400" />
+                 <span className="text-navy-primary dark:text-gold-primary font-bold italic tracking-wider">AISI D2 / DIN 1.2379</span>
+              </nav>
+           </div>
+        </div>
 
-        {/* Hero Section */}
-        <section className="bg-gradient-to-r from-navy-primary to-navy-secondary text-white py-16" data-testid="hero-section">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-heading md:text-heading font-bold mb-6" data-testid="hero-title">
-                Premium HCHCR-D2 Tool Steel Supplier Mumbai
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 text-blue-100" data-testid="hero-subtitle">
-                High Carbon High Chromium Die Steel stockist, dealer & trader in Mumbai. DIN 1.2379, ASTM A681 certified with superior wear resistance for stamping dies, blanking tools & long-run tooling applications.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact" className="bg-gold-primary hover:bg-gold-secondary text-navy-primary font-semibold py-3 px-8 rounded-lg transition-colors duration-300" data-testid="cta-get-quote">
-                  Get Quote Now
-                </Link>
-                <a href="tel:+919819322576" className="border-2 border-white text-white hover:bg-white hover:text-navy-primary font-semibold py-3 px-8 rounded-lg transition-colors duration-300" data-testid="cta-call-now">
-                  Call Now: +91 9819322576
-                </a>
+        {/* Back Link */}
+        <div className="container mx-auto px-4 py-4">
+           <Link href="/product/cold-work-tool-steels" className="inline-flex items-center text-navy-primary dark:text-gold-primary hover:underline font-bold italic uppercase text-xs">
+              <ArrowLeft className="w-3 h-3 mr-2" /> Back to Cold Work Steels
+           </Link>
+        </div>
+
+        <section className="bg-gradient-to-br from-navy-primary via-navy-secondary to-slate-800 text-white py-20 relative overflow-hidden">
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-4xl">
+              <span className="bg-gold-primary text-navy-primary px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest mb-6 inline-block">High-Performance Die Steel</span>
+              <h1 className="text-5xl md:text-7xl font-black mb-6 italic tracking-tighter uppercase leading-none">D2 Tool Steel</h1>
+              <p className="text-xl text-gray-200 mb-8 leading-relaxed max-w-2xl opacity-90 italic font-medium uppercase tracking-tight italic">Ultimate wear resistance and dimensional stability for high-volume cold work tooling.</p>
+              <div className="flex flex-wrap gap-4">
+                <Link href="/contact" className="bg-gold-primary hover:bg-white text-navy-primary px-10 py-4 rounded-2xl font-black transition-all shadow-xl italic tracking-tighter uppercase">Request Batch Quote</Link>
+                <a href="tel:+919819322576" className="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-10 py-4 rounded-2xl font-bold transition-all backdrop-blur-sm italic tracking-tighter">Talk to Metallurgist</a>
               </div>
             </div>
           </div>
+          <Settings className="absolute right-[-10%] bottom-[-10%] w-[500px] h-[500px] text-white/5 pointer-events-none rotate-12" />
         </section>
 
-        {/* Product Overview */}
-        <section className="py-16 bg-white" data-testid="overview-section">
+        <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div>
-                  <h2 className="text-2xl font-bold text-navy-primary mb-6" data-testid="overview-title">
-                    About HCHCR-D2 Tool Steel
-                  </h2>
-                  <div className="space-y-4 text-gray-700 leading-relaxed">
-                    <p>
-                      <strong>HCHCR-D2 Tool Steel</strong> is a premium High Carbon High Chromium Cold Work Tool Steel with exceptional wear resistance and toughness. The controlled Vanadium content provides superior properties and grain refinement, making it ideal for long-run tooling applications.
-                    </p>
-                    <p>
-                      As authorized <strong>D2 steel stockists, suppliers, dealers and traders in Mumbai</strong>, we provide high-quality HCHCR-D2 tool steel conforming to international standards including ASTM A681, DIN 1.2379 (X153CrMoV12), JIS SKD11, and UNS T30402. Available in round bars, flats, squares, plates, and custom sizes.
-                    </p>
-                    <p>
-                      D2 tool steel consolidates maximum wear resistance, great durability, exceptional front line maintenance and treating resistance. It can be nitrided after special heat treatment for enhanced surface properties.
-                    </p>
-                    <p>
-                      <strong>D2 is superior to D3 steel</strong> due to higher alloy content and better balanced chemistry, making it the preferred choice for demanding applications requiring both wear resistance and toughness.
-                    </p>
-                  </div>
-                </div>
-                <div className="bg-gray-50 p-8 rounded-lg">
-                  <h3 className="text-2xl font-semibold text-navy-primary mb-6">Key Advantages of HCHCR-D2</h3>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                      <span>Maximum wear resistance with exceptional durability</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                      <span>Superior toughness due to controlled vanadium content</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                      <span>Excellent front line maintenance properties</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                      <span>Can be nitrided for enhanced surface properties</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                      <span>Air hardening with low distortion characteristics</span>
-                    </li>
-                    <li className="flex items-start">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                      <span>Suitable for long production runs</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Product Features */}
-        <section className="py-16 bg-white" data-testid="features-section">
-          <div className="container mx-auto px-4">
-            <h2 className="text-2xl font-bold text-center text-navy-primary mb-12" data-testid="features-title">
-              Why Choose Our HCHCR-D2 Tool Steel?
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {features.map((feature, index) => (
-                <div key={index} className="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow duration-300" data-testid={`feature-${index}`}>
-                  <feature.icon className="w-12 h-12 text-gold-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-navy-primary mb-2">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Material Properties */}
-        <section className="py-16 bg-gray-50" data-testid="properties-section">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-2xl font-bold text-center text-navy-primary mb-12" data-testid="properties-title">
-                HCHCR-D2 Tool Steel Properties
-              </h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {properties.map((prop, index) => (
-                  <div key={index} className="bg-white p-6 rounded-lg shadow-md border-l-4 border-gold-primary" data-testid={`property-${index}`}>
-                    <h3 className="text-lg font-semibold text-navy-primary mb-2">{prop.property}</h3>
-                    <div className="text-2xl font-bold text-gold-primary mb-2">{prop.value}</div>
-                    <p className="text-gray-600 text-sm">{prop.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Specifications */}
-        <section className="py-16 bg-white" data-testid="specifications-section">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-2xl font-bold text-center text-navy-primary mb-12" data-testid="specifications-title">
-                Technical Specifications
-              </h2>
-              <div className="grid md:grid-cols-2 gap-12">
-                <div className="bg-gray-50 p-8 rounded-lg" data-testid="specifications-standards">
-                  <h3 className="text-2xl font-semibold text-navy-primary mb-6">Standards & Forms</h3>
-                  <ul className="space-y-3">
-                    {specifications.map((spec, index) => (
-                      <li key={index} className="flex items-start" data-testid={`spec-${index}`}>
-                        <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">{spec}</span>
-                      </li>
+            <div className="grid lg:grid-cols-3 gap-12">
+              <div className="lg:col-span-2 space-y-12">
+                {/* Intro Card */}
+                <div className="bg-white dark:bg-gray-800 p-10 rounded-[2.5rem] shadow-2xl border border-gray-100 dark:border-gray-700">
+                  <h2 className="text-3xl font-black text-navy-primary dark:text-white mb-8 italic tracking-tighter uppercase border-l-8 border-gold-primary pl-6">Technical Profile</h2>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed italic font-medium italic mb-8 italic">AISI D2 (HCHCR) is a high-carbon, high-chromium tool steel known for its exceptional through-hardening capability and abrasion resistance. Its unique balanced chemistry allows for minimal distortion during heat treatment, making it the industry standard for precision dies and cutting tools.</p>
+                  
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+                    {chemicalComposition.map((item, i) => (
+                      <div key={i} className="p-5 bg-gray-50 dark:bg-gray-700/50 rounded-3xl border border-gray-100 dark:border-gray-600 group hover:border-gold-primary transition-all">
+                        <p className="text-[10px] text-gray-500 uppercase font-black italic mb-1 tracking-widest">{item.element}</p>
+                        <p className="text-xl font-black text-navy-primary dark:text-gold-primary italic tracking-tighter">{item.value}</p>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
-                <div className="bg-gray-50 p-8 rounded-lg" data-testid="specifications-applications">
-                  <h3 className="text-2xl font-semibold text-navy-primary mb-6">Applications</h3>
-                  <ul className="space-y-3">
-                    {applications.map((app, index) => (
-                      <li key={index} className="flex items-start" data-testid={`app-${index}`}>
-                        <Star className="w-5 h-5 text-gold-primary mr-3 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">{app}</span>
-                      </li>
+
+                {/* Heat Treatment Card */}
+                <div className="bg-navy-primary text-white p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden group">
+                   <div className="relative z-10">
+                      <h2 className="text-3xl font-black mb-8 italic tracking-tighter uppercase flex items-center gap-4 h-fit">
+                         <Thermometer className="w-8 h-8 text-gold-primary" />
+                         Heat Treatment Specs (HCHCR-D2)
+                      </h2>
+                      <div className="space-y-6">
+                         {thermalSpecs.map((spec, i) => (
+                            <div key={i} className="flex flex-col md:flex-row gap-4 p-6 bg-white/5 rounded-3xl border border-white/10 hover:bg-white/10 transition-colors">
+                               <div className="md:w-1/4">
+                                  <p className="text-gold-primary font-black uppercase text-xs tracking-widest mb-1 italic">{spec.process}</p>
+                                  <p className="text-xl font-black italic tracking-tighter">{spec.temp}</p>
+                               </div>
+                               <p className="md:w-3/4 text-sm text-gray-300 font-medium italic leading-relaxed">{spec.desc}</p>
+                            </div>
+                         ))}
+                      </div>
+                   </div>
+                   <Activity className="absolute right-[-5%] top-[-5%] w-64 h-64 text-white/5 pointer-events-none group-hover:scale-110 transition-transform" />
+                </div>
+              </div>
+
+              <div className="space-y-8">
+                {/* Equivalent Table */}
+                <div className="bg-white dark:bg-gray-800 p-8 rounded-[2.5rem] shadow-xl border border-gray-100 dark:border-gray-700 h-fit">
+                  <h3 className="text-xl font-black text-navy-primary dark:text-white mb-6 italic tracking-tighter uppercase border-b border-gold-primary pb-2">Global Standards</h3>
+                  <div className="space-y-4">
+                    {equivalentGrades.map((eq, i) => (
+                      <div key={i} className="flex justify-between items-center p-4 bg-gray-50 dark:bg-gray-700 rounded-2xl border border-transparent hover:border-gold-primary/20 transition-all">
+                        <span className="text-xs text-gray-500 uppercase font-bold italic">{eq.country}</span>
+                        <span className="font-black text-navy-primary dark:text-gold-primary italic text-sm">{eq.grade}</span>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
+                </div>
+
+                {/* Industrial Use-Cases */}
+                <div className="bg-gradient-to-br from-gold-primary to-yellow-600 p-8 rounded-[2.5rem] shadow-2xl text-navy-primary h-fit group">
+                   <h3 className="text-2xl font-black mb-6 italic tracking-tighter uppercase italic">Precision Use Cases</h3>
+                   <div className="space-y-4">
+                      {["Stamping & Blanking Dies", "Thread Rolling Dies", "Slitting Knives", "Punches & Gauge Blocks", "Master Hobs", "Erosion Testing Tools"].map((use, i) => (
+                         <div key={i} className="flex items-center gap-3 text-sm font-black italic uppercase tracking-tighter group/item transition-all">
+                            <Zap className="w-4 h-4 text-navy-primary/60 group-hover/item:text-navy-primary" />
+                            <span>{use}</span>
+                         </div>
+                      ))}
+                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Heat Treatment Guide */}
-        <section className="py-16 bg-gray-50" data-testid="heat-treatment-section">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-2xl font-bold text-center text-navy-primary mb-12" data-testid="heat-treatment-title">
-                HCHCR-D2 Heat Treatment Guide
-              </h2>
-              <div className="grid md:grid-cols-3 gap-8">
-                {heatTreatment.map((treatment, index) => (
-                  <div key={index} className="bg-white p-6 rounded-lg shadow-md border-t-4 border-gold-primary" data-testid={`heat-treatment-${index}`}>
-                    <div className="flex items-center mb-4">
-                      <Thermometer className="w-8 h-8 text-gold-primary mr-3" />
-                      <h3 className="text-xl font-semibold text-navy-primary">{treatment.process}</h3>
-                    </div>
-                    <div className="mb-3">
-                      <span className="text-sm font-medium text-gray-600">Temperature:</span>
-                      <div className="text-lg font-bold text-gold-primary">{treatment.temperature}</div>
-                    </div>
-                    <p className="text-gray-700 text-sm leading-relaxed">{treatment.procedure}</p>
-                  </div>
-                ))}
+        {/* CTA Footer */}
+        <section className="py-20 bg-white dark:bg-gray-800 border-t border-gray-100 dark:border-gray-700">
+           <div className="container mx-auto px-4 text-center">
+              <h2 className="text-4xl font-black text-navy-primary dark:text-white mb-6 italic tracking-tighter uppercase italic">Optimize Your Tooling Lifecycle</h2>
+              <p className="text-lg text-gray-500 dark:text-gray-400 mb-10 max-w-2xl mx-auto font-medium italic italic">Mamta Steel Traders provides precision annealing, grinding, and vacuum hardening support for high-end HCHCR materials. Technical data sheets available on request.</p>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                 <Link href="/contact" className="bg-navy-primary text-white px-12 py-5 rounded-3xl font-black hover:bg-navy-secondary transition-all shadow-xl italic tracking-tighter uppercase italic tracking-tighter">Instant Batch Pricing</Link>
+                 <a href="mailto:naren@mamtasteel.com" className="border-4 border-navy-primary text-navy-primary px-12 py-5 rounded-3xl font-black hover:bg-gray-50 transition-all italic tracking-tighter uppercase italic tracking-tighter">Export Inquiry</a>
               </div>
-              <div className="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
-                <h4 className="text-lg font-semibold text-navy-primary mb-3 flex items-center">
-                  <Settings className="w-5 h-5 mr-2 text-gold-primary" />
-                  Important Heat Treatment Notes for HCHCR-D2
-                </h4>
-                <ul className="text-gray-700 space-y-2 text-sm">
-                  <li>• HCHCR-D2 requires careful heat treatment due to high alloy content</li>
-                  <li>• Use controlled atmosphere or vacuum furnace to prevent decarburization</li>
-                  <li>• Double tempering is mandatory for tools to ensure dimensional stability</li>
-                  <li>• Air cooling or gas quenching preferred - oil quench only with caution for very thick sections</li>
-                  <li>• Sub-zero treatment (-80°C to -196°C) optional for maximum wear resistance</li>
-                  <li>• Stress relieving at 650-700°C after rough machining improves dimensional stability</li>
-                  <li>• Nitriding after heat treatment can enhance surface hardness and wear resistance</li>
-                  <li>• Always verify hardness after heat treatment to ensure proper processing</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Chemical Composition */}
-        <section className="py-16 bg-gray-50" data-testid="composition-section">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-2xl font-bold text-center text-navy-primary mb-12" data-testid="composition-title">
-                HCHCR-D2 Chemical Composition
-              </h2>
-              <div className="overflow-x-auto">
-                <table className="w-full bg-white border border-gray-200 rounded-lg shadow-md" data-testid="composition-table">
-                  <thead className="bg-navy-primary text-white">
-                    <tr>
-                      <th className="px-6 py-4 text-left">Element</th>
-                      <th className="px-6 py-4 text-left">Content (%)</th>
-                      <th className="px-6 py-4 text-left">Purpose & Function</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-200">
-                    <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">Carbon (C)</td>
-                      <td className="px-6 py-4">1.40 – 1.60</td>
-                      <td className="px-6 py-4">Primary hardening element for maximum hardness and wear resistance</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">Chromium (Cr)</td>
-                      <td className="px-6 py-4">11.00 – 13.00</td>
-                      <td className="px-6 py-4">Forms hard wear-resistant carbides and provides corrosion resistance</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">Molybdenum (Mo)</td>
-                      <td className="px-6 py-4">0.70 – 1.20</td>
-                      <td className="px-6 py-4">Increases hardenability, toughness and high temperature strength</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">Vanadium (V)</td>
-                      <td className="px-6 py-4">0.15 – 0.35</td>
-                      <td className="px-6 py-4">Refines grain structure, enhances wear resistance and cutting edge retention</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">Manganese (Mn)</td>
-                      <td className="px-6 py-4">0.20 – 0.60</td>
-                      <td className="px-6 py-4">Deoxidizer, improves hardenability and hot workability</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">Silicon (Si)</td>
-                      <td className="px-6 py-4">0.10 – 0.60</td>
-                      <td className="px-6 py-4">Deoxidizer and strengthens the steel matrix</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">Phosphorus (P)</td>
-                      <td className="px-6 py-4">0.030 Max</td>
-                      <td className="px-6 py-4">Controlled as impurity to maintain toughness</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">Sulfur (S)</td>
-                      <td className="px-6 py-4">0.030 Max</td>
-                      <td className="px-6 py-4">Controlled as impurity to prevent brittleness and hot shortness</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">Nickel (Ni)</td>
-                      <td className="px-6 py-4">0.30 Max</td>
-                      <td className="px-6 py-4">Improves toughness and impact resistance</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-semibold">Copper (Cu)</td>
-                      <td className="px-6 py-4">0.25 Max</td>
-                      <td className="px-6 py-4">Residual element with minor contribution to strength</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Contact CTA */}
-        <section className="py-16 bg-navy-primary text-white" data-testid="contact-cta-section">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-2xl font-bold mb-6" data-testid="cta-title">
-                Ready to Order D2 Tool Steel?
-              </h2>
-              <p className="text-xl mb-8 text-blue-100" data-testid="cta-subtitle">
-                Get instant quotes and technical support from our D2 tool steel specialists
-              </p>
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
-                <div className="flex items-center justify-center space-x-3" data-testid="contact-phone">
-                  <Phone className="w-6 h-6 text-gold-primary" />
-                  <div>
-                    <p className="font-semibold">Call Us</p>
-                    <p className="text-blue-100">+91 9819322576</p>
-                  </div>
-                </div>
-                <div className="flex items-center justify-center space-x-3" data-testid="contact-email">
-                  <Mail className="w-6 h-6 text-gold-primary" />
-                  <div>
-                    <p className="font-semibold">Email Us</p>
-                    <p className="text-blue-100">mamtasteeltraders@gmail.com</p>
-                  </div>
-                </div>
-                <div className="flex items-center justify-center space-x-3" data-testid="contact-location">
-                  <MapPin className="w-6 h-6 text-gold-primary" />
-                  <div>
-                    <p className="font-semibold">Visit Us</p>
-                    <p className="text-blue-100">Mumbai, Maharashtra</p>
-                  </div>
-                </div>
-              </div>
-              <Link href="/contact" className="bg-gold-primary hover:bg-gold-secondary text-navy-primary font-semibold py-4 px-8 rounded-lg transition-colors duration-300 inline-block" data-testid="cta-contact-button">
-                Get Detailed Quote
-              </Link>
-            </div>
-          </div>
+           </div>
         </section>
       </div>
     </>

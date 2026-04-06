@@ -9,7 +9,8 @@ const hotWorkProducts = [
     image: mamta_steel_traders000_img,
     description: "Premium 55NiCrMoV7 hot work tool steel flat bars with excellent high-temperature strength and thermal conductivity.",
     specifications: ["DIN 1.2714", "55NiCrMoV7", "High thermal conductivity", "Forging dies applications"],
-    applications: ["Die casting dies", "Forging tools", "Extrusion tools", "Hot shear blades"]
+    applications: ["Die casting dies", "Forging tools", "Extrusion tools", "Hot shear blades"],
+    path: "/product/round-bars/hot-work-steel/din-1-2714-tool-steel"
   },
   {
     id: 2,
@@ -17,7 +18,8 @@ const hotWorkProducts = [
     image: mamta_steel_traders000_img,
     description: "AISI H11 (DIN 1.2343) premium hot work tool steel with superior toughness and thermal shock resistance.",
     specifications: ["AISI H11", "DIN 1.2343", "Thermal shock resistant", "Die casting applications"],
-    applications: ["Aluminum die casting", "Brass die casting", "Forging dies", "Hot forming tools"]
+    applications: ["Aluminum die casting", "Brass die casting", "Forging dies", "Hot forming tools"],
+    path: "/product/round-bars/hot-work-steel/h11-tool-steel"
   },
   {
     id: 3,
@@ -25,7 +27,8 @@ const hotWorkProducts = [
     image: mamta_steel_traders000_img,
     description: "H13 (DIN 1.2344) SKD61 flat bars - premium hot work tool steel with excellent hardenability and toughness.",
     specifications: ["AISI H13", "DIN 1.2344", "SKD61", "X40CrMoV5-1", "T20813"],
-    applications: ["Die casting dies", "Extrusion dies", "Forging tools", "Hot work applications"]
+    applications: ["Die casting dies", "Extrusion dies", "Forging tools", "Hot work applications"],
+    path: "/product/round-bars/hot-work-steel/h13-tool-steel"
   },
   {
     id: 4,
@@ -33,7 +36,8 @@ const hotWorkProducts = [
     image: mamta_steel_traders000_img,
     description: "Premium H13 round bars (DIN 1.2344) with exceptional thermal fatigue resistance and high-temperature strength.",
     specifications: ["AISI H13", "DIN 1.2344", "SKD61", "X40CrMoV5-1", "Superior thermal fatigue resistance"],
-    applications: ["Aluminum die casting", "Zinc die casting", "Plastic molding", "Hot forging dies"]
+    applications: ["Aluminum die casting", "Zinc die casting", "Plastic molding", "Hot forging dies"],
+    path: "/product/round-bars/hot-work-steel/h13-tool-steel"
   },
   {
     id: 5,
@@ -41,7 +45,8 @@ const hotWorkProducts = [
     image: mamta_steel_traders000_img,
     description: "AISI H21 (DIN 1.2581) SKD5 premium tungsten hot work steel with excellent high-temperature performance.",
     specifications: ["AISI H21", "DIN 1.2581", "SKD5", "X30WCrV93", "T20821"],
-    applications: ["Hot extrusion dies", "Forging dies", "Hot stamping tools", "High-temperature applications"]
+    applications: ["Hot extrusion dies", "Forging dies", "Hot stamping tools", "High-temperature applications"],
+    path: "/product/round-bars/hot-work-steel/h21-tool-steel"
   },
   {
     id: 6,
@@ -49,7 +54,8 @@ const hotWorkProducts = [
     image: mamta_steel_traders000_img,
     description: "S7 (DIN 1.2357) shock-resistant tool steel with outstanding impact toughness and wear resistance.",
     specifications: ["AISI S7", "DIN 1.2357", "Shock resistant", "High impact toughness"],
-    applications: ["Punches", "Dies", "Hammers", "High impact tooling"]
+    applications: ["Punches", "Dies", "Hammers", "High impact tooling"],
+    path: "/product/round-bars/hot-work-steel/s7-tool-steel"
   }
 ];
 
@@ -86,9 +92,9 @@ export default function HotWorkSteel() {
   return (
     <>
       <ProductSEO
-        title="Hot Work Steel Round Bars - H11, H13, H21, S7 Tool Steel | Mamta Steel Traders"
-        description="Premium hot work steel round bars supplier in Mumbai. AISI H11, H13, H21, S7, DIN 1.2343, 1.2344, 1.2581 tool steel for die casting, forging dies & extrusion tools. Worldwide delivery with mill test certificates."
-        keywords="hot work steel, H11 steel, H13 steel, H21 steel, S7 steel, DIN 1.2343, DIN 1.2344, SKD61, die casting steel, forging die steel, tool steel supplier Mumbai, hot work tool steel India"
+        title="Hot Work Steel Round Bars - H11, H13, H21, S7 Tool Steel | Pan India Supplier | Mamta Steel Traders"
+        description="Premium hot work steel round & flat bars supplier serving Pan India and Global markets. AISI H11, H13, H21, S7, DIN 1.2343, 1.2344 tool steel for die casting, forging dies & extrusion tools. Export quality certified."
+        keywords="hot work steel mumbai, pan india tool steel supplier, H11 steel india, H13 steel price mumbai, H21 steel stockist, S7 shock resistant steel, DIN 1.2343, DIN 1.2344, SKD61 india, die casting steel pan india"
         canonicalUrl="/product/round-bars/hot-work-steel"
       />
       
@@ -194,11 +200,11 @@ export default function HotWorkSteel() {
                       </ul>
                     </div>
                     <Link 
-                      href="/contact"
+                      href={product.path}
                       className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded font-medium transition-colors text-center block"
                       data-testid={`quote-button-${product.id}`}
                     >
-                      Get Quote
+                      Details
                     </Link>
                   </div>
                 </div>

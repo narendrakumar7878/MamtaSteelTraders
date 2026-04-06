@@ -1,314 +1,171 @@
 import ProductSEO from "@/components/ProductSEO";
-import { ArrowRight, Phone, Mail, MapPin, Star, CheckCircle, TrendingUp, Shield, Award } from "lucide-react";
+import { ArrowRight, ArrowLeft, Phone, Mail, CheckCircle, Shield, Award, Activity, Microscope, Zap, Thermometer, Settings, ChevronRight } from "lucide-react";
 import { Link } from "wouter";
 
 export default function DuplexSuperDuplexRoundBars() {
-  const duplexGrades = [
-    "UNS S31803 (SAF 2205)",
-    "UNS S32205 (SAF 2205)",
-    "UNS S32750 (SAF 2507)",
-    "UNS S32760 (Zeron 100)",
-    "UNS S31254 (254 SMO)",
-    "UNS S32550 (Ferralium 255)"
-  ];
-
-  const specifications = [
-    "ASTM A276 - Standard Specification for Stainless Steel Bars and Shapes",
-    "ASTM A479 - Standard Specification for Stainless Steel Bars for Boiler and Pressure Vessel Construction",
-    "ASTM A564 - Standard Specification for Hot-Rolled and Cold-Finished Age-Hardening Stainless Steel Bars",
-    "Size Range: 6mm to 350mm diameter",
-    "Length: Up to 6000mm",
-    "Condition: Solution Annealed"
-  ];
-
-  const applications = [
-    "Oil and Gas Industry",
-    "Chemical Processing Equipment",
-    "Marine Applications",
-    "Desalination Plants",
-    "Pulp and Paper Industry",
-    "Heat Exchangers",
-    "Pressure Vessels",
-    "Offshore Platforms",
-    "Petrochemical Plants",
-    "Power Generation"
-  ];
-
-  const advantages = [
+  const duplexProducts = [
     {
-      title: "High Strength",
-      description: "Approximately twice the yield strength of austenitic stainless steels",
-      icon: "💪"
+      title: "Duplex 2205",
+      subtitle: "UNS S31803 / S32205",
+      description: "The most widely used duplex grade. Exceptional yield strength and SCC resistance.",
+      image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800&auto=format&fit=crop",
+      path: "/product/round-bars/duplex-super-duplex/duplex-2205"
     },
     {
-      title: "Excellent Corrosion Resistance",
-      description: "Superior resistance to chloride stress corrosion cracking",
-      icon: "🛡️"
+      title: "Super Duplex 2507",
+      subtitle: "UNS S32750",
+      description: "Extreme corrosion resistance for offshore and high-chloride environments. PREN > 40.",
+      image: "https://images.unsplash.com/photo-1504917595217-d4dc5efa61df?q=80&w=800&auto=format&fit=crop",
+      path: "/product/round-bars/duplex-super-duplex/super-duplex-2507"
     },
     {
-      title: "Cost Effective",
-      description: "Lower nickel content reduces material costs",
-      icon: "💰"
+      title: "Zeron 100",
+      subtitle: "UNS S32760",
+      description: "Super duplex alloy with added copper and tungsten for resistance in acidic fluids.",
+      image: "https://images.unsplash.com/photo-1532187863486-abf9bdad1b69?q=80&w=800&auto=format&fit=crop",
+      path: "/product/round-bars/duplex-super-duplex/zeron-100"
     },
     {
-      title: "Weldability",
-      description: "Good weldability with proper procedures",
-      icon: "🔧"
-    }
-  ];
-
-  const gradeComparison = [
-    {
-      grade: "UNS S31803 (2205)",
-      chromium: "21.0-23.0",
-      nickel: "4.5-6.5",
-      molybdenum: "2.5-3.5",
-      nitrogen: "0.08-0.20",
-      pitting: "32-38"
+      title: "254 SMO",
+      subtitle: "UNS S31254",
+      description: "6% Moly alloy with high nitrogen. Superior resistance to pitting and crevice corrosion.",
+      image: "https://images.unsplash.com/photo-1581093583449-80d009746377?q=80&w=800&auto=format&fit=crop",
+      path: "/product/round-bars/duplex-super-duplex/254-smo"
     },
     {
-      grade: "UNS S32750 (2507)",
-      chromium: "24.0-26.0",
-      nickel: "6.0-8.0",
-      molybdenum: "3.0-5.0",
-      nitrogen: "0.24-0.32",
-      pitting: ">40"
+      title: "Ferralium 255",
+      subtitle: "UNS S32550",
+      description: "Original super duplex. High strength and 25% Cr for excellent erosion-corrosion resistance.",
+      image: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?q=80&w=800&auto=format&fit=crop",
+      path: "/product/round-bars/duplex-super-duplex/ferralium-255"
     },
     {
-      grade: "UNS S32760 (Zeron 100)",
-      chromium: "24.0-26.0",
-      nickel: "6.0-8.0",
-      molybdenum: "3.0-4.0",
-      nitrogen: "0.20-0.30",
-      pitting: ">40"
+      title: "Lean Duplex 2101",
+      subtitle: "UNS S32101",
+      description: "Cost-effective duplex with high strength and moderate corrosion resistance.",
+      image: "https://images.unsplash.com/photo-1581094271901-803b50730191?q=80&w=800&auto=format&fit=crop",
+      path: "/product/round-bars/duplex-super-duplex/lean-duplex-2101"
     }
   ];
 
   return (
     <>
       <ProductSEO
-        title="Duplex & Super Duplex Round Bars - UNS S31803, S32205, S32750 | High Strength Stainless Steel | Mamta Steel Traders"
-        description="Premium duplex and super duplex stainless steel round bars. High strength, excellent corrosion resistance. Grades: UNS S31803, S32205, S32750, S32760. ASTM A276, A479 compliant for oil, gas, and marine applications."
-        keywords="duplex round bars, super duplex round bars, UNS S31803, UNS S32205, UNS S32750, SAF 2205, SAF 2507, Zeron 100, duplex stainless steel, marine grade stainless steel"
+        title="Duplex & Super Duplex Round Bars | UNS S31803, S32750, Zeron 100 | Mumbai"
+        description="Premium Duplex & Super Duplex Round Bar supplier in Mumbai India. Grades 2205, 2507, Zeron 100, 254 SMO. High strength and corrosion resistance for oil, gas and offshore."
+        keywords="duplex round bars mumbai, super duplex UNS S32750 supplier, 2205 duplex steel price, Zeron 100 round bars india, 254 SMO alloy stockholder, lean duplex 2101 bars"
         canonicalUrl="/product/round-bars/duplex-super-duplex"
       />
 
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 font-bold tracking-tighter italic">
         {/* Hero Section */}
-        <div className="bg-gradient-to-br from-navy-primary via-navy-secondary to-slate-800 text-white relative overflow-hidden">
-          <div className="absolute inset-0 bg-black/20"></div>
-          <div className="container mx-auto px-4 py-20 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-heading font-bold mb-6" data-testid="text-duplex-title">
-                Duplex & Super Duplex Round Bars
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 text-gray-200" data-testid="text-duplex-subtitle">
-                High Strength, Superior Corrosion Resistance for Critical Applications
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact" className="bg-gold-primary hover:bg-gold-secondary text-navy-primary px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center justify-center" data-testid="button-contact-duplex">
-                  <Mail className="w-5 h-5 mr-2" />
-                  Get Quote
-                </Link>
-                <a href="tel:+919819322576" className="border-2 border-white hover:bg-white hover:text-navy-primary px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center justify-center" data-testid="button-call-duplex">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call Now
-                </a>
+        <section className="bg-gradient-to-br from-navy-primary via-navy-secondary to-slate-800 text-white py-24 relative overflow-hidden">
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-4xl">
+              <span className="bg-gold-primary text-navy-primary px-6 py-2 rounded-full text-sm font-black uppercase tracking-widest mb-8 inline-block shadow-2xl underline decoration-navy-primary decoration-4">The Pinnacle of Steel Strength</span>
+              <h1 className="text-6xl md:text-8xl font-black mb-8 italic tracking-tighter uppercase leading-none">Duplex & Super Duplex</h1>
+              <p className="text-2xl text-gray-200 mb-10 leading-relaxed max-w-2xl opacity-90 italic font-medium uppercase tracking-tight italic tracking-tighter italic">Combined austenitic and ferritic microstructures for extreme performance in the world's most corrosive environments.</p>
+              <div className="flex flex-wrap gap-6">
+                <Link href="/contact" className="bg-gold-primary hover:bg-white text-navy-primary px-12 py-5 rounded-[2rem] font-black transition-all shadow-xl italic tracking-tighter uppercase text-lg">Inquire Technical Spec</Link>
+                <a href="tel:+919819322576" className="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-12 py-5 rounded-[2rem] font-bold transition-all backdrop-blur-sm italic tracking-tighter text-lg">Call Metallurgy Desk</a>
               </div>
             </div>
           </div>
-        </div>
+          <Activity className="absolute right-[-10%] bottom-[-10%] w-[600px] h-[600px] text-white/5 pointer-events-none rotate-12" />
+        </section>
 
-        {/* Breadcrumb */}
+        {/* Global Breadcrumb & Navigation */}
         <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
-          <div className="container mx-auto px-4 py-4">
-            <nav className="flex items-center space-x-2 text-sm">
-              <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary dark:hover:text-gold-primary transition-colors" data-testid="breadcrumb-home">
-                Home
-              </Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <Link href="/products" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary dark:hover:text-gold-primary transition-colors" data-testid="breadcrumb-products">
-                Products
-              </Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <Link href="/product/round-bars/round-bars" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary dark:hover:text-gold-primary transition-colors" data-testid="breadcrumb-round-bars">
-                Round Bars
-              </Link>
-              <ArrowRight className="w-4 h-4 text-gray-400" />
-              <span className="text-navy-primary dark:text-gold-primary font-medium" data-testid="breadcrumb-current">Duplex & Super Duplex</span>
-            </nav>
-          </div>
+           <div className="container mx-auto px-4 py-6 font-black">
+              <nav className="flex items-center space-x-3 text-sm flex-wrap gap-y-2 text-black font-black uppercase italic font-black">
+                 <Link href="/" className="text-gray-500 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-all uppercase italic tracking-tighter uppercase font-black italic">Home</Link>
+                 <ChevronRight className="w-4 h-4 text-gray-400 font-extrabold" />
+                 <Link href="/product/round-bars/round-bars" className="text-gray-500 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-all uppercase italic tracking-tighter uppercase font-black italic font-black">Round Bars</Link>
+                 <ChevronRight className="w-4 h-4 text-gray-400 font-extrabold" />
+                 <span className="text-navy-primary dark:text-gold-primary underline decoration-gold-primary decoration-2 underline-offset-4 italic tracking-tighter uppercase font-black italic font-black tracking-widest uppercase">Duplex & Super Duplex Hub</span>
+              </nav>
+           </div>
+        </div>
+        <div className="container mx-auto px-4 py-4">
+           <Link href="/product/round-bars/round-bars" className="inline-flex items-center text-navy-primary dark:text-gold-primary hover:underline font-black uppercase text-xs italic tracking-tighter italic font-black">
+              <ArrowLeft className="w-3 h-3 mr-2 font-black" /> Back to Round Bars
+           </Link>
         </div>
 
-        {/* Main Content */}
-        <div className="container mx-auto px-4 py-16">
-          <div className="max-w-7xl mx-auto">
-            {/* Overview Section */}
-            <div className="grid lg:grid-cols-2 gap-12 mb-16">
-              <div>
-                <h2 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-6" data-testid="text-overview-title">
-                  Duplex & Super Duplex Overview
-                </h2>
-                <p className="text-lg text-gray-600 dark:text-gray-300 mb-6" data-testid="text-overview-description">
-                  Duplex and Super Duplex stainless steels combine the best properties of austenitic and ferritic grades. They offer high strength, excellent corrosion resistance, and good weldability, making them ideal for demanding applications in oil & gas, marine, and chemical processing industries.
-                </p>
-                <div className="space-y-4">
-                  {advantages.map((advantage, index) => (
-                    <div key={index} className="flex items-start">
-                      <div className="text-2xl mr-3 mt-0.5">{advantage.icon}</div>
-                      <div>
-                        <h3 className="font-semibold text-slate-800 dark:text-gray-100">{advantage.title}</h3>
-                        <p className="text-gray-600 dark:text-gray-300">{advantage.description}</p>
+        {/* Product Grid - Premium Luxury Layout */}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+             <div className="text-center mb-20">
+                <h2 className="text-5xl font-black text-navy-primary dark:text-white mb-6 italic tracking-tighter uppercase underline decoration-gold-primary decoration-8 underline-offset-[12px]">Engineered Grades</h2>
+                <p className="text-xl text-gray-500 dark:text-gray-400 max-w-2xl mx-auto italic font-medium italic tracking-tighter italic">Select a specific grade to access full chemical analysis, mechanical property tables, and thermal processing charts.</p>
+             </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+              {duplexProducts.map((product, i) => (
+                <Link key={i} href={product.path}>
+                  <div className="group bg-white dark:bg-gray-800 rounded-[2.5rem] shadow-2xl overflow-hidden border-2 border-gray-100 dark:border-gray-700 cursor-pointer hover:border-gold-primary transition-all hover:scale-[1.02] duration-500 relative flex flex-col h-full">
+                    <div className="p-10 bg-gradient-to-br from-navy-primary to-navy-secondary relative overflow-hidden">
+                       <div className="relative z-10">
+                          <span className="bg-gold-primary text-navy-primary px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-4 inline-block shadow-lg underline decoration-navy-primary decoration-4 italic">{product.subtitle}</span>
+                          <h3 className="text-4xl font-black text-white italic tracking-tighter uppercase leading-none">{product.title}</h3>
+                       </div>
+                       <Activity className="absolute right-[-10%] bottom-[-10%] w-32 h-32 text-white/10 rotate-12 pointer-events-none" />
+                    </div>
+                    <div className="p-10 flex-1 flex flex-col">
+                      <p className="text-gray-500 dark:text-gray-300 text-sm leading-relaxed mb-8 italic font-semibold italic tracking-tighter uppercase border-l-4 border-gold-primary pl-4">{product.description}</p>
+                      <div className="mt-auto flex items-center justify-between text-navy-primary dark:text-gold-primary font-black uppercase italic tracking-tighter border-t border-gray-100 dark:border-gray-700 pt-8 group-hover:text-gold-primary transition-all underline decoration-transparent group-hover:decoration-current decoration-4 underline-offset-8">
+                        <span className="text-lg">View Metallurgy Profile</span>
+                        <ArrowRight className="w-6 h-6 transform group-hover:translate-x-3 transition-transform" />
                       </div>
                     </div>
-                  ))}
-                </div>
-              </div>
-              <div className="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&h=400&fit=crop&crop=center"
-                  alt="High-strength duplex and super duplex stainless steel round bars"
-                  className="w-full h-96 object-cover rounded-xl shadow-lg"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl"></div>
-              </div>
-            </div>
-
-            {/* Available Grades */}
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 mb-16">
-              <h3 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-6" data-testid="text-grades-title">
-                Available Grades
-              </h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {duplexGrades.map((grade, index) => (
-                  <div key={index} className="bg-gradient-to-r from-navy-primary to-navy-secondary text-white p-4 rounded-lg text-center">
-                    <span className="font-semibold" data-testid={`grade-${index}`}>{grade}</span>
                   </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Grade Comparison Table */}
-            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 mb-16">
-              <h3 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-6" data-testid="text-comparison-title">
-                Chemical Composition Comparison (%)
-              </h3>
-              <div className="overflow-x-auto">
-                <table className="w-full border-collapse">
-                  <thead>
-                    <tr className="border-b-2 border-gray-200 dark:border-gray-600">
-                      <th className="text-left py-3 px-4 font-semibold text-slate-800 dark:text-gray-100">Grade</th>
-                      <th className="text-left py-3 px-4 font-semibold text-slate-800 dark:text-gray-100">Cr</th>
-                      <th className="text-left py-3 px-4 font-semibold text-slate-800 dark:text-gray-100">Ni</th>
-                      <th className="text-left py-3 px-4 font-semibold text-slate-800 dark:text-gray-100">Mo</th>
-                      <th className="text-left py-3 px-4 font-semibold text-slate-800 dark:text-gray-100">N</th>
-                      <th className="text-left py-3 px-4 font-semibold text-slate-800 dark:text-gray-100">PREN</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {gradeComparison.map((grade, index) => (
-                      <tr key={index} className="border-b border-gray-100 dark:border-gray-700">
-                        <td className="py-3 px-4 text-gray-700 dark:text-gray-300 font-medium">{grade.grade}</td>
-                        <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{grade.chromium}</td>
-                        <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{grade.nickel}</td>
-                        <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{grade.molybdenum}</td>
-                        <td className="py-3 px-4 text-gray-700 dark:text-gray-300">{grade.nitrogen}</td>
-                        <td className="py-3 px-4 text-navy-primary dark:text-gold-primary font-semibold">{grade.pitting}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-4">
-                PREN = Pitting Resistance Equivalent Number = %Cr + 3.3(%Mo) + 16(%N)
-              </p>
-            </div>
-
-            {/* Specifications Grid */}
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
-              {/* Technical Specifications */}
-              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-6" data-testid="text-specifications-title">
-                  Technical Specifications
-                </h3>
-                <div className="space-y-3">
-                  {specifications.map((spec, index) => (
-                    <div key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-navy-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                      <span className="text-gray-700 dark:text-gray-300" data-testid={`spec-${index}`}>{spec}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Applications */}
-              <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
-                <h3 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-6" data-testid="text-applications-title">
-                  Key Applications
-                </h3>
-                <div className="space-y-3">
-                  {applications.map((application, index) => (
-                    <div key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-gold-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                      <span className="text-gray-700 dark:text-gray-300" data-testid={`application-${index}`}>{application}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Performance Advantages */}
-            <div className="bg-gradient-to-r from-navy-primary to-navy-secondary rounded-xl p-8 text-white mb-16">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold mb-4" data-testid="text-performance-title">Performance Advantages</h3>
-                <p className="text-lg">Why choose Duplex & Super Duplex over conventional stainless steels?</p>
-              </div>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="text-center">
-                  <TrendingUp className="w-12 h-12 text-gold-primary mx-auto mb-3" />
-                  <h4 className="font-semibold mb-2">2x Strength</h4>
-                  <p className="text-sm text-gray-200">Double the yield strength of 316L</p>
-                </div>
-                <div className="text-center">
-                  <Shield className="w-12 h-12 text-gold-primary mx-auto mb-3" />
-                  <h4 className="font-semibold mb-2">SCC Resistance</h4>
-                  <p className="text-sm text-gray-200">Excellent chloride stress corrosion cracking resistance</p>
-                </div>
-                <div className="text-center">
-                  <CheckCircle className="w-12 h-12 text-gold-primary mx-auto mb-3" />
-                  <h4 className="font-semibold mb-2">Cost Effective</h4>
-                  <p className="text-sm text-gray-200">Lower nickel content reduces costs</p>
-                </div>
-                <div className="text-center">
-                  <Award className="w-12 h-12 text-gold-primary mx-auto mb-3" />
-                  <h4 className="font-semibold mb-2">Proven Track Record</h4>
-                  <p className="text-sm text-gray-200">Decades of successful offshore use</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Contact Section */}
-            <div className="text-center">
-              <h3 className="text-2xl font-bold text-slate-800 dark:text-gray-100 mb-4" data-testid="text-contact-title">
-                Need Duplex Steel Solutions?
-              </h3>
-              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-                Contact our metallurgical experts for grade selection and technical support
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact" className="bg-navy-primary hover:bg-navy-secondary text-white px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center justify-center" data-testid="button-get-quote">
-                  <Mail className="w-5 h-5 mr-2" />
-                  Get Technical Quote
                 </Link>
-                <a href="tel:+919819322576" className="bg-gold-primary hover:bg-gold-secondary text-navy-primary px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center justify-center" data-testid="button-call-expert">
-                  <Phone className="w-5 h-5 mr-2" />
-                  Call Metallurgy Expert
-                </a>
-              </div>
+              ))}
             </div>
           </div>
-        </div>
+        </section>
+
+        {/* Global Trust Section */}
+        <section className="py-24 bg-navy-primary text-white overflow-hidden relative">
+           <div className="container mx-auto px-4 relative z-10">
+              <div className="grid lg:grid-cols-2 gap-16 items-center">
+                 <div>
+                    <h2 className="text-5xl font-black mb-8 italic tracking-tighter uppercase border-l-8 border-gold-primary pl-8 h-fit">Offshore & Marine Ready Metallurgy</h2>
+                    <p className="text-lg text-gray-300 mb-10 leading-relaxed italic font-medium italic tracking-tighter italic">Our Duplex and Super Duplex round bars are source-certified to withstand extreme chloride stress corrosion cracking, pitting, and erosion. Used globally in desalination, deep-sea oil extraction, and high-pressure chemical reactors.</p>
+                    <div className="grid grid-cols-2 gap-8 h-fit">
+                       <div className="p-6 bg-white/5 rounded-3xl border border-white/10 h-fit">
+                          <Microscope className="w-10 h-10 text-gold-primary mb-4" />
+                          <h4 className="font-black uppercase italic tracking-tighter mb-2">Dual Phase Structure</h4>
+                          <p className="text-xs text-gray-400 font-medium italic">50% Ferritic / 50% Austenitic balance for record performance.</p>
+                       </div>
+                       <div className="p-6 bg-white/5 rounded-3xl border border-white/10 h-fit">
+                          <CheckCircle className="w-10 h-10 text-gold-primary mb-4" />
+                          <h4 className="font-black uppercase italic tracking-tighter mb-2">Certified Batches</h4>
+                          <p className="text-xs text-gray-400 font-medium italic">ASTM A276 / A479 and NORSOK M-650 compliant stock.</p>
+                       </div>
+                    </div>
+                 </div>
+                 <div className="relative h-fit group">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=800&auto=format&fit=crop" alt="Industrial Construction" className="rounded-[3rem] shadow-2xl relative z-10 grayscale group-hover:grayscale-0 transition-all duration-700" />
+                    <div className="absolute -top-10 -right-10 w-64 h-64 bg-gold-primary/20 rounded-full blur-3xl" />
+                    <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-navy-secondary/20 rounded-full blur-3xl" />
+                 </div>
+              </div>
+           </div>
+           <Settings className="absolute left-[-5%] bottom-[-5%] w-96 h-96 text-white/5 rotate-45 pointer-events-none" />
+        </section>
+
+        {/* Global Footer Action */}
+        <section className="py-24 bg-white dark:bg-gray-800 border-t border-gray-100 dark:border-gray-700 h-fit">
+           <div className="container mx-auto px-4 text-center h-fit">
+              <h2 className="text-5xl font-black text-navy-primary dark:text-white mb-8 italic tracking-tighter uppercase italic tracking-tighter italic h-fit">Request Global Export Pricing</h2>
+              <p className="text-xl text-gray-500 dark:text-gray-400 mb-12 max-w-2xl mx-auto font-medium italic italic tracking-tighter italic h-fit">Mamta Steel Traders is a key exporter of Super Duplex alloys, serving shipbuilding and energy industries from Dubai to Norway. Get a same-day technical estimate.</p>
+              <div className="flex flex-col sm:flex-row gap-8 justify-center h-fit">
+                 <Link href="/contact" className="bg-navy-primary text-white px-16 py-6 rounded-[2.5rem] font-black hover:bg-navy-secondary transition-all shadow-2xl italic tracking-tighter uppercase text-xl h-fit">Get Export Estimate</Link>
+                 <a href="mailto:naren@mamtasteel.com" className="border-4 border-navy-primary text-navy-primary px-16 py-6 rounded-[2.5rem] font-black hover:bg-gray-50 transition-all italic tracking-tighter uppercase text-xl h-fit">Get Technical Sheet</a>
+              </div>
+           </div>
+        </section>
       </div>
     </>
   );

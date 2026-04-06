@@ -9,49 +9,49 @@ export default function AluminiumAlloyRoundBars() {
       id: 1,
       title: "2014 T6 Round Bars",
       image: aluminium_mamta_steel_traders_img,
-      alt: "2014 T6 Round Bars Hindalco Jindal",
-      link: "/contact",
-      description: "High strength aluminum alloy with excellent machinability"
+      alt: "2014 T6 Round Bars High Strength Aerospace Grade",
+      link: "/product/round-bars/aluminium-alloy/2014-t6-round-bars",
+      description: "High strength aluminum alloy with excellent machinability for structural components."
     },
     {
       id: 2,
-      title: "2024 T6 Round Bars",
+      title: "2024 T351/T4 Round Bars",
       image: aluminium_mamta_steel_traders_img,
-      alt: "2024 T6 T851 Round Bars AMS 4339 4112",
-      link: "/contact",
-      description: "Aerospace grade aluminum with superior strength-to-weight ratio"
+      alt: "2024 T351 T4 Round Bars Aircraft Grade",
+      link: "/product/round-bars/aluminium-alloy/2024-t6-round-bars",
+      description: "Aerospace grade aluminum with superior fatigue resistance and strength-to-weight ratio."
     },
     {
       id: 3,
       title: "5083 H111 Round Bars",
       image: aluminium_mamta_steel_traders_img,
       alt: "5083 H111 Aluminium Round Bar Marine Grade",
-      link: "/contact",
-      description: "Marine grade aluminum with excellent corrosion resistance"
+      link: "/product/round-bars/aluminium-alloy/5083-h111-round-bars",
+      description: "Marine grade aluminum with outstanding corrosion resistance in seawater environments."
     },
     {
       id: 4,
       title: "6061 T6 Round Bars",
       image: aluminium_mamta_steel_traders_img,
       alt: "Aluminium 6061 T6 Round Bars General Purpose",
-      link: "/contact",
-      description: "Most versatile aluminum alloy for general engineering applications"
+      link: "/product/round-bars/aluminium-alloy/6061-t6-round-bars",
+      description: "Most versatile aluminum alloy for structural and general engineering applications."
     },
     {
       id: 5,
-      title: "Aluminium 2024 Round Bars",
+      title: "6082 T6 Round Bars",
       image: aluminium_mamta_steel_traders_img,
-      alt: "Aluminium 2024 Round Bars Aircraft Grade",
-      link: "/contact",
-      description: "Aircraft structural components with high fatigue resistance"
+      alt: "Aluminium 6082 T6 Round Bars Structural Grade",
+      link: "/product/round-bars/aluminium-alloy/6082-t6-round-bars",
+      description: "Highest strength of the 6000 series with excellent structural integrity."
     },
     {
       id: 6,
-      title: "Aluminium 24345 Round Bar",
+      title: "7075 T6 Round Bars",
       image: aluminium_mamta_steel_traders_img,
-      alt: "Aluminium 24345 Round Bar Special Alloy",
-      link: "/contact",
-      description: "Specialized aluminum alloy for specific industrial applications"
+      alt: "Aluminium 7075 T6 Round Bar Highest Strength",
+      link: "/product/round-bars/aluminium-alloy/7075-t6-round-bars",
+      description: "Ultra-high strength aluminum alloy comparable to steel in structural performance."
     }
   ];
 
@@ -113,11 +113,9 @@ export default function AluminiumAlloyRoundBars() {
             <div className="flex items-center space-x-2 text-sm text-gray-600">
               <Link href="/" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-home">Home</Link>
               <ArrowRight className="w-4 h-4" />
-              <Link href="/product" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-products">Products</Link>
+              <Link href="/product/round-bars/round-bars" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-round-bars">All Round Bars</Link>
               <ArrowRight className="w-4 h-4" />
-              <Link href="/product/round-bars" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-round-bars">Round Bars</Link>
-              <ArrowRight className="w-4 h-4" />
-              <span className="text-navy-primary font-medium" data-testid="breadcrumb-current">Aluminium Alloy Round Bars</span>
+              <span className="text-navy-primary font-medium" data-testid="breadcrumb-current">Aluminium Alloy</span>
             </div>
           </div>
         </nav>
@@ -239,10 +237,10 @@ export default function AluminiumAlloyRoundBars() {
                         </div>
                         <Link 
                           href={product.link} 
-                          className="bg-gold-primary hover:bg-gold-secondary text-navy-primary px-4 py-2 rounded-lg font-semibold transition-colors text-sm"
+                          className="bg-navy-primary hover:bg-navy-secondary text-white px-4 py-2 rounded-lg font-semibold transition-colors text-sm flex items-center"
                           data-testid={`product-cta-${product.id}`}
                         >
-                          Get Quote
+                          View Details <ArrowRight className="w-4 h-4 ml-1" />
                         </Link>
                       </div>
                     </div>

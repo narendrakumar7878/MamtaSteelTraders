@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import ProductSEO from "@/components/ProductSEO";
+import { ArrowRight, ArrowLeft } from "lucide-react";
 import mamta_steel_traders000_img from "@/assets/MAMTA STEEL TRADERS000.jpg";
 
 const hastelloyProducts = [
@@ -9,7 +10,8 @@ const hastelloyProducts = [
     image: mamta_steel_traders000_img,
     description: "Premium Hastelloy B2 (UNS N10665, DIN 2.4617) round bars with excellent resistance to hydrochloric acid and reducing environments.",
     specifications: ["Hastelloy B2", "UNS N10665", "DIN 2.4617", "Molybdenum Based"],
-    applications: ["Chemical processing", "Hydrochloric acid service", "Reducing environments", "Heat exchangers"]
+    applications: ["Chemical processing", "Hydrochloric acid service", "Reducing environments", "Heat exchangers"],
+    path: "/product/round-bars/hastelloy/hastelloy-b2-round-bars"
   },
   {
     id: 2,
@@ -17,7 +19,8 @@ const hastelloyProducts = [
     image: mamta_steel_traders000_img,
     description: "High-performance Hastelloy C22 (Alloy 22, N06022, DIN 2.4602) with superior corrosion resistance in oxidizing and reducing environments.",
     specifications: ["Hastelloy C22", "Alloy 22", "N06022", "DIN 2.4602"],
-    applications: ["Chemical processing", "Pollution control", "Waste treatment", "Pharmaceutical industry"]
+    applications: ["Chemical processing", "Pollution control", "Waste treatment", "Pharmaceutical industry"],
+    path: "/product/round-bars/hastelloy/hastelloy-c22-round-bars"
   },
   {
     id: 3,
@@ -25,7 +28,8 @@ const hastelloyProducts = [
     image: mamta_steel_traders000_img,
     description: "Premium Hastelloy C276 nickel-molybdenum-chromium alloy with exceptional corrosion resistance in severe chemical environments.",
     specifications: ["Hastelloy C276", "Nickel Alloy", "Chemical Resistant", "High Temperature"],
-    applications: ["Chemical processing", "Flue gas desulfurization", "Pollution control", "Pharmaceutical equipment"]
+    applications: ["Chemical processing", "Flue gas desulfurization", "Pollution control", "Pharmaceutical equipment"],
+    path: "/product/round-bars/hastelloy/hastelloy-c276-round-bars"
   }
 ];
 
@@ -69,26 +73,23 @@ export default function Hastelloy() {
       />
       
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-        {/* Breadcrumb */}
-        <nav className="bg-white shadow-sm border-b" aria-label="Breadcrumb">
-          <div className="container mx-auto px-4 py-3">
-            <ol className="flex items-center space-x-2 text-sm text-gray-600">
-              <li>
-                <Link href="/" className="hover:text-blue-600 transition-colors" data-testid="breadcrumb-home">
-                  Home
-                </Link>
-              </li>
-              <li className="text-gray-400">/</li>
-              <li>
-                <Link href="/product/round-bars/round-bars" className="hover:text-blue-600 transition-colors" data-testid="breadcrumb-products">
-                  Round Bars
-                </Link>
-              </li>
-              <li className="text-gray-400">/</li>
-              <li className="text-gray-900 font-medium">Hastelloy</li>
-            </ol>
-          </div>
-        </nav>
+        {/* Breadcrumb & Navigation */}
+        <div className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+           <div className="container mx-auto px-4 py-4 font-black">
+              <nav className="flex items-center space-x-2 text-sm flex-wrap text-black font-black uppercase italic font-black">
+                 <Link href="/" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-colors italic tracking-tighter uppercase font-black italic">Home</Link>
+                 <ArrowRight className="w-4 h-4 text-gray-400 font-extrabold" />
+                 <Link href="/product/round-bars/round-bars" className="text-gray-600 dark:text-gray-400 hover:text-navy-primary underline decoration-navy-primary/20 transition-colors italic tracking-tighter uppercase font-black italic font-black">Round Bars</Link>
+                 <ArrowRight className="w-4 h-4 text-gray-400 font-extrabold" />
+                 <span className="text-navy-primary dark:text-gold-primary underline decoration-gold-primary decoration-2 underline-offset-4 italic tracking-tighter uppercase font-black italic">Hastelloy</span>
+              </nav>
+           </div>
+        </div>
+        <div className="container mx-auto px-4 py-4">
+           <Link href="/product/round-bars/round-bars" className="inline-flex items-center text-navy-primary dark:text-gold-primary hover:underline font-black uppercase text-xs italic tracking-tighter italic font-black">
+              <ArrowLeft className="w-3 h-3 mr-2 font-black" /> Back to Round Bars
+           </Link>
+        </div>
 
         {/* Hero Section */}
         <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-900 text-white py-16">
@@ -170,11 +171,11 @@ export default function Hastelloy() {
                       </ul>
                     </div>
                     <Link 
-                      href="/contact"
+                      href={product.path}
                       className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded font-medium transition-colors text-center block"
                       data-testid={`quote-button-${product.id}`}
                     >
-                      Get Quote
+                      View Details
                     </Link>
                   </div>
                 </div>
