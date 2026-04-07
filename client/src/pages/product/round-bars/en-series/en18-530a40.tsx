@@ -138,3 +138,5 @@ export default function EN18530A40Detail() {
     </>
   );
 }
+
+

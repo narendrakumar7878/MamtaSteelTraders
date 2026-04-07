@@ -130,7 +130,7 @@ export default function StainlessSteelElectrodes() {
             <div className="flex items-center space-x-2 text-sm text-gray-600">
               <Link href="/" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-home">Home</Link>
               <ArrowRight className="w-4 h-4" />
-              <Link href="/product" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-products">Products</Link>
+              <Link href="/products" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-products">Products</Link>
               <ArrowRight className="w-4 h-4" />
               <Link href="/product/welding-electrodes" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-welding">Welding Electrodes</Link>
               <ArrowRight className="w-4 h-4" />
@@ -578,3 +578,4 @@ export default function StainlessSteelElectrodes() {
     </>
   );
 }
+

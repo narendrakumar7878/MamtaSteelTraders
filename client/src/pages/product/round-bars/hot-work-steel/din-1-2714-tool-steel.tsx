@@ -140,3 +140,5 @@ export default function DIN12714ToolSteelDetail() {
     </>
   );
 }
+
+

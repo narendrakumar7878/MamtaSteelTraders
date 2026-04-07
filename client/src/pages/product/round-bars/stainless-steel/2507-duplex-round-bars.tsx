@@ -1,18 +1,18 @@
-﻿import ProductSEO from "@/components/ProductSEO";
+import ProductSEO from "@/components/ProductSEO";
 import { ArrowRight, Phone, Mail, ArrowLeft, CheckCircle, ShieldCheck } from "lucide-react";
 import ss_round_bar_mamta_steel_traders_img from "@/assets/SS ROUND BAR  MAMTA STEEL TRADERS.jpg";
 import { Link } from "wouter";
 
 export default function Grade2507SuperDuplexRoundBars() {
   const chemicalComposition = [
-    { element: "Carbon (C)", min: "â€”", max: "0.030" },
-    { element: "Manganese (Mn)", min: "â€”", max: "1.20" },
-    { element: "Silicon (Si)", min: "â€”", max: "0.80" },
+    { element: "Carbon (C)", min: "—", max: "0.030" },
+    { element: "Manganese (Mn)", min: "—", max: "1.20" },
+    { element: "Silicon (Si)", min: "—", max: "0.80" },
     { element: "Chromium (Cr)", min: "24.00", max: "26.00" },
     { element: "Nickel (Ni)", min: "6.00", max: "8.00" },
     { element: "Molybdenum (Mo)", min: "3.00", max: "5.00" },
     { element: "Nitrogen (N)", min: "0.24", max: "0.32" },
-    { element: "Copper (Cu)", min: "â€”", max: "0.50" },
+    { element: "Copper (Cu)", min: "—", max: "0.50" },
   ];
   const equivalentGrades = [
     { country: "Germany / DIN", grade: "1.4410 / X2CrNiMoN25-7-4" },
@@ -147,7 +147,7 @@ export default function Grade2507SuperDuplexRoundBars() {
                 <h3 className="text-2xl font-bold mb-8 uppercase border-b-2 border-gold-primary pb-2 inline-block">Supply Capacity</h3>
                 <div className="p-6 bg-white/5 rounded-xl text-center mb-8 border border-white/20 shadow-inner">
                   <p className="text-xs text-gray-400 uppercase font-bold tracking-widest mb-2 text-center">Master Stock Range</p>
-                  <p className="text-5xl font-black text-gold-primary text-center">6mm – 500mm</p>
+                  <p className="text-5xl font-black text-gold-primary text-center">6mm � 500mm</p>
                 </div>
                 <ul className="space-y-4 text-sm font-bold tracking-tighter italic">
                   <li className="flex items-center"><CheckCircle className="w-5 h-5 text-gold-primary mr-3 " /> Comprehensive Dimensional Coverage</li>
@@ -182,3 +182,4 @@ export default function Grade2507SuperDuplexRoundBars() {
     </>
   );
 }
+

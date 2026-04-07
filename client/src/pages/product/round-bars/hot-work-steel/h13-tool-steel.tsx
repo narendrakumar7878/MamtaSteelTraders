@@ -140,3 +140,5 @@ export default function H13ToolSteelDetail() {
     </>
   );
 }
+
+

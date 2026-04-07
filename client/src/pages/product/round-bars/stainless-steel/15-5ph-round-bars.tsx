@@ -1,18 +1,18 @@
-﻿import ProductSEO from "@/components/ProductSEO";
+import ProductSEO from "@/components/ProductSEO";
 import { ArrowRight, Phone, Mail, ArrowLeft, CheckCircle, ShieldCheck } from "lucide-react";
 import ss_round_bar_mamta_steel_traders_img from "@/assets/SS ROUND BAR  MAMTA STEEL TRADERS.jpg";
 import { Link } from "wouter";
 
 export default function Grade155PHRoundBars() {
   const chemicalComposition = [
-    { element: "Carbon (C)", min: "â€”", max: "0.07" },
-    { element: "Manganese (Mn)", min: "â€”", max: "1.00" },
-    { element: "Silicon (Si)", min: "â€”", max: "1.00" },
+    { element: "Carbon (C)", min: "—", max: "0.07" },
+    { element: "Manganese (Mn)", min: "—", max: "1.00" },
+    { element: "Silicon (Si)", min: "—", max: "1.00" },
     { element: "Chromium (Cr)", min: "14.00", max: "15.50" },
     { element: "Nickel (Ni)", min: "3.50", max: "5.50" },
     { element: "Copper (Cu)", min: "2.50", max: "4.50" },
     { element: "Columbium + Tantalum", min: "0.15", max: "0.45" },
-    { element: "Phosphorus (P)", min: "â€”", max: "0.040" },
+    { element: "Phosphorus (P)", min: "—", max: "0.040" },
   ];
   const equivalentGrades = [
     { country: "Germany / DIN", grade: "1.4545 / X5CrNiCuNb15-5" },
@@ -147,7 +147,7 @@ export default function Grade155PHRoundBars() {
                 <h3 className="text-2xl font-bold mb-8 uppercase border-b-2 border-gold-primary pb-2 inline-block">Supply Capacity</h3>
                 <div className="p-6 bg-white/5 rounded-xl text-center mb-8 border border-white/20 shadow-inner">
                   <p className="text-xs text-gray-400 uppercase font-bold tracking-widest mb-2 text-center">Master Stock Range</p>
-                  <p className="text-5xl font-black text-gold-primary text-center">6mm – 500mm</p>
+                  <p className="text-5xl font-black text-gold-primary text-center">6mm � 500mm</p>
                 </div>
                 <ul className="space-y-4 text-sm font-bold tracking-tighter italic">
                   <li className="flex items-center"><CheckCircle className="w-5 h-5 text-gold-primary mr-3 " /> Comprehensive Dimensional Coverage</li>
@@ -182,3 +182,4 @@ export default function Grade155PHRoundBars() {
     </>
   );
 }
+

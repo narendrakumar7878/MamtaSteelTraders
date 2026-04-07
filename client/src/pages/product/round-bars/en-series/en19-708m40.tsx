@@ -139,3 +139,5 @@ export default function EN19708M40Detail() {
     </>
   );
 }
+
+

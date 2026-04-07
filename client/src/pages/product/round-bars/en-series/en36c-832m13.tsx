@@ -139,3 +139,5 @@ export default function EN36C832M13Detail() {
     </>
   );
 }
+
+

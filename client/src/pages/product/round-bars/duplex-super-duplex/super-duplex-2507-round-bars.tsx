@@ -167,3 +167,5 @@ export default function SuperDuplex2507Detail() {
     </>
   );
 }
+
+

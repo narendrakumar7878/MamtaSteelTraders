@@ -137,3 +137,5 @@ export default function EN8080M40Detail() {
     </>
   );
 }
+
+

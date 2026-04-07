@@ -167,3 +167,5 @@ export default function CuNi7030() {
     </>
   );
 }
+
+

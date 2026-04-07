@@ -1,16 +1,16 @@
-﻿import ProductSEO from "@/components/ProductSEO";
+import ProductSEO from "@/components/ProductSEO";
 import { ArrowRight, Phone, Mail, ArrowLeft, CheckCircle, ShieldCheck } from "lucide-react";
 import ss_round_bar_mamta_steel_traders_img from "@/assets/SS ROUND BAR  MAMTA STEEL TRADERS.jpg";
 import { Link } from "wouter";
 
 export default function Grade446RoundBars() {
   const chemicalComposition = [
-    { element: "Carbon (C)", min: "â€”", max: "0.20" },
-    { element: "Manganese (Mn)", min: "â€”", max: "1.50" },
-    { element: "Silicon (Si)", min: "â€”", max: "1.00" },
+    { element: "Carbon (C)", min: "—", max: "0.20" },
+    { element: "Manganese (Mn)", min: "—", max: "1.50" },
+    { element: "Silicon (Si)", min: "—", max: "1.00" },
     { element: "Chromium (Cr)", min: "23.00", max: "27.00" },
-    { element: "Nickel (Ni)", min: "â€”", max: "0.75" },
-    { element: "Nitrogen (N)", min: "â€”", max: "0.25" },
+    { element: "Nickel (Ni)", min: "—", max: "0.75" },
+    { element: "Nitrogen (N)", min: "—", max: "0.25" },
   ];
   const equivalentGrades = [
     { country: "Germany / DIN", grade: "1.4762 / 1.4749" },
@@ -34,7 +34,7 @@ export default function Grade446RoundBars() {
     <>
       <ProductSEO
         title="446 Stainless Steel Round Bars - Heat Resistant Ferritic | Mamta Steel Traders"
-        description="Premium 446 (1.4762 / S44600) high-chromium ferritic stainless steel round bars. Exceptional oxidation resistance up to 1100Â°C. Resists sulfur attack. Mumbai supplier."
+        description="Premium 446 (1.4762 / S44600) high-chromium ferritic stainless steel round bars. Exceptional oxidation resistance up to 1100°C. Resists sulfur attack. Mumbai supplier."
         keywords="446 round bar, 446 stainless steel, 1.4762 steel, high chromium SS bar, SUH21 round bar, furnace grade stainless Mumbai, buy SS 446 bar India, AEO extreme thermal alloy"
         canonicalUrl="/product/round-bars/stainless-steel/446-round-bars"
       />
@@ -145,7 +145,7 @@ export default function Grade446RoundBars() {
                 <h3 className="text-2xl font-bold mb-8 uppercase border-b-2 border-gold-primary pb-2 inline-block">Supply Capacity</h3>
                 <div className="p-6 bg-white/5 rounded-xl text-center mb-8 border border-white/20 shadow-inner">
                   <p className="text-xs text-gray-400 uppercase font-bold tracking-widest mb-2 text-center">Master Stock Range</p>
-                  <p className="text-5xl font-black text-gold-primary text-center">6mm – 500mm</p>
+                  <p className="text-5xl font-black text-gold-primary text-center">6mm � 500mm</p>
                 </div>
                 <ul className="space-y-4 text-sm font-bold tracking-tighter italic">
                   <li className="flex items-center"><CheckCircle className="w-5 h-5 text-gold-primary mr-3 " /> Comprehensive Dimensional Coverage</li>
@@ -180,3 +180,4 @@ export default function Grade446RoundBars() {
     </>
   );
 }
+

@@ -137,3 +137,5 @@ export default function EN32BRoundBarsDetail() {
     </>
   );
 }
+
+

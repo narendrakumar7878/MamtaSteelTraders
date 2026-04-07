@@ -167,3 +167,5 @@ export default function Duplex2205Detail() {
     </>
   );
 }
+
+

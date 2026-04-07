@@ -1,5 +1,5 @@
 import ProductSEO from "@/components/ProductSEO";
-import { ArrowRight, Phone, Mail, MapPin, Star, CheckCircle, TrendingUp, Shield, Award, Zap, Settings, Users, Factory, Globe } from "lucide-react";
+import { ArrowRight, Phone, Mail, MapPin, Star, CheckCircle, TrendingUp, Shield, Award, Zap, Settings, Users, Factory, Globe, Info } from "lucide-react";
 import ss_round_bar_mamta_steel_traders_img from "@/assets/SS ROUND BAR  MAMTA STEEL TRADERS.jpg";
 import { Link } from "wouter";
 import { useState } from "react";
@@ -26,56 +26,64 @@ export default function StainlessSteelFlanges() {
       uns: "S30400",
       description: "General purpose austenitic stainless steel with good corrosion resistance",
       applications: ["Food processing", "Chemical equipment", "Marine applications"],
-      composition: "18% Cr, 8% Ni, Balance Fe"
+      composition: "18% Cr, 8% Ni, Balance Fe",
+      link: "/product/flanges/stainless-steel/304-flanges"
     },
     {
       grade: "SS 304L",
       uns: "S30403", 
       description: "Low carbon version of 304 with enhanced corrosion resistance",
       applications: ["Welded structures", "Chemical tanks", "Heat exchangers"],
-      composition: "18% Cr, 10% Ni, 0.03% C max"
+      composition: "18% Cr, 10% Ni, 0.03% C max",
+      link: "/product/flanges/stainless-steel/304l-flanges"
     },
     {
       grade: "SS 304H",
       uns: "S30409",
       description: "High carbon version for high temperature applications",
       applications: ["High temperature service", "Furnace parts", "Heat treatment"],
-      composition: "18% Cr, 9% Ni, 0.04-0.10% C"
+      composition: "18% Cr, 9% Ni, 0.04-0.10% C",
+      link: "/product/flanges/stainless-steel/304h-flanges"
     },
     {
       grade: "SS 316",
       uns: "S31600",
       description: "Molybdenum bearing grade with superior corrosion resistance",
       applications: ["Marine environments", "Chemical processing", "Medical equipment"],
-      composition: "16% Cr, 10% Ni, 2% Mo"
+      composition: "16% Cr, 10% Ni, 2% Mo",
+      link: "/product/flanges/stainless-steel/316-flanges"
     },
     {
       grade: "SS 316L",
       uns: "S31603",
       description: "Low carbon molybdenum grade for welded applications",
       applications: ["Pharmaceutical", "Food processing", "Chemical plants"],
-      composition: "17% Cr, 12% Ni, 2.5% Mo"
+      composition: "17% Cr, 12% Ni, 2.5% Mo",
+      link: "/product/flanges/stainless-steel/316l-flanges"
     },
     {
       grade: "SS 316H",
       uns: "S31609",
       description: "High carbon grade for elevated temperature service",
       applications: ["High temperature applications", "Petrochemical", "Power plants"],
-      composition: "16% Cr, 11% Ni, 2% Mo, 0.04-0.10% C"
+      composition: "16% Cr, 11% Ni, 2% Mo, 0.04-0.10% C",
+      link: "/product/flanges/stainless-steel/316h-flanges"
     },
     {
       grade: "SS 321",
       uns: "S32100",
       description: "Titanium stabilized grade resistant to intergranular corrosion",
       applications: ["Aircraft exhaust", "Furnace parts", "Heat exchangers"],
-      composition: "17% Cr, 9% Ni, Ti stabilized"
+      composition: "17% Cr, 9% Ni, Ti stabilized",
+      link: "/product/flanges/stainless-steel/321-flanges"
     },
     {
       grade: "SS 347",
       uns: "S34700",
       description: "Niobium stabilized grade for high temperature applications",
       applications: ["Jet engine parts", "Nuclear applications", "High temp service"],
-      composition: "17% Cr, 11% Ni, Nb stabilized"
+      composition: "17% Cr, 11% Ni, Nb stabilized",
+      link: "/product/flanges/stainless-steel/347-flanges"
     }
   ];
 
@@ -320,8 +328,8 @@ export default function StainlessSteelFlanges() {
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
               {visibleGrades.map((grade, index) => (
-                <div key={index} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200" data-testid={`card-grade-${index}`}>
-                  <div className="p-6">
+                <div key={index} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-200 flex flex-col" data-testid={`card-grade-${index}`}>
+                  <div className="p-6 flex-grow">
                     <div className="flex justify-between items-start mb-4">
                       <h3 className="text-xl font-semibold text-gray-900 dark:text-white" data-testid={`text-grade-name-${index}`}>
                         {grade.grade}
@@ -348,6 +356,11 @@ export default function StainlessSteelFlanges() {
                         ))}
                       </ul>
                     </div>
+                  </div>
+                  <div className="p-6 bg-gray-50 dark:bg-gray-700 border-t border-gray-100 dark:border-gray-600">
+                    <Link href={grade.link} className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center group">
+                      View Full {grade.grade} Details <Info className="ml-2 w-4 h-4 group-hover:scale-110 transition-transform" />
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -500,7 +513,11 @@ export default function StainlessSteelFlanges() {
                     <tbody className="divide-y divide-gray-200 dark:divide-gray-600">
                       {Object.entries(chemicalComposition).map(([grade, comp], index) => (
                         <tr key={index} data-testid={`row-composition-${index}`}>
-                          <td className="px-3 py-2 font-semibold">{grade}</td>
+                           <td className="px-3 py-2 font-semibold">
+                            <Link href={`/product/flanges/stainless-steel/${grade.toLowerCase().replace('ss ', '')}-flanges`} className="text-blue-600 hover:underline">
+                              {grade}
+                            </Link>
+                          </td>
                           <td className="px-3 py-2">{comp.C}</td>
                           <td className="px-3 py-2">{comp.Cr}</td>
                           <td className="px-3 py-2">{comp.Ni}</td>
@@ -652,3 +669,5 @@ export default function StainlessSteelFlanges() {
     </>
   );
 }
+
+

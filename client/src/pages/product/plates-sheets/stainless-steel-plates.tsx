@@ -494,7 +494,7 @@ export default function StainlessSteelPlates() {
               </Link>
               <ArrowRight className="w-4 h-4" />
               <Link
-                href="/product"
+                href="/products"
                 className="hover:text-navy-primary transition-colors"
                 data-testid="breadcrumb-products"
               >
@@ -1090,3 +1090,5 @@ export default function StainlessSteelPlates() {
     </>
   );
 }
+
+

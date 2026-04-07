@@ -142,3 +142,5 @@ export default function Alloy20RoundBarsDetail() {
     </>
   );
 }
+
+

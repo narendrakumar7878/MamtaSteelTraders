@@ -142,3 +142,5 @@ export default function C67500ManganeseBronzeDetail() {
     </>
   );
 }
+
+

@@ -142,3 +142,5 @@ export default function MonelK500RoundBarsDetail() {
     </>
   );
 }
+
+

@@ -140,3 +140,5 @@ export default function EN24817M40Detail() {
     </>
   );
 }
+
+

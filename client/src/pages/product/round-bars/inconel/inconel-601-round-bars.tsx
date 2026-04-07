@@ -140,3 +140,5 @@ export default function Inconel601RoundBarsDetail() {
     </>
   );
 }
+
+

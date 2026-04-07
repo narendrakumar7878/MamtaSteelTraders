@@ -89,3 +89,5 @@ export default function LG2RoundBars() {
     </>
   );
 }
+
+

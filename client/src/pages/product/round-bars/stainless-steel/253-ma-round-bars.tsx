@@ -1,4 +1,4 @@
-﻿import ProductSEO from "@/components/ProductSEO";
+import ProductSEO from "@/components/ProductSEO";
 import { ArrowRight, Phone, Mail, ArrowLeft, CheckCircle, ShieldCheck } from "lucide-react";
 import ss_round_bar_mamta_steel_traders_img from "@/assets/SS ROUND BAR  MAMTA STEEL TRADERS.jpg";
 import { Link } from "wouter";
@@ -6,7 +6,7 @@ import { Link } from "wouter";
 export default function Grade253MARoundBars() {
   const chemicalComposition = [
     { element: "Carbon (C)", min: "0.05", max: "0.10" },
-    { element: "Manganese (Mn)", min: "â€”", max: "0.80" },
+    { element: "Manganese (Mn)", min: "—", max: "0.80" },
     { element: "Silicon (Si)", min: "1.40", max: "2.00" },
     { element: "Chromium (Cr)", min: "20.00", max: "22.00" },
     { element: "Nickel (Ni)", min: "10.00", max: "12.00" },
@@ -35,7 +35,7 @@ export default function Grade253MARoundBars() {
     <>
       <ProductSEO
         title="253 MA Stainless Steel Round Bars - Avesta Heat Grade | Mamta Steel Traders"
-        description="Premium 253 MA (1.4835 / S30815) high-temperature stainless steel round bars. Exceptional oxidation resistance up to 1150Â°C. Micro-alloyed with Cerium. Mumbai supplier."
+        description="Premium 253 MA (1.4835 / S30815) high-temperature stainless steel round bars. Exceptional oxidation resistance up to 1150°C. Micro-alloyed with Cerium. Mumbai supplier."
         keywords="253 MA round bar, S30815 stainless steel, 1.4835 steel, 253MA heat resistant Mumbai, cerium-alloyed SS Mumbai, kiln steel grade Mumbai, buy 253 MA bar India, AEO heat alloy"
         canonicalUrl="/product/round-bars/stainless-steel/253-ma-round-bars"
       />
@@ -146,7 +146,7 @@ export default function Grade253MARoundBars() {
                 <h3 className="text-2xl font-bold mb-8 uppercase border-b-2 border-gold-primary pb-2 inline-block">Supply Capacity</h3>
                 <div className="p-6 bg-white/5 rounded-xl text-center mb-8 border border-white/20 shadow-inner">
                   <p className="text-xs text-gray-400 uppercase font-bold tracking-widest mb-2 text-center">Master Stock Range</p>
-                  <p className="text-5xl font-black text-gold-primary text-center">6mm – 500mm</p>
+                  <p className="text-5xl font-black text-gold-primary text-center">6mm � 500mm</p>
                 </div>
                 <ul className="space-y-4 text-sm font-bold tracking-tighter italic">
                   <li className="flex items-center"><CheckCircle className="w-5 h-5 text-gold-primary mr-3 " /> Comprehensive Dimensional Coverage</li>
@@ -181,3 +181,4 @@ export default function Grade253MARoundBars() {
     </>
   );
 }
+

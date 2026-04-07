@@ -40,7 +40,7 @@ import AlloySteelPipes from "@/pages/product/pipes-tubes/alloy-steel-pipe";
 import StainlessSteelPlates from "@/pages/product/plates-sheets/stainless-steel-plates";
 import StainlessSteelRoundBars from "@/pages/product/round-bars/stainless-steel-round-bars";
 import RoundBarsMain from "@/pages/product/round-bars/round-bars";
-import StainlessSteelFlanges from "@/pages/product/flanges/stainless-steel";
+import StainlessSteelFlanges from "@/pages/product/flanges/stainless-steel/stainless-steel-flanges";
 import HighTensileFasteners from "@/pages/product/fasteners/high-tensile";
 import StainlessSteelBolts from "@/pages/product/fasteners/ss-bolts";
 import StainlessSteelNuts from "@/pages/product/fasteners/ss-nuts";
@@ -48,11 +48,55 @@ import StainlessSteelScrews from "@/pages/product/fasteners/ss-screws";
 import StainlessSteelWashers from "@/pages/product/fasteners/ss-washers";
 
 // Flange Pages
-import CarbonSteelFlanges from "@/pages/product/flanges/carbon-steel";
-import AlloySteelFlanges from "@/pages/product/flanges/alloy-steel";
-import NickelAlloyFlanges from "@/pages/product/flanges/nickel-alloy";
-import InconelFlanges from "@/pages/product/flanges/inconel";
-import IncoloyFlanges from "@/pages/product/flanges/incoloy";
+import CarbonSteelFlanges from "@/pages/product/flanges/carbon-steel/carbon-steel-flanges";
+import AlloySteelFlanges from "@/pages/product/flanges/alloy-steel/alloy-steel-flanges";
+import AS_F1_Flanges from "@/pages/product/flanges/alloy-steel/f1-flanges";
+import AS_F2_Flanges from "@/pages/product/flanges/alloy-steel/f2-flanges";
+import AS_F5_Flanges from "@/pages/product/flanges/alloy-steel/f5-flanges";
+import AS_F7_Flanges from "@/pages/product/flanges/alloy-steel/f7-flanges";
+import AS_F9_Flanges from "@/pages/product/flanges/alloy-steel/f9-flanges";
+import AS_F11_Flanges from "@/pages/product/flanges/alloy-steel/f11-flanges";
+import AS_F12_Flanges from "@/pages/product/flanges/alloy-steel/f12-flanges";
+import AS_F21_Flanges from "@/pages/product/flanges/alloy-steel/f21-flanges";
+import AS_F22_Flanges from "@/pages/product/flanges/alloy-steel/f22-flanges";
+import AS_F91_Flanges from "@/pages/product/flanges/alloy-steel/f91-flanges";
+import AS_F92_Flanges from "@/pages/product/flanges/alloy-steel/f92-flanges";
+import AS_F911_Flanges from "@/pages/product/flanges/alloy-steel/f911-flanges";
+import NickelAlloyFlanges from "@/pages/product/flanges/nickel-alloy/nickel-alloy-flanges";
+import NA_Nickel200_Flanges from "@/pages/product/flanges/nickel-alloy/nickel-200-flanges";
+import NA_Nickel201_Flanges from "@/pages/product/flanges/nickel-alloy/nickel-201-flanges";
+import NA_Monel400_Flanges from "@/pages/product/flanges/nickel-alloy/monel-400-flanges";
+import NA_MonelK500_Flanges from "@/pages/product/flanges/nickel-alloy/monel-k500-flanges";
+import NA_Inconel600_Flanges from "@/pages/product/flanges/nickel-alloy/inconel-600-flanges";
+import NA_Inconel601_Flanges from "@/pages/product/flanges/nickel-alloy/inconel-601-flanges";
+import NA_Inconel625_Flanges from "@/pages/product/flanges/nickel-alloy/inconel-625-flanges";
+import NA_Inconel718_Flanges from "@/pages/product/flanges/nickel-alloy/inconel-718-flanges";
+import NA_Incoloy800_Flanges from "@/pages/product/flanges/nickel-alloy/incoloy-800-flanges";
+import NA_Incoloy825_Flanges from "@/pages/product/flanges/nickel-alloy/incoloy-825-flanges";
+import NA_CuNi9010_Flanges from "@/pages/product/flanges/nickel-alloy/cupro-nickel-90-10-flanges";
+import NA_CuNi7030_Flanges from "@/pages/product/flanges/nickel-alloy/cupro-nickel-70-30-flanges";
+import InconelFlanges from "@/pages/product/flanges/inconel/inconel-flanges";
+import I_Inconel600_Flanges from "@/pages/product/flanges/inconel/inconel-600-flanges";
+import I_Inconel601_Flanges from "@/pages/product/flanges/inconel/inconel-601-flanges";
+import I_Inconel617_Flanges from "@/pages/product/flanges/inconel/inconel-617-flanges";
+import I_Inconel625_Flanges from "@/pages/product/flanges/inconel/inconel-625-flanges";
+import I_Inconel686_Flanges from "@/pages/product/flanges/inconel/inconel-686-flanges";
+import I_Inconel690_Flanges from "@/pages/product/flanges/inconel/inconel-690-flanges";
+import I_Inconel718_Flanges from "@/pages/product/flanges/inconel/inconel-718-flanges";
+import I_Inconel725_Flanges from "@/pages/product/flanges/inconel/inconel-725-flanges";
+import I_Inconel800_Flanges from "@/pages/product/flanges/inconel/inconel-800-flanges";
+import I_Inconel825_Flanges from "@/pages/product/flanges/inconel/inconel-825-flanges";
+import I_InconelX750_Flanges from "@/pages/product/flanges/inconel/inconel-x-750-flanges";
+import IncoloyFlanges from "@/pages/product/flanges/incoloy/incoloy-flanges";
+import IL_Incoloy800_Flanges from "@/pages/product/flanges/incoloy/incoloy-800-flanges";
+import IL_Incoloy800H_Flanges from "@/pages/product/flanges/incoloy/incoloy-800h-flanges";
+import IL_Incoloy800HT_Flanges from "@/pages/product/flanges/incoloy/incoloy-800ht-flanges";
+import IL_Incoloy825_Flanges from "@/pages/product/flanges/incoloy/incoloy-825-flanges";
+import IL_Incoloy925_Flanges from "@/pages/product/flanges/incoloy/incoloy-925-flanges";
+import IL_Incoloy926_Flanges from "@/pages/product/flanges/incoloy/incoloy-926-flanges";
+import IL_Incoloy800AT_Flanges from "@/pages/product/flanges/incoloy/incoloy-800at-flanges";
+import IL_IncoloyDS_Flanges from "@/pages/product/flanges/incoloy/incoloy-ds-flanges";
+import IL_Incoloy256MO_Flanges from "@/pages/product/flanges/incoloy/incoloy-25-6mo-flanges";
 
 // Fitting Pages
 import ButtweldFittings from "@/pages/product/fittings/buttweld-fittings";
@@ -422,6 +466,28 @@ import SlipOnFlanges from "@/pages/product/flanges/slip-on-flanges";
 import SocketWeldFlanges from "@/pages/product/flanges/socket-weld-flanges";
 import ThreadedFlanges from "@/pages/product/flanges/threaded-flanges";
 import WeldNeckFlanges from "@/pages/product/flanges/weld-neck-flanges";
+
+// Stainless Steel Flange Grade Detail Pages
+import SS304Flanges from "@/pages/product/flanges/stainless-steel/304-flanges";
+import SS304LFlanges from "@/pages/product/flanges/stainless-steel/304l-flanges";
+import SS304HFlanges from "@/pages/product/flanges/stainless-steel/304h-flanges";
+import SS316Flanges from "@/pages/product/flanges/stainless-steel/316-flanges";
+import SS316LFlanges from "@/pages/product/flanges/stainless-steel/316l-flanges";
+import SS316HFlanges from "@/pages/product/flanges/stainless-steel/316h-flanges";
+import SS321Flanges from "@/pages/product/flanges/stainless-steel/321-flanges";
+import SS347Flanges from "@/pages/product/flanges/stainless-steel/347-flanges";
+
+// Carbon Steel Flange Grade Detail Pages
+import CarbonA105Flanges from "@/pages/product/flanges/carbon-steel/a105-flanges";
+import CarbonA350LF1Flanges from "@/pages/product/flanges/carbon-steel/a350-lf1-flanges";
+import CarbonA350LF2Flanges from "@/pages/product/flanges/carbon-steel/a350-lf2-flanges";
+import CarbonA350LF3Flanges from "@/pages/product/flanges/carbon-steel/a350-lf3-flanges";
+import CarbonA694F42Flanges from "@/pages/product/flanges/carbon-steel/a694-f42-flanges";
+import CarbonA694F46Flanges from "@/pages/product/flanges/carbon-steel/a694-f46-flanges";
+import CarbonA694F52Flanges from "@/pages/product/flanges/carbon-steel/a694-f52-flanges";
+import CarbonA694F60Flanges from "@/pages/product/flanges/carbon-steel/a694-f60-flanges";
+import CarbonA694F65Flanges from "@/pages/product/flanges/carbon-steel/a694-f65-flanges";
+import CarbonA694F70Flanges from "@/pages/product/flanges/carbon-steel/a694-f70-flanges";
 import TopBar from "@/components/TopBar";
 import MainHeader from "@/components/MainHeader";
 import Navbar from "@/components/Navbar";
@@ -460,11 +526,78 @@ function Router() {
 
       {/* Flange Routes */}
       <Route path="/product/flanges/stainless-steel" component={StainlessSteelFlanges} />
+      <Route path="/product/flanges/stainless-steel/304-flanges" component={SS304Flanges} />
+      <Route path="/product/flanges/stainless-steel/304l-flanges" component={SS304LFlanges} />
+      <Route path="/product/flanges/stainless-steel/304h-flanges" component={SS304HFlanges} />
+      <Route path="/product/flanges/stainless-steel/316-flanges" component={SS316Flanges} />
+      <Route path="/product/flanges/stainless-steel/316l-flanges" component={SS316LFlanges} />
+      <Route path="/product/flanges/stainless-steel/316h-flanges" component={SS316HFlanges} />
+      <Route path="/product/flanges/stainless-steel/321-flanges" component={SS321Flanges} />
+      <Route path="/product/flanges/stainless-steel/347-flanges" component={SS347Flanges} />
       <Route path="/product/flanges/carbon-steel" component={CarbonSteelFlanges} />
+      {/* Carbon Steel Grade Detail Routes */}
+      <Route path="/product/flanges/carbon-steel/a105-flanges" component={CarbonA105Flanges} />
+      <Route path="/product/flanges/carbon-steel/a350-lf1-flanges" component={CarbonA350LF1Flanges} />
+      <Route path="/product/flanges/carbon-steel/a350-lf2-flanges" component={CarbonA350LF2Flanges} />
+      <Route path="/product/flanges/carbon-steel/a350-lf3-flanges" component={CarbonA350LF3Flanges} />
+      <Route path="/product/flanges/carbon-steel/a694-f42-flanges" component={CarbonA694F42Flanges} />
+      <Route path="/product/flanges/carbon-steel/a694-f46-flanges" component={CarbonA694F46Flanges} />
+      <Route path="/product/flanges/carbon-steel/a694-f52-flanges" component={CarbonA694F52Flanges} />
+      <Route path="/product/flanges/carbon-steel/a694-f60-flanges" component={CarbonA694F60Flanges} />
+      <Route path="/product/flanges/carbon-steel/a694-f65-flanges" component={CarbonA694F65Flanges} />
+      <Route path="/product/flanges/carbon-steel/a694-f70-flanges" component={CarbonA694F70Flanges} />
       <Route path="/product/flanges/alloy-steel" component={AlloySteelFlanges} />
+      {/* Alloy Steel Grade Detail Routes */}
+      <Route path="/product/flanges/alloy-steel/f1-flanges" component={AS_F1_Flanges} />
+      <Route path="/product/flanges/alloy-steel/f2-flanges" component={AS_F2_Flanges} />
+      <Route path="/product/flanges/alloy-steel/f5-flanges" component={AS_F5_Flanges} />
+      <Route path="/product/flanges/alloy-steel/f7-flanges" component={AS_F7_Flanges} />
+      <Route path="/product/flanges/alloy-steel/f9-flanges" component={AS_F9_Flanges} />
+      <Route path="/product/flanges/alloy-steel/f11-flanges" component={AS_F11_Flanges} />
+      <Route path="/product/flanges/alloy-steel/f12-flanges" component={AS_F12_Flanges} />
+      <Route path="/product/flanges/alloy-steel/f21-flanges" component={AS_F21_Flanges} />
+      <Route path="/product/flanges/alloy-steel/f22-flanges" component={AS_F22_Flanges} />
+      <Route path="/product/flanges/alloy-steel/f91-flanges" component={AS_F91_Flanges} />
+      <Route path="/product/flanges/alloy-steel/f92-flanges" component={AS_F92_Flanges} />
+      <Route path="/product/flanges/alloy-steel/f911-flanges" component={AS_F911_Flanges} />
       <Route path="/product/flanges/nickel-alloy" component={NickelAlloyFlanges} />
+      {/* Nickel Alloy Grade Detail Routes */}
+      <Route path="/product/flanges/nickel-alloy/nickel-200" component={NA_Nickel200_Flanges} />
+      <Route path="/product/flanges/nickel-alloy/nickel-201" component={NA_Nickel201_Flanges} />
+      <Route path="/product/flanges/nickel-alloy/monel-400" component={NA_Monel400_Flanges} />
+      <Route path="/product/flanges/nickel-alloy/monel-k500" component={NA_MonelK500_Flanges} />
+      <Route path="/product/flanges/nickel-alloy/inconel-600" component={NA_Inconel600_Flanges} />
+      <Route path="/product/flanges/nickel-alloy/inconel-601" component={NA_Inconel601_Flanges} />
+      <Route path="/product/flanges/nickel-alloy/inconel-625" component={NA_Inconel625_Flanges} />
+      <Route path="/product/flanges/nickel-alloy/inconel-718" component={NA_Inconel718_Flanges} />
+      <Route path="/product/flanges/nickel-alloy/incoloy-800" component={NA_Incoloy800_Flanges} />
+      <Route path="/product/flanges/nickel-alloy/incoloy-825" component={NA_Incoloy825_Flanges} />
+      <Route path="/product/flanges/nickel-alloy/cupro-nickel-90-10" component={NA_CuNi9010_Flanges} />
+      <Route path="/product/flanges/nickel-alloy/cupro-nickel-70-30" component={NA_CuNi7030_Flanges} />
       <Route path="/product/flanges/inconel" component={InconelFlanges} />
+      {/* Inconel Grade Detail Routes */}
+      <Route path="/product/flanges/inconel/600" component={I_Inconel600_Flanges} />
+      <Route path="/product/flanges/inconel/601" component={I_Inconel601_Flanges} />
+      <Route path="/product/flanges/inconel/617" component={I_Inconel617_Flanges} />
+      <Route path="/product/flanges/inconel/625" component={I_Inconel625_Flanges} />
+      <Route path="/product/flanges/inconel/686" component={I_Inconel686_Flanges} />
+      <Route path="/product/flanges/inconel/690" component={I_Inconel690_Flanges} />
+      <Route path="/product/flanges/inconel/718" component={I_Inconel718_Flanges} />
+      <Route path="/product/flanges/inconel/725" component={I_Inconel725_Flanges} />
+      <Route path="/product/flanges/inconel/800" component={I_Inconel800_Flanges} />
+      <Route path="/product/flanges/inconel/825" component={I_Inconel825_Flanges} />
+      <Route path="/product/flanges/inconel/x-750" component={I_InconelX750_Flanges} />
       <Route path="/product/flanges/incoloy" component={IncoloyFlanges} />
+      {/* Incoloy Grade Detail Routes */}
+      <Route path="/product/flanges/incoloy/800" component={IL_Incoloy800_Flanges} />
+      <Route path="/product/flanges/incoloy/800h" component={IL_Incoloy800H_Flanges} />
+      <Route path="/product/flanges/incoloy/800ht" component={IL_Incoloy800HT_Flanges} />
+      <Route path="/product/flanges/incoloy/825" component={IL_Incoloy825_Flanges} />
+      <Route path="/product/flanges/incoloy/925" component={IL_Incoloy925_Flanges} />
+      <Route path="/product/flanges/incoloy/926" component={IL_Incoloy926_Flanges} />
+      <Route path="/product/flanges/incoloy/800at" component={IL_Incoloy800AT_Flanges} />
+      <Route path="/product/flanges/incoloy/ds" component={IL_IncoloyDS_Flanges} />
+      <Route path="/product/flanges/incoloy/25-6mo" component={IL_Incoloy256MO_Flanges} />
 
       {/* Fitting Routes */}
       <Route path="/product/fittings/buttweld-fittings" component={ButtweldFittings} />

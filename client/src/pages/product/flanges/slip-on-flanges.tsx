@@ -76,9 +76,9 @@ export default function SlipOnFlanges() {
             <div className="flex items-center space-x-2 text-sm text-gray-600">
               <Link href="/" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-home">Home</Link>
               <ArrowRight className="w-4 h-4" />
-              <Link href="/product" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-products">Products</Link>
+              <Link href="/products" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-products">Products</Link>
               <ArrowRight className="w-4 h-4" />
-              <Link href="/product/flanges" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-flanges">Flanges</Link>
+              <Link href="/flanges" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-flanges">Flanges</Link>
               <ArrowRight className="w-4 h-4" />
               <span className="text-navy-primary font-medium" data-testid="breadcrumb-current">Slip On Flanges</span>
             </div>
@@ -275,3 +275,5 @@ export default function SlipOnFlanges() {
     </>
   );
 }
+
+

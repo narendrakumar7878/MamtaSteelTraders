@@ -142,3 +142,5 @@ export default function Nickel201RoundBarsDetail() {
     </>
   );
 }
+
+

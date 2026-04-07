@@ -167,3 +167,5 @@ export default function Zeron100Detail() {
     </>
   );
 }
+
+

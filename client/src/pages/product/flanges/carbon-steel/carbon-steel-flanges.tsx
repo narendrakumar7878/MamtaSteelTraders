@@ -57,6 +57,7 @@ export default function CarbonSteelFlanges() {
   const carbonSteelGrades = [
     {
       grade: "ASTM A105",
+      path: "/product/flanges/carbon-steel/a105-flanges",
       description: "Standard carbon steel forging material for ambient and high temperature service",
       chemicalComposition: "C: 0.35 max, Mn: 0.60-1.35, P: 0.035 max, S: 0.040 max, Si: 0.15-0.40",
       mechanicalProperties: "Tensile: 485 MPa, Yield: 250 MPa, Elongation: 30%, Hardness: 187 HB max",
@@ -65,6 +66,7 @@ export default function CarbonSteelFlanges() {
     },
     {
       grade: "ASTM A350 LF1",
+      path: "/product/flanges/carbon-steel/a350-lf1-flanges",
       description: "Low temperature carbon steel forging for -46°C service",
       chemicalComposition: "C: 0.30 max, Mn: 0.60-1.35, P: 0.035 max, S: 0.040 max, Si: 0.15-0.40",
       mechanicalProperties: "Tensile: 485 MPa, Yield: 250 MPa, Impact: 27J at -46°C",
@@ -73,6 +75,7 @@ export default function CarbonSteelFlanges() {
     },
     {
       grade: "ASTM A350 LF2",
+      path: "/product/flanges/carbon-steel/a350-lf2-flanges",
       description: "Low temperature carbon steel forging for sub-zero applications down to -46°C",
       chemicalComposition: "C: 0.30 max, Mn: 0.60-1.35, P: 0.035 max, S: 0.040 max, Si: 0.15-0.40",
       mechanicalProperties: "Tensile: 485 MPa, Yield: 250 MPa, Impact: 27J at -46°C",
@@ -81,6 +84,7 @@ export default function CarbonSteelFlanges() {
     },
     {
       grade: "ASTM A350 LF3",
+      path: "/product/flanges/carbon-steel/a350-lf3-flanges",
       description: "Low temperature carbon steel forging for -101°C service",
       chemicalComposition: "C: 0.20 max, Mn: 0.90-1.50, P: 0.035 max, S: 0.040 max, Si: 0.15-0.40, Ni: 3.25-3.75",
       mechanicalProperties: "Tensile: 550 MPa, Yield: 315 MPa, Impact: 27J at -101°C",
@@ -89,6 +93,7 @@ export default function CarbonSteelFlanges() {
     },
     {
       grade: "ASTM A694 F42",
+      path: "/product/flanges/carbon-steel/a694-f42-flanges",
       description: "High strength carbon steel for pressure service - Grade F42",
       chemicalComposition: "C: 0.26 max, Mn: 1.40 max, P: 0.035 max, S: 0.035 max, Si: 0.45 max",
       mechanicalProperties: "Tensile: 414 MPa, Yield: 290 MPa, Elongation: 22%",
@@ -97,6 +102,7 @@ export default function CarbonSteelFlanges() {
     },
     {
       grade: "ASTM A694 F46",
+      path: "/product/flanges/carbon-steel/a694-f46-flanges",
       description: "High strength carbon steel for pressure service - Grade F46",
       chemicalComposition: "C: 0.26 max, Mn: 1.40 max, P: 0.035 max, S: 0.035 max, Si: 0.45 max",
       mechanicalProperties: "Tensile: 455 MPa, Yield: 315 MPa, Elongation: 21%",
@@ -105,6 +111,7 @@ export default function CarbonSteelFlanges() {
     },
     {
       grade: "ASTM A694 F52",
+      path: "/product/flanges/carbon-steel/a694-f52-flanges",
       description: "High strength carbon steel for pressure service - Grade F52",
       chemicalComposition: "C: 0.26 max, Mn: 1.40 max, P: 0.035 max, S: 0.035 max, Si: 0.45 max",
       mechanicalProperties: "Tensile: 455 MPa, Yield: 360 MPa, Elongation: 21%",
@@ -113,6 +120,7 @@ export default function CarbonSteelFlanges() {
     },
     {
       grade: "ASTM A694 F60",
+      path: "/product/flanges/carbon-steel/a694-f60-flanges",
       description: "High strength carbon steel for high pressure service applications",
       chemicalComposition: "C: 0.26 max, Mn: 1.40 max, P: 0.035 max, S: 0.035 max, Si: 0.45 max",
       mechanicalProperties: "Tensile: 520 MPa, Yield: 415 MPa, Elongation: 20%",
@@ -121,6 +129,7 @@ export default function CarbonSteelFlanges() {
     },
     {
       grade: "ASTM A694 F65",
+      path: "/product/flanges/carbon-steel/a694-f65-flanges",
       description: "High yield strength carbon steel for critical pressure applications",
       chemicalComposition: "C: 0.26 max, Mn: 1.40 max, P: 0.035 max, S: 0.035 max, Si: 0.45 max",
       mechanicalProperties: "Tensile: 565 MPa, Yield: 450 MPa, Elongation: 19%",
@@ -129,6 +138,7 @@ export default function CarbonSteelFlanges() {
     },
     {
       grade: "ASTM A694 F70",
+      path: "/product/flanges/carbon-steel/a694-f70-flanges",
       description: "Ultra-high strength carbon steel for extreme pressure conditions",
       chemicalComposition: "C: 0.26 max, Mn: 1.40 max, P: 0.035 max, S: 0.035 max, Si: 0.45 max",
       mechanicalProperties: "Tensile: 620 MPa, Yield: 485 MPa, Elongation: 18%",
@@ -138,38 +148,16 @@ export default function CarbonSteelFlanges() {
   ];
 
   const mumbaiSuppliers = [
-    {
-      area: "Andheri East",
-      speciality: "ASTM A105 Carbon Steel Flanges",
-      service: "Same Day Delivery"
-    },
-    {
-      area: "Kandivali",
-      speciality: "A350 Low Temperature Flanges", 
-      service: "24/7 Customer Support"
-    },
-    {
-      area: "Ghatkopar",
-      speciality: "A694 High Pressure Flanges",
-      service: "Technical Consultation"
-    },
-    {
-      area: "Thane",
-      speciality: "Complete Range ASME B16.5",
-      service: "Bulk Supply Specialist"
-    }
+    { area: "Andheri East", speciality: "ASTM A105 Carbon Steel Flanges", service: "Same Day Delivery" },
+    { area: "Kandivali", speciality: "A350 Low Temperature Flanges", service: "24/7 Customer Support" },
+    { area: "Ghatkopar", speciality: "A694 High Pressure Flanges", service: "Technical Consultation" },
+    { area: "Thane", speciality: "Complete Range ASME B16.5", service: "Bulk Supply Specialist" }
   ];
 
   const seoKeywords = [
-    "Carbon Steel Flanges Mumbai",
-    "ASTM A105 Flanges Suppliers",
-    "Best Flanges Stockists India", 
-    "Slip On Flanges Mumbai",
-    "Weld Neck Flanges India",
-    "Blind Flanges Suppliers Mumbai",
-    "ASME B16.5 Flanges Stockists",
-    "Industrial Flanges Mumbai",
-    "Steel Flanges Distributors",
+    "Carbon Steel Flanges Mumbai", "ASTM A105 Flanges Suppliers", "Best Flanges Stockists India", 
+    "Slip On Flanges Mumbai", "Weld Neck Flanges India", "Blind Flanges Suppliers Mumbai",
+    "ASME B16.5 Flanges Stockists", "Industrial Flanges Mumbai", "Steel Flanges Distributors",
     "Flanges Manufacturers India"
   ];
 
@@ -192,9 +180,9 @@ export default function CarbonSteelFlanges() {
             <div className="flex items-center space-x-2 text-sm text-gray-600">
               <Link href="/" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-home">Home</Link>
               <ArrowRight className="w-4 h-4" />
-              <Link href="/product" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-products">Products</Link>
+              <Link href="/products" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-products">Products</Link>
               <ArrowRight className="w-4 h-4" />
-              <Link href="/product/flanges" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-flanges">Flanges</Link>
+              <Link href="/flanges" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-flanges">Flanges</Link>
               <ArrowRight className="w-4 h-4" />
               <span className="text-navy-primary font-medium" data-testid="breadcrumb-current">Carbon Steel Flanges</span>
             </div>
@@ -293,66 +281,19 @@ export default function CarbonSteelFlanges() {
           </div>
         </section>
 
-        {/* Technical Specifications */}
-        <section className="py-16 bg-gray-50" data-testid="specifications-section">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-2xl font-bold text-center text-navy-primary mb-12" data-testid="specifications-title">
-                Technical Specifications
-              </h2>
-              <div className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden">
-                <div className="bg-navy-primary text-white px-6 py-4">
-                  <h3 className="text-xl font-semibold">Specification Standards</h3>
-                </div>
-                <div className="p-6">
-                  <div className="grid md:grid-cols-1 gap-4">
-                    {specifications.map((spec, index) => (
-                      <div key={index} className="flex items-start" data-testid={`specification-${index}`}>
-                        <CheckCircle className="w-5 h-5 text-gold-primary mr-3 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">{spec}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Applications */}
-        <section className="py-16 bg-white" data-testid="applications-section">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-2xl font-bold text-center text-navy-primary mb-12" data-testid="applications-title">
-                Industrial Applications
-              </h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {applications.map((application, index) => (
-                  <div key={index} className="bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-lg border border-gray-200 text-center hover:shadow-lg transition-shadow duration-300" data-testid={`application-${index}`}>
-                    <div className="w-12 h-12 bg-navy-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <Star className="w-6 h-6 text-gold-primary" />
-                    </div>
-                    <h3 className="text-lg font-semibold text-navy-primary">{application}</h3>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Carbon Steel Grades */}
+        {/* Carbon Steel Grades Grid */}
         <section className="py-16 bg-gray-50" data-testid="carbon-steel-grades-section">
           <div className="container mx-auto px-4">
             <div className="max-w-7xl mx-auto">
               <h2 className="text-2xl font-bold text-center text-navy-primary mb-6" data-testid="grades-title">
-                Carbon Steel Grades Available
+                Carbon Steel Flanges by Grade
               </h2>
               <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-                We stock premium quality carbon steel flanges in various ASTM grades. Each grade is carefully selected for specific applications and pressure requirements. All grades available ex-stock Mumbai for immediate delivery.
+                Explore our comprehensive range of carbon steel grades, each precision-engineered for specific industrial environments and pressure requirements.
               </p>
               <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
                 {carbonSteelGrades.map((grade, index) => (
-                  <div key={index} className="bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300" data-testid={`grade-${index}`}>
+                  <div key={index} className="bg-white rounded-lg shadow-md border border-gray-200 p-6 hover:shadow-lg transition-shadow duration-300 flex flex-col" data-testid={`grade-${index}`}>
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 bg-navy-primary rounded-full flex items-center justify-center mr-4">
                         <Award className="w-6 h-6 text-gold-primary" />
@@ -362,18 +303,33 @@ export default function CarbonSteelFlanges() {
                         <span className="text-sm text-green-600 font-medium">{grade.availability}</span>
                       </div>
                     </div>
-                    <p className="text-gray-700 mb-4">{grade.description}</p>
+                    <p className="text-gray-700 mb-4 flex-grow">{grade.description}</p>
                     <div className="mb-4">
-                      <h4 className="font-semibold text-navy-primary mb-2">Chemical Composition:</h4>
-                      <p className="text-sm text-gray-600 bg-gray-50 p-3 rounded">{grade.chemicalComposition}</p>
+                      <h4 className="font-semibold text-navy-primary mb-2 text-sm uppercase tracking-wider">Features:</h4>
+                      <div className="grid grid-cols-1 gap-2">
+                        <div className="text-sm text-gray-600 bg-gray-50 p-2 rounded flex justify-between">
+                          <span className="font-medium">Composition:</span>
+                          <span>{grade.chemicalComposition.split(',')[0]}...</span>
+                        </div>
+                        <div className="text-sm text-gray-600 bg-blue-50 p-2 rounded flex justify-between">
+                          <span className="font-medium">Tensile Strength:</span>
+                          <span>{grade.mechanicalProperties.split(',')[0]}</span>
+                        </div>
+                      </div>
                     </div>
-                    <div className="mb-4">
-                      <h4 className="font-semibold text-navy-primary mb-2">Mechanical Properties:</h4>
-                      <p className="text-sm text-gray-600 bg-blue-50 p-3 rounded">{grade.mechanicalProperties}</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-navy-primary mb-2">Applications:</h4>
-                      <p className="text-sm text-gray-600">{grade.applications}</p>
+                    <div className="flex gap-4">
+                      <Link 
+                        href={grade.path}
+                        className="flex-1 bg-navy-primary text-white text-center py-2 rounded font-semibold hover:bg-navy-secondary transition-colors"
+                      >
+                        View Details
+                      </Link>
+                      <Link 
+                        href="/contact"
+                        className="flex-1 border-2 border-navy-primary text-navy-primary text-center py-2 rounded font-semibold hover:bg-navy-primary hover:text-white transition-all"
+                      >
+                        Get Quote
+                      </Link>
                     </div>
                   </div>
                 ))}
@@ -390,7 +346,7 @@ export default function CarbonSteelFlanges() {
                 Best Carbon Steel Flanges Suppliers & Stockists in Mumbai
               </h2>
               <p className="text-center text-gray-600 mb-12 max-w-4xl mx-auto">
-                We are recognized as one of the leading carbon steel flanges suppliers and stockists in Mumbai with extensive network across India. Our strategically located warehouses ensure quick delivery of premium quality flanges.
+                Recognized as one of the leading carbon steel flanges suppliers and stockists in Mumbai with extensive network across India.
               </p>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                 {mumbaiSuppliers.map((supplier, index) => (
@@ -399,148 +355,13 @@ export default function CarbonSteelFlanges() {
                       <MapPin className="w-8 h-8 text-gold-primary mr-3" />
                       <h3 className="text-lg font-bold">{supplier.area}</h3>
                     </div>
-                    <p className="text-blue-100 mb-3">{supplier.speciality}</p>
+                    <p className="text-blue-100 mb-3 text-sm">{supplier.speciality}</p>
                     <div className="flex items-center">
                       <CheckCircle className="w-4 h-4 text-gold-primary mr-2" />
-                      <span className="text-sm">{supplier.service}</span>
+                      <span className="text-xs uppercase tracking-tighter">{supplier.service}</span>
                     </div>
                   </div>
                 ))}
-              </div>
-              
-              {/* SEO Keywords Section */}
-              <div className="bg-gray-50 rounded-lg p-8">
-                <h3 className="text-2xl font-bold text-navy-primary mb-6 text-center">
-                  Search Terms We Rank For
-                </h3>
-                <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4">
-                  {seoKeywords.map((keyword, index) => (
-                    <div key={index} className="bg-white rounded-lg p-3 text-center border border-gray-200 hover:border-gold-primary transition-colors duration-300" data-testid={`keyword-${index}`}>
-                      <span className="text-sm text-navy-primary font-medium">{keyword}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Major Indian Cities Network */}
-        <section className="py-16 bg-gradient-to-br from-gray-50 to-blue-50" data-testid="cities-network-section">
-          <div className="container mx-auto px-4">
-            <div className="max-w-7xl mx-auto">
-              <h2 className="text-2xl font-bold text-center text-navy-primary mb-6" data-testid="cities-title">
-                Carbon Steel Flanges Supply Network Across India
-              </h2>
-              <p className="text-center text-gray-600 mb-12 max-w-4xl mx-auto">
-                We maintain extensive inventory and supply network across all major Indian cities. Our strategic locations ensure fastest delivery of carbon steel flanges anywhere in India with same-day dispatch facility.
-              </p>
-              
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-white rounded-lg shadow-lg p-6 border-l-4 border-navy-primary">
-                  <h3 className="text-xl font-bold text-navy-primary mb-4 flex items-center">
-                    <MapPin className="w-6 h-6 mr-2 text-gold-primary" />
-                    Mumbai & MMR Region
-                  </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Andheri - Carbon Steel Flanges Hub</li>
-                    <li>• Kandivali - A105 Specialists</li>
-                    <li>• Thane - Complete ASME Range</li>
-                    <li>• Ghatkopar - High Pressure Flanges</li>
-                    <li>• Navi Mumbai - Industrial Supply</li>
-                  </ul>
-                </div>
-
-                <div className="bg-white rounded-lg shadow-lg p-6 border-l-4 border-navy-primary">
-                  <h3 className="text-xl font-bold text-navy-primary mb-4 flex items-center">
-                    <MapPin className="w-6 h-6 mr-2 text-gold-primary" />
-                    Delhi NCR & North India
-                  </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• New Delhi - Premium Flanges</li>
-                    <li>• Gurgaon - Industrial Projects</li>
-                    <li>• Noida - Manufacturing Supply</li>
-                    <li>• Faridabad - Bulk Orders</li>
-                    <li>• Ghaziabad - Quick Dispatch</li>
-                  </ul>
-                </div>
-
-                <div className="bg-white rounded-lg shadow-lg p-6 border-l-4 border-navy-primary">
-                  <h3 className="text-xl font-bold text-navy-primary mb-4 flex items-center">
-                    <MapPin className="w-6 h-6 mr-2 text-gold-primary" />
-                    South India Network
-                  </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Chennai - Petrochemical Focus</li>
-                    <li>• Bengaluru - IT & Manufacturing</li>
-                    <li>• Hyderabad - Pharma Industries</li>
-                    <li>• Coimbatore - Textile Mills</li>
-                    <li>• Kochi - Marine Applications</li>
-                  </ul>
-                </div>
-
-                <div className="bg-white rounded-lg shadow-lg p-6 border-l-4 border-navy-primary">
-                  <h3 className="text-xl font-bold text-navy-primary mb-4 flex items-center">
-                    <MapPin className="w-6 h-6 mr-2 text-gold-primary" />
-                    Gujarat & West India
-                  </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Ahmedabad - Chemical Plants</li>
-                    <li>• Vadodara - Refineries</li>
-                    <li>• Surat - Industrial Estates</li>
-                    <li>• Rajkot - Engineering Units</li>
-                    <li>• Bharuch - Petrochemicals</li>
-                  </ul>
-                </div>
-
-                <div className="bg-white rounded-lg shadow-lg p-6 border-l-4 border-navy-primary">
-                  <h3 className="text-xl font-bold text-navy-primary mb-4 flex items-center">
-                    <MapPin className="w-6 h-6 mr-2 text-gold-primary" />
-                    East & Central India
-                  </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Kolkata - Steel Industries</li>
-                    <li>• Bhubaneswar - Mining Sector</li>
-                    <li>• Raipur - Power Plants</li>
-                    <li>• Jamshedpur - Heavy Industries</li>
-                    <li>• Ranchi - Mining Equipment</li>
-                  </ul>
-                </div>
-
-                <div className="bg-white rounded-lg shadow-lg p-6 border-l-4 border-navy-primary">
-                  <h3 className="text-xl font-bold text-navy-primary mb-4 flex items-center">
-                    <MapPin className="w-6 h-6 mr-2 text-gold-primary" />
-                    Punjab & North West
-                  </h3>
-                  <ul className="space-y-2 text-gray-600">
-                    <li>• Ludhiana - Manufacturing Hub</li>
-                    <li>• Chandigarh - Government Projects</li>
-                    <li>• Amritsar - Food Industries</li>
-                    <li>• Jalandhar - Sports Goods</li>
-                    <li>• Mohali - IT & Services</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="mt-12 bg-navy-primary text-white rounded-lg p-8">
-                <h3 className="text-2xl font-bold mb-6 text-center">Why Choose Us as Your Carbon Steel Flanges Supplier?</h3>
-                <div className="grid md:grid-cols-3 gap-6">
-                  <div className="text-center">
-                    <TrendingUp className="w-12 h-12 text-gold-primary mx-auto mb-4" />
-                    <h4 className="font-bold mb-2">Pan India Presence</h4>
-                    <p className="text-blue-100">Largest network of carbon steel flanges stockists across India</p>
-                  </div>
-                  <div className="text-center">
-                    <Shield className="w-12 h-12 text-gold-primary mx-auto mb-4" />
-                    <h4 className="font-bold mb-2">Quality Assured</h4>
-                    <p className="text-blue-100">All flanges tested & certified as per ASTM, ASME standards</p>
-                  </div>
-                  <div className="text-center">
-                    <CheckCircle className="w-12 h-12 text-gold-primary mx-auto mb-4" />
-                    <h4 className="font-bold mb-2">Same Day Dispatch</h4>
-                    <p className="text-blue-100">Ready inventory for immediate delivery from nearest location</p>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -558,16 +379,12 @@ export default function CarbonSteelFlanges() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact" className="bg-gold-primary hover:bg-gold-secondary text-navy-primary font-semibold py-3 px-8 rounded-lg transition-colors duration-300" data-testid="cta-contact">
-                  Contact
+                  Contact Now
                 </Link>
                 <div className="flex items-center justify-center space-x-4 text-sm">
                   <div className="flex items-center" data-testid="contact-phone">
                     <Phone className="w-4 h-4 mr-2" />
                     <a href="tel:+919819322576" className="hover:text-gold-primary transition-colors">+91 9819322576</a>
-                  </div>
-                  <div className="flex items-center" data-testid="contact-email">
-                    <Mail className="w-4 h-4 mr-2" />
-                    <a href="mailto:mamtasteeltraders@gmail.com" className="hover:text-gold-primary transition-colors">mamtasteeltraders@gmail.com</a>
                   </div>
                 </div>
               </div>
