@@ -100,12 +100,32 @@ import IL_Incoloy256MO_Flanges from "@/pages/product/flanges/incoloy/incoloy-25-
 
 // Fitting Pages
 import ButtweldFittings from "@/pages/product/fittings/buttweld-fittings";
+// Buttweld Fitting Grade Detail Pages
+import ButtweldElbowsDetail from "@/pages/product/fittings/buttweld-fittings/buttweld-elbows";
+import ButtweldTeesDetail from "@/pages/product/fittings/buttweld-fittings/buttweld-tees";
+import ButtweldReducersDetail from "@/pages/product/fittings/buttweld-fittings/buttweld-reducers";
+import ButtweldCapsDetail from "@/pages/product/fittings/buttweld-fittings/buttweld-caps";
+import ButtweldStubEndsDetail from "@/pages/product/fittings/buttweld-fittings/buttweld-stub-ends";
 import ForgedFittings from "@/pages/product/fittings/forged-fittings";
+// Forged Fitting Grade Detail Pages
+import SocketWeldFittingsDetail from "@/pages/product/fittings/forged-fittings/socket-weld-fittings";
+import ThreadedFittingsDetail from "@/pages/product/fittings/forged-fittings/threaded-fittings";
+import ForgedReducingFittingsDetail from "@/pages/product/fittings/forged-fittings/forged-reducing-fittings";
+import SpecialForgedFittingsDetail from "@/pages/product/fittings/forged-fittings/special-forged-fittings";
 
 // Welding Electrode Pages
 import StainlessSteelElectrodes from "@/pages/product/welding-electrodes/stainless-steel-electrode";
 import ERCuNiWire from "@/pages/product/welding-electrodes/ercuni-wire-copper-nickel";
 import AluminiumWire from "@/pages/product/welding-electrodes/aluminiumwire";
+// Aluminium Wire Grade Detail Pages
+import ER5356AluminumWireDetail from "@/pages/product/welding-electrodes/aluminium-wire/er5356-aluminum-wire";
+import ER1100AluminumWireDetail from "@/pages/product/welding-electrodes/aluminium-wire/er1100-aluminum-wire";
+import ER4043AluminumWireDetail from "@/pages/product/welding-electrodes/aluminium-wire/er4043-aluminum-wire";
+import ERCuAlA1AluminumBronzeDetail from "@/pages/product/welding-electrodes/aluminium-wire/ercual-a1-aluminum-bronze";
+import ERCuAlA2AluminumBronzeDetail from "@/pages/product/welding-electrodes/aluminium-wire/ercual-a2-aluminum-bronze";
+import ERCuAlA3AluminumBronzeDetail from "@/pages/product/welding-electrodes/aluminium-wire/ercual-a3-aluminum-bronze";
+import ERCuSiASiliconBronzeDetail from "@/pages/product/welding-electrodes/aluminium-wire/ercusi-a-silicon-bronze";
+import GeneralPurposeAluminumWireDetail from "@/pages/product/welding-electrodes/aluminium-wire/general-purpose-aluminum-wire";
 
 // Galvanized Pages
 import HotDipGalvanizedAngles from "@/pages/product/galvanized/hot-dip-galvanized-angles";
@@ -131,12 +151,161 @@ import WeldedWearResistantPipes from "@/pages/product/pipes-tubes/welded-wear-re
 import PlateWeldedPipes from "@/pages/product/pipes-tubes/plate-welded-pipes";
 import LargeODSeamlessPipes from "@/pages/product/pipes-tubes/large-od-seamless-pipes";
 
+// Stainless Steel Pipe Grade Detail Pages
+import SS304PipesDetail from "@/pages/product/pipes-tubes/stainless-steel/304-pipes";
+import SS304LPipesDetail from "@/pages/product/pipes-tubes/stainless-steel/304l-pipes";
+import SS310PipesDetail from "@/pages/product/pipes-tubes/stainless-steel/310-pipes";
+import SS310SPipesDetail from "@/pages/product/pipes-tubes/stainless-steel/310s-pipes";
+import SS316LPipesDetail from "@/pages/product/pipes-tubes/stainless-steel/316l-pipes";
+import SS317PipesDetail from "@/pages/product/pipes-tubes/stainless-steel/317-pipes";
+import SS317LPipesDetail from "@/pages/product/pipes-tubes/stainless-steel/317l-pipes";
+import SS321PipesDetail from "@/pages/product/pipes-tubes/stainless-steel/321-pipes";
+import SS347PipesDetail from "@/pages/product/pipes-tubes/stainless-steel/347-pipes";
+import SS904LPipesDetail from "@/pages/product/pipes-tubes/stainless-steel/904l-pipes";
+import Monel400PipesDetail from "@/pages/product/pipes-tubes/monel/400-pipes";
+import MonelK500PipesDetail from "@/pages/product/pipes-tubes/monel/k500-pipes";
+import Inconel600PipesDetail from "@/pages/product/pipes-tubes/inconel/600-pipes";
+import Inconel601PipesDetail from "@/pages/product/pipes-tubes/inconel/601-pipes";
+import Inconel625PipesDetail from "@/pages/product/pipes-tubes/inconel/625-pipes";
+import Inconel718PipesDetail from "@/pages/product/pipes-tubes/inconel/718-pipes";
+import Incoloy800PipesDetail from "@/pages/product/pipes-tubes/incoloy/800-pipes";
+import Incoloy800HPipesDetail from "@/pages/product/pipes-tubes/incoloy/800h-pipes";
+import Incoloy825PipesDetail from "@/pages/product/pipes-tubes/incoloy/825-pipes";
+import HastelloyC276PipesDetail from "@/pages/product/pipes-tubes/hastelloy/c276-pipes";
+import HastelloyC22PipesDetail from "@/pages/product/pipes-tubes/hastelloy/c22-pipes";
+import Duplex2205PipesDetail from "@/pages/product/pipes-tubes/duplex/2205-pipes";
+import SuperDuplex2507PipesDetail from "@/pages/product/pipes-tubes/duplex/2507-pipes";
+import TitaniumGrade2PipesDetail from "@/pages/product/pipes-tubes/titanium/grade-2-pipes";
+import Alloy20PipesDetail from "@/pages/product/pipes-tubes/alloy-20/pipes";
+
+// Carbon Steel Pipe Grade Detail Pages
+import A106GradeBPipesDetail from "@/pages/product/pipes-tubes/carbon-steel/a106-grade-b";
+import A333Grade6PipesDetail from "@/pages/product/pipes-tubes/carbon-steel/a333-grade-6";
+import AISI4130PipesDetail from "@/pages/product/pipes-tubes/carbon-steel/aisi-4130";
+import API5LPipesDetail from "@/pages/product/pipes-tubes/carbon-steel/api-5l";
+import A53GradeBPipesDetail from "@/pages/product/pipes-tubes/carbon-steel/a53-grade-b";
+
+// Alloy Steel Pipe Grade Detail Pages
+import P5AlloySteelPipesDetail from "@/pages/product/pipes-tubes/alloy-steel/p5-pipes";
+import P9AlloySteelPipesDetail from "@/pages/product/pipes-tubes/alloy-steel/p9-pipes";
+import P11AlloySteelPipesDetail from "@/pages/product/pipes-tubes/alloy-steel/p11-pipes";
+import P22AlloySteelPipesDetail from "@/pages/product/pipes-tubes/alloy-steel/p22-pipes";
+import P91AlloySteelPipesDetail from "@/pages/product/pipes-tubes/alloy-steel/p91-pipes";
+import P92AlloySteelPipesDetail from "@/pages/product/pipes-tubes/alloy-steel/p92-pipes";
+
 // Additional Plates & Sheets Pages
 import AlloySteelPlates from "@/pages/product/plates-sheets/alloy-steel-plates";
 import AluminiumAlloyPlates from "@/pages/product/plates-sheets/aluminium-alloy";
 import CarbonSteelPlates from "@/pages/product/plates-sheets/carbon-steel";
 import CopperNickelPlates from "@/pages/product/plates-sheets/copper-nickel";
 import DuplexSuperDuplexPlates from "@/pages/product/plates-sheets/duplex-super-duplex";
+
+// Stainless Steel Plate Grade Detail Pages
+import SS304PlatesDetail from "@/pages/product/plates-sheets/stainless-steel/304-plates";
+import SS304LPlatesDetail from "@/pages/product/plates-sheets/stainless-steel/304l-plates";
+import SS316PlatesDetail from "@/pages/product/plates-sheets/stainless-steel/316-plates";
+
+// Carbon Steel Plate Grade Detail Pages
+import CarbonSteelA36PlatesDetail from "@/pages/product/plates-sheets/carbon-steel/a36-plates";
+import CarbonSteelA516PlatesDetail from "@/pages/product/plates-sheets/carbon-steel/a516-plates";
+import CarbonSteelA572PlatesDetail from "@/pages/product/plates-sheets/carbon-steel/a572-plates";
+import CarbonSteelA283PlatesDetail from "@/pages/product/plates-sheets/carbon-steel/a283-plates";
+import CarbonSteelIS2062PlatesDetail from "@/pages/product/plates-sheets/carbon-steel/is2062-plates";
+import CarbonSteelC45PlatesDetail from "@/pages/product/plates-sheets/carbon-steel/c45-plates";
+import CarbonSteelEN19PlatesDetail from "@/pages/product/plates-sheets/carbon-steel/en19-plates";
+import CarbonSteel50CrV4PlatesDetail from "@/pages/product/plates-sheets/carbon-steel/50crv4-plates";
+import CarbonSteelS355PlatesDetail from "@/pages/product/plates-sheets/carbon-steel/s355-plates";
+import CarbonSteelST52PlatesDetail from "@/pages/product/plates-sheets/carbon-steel/st52-plates";
+import CarbonSteelA588PlatesDetail from "@/pages/product/plates-sheets/carbon-steel/a588-plates";
+import CarbonSteelIRSM41PlatesDetail from "@/pages/product/plates-sheets/carbon-steel/irsm41-plates";
+
+// Aluminium Plate Grade Detail Pages
+import SS316LPlatesDetail from "@/pages/product/plates-sheets/stainless-steel/316l-plates";
+import SS317LPlatesDetail from "@/pages/product/plates-sheets/stainless-steel/317l-plates";
+import SS321PlatesDetail from "@/pages/product/plates-sheets/stainless-steel/321-plates";
+import SS310PlatesDetail from "@/pages/product/plates-sheets/stainless-steel/310-plates";
+import SS310SPlatesDetail from "@/pages/product/plates-sheets/stainless-steel/310s-plates";
+import SS309PlatesDetail from "@/pages/product/plates-sheets/stainless-steel/309-plates";
+import SS155PHPlatesDetail from "@/pages/product/plates-sheets/stainless-steel/15-5ph-plates";
+import SS174PHPlatesDetail from "@/pages/product/plates-sheets/stainless-steel/17-4ph-plates";
+import SS253MAPlatesDetail from "@/pages/product/plates-sheets/stainless-steel/253ma-plates";
+import SS420J1PlatesDetail from "@/pages/product/plates-sheets/stainless-steel/420j1-plates";
+import SS410PlatesDetail from "@/pages/product/plates-sheets/stainless-steel/410-plates";
+import SS430PlatesDetail from "@/pages/product/plates-sheets/stainless-steel/430-plates";
+import SS904LPlatesDetail from "@/pages/product/plates-sheets/stainless-steel/904l-plates";
+import SS347PlatesDetail from "@/pages/product/plates-sheets/stainless-steel/347-plates";
+import SSDuplex2205PlatesDetail from "@/pages/product/plates-sheets/stainless-steel/2205-duplex-plates";
+import SSSuperDuplex2507PlatesDetail from "@/pages/product/plates-sheets/stainless-steel/2507-super-duplex-plates";
+
+// Duplex & Super Duplex Plate Grade Detail Pages
+import Duplex14410PlatesDetail from "@/pages/product/plates-sheets/duplex-super-duplex/1-4410-plates";
+import Alloy20PlatesDetail from "@/pages/product/plates-sheets/duplex-super-duplex/alloy-20-plates";
+import DuplexS31803PlatesDetail from "@/pages/product/plates-sheets/duplex-super-duplex/s31803-plates";
+import DuplexS32550PlatesDetail from "@/pages/product/plates-sheets/duplex-super-duplex/s32550-plates";
+import DuplexS32750PlatesDetail from "@/pages/product/plates-sheets/duplex-super-duplex/s32750-plates";
+import DuplexS32760PlatesDetail from "@/pages/product/plates-sheets/duplex-super-duplex/s32760-plates";
+import DuplexS32205PlatesDetail from "@/pages/product/plates-sheets/duplex-super-duplex/s32205-plates";
+import Duplex2304PlatesDetail from "@/pages/product/plates-sheets/duplex-super-duplex/2304-plates";
+
+// High Tensile Fastener Grade Detail Pages
+import B7BoltsDetail from "@/pages/product/fasteners/high-tensile/b7-bolts";
+import B16BoltsDetail from "@/pages/product/fasteners/high-tensile/b16-bolts";
+import L7BoltsDetail from "@/pages/product/fasteners/high-tensile/l7-bolts";
+import Grade88FastenersDetail from "@/pages/product/fasteners/high-tensile/8-8-fasteners";
+import Grade109FastenersDetail from "@/pages/product/fasteners/high-tensile/10-9-fasteners";
+import Grade129FastenersDetail from "@/pages/product/fasteners/high-tensile/12-9-fasteners";
+import GradeA480FastenersDetail from "@/pages/product/fasteners/high-tensile/a4-80-fasteners";
+import Grade2HNutsDetail from "@/pages/product/fasteners/high-tensile/2h-nuts";
+
+// Stainless Steel Bolt Grade Detail Pages
+import HexHeadBoltsDetail from "@/pages/product/fasteners/ss-bolts/hex-head-bolts";
+import SocketHeadCapScrewsDetail from "@/pages/product/fasteners/ss-screws/socket-head-cap-screws";
+import SocketButtonHeadScrewsDetail from "@/pages/product/fasteners/ss-screws/socket-button-head-screws";
+import CountersunkHeadScrewsDetail from "@/pages/product/fasteners/ss-screws/countersunk-head-screws";
+import WoodScrewsDetail from "@/pages/product/fasteners/ss-screws/wood-screws";
+import SelfTappingScrewsDetail from "@/pages/product/fasteners/ss-screws/self-tapping-screws";
+import ThumbScrewsDetail from "@/pages/product/fasteners/ss-screws/thumb-screws";
+import FlangeBoltsDetail from "@/pages/product/fasteners/ss-bolts/flange-bolts";
+import UBoltDetail from "@/pages/product/fasteners/ss-bolts/u-bolts";
+import FoundationAnchorBoltsDetail from "@/pages/product/fasteners/ss-bolts/foundation-anchor-bolts";
+import JBoltDetail from "@/pages/product/fasteners/ss-bolts/j-bolts";
+
+// Stainless Steel Nut Grade Detail Pages
+import HexNutsDetail from "@/pages/product/fasteners/ss-nuts/hex-nuts";
+import NylocNutsDetail from "@/pages/product/fasteners/ss-nuts/nyloc-lock-nuts";
+import FlangeNutsDetail from "@/pages/product/fasteners/ss-nuts/flange-nuts";
+import SquareNutsDetail from "@/pages/product/fasteners/ss-nuts/square-nuts";
+import WeldNutsDetail from "@/pages/product/fasteners/ss-nuts/weld-nuts";
+import ThinJamNutsDetail from "@/pages/product/fasteners/ss-nuts/thin-jam-nuts";
+// Stainless Steel Washer Grade Detail Pages
+import PlainWashersDetail from "@/pages/product/fasteners/ss-washers/plain-washers";
+import SpringWashersDetail from "@/pages/product/fasteners/ss-washers/spring-washers";
+import ToothedLockWashersDetail from "@/pages/product/fasteners/ss-washers/toothed-lock-washers";
+import FenderWashersDetail from "@/pages/product/fasteners/ss-washers/fender-washers";
+import BellevilleWashersDetail from "@/pages/product/fasteners/ss-washers/belleville-washers";
+import WaveWashersDetail from "@/pages/product/fasteners/ss-washers/wave-washers";
+
+// Alloy Steel Plate Grade Detail Pages
+import Grade15CDV6PlatesDetail from "@/pages/product/plates-sheets/alloy-steel/15cdv6-sheets";
+import Grade174PHPlatesDetail from "@/pages/product/plates-sheets/alloy-steel/17-4ph-plates";
+import Grade50CrV4SheetsDetail from "@/pages/product/plates-sheets/alloy-steel/50crv4-sheets";
+import GradeA387PlatesDetail from "@/pages/product/plates-sheets/alloy-steel/a387-plates";
+import GradeEN19PlatesDetail from "@/pages/product/plates-sheets/alloy-steel/en19-plates";
+import GradeSAE4140PlatesDetail from "@/pages/product/plates-sheets/alloy-steel/sae-4140-plates";
+
+// Aluminium Alloy Plate Grade Detail Pages
+import Aluminium1100PlatesDetail from "@/pages/product/plates-sheets/aluminium-alloy/1100-plates";
+import Aluminium2014PlatesDetail from "@/pages/product/plates-sheets/aluminium-alloy/2014-plates";
+import Aluminium2024PlatesDetail from "@/pages/product/plates-sheets/aluminium-alloy/2024-plates";
+import Aluminium3003PlatesDetail from "@/pages/product/plates-sheets/aluminium-alloy/3003-plates";
+import Aluminium5052PlatesDetail from "@/pages/product/plates-sheets/aluminium-alloy/5052-plates";
+import Aluminium5083PlatesDetail from "@/pages/product/plates-sheets/aluminium-alloy/5083-plates";
+import Aluminium5086PlatesDetail from "@/pages/product/plates-sheets/aluminium-alloy/5086-plates";
+import Aluminium6061PlatesDetail from "@/pages/product/plates-sheets/aluminium-alloy/6061-plates";
+import Aluminium6063PlatesDetail from "@/pages/product/plates-sheets/aluminium-alloy/6063-plates";
+import Aluminium6082PlatesDetail from "@/pages/product/plates-sheets/aluminium-alloy/6082-plates";
+import Aluminium7050PlatesDetail from "@/pages/product/plates-sheets/aluminium-alloy/7050-plates";
+import Aluminium7075PlatesDetail from "@/pages/product/plates-sheets/aluminium-alloy/7075-plates";
 
 // Additional Round Bars Pages
 import AlloySteelRound from "@/pages/product/round-bars/alloy-steel-round";
@@ -510,12 +679,21 @@ function Router() {
       <Route path="/carbonAndAlloyPipeSpecifications" component={CarbonAndAlloyPipeSpecifications} />
       <Route path="/ams-standard-material" component={AmsStandardMaterial} />
       <Route path="/pipes-tubes" component={Pipestubes} />
-      <Route path="/plates-sheets" component={PlatesSheets} />
+      <Route path="/product/pipes-tubes" component={Pipestubes} />
+      <Route path="/product/plates-sheets" component={PlatesSheets} />
       <Route path="/bars" component={Bars} />
+      <Route path="/product/bars" component={Bars} />
       <Route path="/flanges" component={Flanges} />
+      <Route path="/product/flanges" component={Flanges} />
       <Route path="/fittings" component={Fittings} />
+      <Route path="/product/fittings" component={Fittings} />
       <Route path="/fasteners" component={Fasteners} />
+      <Route path="/product/fasteners" component={Fasteners} />
       <Route path="/angleschannels" component={AnglesChannels} />
+      <Route path="/angles-channels" component={AnglesChannels} />
+      <Route path="/galvanized" component={AnglesChannels} />
+      <Route path="/product/galvanized" component={AnglesChannels} />
+      <Route path="/product/angles-channels" component={AnglesChannels} />
 
       {/* Product Category Routes */}
       <Route path="/product/pipes-tubes/stainless-steel-pipes-tubes" component={StainlessSteelPipesAndTubes} />
@@ -601,12 +779,35 @@ function Router() {
 
       {/* Fitting Routes */}
       <Route path="/product/fittings/buttweld-fittings" component={ButtweldFittings} />
+      
+      {/* Buttweld Fitting Grade Detail Routes */}
+      <Route path="/product/fittings/buttweld-fittings/buttweld-elbows" component={ButtweldElbowsDetail} />
+      <Route path="/product/fittings/buttweld-fittings/buttweld-tees" component={ButtweldTeesDetail} />
+      <Route path="/product/fittings/buttweld-fittings/buttweld-reducers" component={ButtweldReducersDetail} />
+      <Route path="/product/fittings/buttweld-fittings/buttweld-caps" component={ButtweldCapsDetail} />
+      <Route path="/product/fittings/buttweld-fittings/buttweld-stub-ends" component={ButtweldStubEndsDetail} />
       <Route path="/product/fittings/forged-fittings" component={ForgedFittings} />
+
+      {/* Forged Fitting Grade Detail Routes */}
+      <Route path="/product/fittings/forged-fittings/socket-weld-fittings" component={SocketWeldFittingsDetail} />
+      <Route path="/product/fittings/forged-fittings/threaded-fittings" component={ThreadedFittingsDetail} />
+      <Route path="/product/fittings/forged-fittings/forged-reducing-fittings" component={ForgedReducingFittingsDetail} />
+      <Route path="/product/fittings/forged-fittings/special-forged-fittings" component={SpecialForgedFittingsDetail} />
 
       {/* Welding Electrode Routes */}
       <Route path="/product/welding-electrodes/stainless-steel-electrode" component={StainlessSteelElectrodes} />
       <Route path="/product/welding-electrodes/ercuni-wire-copper-nickel" component={ERCuNiWire} />
       <Route path="/product/welding-electrodes/aluminiumwire" component={AluminiumWire} />
+
+      {/* Aluminium Wire Grade Detail Routes */}
+      <Route path="/product/welding-electrodes/aluminium-wire/er5356-aluminum-wire" component={ER5356AluminumWireDetail} />
+      <Route path="/product/welding-electrodes/aluminium-wire/er1100-aluminum-wire" component={ER1100AluminumWireDetail} />
+      <Route path="/product/welding-electrodes/aluminium-wire/er4043-aluminum-wire" component={ER4043AluminumWireDetail} />
+      <Route path="/product/welding-electrodes/aluminium-wire/ercual-a1-aluminum-bronze" component={ERCuAlA1AluminumBronzeDetail} />
+      <Route path="/product/welding-electrodes/aluminium-wire/ercual-a2-aluminum-bronze" component={ERCuAlA2AluminumBronzeDetail} />
+      <Route path="/product/welding-electrodes/aluminium-wire/ercual-a3-aluminum-bronze" component={ERCuAlA3AluminumBronzeDetail} />
+      <Route path="/product/welding-electrodes/aluminium-wire/ercusi-a-silicon-bronze" component={ERCuSiASiliconBronzeDetail} />
+      <Route path="/product/welding-electrodes/aluminium-wire/general-purpose-aluminum-wire" component={GeneralPurposeAluminumWireDetail} />
 
       {/* Galvanized Routes */}
       <Route path="/product/galvanized/hot-dip-galvanized-angles" component={HotDipGalvanizedAngles} />
@@ -617,10 +818,50 @@ function Router() {
       <Route path="/product/pins/pipe-linch-pin" component={PipeLinchPin} />
 
       <Route path="/product/fasteners/high-tensile" component={HighTensileFasteners} />
+
+      {/* High Tensile Fastener Grade Detail Routes */}
+      <Route path="/product/fasteners/high-tensile/b7-bolts" component={B7BoltsDetail} />
+      <Route path="/product/fasteners/high-tensile/b16-bolts" component={B16BoltsDetail} />
+      <Route path="/product/fasteners/high-tensile/l7-bolts" component={L7BoltsDetail} />
+      <Route path="/product/fasteners/high-tensile/8-8-fasteners" component={Grade88FastenersDetail} />
+      <Route path="/product/fasteners/high-tensile/10-9-fasteners" component={Grade109FastenersDetail} />
+      <Route path="/product/fasteners/high-tensile/12-9-fasteners" component={Grade129FastenersDetail} />
+      <Route path="/product/fasteners/high-tensile/a4-80-fasteners" component={GradeA480FastenersDetail} />
+      <Route path="/product/fasteners/high-tensile/2h-nuts" component={Grade2HNutsDetail} />
+
+      {/* Stainless Steel Bolt Grade Detail Routes */}
+      <Route path="/product/fasteners/ss-bolts/hex-head-bolts" component={HexHeadBoltsDetail} />
+      <Route path="/product/fasteners/ss-screws/socket-head-cap-screws" component={SocketHeadCapScrewsDetail} />
+      <Route path="/product/fasteners/ss-screws/socket-button-head-screws" component={SocketButtonHeadScrewsDetail} />
+      <Route path="/product/fasteners/ss-screws/countersunk-head-screws" component={CountersunkHeadScrewsDetail} />
+      <Route path="/product/fasteners/ss-screws/wood-screws" component={WoodScrewsDetail} />
+      <Route path="/product/fasteners/ss-screws/self-tapping-screws" component={SelfTappingScrewsDetail} />
+      <Route path="/product/fasteners/ss-screws/thumb-screws" component={ThumbScrewsDetail} />
+      <Route path="/product/fasteners/ss-bolts/flange-bolts" component={FlangeBoltsDetail} />
+      <Route path="/product/fasteners/ss-bolts/u-bolts" component={UBoltDetail} />
+      <Route path="/product/fasteners/ss-bolts/foundation-anchor-bolts" component={FoundationAnchorBoltsDetail} />
+      <Route path="/product/fasteners/ss-bolts/j-bolts" component={JBoltDetail} />
+
+      {/* Stainless Steel Nut Grade Detail Routes */}
+      <Route path="/product/fasteners/ss-nuts/hex-nuts" component={HexNutsDetail} />
+      <Route path="/product/fasteners/ss-nuts/nyloc-lock-nuts" component={NylocNutsDetail} />
+      <Route path="/product/fasteners/ss-nuts/flange-nuts" component={FlangeNutsDetail} />
+      <Route path="/product/fasteners/ss-nuts/square-nuts" component={SquareNutsDetail} />
+      <Route path="/product/fasteners/ss-nuts/weld-nuts" component={WeldNutsDetail} />
+      <Route path="/product/fasteners/ss-nuts/thin-jam-nuts" component={ThinJamNutsDetail} />
+
       <Route path="/product/fasteners/ss-bolts" component={StainlessSteelBolts} />
       <Route path="/product/fasteners/ss-nuts" component={StainlessSteelNuts} />
       <Route path="/product/fasteners/ss-screws" component={StainlessSteelScrews} />
       <Route path="/product/fasteners/ss-washers" component={StainlessSteelWashers} />
+      
+      {/* Stainless Steel Washer Grade Detail Routes */}
+      <Route path="/product/fasteners/ss-washers/plain-washers" component={PlainWashersDetail} />
+      <Route path="/product/fasteners/ss-washers/spring-washers" component={SpringWashersDetail} />
+      <Route path="/product/fasteners/ss-washers/toothed-lock-washers" component={ToothedLockWashersDetail} />
+      <Route path="/product/fasteners/ss-washers/fender-washers" component={FenderWashersDetail} />
+      <Route path="/product/fasteners/ss-washers/belleville-washers" component={BellevilleWashersDetail} />
+      <Route path="/product/fasteners/ss-washers/wave-washers" component={WaveWashersDetail} />
 
       {/* Additional Pipe & Tubes Routes */}
       <Route path="/product/pipes-tubes/nickel-alloy" component={NickelAlloyPipes} />
@@ -638,12 +879,119 @@ function Router() {
       <Route path="/product/pipes-tubes/plate-welded-pipes" component={PlateWeldedPipes} />
       <Route path="/product/pipes-tubes/large-od-seamless-pipes" component={LargeODSeamlessPipes} />
 
+      {/* Stainless Steel Pipe Grade Detail Routes */}
+      <Route path="/product/pipes-tubes/stainless-steel/304-pipes" component={SS304PipesDetail} />
+      <Route path="/product/pipes-tubes/stainless-steel/304l-pipes" component={SS304LPipesDetail} />
+      <Route path="/product/pipes-tubes/stainless-steel/310-pipes" component={SS310PipesDetail} />
+      <Route path="/product/pipes-tubes/stainless-steel/310s-pipes" component={SS310SPipesDetail} />
+      <Route path="/product/pipes-tubes/stainless-steel/316l-pipes" component={SS316LPipesDetail} />
+      <Route path="/product/pipes-tubes/stainless-steel/317-pipes" component={SS317PipesDetail} />
+      <Route path="/product/pipes-tubes/stainless-steel/317l-pipes" component={SS317LPipesDetail} />
+      <Route path="/product/pipes-tubes/stainless-steel/321-pipes" component={SS321PipesDetail} />
+      <Route path="/product/pipes-tubes/stainless-steel/347-pipes" component={SS347PipesDetail} />
+      <Route path="/product/pipes-tubes/stainless-steel/904l-pipes" component={SS904LPipesDetail} />
+      <Route path="/product/pipes-tubes/monel/400-pipes" component={Monel400PipesDetail} />
+      <Route path="/product/pipes-tubes/monel/k500-pipes" component={MonelK500PipesDetail} />
+      <Route path="/product/pipes-tubes/inconel/600-pipes" component={Inconel600PipesDetail} />
+      <Route path="/product/pipes-tubes/inconel/601-pipes" component={Inconel601PipesDetail} />
+      <Route path="/product/pipes-tubes/inconel/625-pipes" component={Inconel625PipesDetail} />
+      <Route path="/product/pipes-tubes/inconel/718-pipes" component={Inconel718PipesDetail} />
+      <Route path="/product/pipes-tubes/incoloy/800-pipes" component={Incoloy800PipesDetail} />
+      <Route path="/product/pipes-tubes/incoloy/800h-pipes" component={Incoloy800HPipesDetail} />
+      <Route path="/product/pipes-tubes/incoloy/825-pipes" component={Incoloy825PipesDetail} />
+      <Route path="/product/pipes-tubes/hastelloy/c276-pipes" component={HastelloyC276PipesDetail} />
+      <Route path="/product/pipes-tubes/hastelloy/c22-pipes" component={HastelloyC22PipesDetail} />
+      <Route path="/product/pipes-tubes/duplex/2205-pipes" component={Duplex2205PipesDetail} />
+      <Route path="/product/pipes-tubes/duplex/2507-pipes" component={SuperDuplex2507PipesDetail} />
+      <Route path="/product/pipes-tubes/titanium/grade-2-pipes" component={TitaniumGrade2PipesDetail} />
+      <Route path="/product/pipes-tubes/alloy-20/pipes" component={Alloy20PipesDetail} />
+
+      {/* Carbon Steel Pipe Grade Detail Routes */}
+      <Route path="/product/pipes-tubes/carbon-steel/a106-grade-b" component={A106GradeBPipesDetail} />
+      <Route path="/product/pipes-tubes/carbon-steel/a333-grade-6" component={A333Grade6PipesDetail} />
+      <Route path="/product/pipes-tubes/carbon-steel/aisi-4130" component={AISI4130PipesDetail} />
+      <Route path="/product/pipes-tubes/carbon-steel/api-5l" component={API5LPipesDetail} />
+      <Route path="/product/pipes-tubes/carbon-steel/a53-grade-b" component={A53GradeBPipesDetail} />
+
+      {/* Alloy Steel Pipe Grade Detail Routes */}
+      <Route path="/product/pipes-tubes/alloy-steel/p5-pipes" component={P5AlloySteelPipesDetail} />
+      <Route path="/product/pipes-tubes/alloy-steel/p9-pipes" component={P9AlloySteelPipesDetail} />
+      <Route path="/product/pipes-tubes/alloy-steel/p11-pipes" component={P11AlloySteelPipesDetail} />
+      <Route path="/product/pipes-tubes/alloy-steel/p22-pipes" component={P22AlloySteelPipesDetail} />
+      <Route path="/product/pipes-tubes/alloy-steel/p91-pipes" component={P91AlloySteelPipesDetail} />
+      <Route path="/product/pipes-tubes/alloy-steel/p92-pipes" component={P92AlloySteelPipesDetail} />
+
       {/* Additional Plates & Sheets Routes */}
       <Route path="/product/plates-sheets/alloy-steel-plates" component={AlloySteelPlates} />
       <Route path="/product/plates-sheets/aluminium-alloy" component={AluminiumAlloyPlates} />
+      <Route path="/product/plates-sheets/aluminium-alloy/1100-plates" component={Aluminium1100PlatesDetail} />
+      <Route path="/product/plates-sheets/aluminium-alloy/2014-plates" component={Aluminium2014PlatesDetail} />
+      <Route path="/product/plates-sheets/aluminium-alloy/2024-plates" component={Aluminium2024PlatesDetail} />
+      <Route path="/product/plates-sheets/aluminium-alloy/3003-plates" component={Aluminium3003PlatesDetail} />
+      <Route path="/product/plates-sheets/aluminium-alloy/5052-plates" component={Aluminium5052PlatesDetail} />
+      <Route path="/product/plates-sheets/aluminium-alloy/5083-plates" component={Aluminium5083PlatesDetail} />
+      <Route path="/product/plates-sheets/aluminium-alloy/5086-plates" component={Aluminium5086PlatesDetail} />
+      <Route path="/product/plates-sheets/aluminium-alloy/6061-plates" component={Aluminium6061PlatesDetail} />
+      <Route path="/product/plates-sheets/aluminium-alloy/6063-plates" component={Aluminium6063PlatesDetail} />
+      <Route path="/product/plates-sheets/aluminium-alloy/6082-plates" component={Aluminium6082PlatesDetail} />
+      <Route path="/product/plates-sheets/aluminium-alloy/7050-plates" component={Aluminium7050PlatesDetail} />
+      <Route path="/product/plates-sheets/aluminium-alloy/7075-plates" component={Aluminium7075PlatesDetail} />
       <Route path="/product/plates-sheets/carbon-steel" component={CarbonSteelPlates} />
+
+      {/* Carbon Steel Plate Grade Detail Routes */}
+      <Route path="/product/plates-sheets/carbon-steel/a36-plates" component={CarbonSteelA36PlatesDetail} />
+      <Route path="/product/plates-sheets/carbon-steel/a516-plates" component={CarbonSteelA516PlatesDetail} />
+      <Route path="/product/plates-sheets/carbon-steel/a572-plates" component={CarbonSteelA572PlatesDetail} />
+      <Route path="/product/plates-sheets/carbon-steel/a283-plates" component={CarbonSteelA283PlatesDetail} />
+      <Route path="/product/plates-sheets/carbon-steel/is2062-plates" component={CarbonSteelIS2062PlatesDetail} />
+      <Route path="/product/plates-sheets/carbon-steel/c45-plates" component={CarbonSteelC45PlatesDetail} />
+      <Route path="/product/plates-sheets/carbon-steel/en19-plates" component={CarbonSteelEN19PlatesDetail} />
+      <Route path="/product/plates-sheets/carbon-steel/50crv4-plates" component={CarbonSteel50CrV4PlatesDetail} />
+      <Route path="/product/plates-sheets/carbon-steel/s355-plates" component={CarbonSteelS355PlatesDetail} />
+      <Route path="/product/plates-sheets/carbon-steel/st52-plates" component={CarbonSteelST52PlatesDetail} />
+      <Route path="/product/plates-sheets/carbon-steel/a588-plates" component={CarbonSteelA588PlatesDetail} />
+      <Route path="/product/plates-sheets/carbon-steel/irsm41-plates" component={CarbonSteelIRSM41PlatesDetail} />
+
       <Route path="/product/plates-sheets/copper-nickel" component={CopperNickelPlates} />
       <Route path="/product/plates-sheets/duplex-super-duplex" component={DuplexSuperDuplexPlates} />
+
+      {/* Duplex & Super Duplex Plate Grade Detail Routes */}
+      <Route path="/product/plates-sheets/duplex-super-duplex/1-4410-plates" component={Duplex14410PlatesDetail} />
+      <Route path="/product/plates-sheets/duplex-super-duplex/alloy-20-plates" component={Alloy20PlatesDetail} />
+      <Route path="/product/plates-sheets/duplex-super-duplex/s31803-plates" component={DuplexS31803PlatesDetail} />
+      <Route path="/product/plates-sheets/duplex-super-duplex/s32550-plates" component={DuplexS32550PlatesDetail} />
+      <Route path="/product/plates-sheets/duplex-super-duplex/s32750-plates" component={DuplexS32750PlatesDetail} />
+      <Route path="/product/plates-sheets/duplex-super-duplex/s32760-plates" component={DuplexS32760PlatesDetail} />
+      <Route path="/product/plates-sheets/duplex-super-duplex/s32205-plates" component={DuplexS32205PlatesDetail} />
+      <Route path="/product/plates-sheets/duplex-super-duplex/2304-plates" component={Duplex2304PlatesDetail} />
+
+      {/* Stainless Steel Plate Grade Detail Routes */}
+      <Route path="/product/plates-sheets/stainless-steel/304-plates" component={SS304PlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/304l-plates" component={SS304LPlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/316-plates" component={SS316PlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/316l-plates" component={SS316LPlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/317l-plates" component={SS317LPlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/321-plates" component={SS321PlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/310-plates" component={SS310PlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/309-plates" component={SS309PlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/15-5ph-plates" component={SS155PHPlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/17-4ph-plates" component={SS174PHPlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/253ma-plates" component={SS253MAPlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/420j1-plates" component={SS420J1PlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/410-plates" component={SS410PlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/430-plates" component={SS430PlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/904l-plates" component={SS904LPlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/347-plates" component={SS347PlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/2205-duplex-plates" component={SSDuplex2205PlatesDetail} />
+      <Route path="/product/plates-sheets/stainless-steel/2507-super-duplex-plates" component={SSSuperDuplex2507PlatesDetail} />
+
+      {/* Alloy Steel Plate Grade Detail Routes */}
+      <Route path="/product/plates-sheets/alloy-steel/15cdv6-sheets" component={Grade15CDV6PlatesDetail} />
+      <Route path="/product/plates-sheets/alloy-steel/17-4ph-plates" component={Grade174PHPlatesDetail} />
+      <Route path="/product/plates-sheets/alloy-steel/50crv4-sheets" component={Grade50CrV4SheetsDetail} />
+      <Route path="/product/plates-sheets/alloy-steel/a387-plates" component={GradeA387PlatesDetail} />
+      <Route path="/product/plates-sheets/alloy-steel/en19-plates" component={GradeEN19PlatesDetail} />
+      <Route path="/product/plates-sheets/alloy-steel/sae-4140-plates" component={GradeSAE4140PlatesDetail} />
 
       {/* Round Bars Main Page Route */}
       <Route path="/product/round-bars/round-bars" component={RoundBarsMain} />

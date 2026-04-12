@@ -24,6 +24,7 @@ const alloySteelGrades = [
     name: "15CDV6 Sheets",
     shortName: "15CDV6 (1.7734)",
     image: ss304Plate,
+    href: "/product/plates-sheets/alloy-steel/15cdv6-sheets",
     description:
       "High-strength chromium, molybdenum & vanadium heat treatable steel with excellent yield strength and toughness. Ideal for aerospace and defense applications.",
     chemicalComposition:
@@ -43,6 +44,7 @@ const alloySteelGrades = [
     name: "17-4 PH Plates",
     shortName: "SS 17-4 PH",
     image: carbonSteelPlates,
+    href: "/product/plates-sheets/alloy-steel/17-4ph-plates",
     description:
       "Martensitic precipitation-hardening stainless steel with high strength and excellent corrosion resistance. Capable of attaining wide range of strength properties.",
     chemicalComposition:
@@ -62,6 +64,7 @@ const alloySteelGrades = [
     name: "50CrV4 Sheet",
     shortName: "50CrV4 (EN47)",
     image: alloySteelPlates,
+    href: "/product/plates-sheets/alloy-steel/50crv4-sheets",
     description:
       "Chromium vanadium spring steel with high fatigue and impact resistance. Tough, shock-resisting steel suitable for oil hardening and tempering.",
     chemicalComposition:
@@ -81,6 +84,7 @@ const alloySteelGrades = [
     name: "A387/SA387 Chrome Moly Plates",
     shortName: "Chrome Moly",
     image: chequeredPlates,
+    href: "/product/plates-sheets/alloy-steel/a387-plates",
     description:
       "Chromium-molybdenum alloy steel plates for elevated temperature service in boilers and pressure vessels. Available in grades 5, 9, 11, 12, 22, and 91.",
     chemicalComposition:
@@ -101,6 +105,7 @@ const alloySteelGrades = [
     name: "EN19 Plates",
     shortName: "EN19 (AISI 4140)",
     image: ss304Plate,
+    href: "/product/plates-sheets/alloy-steel/en19-plates",
     description:
       "High quality alloy steel known as high tensile steel with good ductility, shock resistance, and wear resistance. Widely used in oil & gas industries.",
     chemicalComposition:
@@ -120,6 +125,7 @@ const alloySteelGrades = [
     name: "SAE 4140 Plate",
     shortName: "SAE 4140",
     image: ss304Plate,
+    href: "/product/plates-sheets/alloy-steel/sae-4140-plates",
     description:
       "Chromium molybdenum alloy steel with high tensile strength and toughness. Perfect for applications requiring strength and impact resistance.",
     chemicalComposition:
@@ -499,12 +505,14 @@ export default function AlloySteelPlates() {
                       </p>
                     </div>
 
-                    <Button
-                      className="w-full bg-blue-600 hover:bg-blue-700"
-                      data-testid={`button-enquiry-${grade.id}`}
-                    >
-                      Request Quote
-                    </Button>
+                    <Link href={grade.href} className="w-full">
+                      <Button
+                        className="w-full bg-blue-600 hover:bg-blue-700"
+                        data-testid={`button-enquiry-${grade.id}`}
+                      >
+                        View Grade Details
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               ))}

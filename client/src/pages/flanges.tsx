@@ -54,7 +54,7 @@ export default function Flanges() {
             </header>
 
             {/* Hero Image */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -66,7 +66,7 @@ export default function Flanges() {
                 className="w-full h-96 object-cover rounded-xl shadow-2xl"
                 loading="lazy"
               />
-            </motion.div>
+            </motion.div> */}
 
             {/* Types of Flanges Section */}
             <motion.section

@@ -32,6 +32,73 @@ export default function AlloySteelPipes() {
     { icon: CheckCircle, title: "Multiple Grades", desc: "Wide range of alloy steel grades available" }
   ];
 
+  const products = [
+    {
+      name: "A106 Grade B (Carbon Steel)",
+      image: ss_pipe_mamta_steel_traders_img,
+      alt: "A106 Grade B Carbon Steel Seamless Pipe",
+      description: "High-temperature carbon steel seamless pipes - also available for comparison with alloy grades.",
+      route: "/product/pipes-tubes/carbon-steel/a106-grade-b",
+      testId: "gallery-a106"
+    },
+    {
+      name: "AISI 4130 / SAE 4130",
+      image: ss_pipe_mamta_steel_traders_img,
+      alt: "AISI 4130 SAE 4130 Seamless Pipes Tubes",
+      description: "Chromium-molybdenum alloy steel with excellent strength and weldability for structural applications.",
+      route: "/product/pipes-tubes/carbon-steel/aisi-4130",
+      testId: "gallery-aisi-4130"
+    },
+    {
+      name: "ASTM A335 Grade P5",
+      image: ss_pipe_mamta_steel_traders_img,
+      alt: "ASTM A335 Grade P5 Alloy Seamless Pipe Tube",
+      description: "Chrome-moly alloy steel pipes for high-temperature service in power generation applications.",
+      route: "/product/pipes-tubes/alloy-steel/p5-pipes",
+      testId: "gallery-p5"
+    },
+    {
+      name: "ASTM A335 Grade P9",
+      image: ss_pipe_mamta_steel_traders_img,
+      alt: "ASTM A335 Grade P9 Alloy Steel Seamless Pipe",
+      description: "Enhanced chrome-moly alloy steel with superior creep resistance for superheater applications.",
+      route: "/product/pipes-tubes/alloy-steel/p9-pipes",
+      testId: "gallery-p9"
+    },
+    {
+      name: "ASTM A335 Grade P91",
+      image: ss_pipe_mamta_steel_traders_img,
+      alt: "ASTM A335 Grade P91 High Temperature Alloy Steel Pipe",
+      description: "Advanced ferritic/martensitic alloy steel for ultra-high temperature steam applications.",
+      route: "/product/pipes-tubes/alloy-steel/p91-pipes",
+      testId: "gallery-p91"
+    },
+    {
+      name: "ASTM A335 Grade P22",
+      image: ss_pipe_mamta_steel_traders_img,
+      alt: "ASTM A335 Grade P22 Alloy Steel Pipe",
+      description: "Chrome-molybdenum alloy steel pipes for high-temperature hydrogen service applications.",
+      route: "/product/pipes-tubes/alloy-steel/p22-pipes",
+      testId: "gallery-p22"
+    },
+    {
+      name: "ASTM A335 Grade P11",
+      image: ss_pipe_mamta_steel_traders_img,
+      alt: "ASTM A335 Grade P11 Alloy Steel Seamless Pipe",
+      description: "Chromium-molybdenum alloy steel for moderate high-temperature steam applications.",
+      route: "/product/pipes-tubes/alloy-steel/p11-pipes",
+      testId: "gallery-p11"
+    },
+    {
+      name: "ASTM A335 Grade P92",
+      image: ss_pipe_mamta_steel_traders_img,
+      alt: "ASTM A335 Grade P92 Tungsten-Enhanced Alloy Pipe",
+      description: "Advanced tungsten-strengthened alloy for ultra-high temperature supercritical power plants.",
+      route: "/product/pipes-tubes/alloy-steel/p92-pipes",
+      testId: "gallery-p92"
+    }
+  ];
+
   return (
     <>
       <ProductSEO
@@ -53,7 +120,7 @@ export default function AlloySteelPipes() {
               <ArrowRight className="w-4 h-4" />
               <Link href="/products" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-products">Products</Link>
               <ArrowRight className="w-4 h-4" />
-              <Link href="/product/pipes-tubes" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-pipes-tubes">Pipes & Tubes</Link>
+              <Link href="/pipes-tubes" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-pipes-tubes">Pipes & Tubes</Link>
               <ArrowRight className="w-4 h-4" />
               <span className="text-navy-primary font-medium" data-testid="breadcrumb-current">Alloy Steel Pipes</span>
             </div>
@@ -136,7 +203,7 @@ export default function AlloySteelPipes() {
                       <div className="w-2 h-2 bg-gold-primary rounded-full mt-2 flex-shrink-0"></div>
                       <div>
                         <h4 className="font-semibold mb-1">Technical Excellence</h4>
-                        <p className="text-sm text-blue-100">Expert metallurgical team with 25+ years experience</p>
+                        <p className="text-sm text-blue-100">Expert metallurgical team with 10+ years experience</p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
@@ -167,142 +234,34 @@ export default function AlloySteelPipes() {
         <section className="py-16 bg-white" data-testid="product-gallery-section">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-2xl font-bold text-center text-navy-primary mb-12" data-testid="gallery-title">
+              <h2 className="text-3xl font-bold text-center text-navy-primary mb-12 uppercase italic tracking-tighter" data-testid="gallery-title">
                 Our Alloy Steel Pipe Products
               </h2>
               
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                {/* A106 Grade B */}
-                <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" data-testid="gallery-a106">
-                  <div className="aspect-square mb-4 overflow-hidden rounded-lg">
-                    <img 
-                      src={ss_pipe_mamta_steel_traders_img} 
-                      alt="A106 Grade B Carbon Steel Seamless Pipe"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                      width="300"
-                      height="300"
-                      data-testid="a106-image"
-                    />
+                {products.map((product, index) => (
+                  <div key={index} className="bg-white border border-gray-100 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col" data-testid={product.testId}>
+                    <div className="aspect-video overflow-hidden rounded-t-xl group relative">
+                      <img 
+                        src={product.image} 
+                        alt={product.alt}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-navy-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                    </div>
+                    <div className="p-6 flex flex-col flex-grow">
+                      <h3 className="text-xl font-bold text-navy-primary mb-3 uppercase italic tracking-tight">{product.name}</h3>
+                      <p className="text-gray-600 text-sm mb-6 flex-grow leading-relaxed">
+                        {product.description}
+                      </p>
+                      <Link href={product.route} className="inline-flex items-center bg-navy-primary text-white py-2.5 px-6 rounded-lg hover:bg-navy-secondary font-bold text-sm transition-all hover:translate-x-1 shadow-md uppercase tracking-wider">
+                        Product Details
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Link>
+                    </div>
                   </div>
-                  <h3 className="text-xl font-semibold text-navy-primary mb-2">A106 Grade B (Carbon Steel)</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    High-temperature carbon steel seamless pipes - also available for comparison with alloy grades.
-                  </p>
-                  <Link href="/contact" className="text-gold-primary hover:text-gold-secondary font-medium text-sm transition-colors" data-testid="a106-get-quote">
-                    Get Quote →
-                  </Link>
-                </div>
-
-                {/* AISI 4130 */}
-                <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" data-testid="gallery-aisi-4130">
-                  <div className="aspect-square mb-4 overflow-hidden rounded-lg">
-                    <img 
-                      src={ss_pipe_mamta_steel_traders_img} 
-                      alt="AISI 4130 SAE 4130 Seamless Pipes Tubes"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                      width="300"
-                      height="300"
-                      data-testid="aisi-4130-image"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-navy-primary mb-2">AISI 4130 / SAE 4130</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    Chromium-molybdenum alloy steel with excellent strength and weldability for structural applications.
-                  </p>
-                  <Link href="/contact" className="text-gold-primary hover:text-gold-secondary font-medium text-sm transition-colors" data-testid="aisi-4130-get-quote">
-                    Get Quote →
-                  </Link>
-                </div>
-
-                {/* ASTM A335 Grade P5 */}
-                <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" data-testid="gallery-p5">
-                  <div className="aspect-square mb-4 overflow-hidden rounded-lg">
-                    <img 
-                      src={ss_pipe_mamta_steel_traders_img} 
-                      alt="ASTM A335 Grade P5 Alloy Seamless Pipe Tube"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                      width="300"
-                      height="300"
-                      data-testid="p5-image"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-navy-primary mb-2">ASTM A335 Grade P5</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    Chrome-moly alloy steel pipes for high-temperature service in power generation applications.
-                  </p>
-                  <Link href="/contact" className="text-gold-primary hover:text-gold-secondary font-medium text-sm transition-colors" data-testid="p5-get-quote">
-                    Get Quote →
-                  </Link>
-                </div>
-
-                {/* ASTM A335 Grade P9 */}
-                <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" data-testid="gallery-p9">
-                  <div className="aspect-square mb-4 overflow-hidden rounded-lg">
-                    <img 
-                      src={ss_pipe_mamta_steel_traders_img} 
-                      alt="ASTM A335 Grade P9 Alloy Steel Seamless Pipe"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                      width="300"
-                      height="300"
-                      data-testid="p9-image"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-navy-primary mb-2">ASTM A335 Grade P9</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    Enhanced chrome-moly alloy steel with superior creep resistance for superheater applications.
-                  </p>
-                  <Link href="/contact" className="text-gold-primary hover:text-gold-secondary font-medium text-sm transition-colors" data-testid="p9-get-quote">
-                    Get Quote →
-                  </Link>
-                </div>
-
-                {/* ASTM A335 Grade P91 */}
-                <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" data-testid="gallery-p91">
-                  <div className="aspect-square mb-4 overflow-hidden rounded-lg">
-                    <img 
-                      src={ss_pipe_mamta_steel_traders_img} 
-                      alt="ASTM A335 Grade P91 High Temperature Alloy Steel Pipe"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                      width="300"
-                      height="300"
-                      data-testid="p91-image"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-navy-primary mb-2">ASTM A335 Grade P91</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    Advanced ferritic/martensitic alloy steel for ultra-high temperature steam applications.
-                  </p>
-                  <Link href="/contact" className="text-gold-primary hover:text-gold-secondary font-medium text-sm transition-colors" data-testid="p91-get-quote">
-                    Get Quote →
-                  </Link>
-                </div>
-
-                {/* ASTM A335 Grade P22 */}
-                <div className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300" data-testid="gallery-p22">
-                  <div className="aspect-square mb-4 overflow-hidden rounded-lg">
-                    <img 
-                      src={ss_pipe_mamta_steel_traders_img} 
-                      alt="ASTM A335 Grade P22 Alloy Steel Pipe"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                      width="300"
-                      height="300"
-                      data-testid="p22-image"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold text-navy-primary mb-2">ASTM A335 Grade P22</h3>
-                  <p className="text-gray-600 text-sm mb-3">
-                    Chrome-molybdenum alloy steel pipes for high-temperature hydrogen service applications.
-                  </p>
-                  <Link href="/contact" className="text-gold-primary hover:text-gold-secondary font-medium text-sm transition-colors" data-testid="p22-get-quote">
-                    Get Quote →
-                  </Link>
-                </div>
+                ))}
               </div>
 
               {/* Gallery CTA */}

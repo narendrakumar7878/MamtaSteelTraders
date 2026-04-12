@@ -24,6 +24,7 @@ export default function StainlessSteelPlates() {
       id: "304",
       name: "304 Stainless Steel Plates",
       shortName: "SS 304",
+      slug: "304-plates",
       image: ss304Plate,
       description:
         "General purpose austenitic stainless steel with excellent corrosion resistance and formability. Most widely used grade for commercial applications.",
@@ -41,6 +42,7 @@ export default function StainlessSteelPlates() {
       id: "304L",
       name: "304L Stainless Steel Plates",
       shortName: "SS 304L",
+      slug: "304l-plates",
       image: ssPlate,
       description:
         "Low carbon version of 304 with superior weldability and reduced carbide precipitation. Ideal for welded constructions.",
@@ -58,6 +60,7 @@ export default function StainlessSteelPlates() {
       id: "316",
       name: "316 Stainless Steel Plates",
       shortName: "SS 316",
+      slug: "316-plates",
       image: ss304Plate,
       description:
         "Molybdenum-bearing austenitic stainless steel with superior corrosion resistance, especially in chloride environments.",
@@ -75,6 +78,7 @@ export default function StainlessSteelPlates() {
       id: "316L",
       name: "316L Stainless Steel Plates",
       shortName: "SS 316L",
+      slug: "316l-plates",
       image: ssPlate,
       description:
         "Low carbon variant of 316 with enhanced corrosion resistance and excellent weldability. Premium grade for critical applications.",
@@ -92,6 +96,7 @@ export default function StainlessSteelPlates() {
       id: "317L",
       name: "317L Stainless Steel Plates",
       shortName: "SS 317L",
+      slug: "317l-plates",
       image: ss304Plate,
       description:
         "Super austenitic stainless steel with higher molybdenum content for enhanced corrosion resistance in aggressive environments.",
@@ -109,6 +114,7 @@ export default function StainlessSteelPlates() {
       id: "321",
       name: "321 Stainless Steel Plates",
       shortName: "SS 321",
+      slug: "321-plates",
       image: ssPlate,
       description:
         "Titanium stabilized austenitic stainless steel with excellent high-temperature properties and intergranular corrosion resistance.",
@@ -126,6 +132,7 @@ export default function StainlessSteelPlates() {
       id: "310",
       name: "310 Stainless Steel Plates",
       shortName: "SS 310",
+      slug: "310-plates",
       image: ss304Plate,
       description:
         "High chromium-nickel austenitic stainless steel with excellent oxidation resistance at elevated temperatures up to 1040°C.",
@@ -143,6 +150,7 @@ export default function StainlessSteelPlates() {
       id: "309",
       name: "309 Stainless Steel Plates",
       shortName: "SS 309",
+      slug: "309-plates",
       image: ssPlate,
       description:
         "High alloy austenitic stainless steel with excellent oxidation resistance and strength at high temperatures.",
@@ -160,6 +168,7 @@ export default function StainlessSteelPlates() {
       id: "15-5PH",
       name: "15-5PH Stainless Steel Plates",
       shortName: "15-5PH",
+      slug: "15-5ph-plates",
       image: alloySteelPlates,
       description:
         "Precipitation hardening stainless steel with high strength, hardness and moderate corrosion resistance. UNS S15500.",
@@ -177,6 +186,7 @@ export default function StainlessSteelPlates() {
       id: "17-4PH",
       name: "17-4PH Stainless Steel Plates",
       shortName: "17-4PH",
+      slug: "17-4ph-plates",
       image: alloySteelPlates,
       description:
         "Precipitation hardening stainless steel with excellent strength and corrosion resistance. Widely used in aerospace and industrial applications.",
@@ -194,6 +204,7 @@ export default function StainlessSteelPlates() {
       id: "253MA",
       name: "253MA Stainless Steel Plates",
       shortName: "253MA",
+      slug: "253ma-plates",
       image: ss304Plate,
       description:
         "High temperature austenitic stainless steel with excellent oxidation resistance and creep strength at elevated temperatures.",
@@ -211,6 +222,7 @@ export default function StainlessSteelPlates() {
       id: "420J1",
       name: "420J1 Stainless Steel Plates",
       shortName: "420J1",
+      slug: "420j1-plates",
       image: carbonSteelPlates,
       description:
         "Martensitic stainless steel with good hardness and wear resistance. Equivalent to 420S1, widely used in cutlery applications.",
@@ -228,6 +240,7 @@ export default function StainlessSteelPlates() {
       id: "410",
       name: "410 Stainless Steel Plates",
       shortName: "SS 410",
+      slug: "410-plates",
       image: ssPlate,
       description:
         "General purpose martensitic stainless steel with good corrosion resistance and high strength after heat treatment.",
@@ -245,6 +258,7 @@ export default function StainlessSteelPlates() {
       id: "430",
       name: "430 Stainless Steel Plates",
       shortName: "SS 430",
+      slug: "430-plates",
       image: carbonSteelPlates,
       description:
         "Ferritic stainless steel with good corrosion resistance and formability. Magnetic properties and cost-effective solution.",
@@ -262,6 +276,7 @@ export default function StainlessSteelPlates() {
       id: "904L",
       name: "904L Stainless Steel Plates",
       shortName: "SS 904L",
+      slug: "904l-plates",
       image: ss304Plate,
       description:
         "Super austenitic stainless steel with exceptional corrosion resistance in aggressive environments including sulfuric acid.",
@@ -279,6 +294,7 @@ export default function StainlessSteelPlates() {
       id: "347",
       name: "347 Stainless Steel Plates",
       shortName: "SS 347",
+      slug: "347-plates",
       image: chequeredPlates,
       description:
         "Niobium stabilized austenitic stainless steel with excellent high temperature properties and intergranular corrosion resistance.",
@@ -296,6 +312,7 @@ export default function StainlessSteelPlates() {
       id: "2205",
       name: "2205 Duplex Stainless Steel Plates",
       shortName: "2205 Duplex",
+      slug: "2205-duplex-plates",
       image: alloySteelPlates,
       description:
         "Duplex stainless steel with excellent strength and pitting corrosion resistance. Combines austenitic and ferritic properties.",
@@ -313,6 +330,7 @@ export default function StainlessSteelPlates() {
       id: "2507",
       name: "2507 Super Duplex Stainless Steel Plates",
       shortName: "2507 Super Duplex",
+      slug: "2507-super-duplex-plates",
       image: alloySteelPlates,
       description:
         "Super duplex stainless steel with exceptional corrosion resistance and high strength for extreme service conditions.",
@@ -456,7 +474,7 @@ export default function StainlessSteelPlates() {
                 },
               ],
               applicationCategory: grade.applications,
-              url: `/product/plates-sheets/stainless-steel-plates#${grade.id}`,
+              url: `/product/plates-sheets/stainless-steel/${grade.slug}`,
               image: grade.image,
               offers: {
                 "@type": "Offer",
@@ -672,11 +690,11 @@ export default function StainlessSteelPlates() {
                       {/* CTA Button */}
                       <div className="pt-4 border-t border-gray-100">
                         <Link
-                          href="/contact"
-                          className="w-full bg-gold-primary hover:bg-gold-secondary text-navy-primary font-semibold py-2 px-4 rounded-lg transition-colors duration-300 text-center text-sm block"
+                          href={`/product/plates-sheets/stainless-steel/${grade.slug}`}
+                          className="w-full bg-gold-primary hover:bg-gold-secondary text-navy-primary font-bold py-2 px-4 rounded-lg transition-all duration-300 text-center text-sm block border border-transparent hover:border-navy-primary hover:scale-[1.02]"
                           data-testid={`grade-cta-${grade.id}`}
                         >
-                          Get {grade.shortName} Quote
+                          View Details & Specs
                         </Link>
                       </div>
                     </div>

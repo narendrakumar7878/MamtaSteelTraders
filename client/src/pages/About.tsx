@@ -47,7 +47,7 @@ export default function About() {
     <>
       <SEOHead
         title="About Mamta Steel Traders - Leading Steel Manufacturer & Supplier India | ISO Certified"
-        description="Mamta Steel Traders - India's largest steel manufacturer, stockist, supplier & exporter. ISO 9001:2015 & MSME certified. 30+ years experience in stainless steel, carbon steel, alloy steel pipes, plates, flanges, fittings. Trusted by 1000+ clients across India. Best quality steel products at competitive prices."
+        description="Mamta Steel Traders - India's largest steel manufacturer, stockist, supplier & exporter. ISO 9001:2015 & MSME certified. 10+ years experience in stainless steel, carbon steel, alloy steel pipes, plates, flanges, fittings. Trusted by 1000+ clients across India. Best quality steel products at competitive prices."
         keywords="about Mamta Steel Traders, steel manufacturer India, ISO certified steel supplier, stainless steel manufacturer, carbon steel supplier India, alloy steel pipes, steel stockist India, Mumbai steel supplier, steel exporter India, industrial steel manufacturer, quality steel supplier, bulk steel dealer India"
         canonicalUrl="https://mamtasteeltraders.com/about"
         structuredData={{
@@ -133,7 +133,7 @@ export default function About() {
                       </p>
                       <div className="grid grid-cols-2 gap-3 sm:gap-4">
                         <div className="text-center">
-                          <div className="text-2xl sm:text-2xl font-bold text-[#f39c12]">30+</div>
+                          <div className="text-2xl sm:text-2xl font-bold text-[#f39c12]">10+</div>
                           <div className="text-xs sm:text-sm text-blue-200">Years Experience</div>
                         </div>
                         <div className="text-center">

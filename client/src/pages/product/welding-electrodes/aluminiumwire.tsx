@@ -23,6 +23,7 @@ export default function AluminiumWire() {
     {
       id: 1,
       title: "ER5356 Aluminum TIG/MIG Wire",
+      slug: "er5356-aluminum-wire",
       image: aluminium_mamta_steel_traders_img,
       alt: "ER5356 Aluminum TIG MIG Wire Filler Rods",
       description: "5% magnesium aluminum filler metal with excellent corrosion resistance and high shear strength",
@@ -41,6 +42,7 @@ export default function AluminiumWire() {
     {
       id: 2,
       title: "ER1100 Aluminum TIG/MIG Wire",
+      slug: "er1100-aluminum-wire",
       image: aluminium_mamta_steel_traders_img,
       alt: "ER1100 Aluminum TIG MIG Wire Al99",
       description: "99% pure aluminum filler metal for welding commercially pure aluminum",
@@ -59,6 +61,7 @@ export default function AluminiumWire() {
     {
       id: 3,
       title: "ER4043 Aluminum TIG/MIG Wire",
+      slug: "er4043-aluminum-wire",
       image: aluminium_mamta_steel_traders_img,
       alt: "ER4043 Aluminum TIG MIG Wire Filler Rods",
       description: "Silicon-aluminum filler metal with excellent fluidity and crater filling characteristics",
@@ -77,6 +80,7 @@ export default function AluminiumWire() {
     {
       id: 4,
       title: "ERCuAl-A1 Aluminum Bronze Wire",
+      slug: "ercual-a1-aluminum-bronze",
       image: aluminium_mamta_steel_traders_img,
       alt: "ERCuAl-A1 Aluminum Bronze TIG MIG Wire C61000",
       description: "Aluminum bronze wire with excellent strength and corrosion resistance",
@@ -95,6 +99,7 @@ export default function AluminiumWire() {
     {
       id: 5,
       title: "ERCuAl-A2 Aluminum Bronze Wire",
+      slug: "ercual-a2-aluminum-bronze",
       image: aluminium_mamta_steel_traders_img,
       alt: "ERCuAl-A2 Aluminum Bronze TIG MIG Wire C61800",
       description: "High strength aluminum bronze for demanding applications",
@@ -113,6 +118,7 @@ export default function AluminiumWire() {
     {
       id: 6,
       title: "ERCuAl-A3 Aluminum Bronze Wire",
+      slug: "ercual-a3-aluminum-bronze",
       image: aluminium_mamta_steel_traders_img,
       alt: "ERCuAl-A3 Aluminum Bronze TIG MIG Wire C62400",
       description: "Premium aluminum bronze with maximum strength and durability",
@@ -131,6 +137,7 @@ export default function AluminiumWire() {
     {
       id: 7,
       title: "ERCuSi-A Silicon Bronze Wire",
+      slug: "ercusi-a-silicon-bronze",
       image: aluminium_mamta_steel_traders_img,
       alt: "ERCuSi-A Silicon Bronze TIG MIG Wire",
       description: "Silicon bronze wire for general purpose welding and brazing",
@@ -149,6 +156,7 @@ export default function AluminiumWire() {
     {
       id: 8,
       title: "General Purpose Aluminum Alloy Wire",
+      slug: "general-purpose-aluminum-wire",
       image: aluminium_mamta_steel_traders_img,
       alt: "General Purpose Aluminum Alloy TIG MIG Wire",
       description: "Multi-purpose aluminum welding wire for various applications",
@@ -321,8 +329,8 @@ export default function AluminiumWire() {
                         {product.awsClass}
                       </span>
                     </div>
-                    <Link href="/contact" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded text-center inline-block transition-colors duration-200" data-testid={`button-enquire-${product.id}`}>
-                      Enquire Now
+                    <Link href={`/product/welding-electrodes/aluminium-wire/${product.slug}`} className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded text-center inline-block transition-colors duration-200" data-testid={`button-details-${product.id}`}>
+                      Product Details <ArrowRight className="w-4 h-4 ml-1 inline-block" />
                     </Link>
                   </div>
                 </div>

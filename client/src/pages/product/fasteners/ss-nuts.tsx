@@ -19,6 +19,7 @@ export default function StainlessSteelNuts() {
   const nutTypes = [
     {
       name: "Hex Nuts",
+      link: "/product/fasteners/ss-nuts/hex-nuts",
       description: "Standard hexagonal nuts for general purpose applications with metric and imperial threading",
       grades: ["SS 304", "SS 316L", "Duplex 2205", "A2-70", "A4-80"],
       sizes: "M3-M100, #4-4\"",
@@ -29,6 +30,7 @@ export default function StainlessSteelNuts() {
     },
     {
       name: "Nyloc Nuts (Lock Nuts)",
+      link: "/product/fasteners/ss-nuts/nyloc-lock-nuts",
       description: "Self-locking nuts with nylon insert for vibration resistance and prevailing torque",
       grades: ["SS 304", "SS 316L", "A2-70", "A4-80"],
       sizes: "M3-M48, #4-2\"",
@@ -39,6 +41,7 @@ export default function StainlessSteelNuts() {
     },
     {
       name: "Flange Nuts",
+      link: "/product/fasteners/ss-nuts/flange-nuts",
       description: "Nuts with built-in washer flange for increased bearing surface and load distribution",
       grades: ["SS 304", "SS 316", "SS 321", "Duplex"],
       sizes: "M5-M20, 3/16\"-3/4\"",
@@ -49,6 +52,7 @@ export default function StainlessSteelNuts() {
     },
     {
       name: "Square Nuts",
+      link: "/product/fasteners/ss-nuts/square-nuts",
       description: "Four-sided nuts for applications requiring non-rotation in square holes or slots",
       grades: ["SS 304", "SS 316L", "SS 321"],
       sizes: "M5-M30, 3/16\"-1.25\"",
@@ -59,6 +63,7 @@ export default function StainlessSteelNuts() {
     },
     {
       name: "Weld Nuts",
+      link: "/product/fasteners/ss-nuts/weld-nuts",
       description: "Square or hex nuts with projection welding capability for permanent attachment",
       grades: ["SS 304", "SS 316L", "SS 321"],
       sizes: "M4-M16, #6-5/8\"",
@@ -69,6 +74,7 @@ export default function StainlessSteelNuts() {
     },
     {
       name: "Thin Nuts (Jam Nuts)",
+      link: "/product/fasteners/ss-nuts/thin-jam-nuts",
       description: "Reduced height nuts for limited space applications and locking against standard nuts",
       grades: ["SS 304", "SS 316L", "A2-70", "A4-80"],
       sizes: "M3-M48, #4-2\"",
@@ -270,8 +276,8 @@ export default function StainlessSteelNuts() {
                         </div>
                       </div>
                       
-                      <Link href="/contact" className="text-gold-primary hover:text-gold-secondary font-medium text-sm">
-                        Request Quote →
+                      <Link href={nut.link} className="text-gold-primary hover:text-gold-secondary font-bold text-sm flex items-center group/btn">
+                        View Details <ArrowRight className="ml-1 w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                       </Link>
                     </div>
                   </div>

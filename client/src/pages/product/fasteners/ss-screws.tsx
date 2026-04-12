@@ -18,6 +18,7 @@ export default function StainlessSteelScrews() {
   const screwTypes = [
     {
       name: "Socket Head Cap Screws",
+      slug: "socket-head-cap-screws",
       description: "Cylindrical head screws with hexagonal socket drive for high strength applications",
       grades: ["SS 316L", "SS 304", "A4-80", "A2-70"],
       sizes: "M2-M48, #0-2\"",
@@ -29,6 +30,7 @@ export default function StainlessSteelScrews() {
     },
     {
       name: "Socket Button Head Screws",
+      slug: "socket-button-head-screws",
       description: "Low profile button head screws with hex socket for aesthetic and functional applications",
       grades: ["SS 304", "SS 316L", "A2-70", "A4-80"],
       sizes: "M3-M20, #4-3/4\"",
@@ -40,6 +42,7 @@ export default function StainlessSteelScrews() {
     },
     {
       name: "Countersunk Head Screws",
+      slug: "countersunk-head-screws",
       description: "Flat head screws designed to sit flush with surface for clean finished appearance",
       grades: ["SS 304", "SS 316L", "SS 321"],
       sizes: "M3-M20, #6-1\"",
@@ -51,6 +54,7 @@ export default function StainlessSteelScrews() {
     },
     {
       name: "Wood Screws",
+      slug: "wood-screws",
       description: "Self-tapping screws with aggressive thread design for wood and soft material applications",
       grades: ["SS 304", "SS 316L", "A2"],
       sizes: "#6-#14, 6mm-12mm",
@@ -62,6 +66,7 @@ export default function StainlessSteelScrews() {
     },
     {
       name: "Self-Tapping Screws",
+      slug: "self-tapping-screws",
       description: "Thread-forming screws for sheet metal and plastic applications without pre-drilling",
       grades: ["SS 304", "SS 316", "A2-70"],
       sizes: "#2-#14, M2.2-M6.3",
@@ -73,6 +78,7 @@ export default function StainlessSteelScrews() {
     },
     {
       name: "Thumb Screws",
+      slug: "thumb-screws",
       description: "Hand-operated screws with large knurled heads for tool-free operation",
       grades: ["SS 304", "SS 316L", "Duplex"],
       sizes: "M4-M12, #8-1/2\"",
@@ -292,8 +298,8 @@ export default function StainlessSteelScrews() {
                         </div>
                       </div>
                       
-                      <Link href="/contact" className="text-gold-primary hover:text-gold-secondary font-medium text-sm">
-                        Request Quote →
+                      <Link href={`/product/fasteners/ss-screws/${screw.slug}`} className="text-gold-primary hover:text-gold-secondary font-medium text-sm">
+                        Product Details →
                       </Link>
                     </div>
                   </div>

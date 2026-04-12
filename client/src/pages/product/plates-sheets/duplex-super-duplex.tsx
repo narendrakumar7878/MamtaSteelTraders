@@ -156,123 +156,148 @@ export default function DuplexSuperDuplexPlates() {
                 Textron Steel & Alloys stocks super duplex stainless steel plates certified to material grades with branded designations from Jindal, Outokumpu and other premium manufacturers.
               </p>
               
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                 {/* 1.4410 Plates */}
-                <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden" data-testid="product-1-4410">
-                  <div className="bg-gradient-to-r from-navy-primary to-navy-secondary p-6 text-white">
+                <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col h-full" data-testid="product-1-4410">
+                  <div className="bg-gradient-to-r from-navy-primary to-navy-secondary p-6 text-white min-h-[120px]">
                     <h3 className="text-xl font-bold mb-2">1.4410 Plates</h3>
                     <p className="text-blue-100">Super Duplex UNS S32750</p>
                   </div>
-                  <div className="p-6">
-                    <p className="text-gray-600 mb-4">The most common super duplex grade in the market. Designed for aggressive chloride-containing environments.</p>
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />25% Cr super duplex</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />X2CrNiMoN25-7-4</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />High mechanical strength</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Excellent stress corrosion resistance</li>
+                  <div className="p-6 flex-1 flex flex-col">
+                    <p className="text-gray-600 mb-4 flex-1 text-sm">The most common super duplex grade in the market. Designed for aggressive chloride-containing environments.</p>
+                    <ul className="space-y-2 text-sm mb-6">
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />25% Cr super duplex</li>
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />X2CrNiMoN25-7-4</li>
                     </ul>
+                    <Link href="/product/plates-sheets/duplex-super-duplex/1-4410-plates" className="w-full text-center border-2 border-gold-primary text-navy-primary font-bold py-2 px-4 rounded hover:bg-gold-primary hover:text-white transition-all duration-300 uppercase text-xs tracking-widest">
+                      View Details & Specs
+                    </Link>
                   </div>
                 </div>
 
                 {/* Alloy 20 */}
-                <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden" data-testid="product-alloy-20">
-                  <div className="bg-gradient-to-r from-green-600 to-green-700 p-6 text-white">
+                <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col h-full" data-testid="product-alloy-20">
+                  <div className="bg-gradient-to-r from-green-600 to-green-700 p-6 text-white min-h-[120px]">
                     <h3 className="text-xl font-bold mb-2">Alloy 20</h3>
                     <p className="text-green-100">UNS N08020</p>
                   </div>
-                  <div className="p-6">
-                    <p className="text-gray-600 mb-4">High-performance nickel-chromium-molybdenum alloy with superior corrosion resistance.</p>
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Chemical processing</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Sulfuric acid resistance</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />High temperature stability</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Pressure vessel applications</li>
+                  <div className="p-6 flex-1 flex flex-col">
+                    <p className="text-gray-600 mb-4 flex-1 text-sm">High-performance nickel-chromium-molybdenum alloy with superior corrosion resistance.</p>
+                    <ul className="space-y-2 text-sm mb-6">
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />Chemical processing</li>
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />Sulfuric acid resistance</li>
                     </ul>
+                    <Link href="/product/plates-sheets/duplex-super-duplex/alloy-20-plates" className="w-full text-center border-2 border-gold-primary text-navy-primary font-bold py-2 px-4 rounded hover:bg-gold-primary hover:text-white transition-all duration-300 uppercase text-xs tracking-widest">
+                      View Details & Specs
+                    </Link>
                   </div>
                 </div>
 
                 {/* UNS S31803 */}
-                <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden" data-testid="product-s31803">
-                  <div className="bg-gradient-to-r from-purple-600 to-purple-700 p-6 text-white">
+                <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col h-full" data-testid="product-s31803">
+                  <div className="bg-gradient-to-r from-purple-600 to-purple-700 p-6 text-white min-h-[120px]">
                     <h3 className="text-xl font-bold mb-2">UNS S31803</h3>
-                    <p className="text-purple-100">ASTM A240 / ASME SA240</p>
+                    <p className="text-purple-100">Standard 2205 Duplex</p>
                   </div>
-                  <div className="p-6">
-                    <p className="text-gray-600 mb-4">Standard duplex stainless steel with balanced austenitic-ferritic structure for enhanced properties.</p>
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Balanced duplex structure</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Oil & gas qualified</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Cost-effective solution</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />General chemical processing</li>
+                  <div className="p-6 flex-1 flex flex-col">
+                    <p className="text-gray-600 mb-4 flex-1 text-sm">Standard duplex stainless steel with balanced austenitic-ferritic structure for enhanced properties.</p>
+                    <ul className="space-y-2 text-sm mb-6">
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />Balanced duplex structure</li>
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />Oil & gas qualified</li>
                     </ul>
+                    <Link href="/product/plates-sheets/duplex-super-duplex/s31803-plates" className="w-full text-center border-2 border-gold-primary text-navy-primary font-bold py-2 px-4 rounded hover:bg-gold-primary hover:text-white transition-all duration-300 uppercase text-xs tracking-widest">
+                      View Details & Specs
+                    </Link>
                   </div>
                 </div>
 
                 {/* UNS S32550 */}
-                <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden" data-testid="product-s32550">
-                  <div className="bg-gradient-to-r from-orange-600 to-orange-700 p-6 text-white">
+                <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col h-full" data-testid="product-s32550">
+                  <div className="bg-gradient-to-r from-orange-600 to-orange-700 p-6 text-white min-h-[120px]">
                     <h3 className="text-xl font-bold mb-2">UNS S32550</h3>
-                    <p className="text-orange-100">ASTM A240 / ASME SA240</p>
+                    <p className="text-orange-100">Ferralium 255 Super Duplex</p>
                   </div>
-                  <div className="p-6">
-                    <p className="text-gray-600 mb-4">Super duplex grade with enhanced pitting and crevice corrosion resistance for demanding applications.</p>
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Super duplex grade</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Enhanced pitting resistance</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Offshore applications</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Seawater environments</li>
+                  <div className="p-6 flex-1 flex flex-col">
+                    <p className="text-gray-600 mb-4 flex-1 text-sm">Super duplex grade with enhanced pitting and crevice corrosion resistance for demanding applications.</p>
+                    <ul className="space-y-2 text-sm mb-6">
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />Enhanced pitting resistance</li>
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />Offshore applications</li>
                     </ul>
+                    <Link href="/product/plates-sheets/duplex-super-duplex/s32550-plates" className="w-full text-center border-2 border-gold-primary text-navy-primary font-bold py-2 px-4 rounded hover:bg-gold-primary hover:text-white transition-all duration-300 uppercase text-xs tracking-widest">
+                      View Details & Specs
+                    </Link>
                   </div>
                 </div>
 
                 {/* UNS S32750 */}
-                <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden" data-testid="product-s32750">
-                  <div className="bg-gradient-to-r from-red-600 to-red-700 p-6 text-white">
+                <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col h-full" data-testid="product-s32750">
+                  <div className="bg-gradient-to-r from-red-600 to-red-700 p-6 text-white min-h-[120px]">
                     <h3 className="text-xl font-bold mb-2">UNS S32750</h3>
-                    <p className="text-red-100">ASTM A240 / ASME SA240</p>
+                    <p className="text-red-100">Super Duplex 2507</p>
                   </div>
-                  <div className="p-6">
-                    <p className="text-gray-600 mb-4">Premium super duplex grade (2507) with exceptional corrosion resistance and mechanical properties.</p>
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />2507 designation</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />High molybdenum content</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Norsok qualified</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Offshore oil & gas</li>
+                  <div className="p-6 flex-1 flex flex-col">
+                    <p className="text-gray-600 mb-4 flex-1 text-sm">Premium super duplex grade (2507) with exceptional corrosion resistance and mechanical properties.</p>
+                    <ul className="space-y-2 text-sm mb-6">
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />High molybdenum content</li>
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />Norsok qualified</li>
                     </ul>
+                    <Link href="/product/plates-sheets/duplex-super-duplex/s32750-plates" className="w-full text-center border-2 border-gold-primary text-navy-primary font-bold py-2 px-4 rounded hover:bg-gold-primary hover:text-white transition-all duration-300 uppercase text-xs tracking-widest">
+                      View Details & Specs
+                    </Link>
                   </div>
                 </div>
 
                 {/* UNS S32760 */}
-                <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden" data-testid="product-s32760">
-                  <div className="bg-gradient-to-r from-indigo-600 to-indigo-700 p-6 text-white">
+                <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col h-full" data-testid="product-s32760">
+                  <div className="bg-gradient-to-r from-indigo-600 to-indigo-700 p-6 text-white min-h-[120px]">
                     <h3 className="text-xl font-bold mb-2">UNS S32760</h3>
-                    <p className="text-indigo-100">ASTM A240 / ASME SA240 (Zeron 100)</p>
+                    <p className="text-indigo-100">Zeron 100 Super Duplex</p>
                   </div>
-                  <div className="p-6">
-                    <p className="text-gray-600 mb-4">Ultra-high performance super duplex for the most demanding corrosive environments.</p>
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Zeron 100 brand</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Highest PREN value</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Severe chloride environments</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Extreme corrosion resistance</li>
+                  <div className="p-6 flex-1 flex flex-col">
+                    <p className="text-gray-600 mb-4 flex-1 text-sm">Ultra-high performance super duplex for the most demanding corrosive environments.</p>
+                    <ul className="space-y-2 text-sm mb-6">
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />Highest PREN value</li>
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />Extreme corrosion resistance</li>
                     </ul>
+                    <Link href="/product/plates-sheets/duplex-super-duplex/s32760-plates" className="w-full text-center border-2 border-gold-primary text-navy-primary font-bold py-2 px-4 rounded hover:bg-gold-primary hover:text-white transition-all duration-300 uppercase text-xs tracking-widest">
+                      View Details & Specs
+                    </Link>
                   </div>
                 </div>
 
                 {/* UNS S32205 */}
-                <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden" data-testid="product-s32205">
-                  <div className="bg-gradient-to-r from-teal-600 to-teal-700 p-6 text-white">
+                <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col h-full" data-testid="product-s32205">
+                  <div className="bg-gradient-to-r from-teal-600 to-teal-700 p-6 text-white min-h-[120px]">
                     <h3 className="text-xl font-bold mb-2">UNS S32205</h3>
-                    <p className="text-teal-100">Plates, Coils, Sheets</p>
+                    <p className="text-teal-100">Enhanced 2205 Duplex</p>
                   </div>
-                  <div className="p-6">
-                    <p className="text-gray-600 mb-4">Enhanced duplex grade with improved mechanical properties and corrosion resistance over S31803.</p>
-                    <ul className="space-y-2 text-sm">
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Enhanced 2205 grade</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Improved properties</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Structural applications</li>
-                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2" />Pressure vessels</li>
+                  <div className="p-6 flex-1 flex flex-col">
+                    <p className="text-gray-600 mb-4 flex-1 text-sm">Enhanced duplex grade with improved mechanical properties and corrosion resistance over S31803.</p>
+                    <ul className="space-y-2 text-sm mb-6">
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />Structural applications</li>
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />Pressure vessels</li>
                     </ul>
+                    <Link href="/product/plates-sheets/duplex-super-duplex/s32205-plates" className="w-full text-center border-2 border-gold-primary text-navy-primary font-bold py-2 px-4 rounded hover:bg-gold-primary hover:text-white transition-all duration-300 uppercase text-xs tracking-widest">
+                      View Details & Specs
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Lean Duplex 2304 */}
+                <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col h-full" data-testid="product-2304">
+                  <div className="bg-gradient-to-r from-slate-600 to-slate-700 p-6 text-white min-h-[120px]">
+                    <h3 className="text-xl font-bold mb-2">Lean Duplex 2304</h3>
+                    <p className="text-slate-100">UNS S32304 / 1.4362</p>
+                  </div>
+                  <div className="p-6 flex-1 flex flex-col">
+                    <p className="text-gray-600 mb-4 flex-1 text-sm">Cost-effective low nickel duplex with twice the strength of standard 316L stainless steel.</p>
+                    <ul className="space-y-2 text-sm mb-6">
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />Economic alternative to 316</li>
+                      <li className="flex items-center"><CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />High yield strength</li>
+                    </ul>
+                    <Link href="/product/plates-sheets/duplex-super-duplex/2304-plates" className="w-full text-center border-2 border-gold-primary text-navy-primary font-bold py-2 px-4 rounded hover:bg-gold-primary hover:text-white transition-all duration-300 uppercase text-xs tracking-widest">
+                      View Details & Specs
+                    </Link>
                   </div>
                 </div>
               </div>

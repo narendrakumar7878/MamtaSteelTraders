@@ -456,7 +456,7 @@ export default function SEOHead({
       
       {/* Quality & Trust Signals */}
       <meta name="quality-indicators" content="ISO 9001:2015 certified, mill test certificate, material test report, genuine steel products, quality guaranteed" />
-      <meta name="trust-signals" content="established 2005, 15+ years experience, 1000+ satisfied clients, worldwide delivery, professional service" />
+      <meta name="trust-signals" content="established 2005, 10+ years experience, 1000+ satisfied clients, worldwide delivery, professional service" />
       
       {/* Structured Data - JSON-LD */}
       {allStructuredData.map((data, index) => (

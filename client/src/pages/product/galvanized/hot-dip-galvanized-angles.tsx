@@ -742,7 +742,7 @@ export default function HotDipGalvanizedAngles() {
                   <div className="w-16 h-16 bg-gold-primary rounded-full mx-auto mb-4 flex items-center justify-center">
                     <Factory className="w-8 h-8 text-navy-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">25+ Years Experience</h3>
+                  <h3 className="text-xl font-semibold mb-2">10+ Years Experience</h3>
                   <p className="text-blue-100">Trusted manufacturer & supplier in galvanized steel industry</p>
                 </div>
                 <div className="text-center">

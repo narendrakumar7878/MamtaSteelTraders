@@ -37,35 +37,40 @@ export default function CarbonSteelPipes() {
       image: ss_pipe_mamta_steel_traders_img,
       alt: "ASTM A106 Grade B Carbon Steel Seamless Pipe",
       description: "High-temperature service seamless carbon steel pipes. Most commonly used grade for industrial applications.",
-      applications: ["Power Plants", "Refineries", "High-Temperature Steam Lines"]
+      applications: ["Power Plants", "Refineries", "High-Temperature Steam Lines"],
+      route: "/product/pipes-tubes/carbon-steel/a106-grade-b"
     },
     {
       name: "A333 Grade 6 Pipes",
       image: ss_pipe_mamta_steel_traders_img,
       alt: "A333 Grade 6 Seamless Pipe JSL MSL 3.1 MTC",
       description: "Low-temperature carbon steel seamless pipes designed for cryogenic applications.",
-      applications: ["Cryogenic Storage", "LNG Plants", "Low-Temperature Processing"]
+      applications: ["Cryogenic Storage", "LNG Plants", "Low-Temperature Processing"],
+      route: "/product/pipes-tubes/carbon-steel/a333-grade-6"
     },
     {
       name: "AISI 4130 / SAE 4130",
       image: ss_pipe_mamta_steel_traders_img,
       alt: "AISI 4130 SAE 4130 1.7218 25CrMo4 Seamless Pipes Tubes",
       description: "Chromium-molybdenum alloy steel pipes with excellent strength and toughness properties.",
-      applications: ["Aerospace", "Automotive", "Oil & Gas Drilling"]
+      applications: ["Aerospace", "Automotive", "Oil & Gas Drilling"],
+      route: "/product/pipes-tubes/carbon-steel/aisi-4130"
     },
     {
       name: "API 5L PSL-1 / PSL-2 Pipes",
       image: ss_pipe_mamta_steel_traders_img,
       alt: "API 5L Seamless Pipe Tube Stockist Supplier",
       description: "Line pipes for oil and gas transmission systems meeting API 5L specifications.",
-      applications: ["Oil Pipelines", "Gas Transmission", "Offshore Applications"]
+      applications: ["Oil Pipelines", "Gas Transmission", "Offshore Applications"],
+      route: "/product/pipes-tubes/carbon-steel/api-5l"
     },
     {
       name: "ASTM A53 Grade B",
       image: ss_pipe_mamta_steel_traders_img,
       alt: "ASTM A53 Grade B Welded and Seamless Steel Pipe",
       description: "Standard specification for welded and seamless steel pipe for general structural and pressure applications.",
-      applications: ["Water Lines", "Gas Distribution", "Structural Applications"]
+      applications: ["Water Lines", "Gas Distribution", "Structural Applications"],
+      route: "/product/pipes-tubes/carbon-steel/a53-grade-b"
     }
   ];
 
@@ -90,7 +95,7 @@ export default function CarbonSteelPipes() {
               <ArrowRight className="w-4 h-4" />
               <Link href="/products" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-products">Products</Link>
               <ArrowRight className="w-4 h-4" />
-              <Link href="/product/pipes-tubes" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-pipes-tubes">Pipes & Tubes</Link>
+              <Link href="/pipes-tubes" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-pipes-tubes">Pipes & Tubes</Link>
               <ArrowRight className="w-4 h-4" />
               <span className="text-navy-primary font-medium" data-testid="breadcrumb-current">Carbon Steel Pipes</span>
             </div>
@@ -161,9 +166,9 @@ export default function CarbonSteelPipes() {
                           ))}
                         </div>
                       </div>
-                      <Link href="/contact" className="inline-flex items-center text-gold-primary hover:text-gold-secondary font-semibold text-sm transition-colors" data-testid={`product-cta-${index}`}>
-                        Get Quote
-                        <ExternalLink className="w-4 h-4 ml-1" />
+                      <Link href={product.route} className="inline-flex items-center bg-navy-primary text-white py-2 px-4 rounded hover:bg-navy-secondary font-semibold text-sm transition-colors" data-testid={`product-cta-${index}`}>
+                        Product Details
+                        <ArrowRight className="w-4 h-4 ml-2" />
                       </Link>
                     </div>
                   </div>

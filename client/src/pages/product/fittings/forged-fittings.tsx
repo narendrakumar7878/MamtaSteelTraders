@@ -26,6 +26,7 @@ export default function ForgedFittings() {
   const detailedFittingTypes = [
     {
       category: "Socket Weld Fittings",
+      slug: "socket-weld-fittings",
       types: [
         "90° Elbow Socket Weld",
         "45° Elbow Socket Weld", 
@@ -36,13 +37,14 @@ export default function ForgedFittings() {
         "Socket Weld Cross",
         "Socket Weld Union",
         "Reducer Insert",
-        "Swage Nipple"
+        "Socket Weld Nipple"
       ],
       applications: "High pressure piping, instrumentation, small bore connections",
       advantages: "No pipe preparation required, strong joint, easy installation"
     },
     {
       category: "Threaded Fittings (NPT/BSP)",
+      slug: "threaded-fittings",
       types: [
         "90° Elbow Threaded",
         "45° Elbow Threaded",
@@ -62,6 +64,7 @@ export default function ForgedFittings() {
     },
     {
       category: "Forged Reducing Fittings",
+      slug: "forged-reducing-fittings",
       types: [
         "Concentric Swage Nipple",
         "Eccentric Swage Nipple",
@@ -76,9 +79,11 @@ export default function ForgedFittings() {
     },
     {
       category: "Special Forged Fittings",
+      slug: "special-forged-fittings",
       types: [
         "Forged Lateral (45° & 90°)",
-        "Forged Olet (Weldolet, Sockolet, Thredolet)",
+        "Weldolet® & Sockolet®",
+        "Thredolet® & Elbolet®",
         "Boss Fitting",
         "Steam Trap",
         "Sight Glass",
@@ -450,6 +455,9 @@ export default function ForgedFittings() {
                           </p>
                         </div>
                       </div>
+                      <Link href={`/product/fittings/forged-fittings/${category.slug}`} className="mt-4 text-gold-primary hover:text-gold-secondary font-bold text-sm inline-flex items-center">
+                        Product Details <ArrowRight className="w-4 h-4 ml-1" />
+                      </Link>
                     </div>
                   </div>
                 ))}

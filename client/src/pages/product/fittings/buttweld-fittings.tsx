@@ -25,6 +25,7 @@ export default function ButtweldFittings() {
   const detailedFittingTypes = [
     {
       category: "Elbows",
+      slug: "buttweld-elbows",
       types: [
         "90° Long Radius Elbows (LR)",
         "90° Short Radius Elbows (SR)", 
@@ -38,6 +39,7 @@ export default function ButtweldFittings() {
     },
     {
       category: "Tees",
+      slug: "buttweld-tees",
       types: [
         "Straight Tees (Equal Tees)",
         "Reducing Tees (Unequal Tees)",
@@ -49,6 +51,7 @@ export default function ButtweldFittings() {
     },
     {
       category: "Reducers",
+      slug: "buttweld-reducers",
       types: [
         "Concentric Reducers",
         "Eccentric Reducers",
@@ -59,6 +62,7 @@ export default function ButtweldFittings() {
     },
     {
       category: "Caps & Closures",
+      slug: "buttweld-caps",
       types: [
         "End Caps (Dished Ends)",
         "Flat End Caps",
@@ -69,6 +73,7 @@ export default function ButtweldFittings() {
     },
     {
       category: "Stub Ends",
+      slug: "buttweld-stub-ends",
       types: [
         "Type A - MSS SP-43",
         "Type B - Short Pattern",
@@ -330,11 +335,14 @@ export default function ButtweldFittings() {
                           </li>
                         ))}
                       </ul>
-                      <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                      <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg mb-4">
                         <p className="text-sm text-blue-800 dark:text-blue-200">
                           <strong>Applications:</strong> {category.applications}
                         </p>
                       </div>
+                      <Link href={`/product/fittings/buttweld-fittings/${category.slug}`} className="text-gold-primary hover:text-gold-secondary font-bold text-sm inline-flex items-center">
+                        Product Details <ArrowRight className="w-4 h-4 ml-1" />
+                      </Link>
                     </div>
                   </div>
                 ))}
@@ -552,7 +560,7 @@ export default function ButtweldFittings() {
                   <div className="w-16 h-16 bg-gold-primary rounded-full mx-auto mb-4 flex items-center justify-center">
                     <Factory className="w-8 h-8 text-navy-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">25+ Years Experience</h3>
+                  <h3 className="text-xl font-semibold mb-2">10+ Years Experience</h3>
                   <p className="text-blue-100">Trusted manufacturer & supplier in steel industry</p>
                 </div>
                 <div className="text-center">

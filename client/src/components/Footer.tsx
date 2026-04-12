@@ -94,206 +94,148 @@ export default function Footer() {
           Round Bars Mumbai, Fasteners Mumbai, Tool Steel India
         </div>
         
-        {/* Main Footer Content - Centered */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 justify-items-center text-center lg:text-left lg:justify-items-start">
-          {/* Company Info Section */}
-          <div className="lg:col-span-1 group w-full sm:w-auto" itemProp="description">
-            <h3 className="text-orange-400 text-base sm:text-lg font-semibold mb-3 sm:mb-4 transform transition-all duration-300 group-hover:translate-x-1">
+        {/* Main Footer Content - Adaptive Layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-6 justify-items-center text-center lg:text-left lg:justify-items-start px-4 sm:px-0">
+          
+          {/* Company Info Section - Centered on Mobile */}
+          <div className="group w-full flex flex-col items-center lg:items-start sm:col-span-2 lg:col-span-1" itemProp="description">
+            <h3 className="text-orange-400 text-base sm:text-lg font-semibold mb-4 transform transition-all duration-300 group-hover:translate-x-1">
               <span itemProp="name">MAMTA STEEL TRADERS</span>
             </h3>
-            <p className="text-gray-300 text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6 transition-colors duration-300 group-hover:text-gray-200">
+            <p className="text-gray-300 text-xs sm:text-sm leading-relaxed mb-6 transition-colors duration-300 group-hover:text-gray-200 max-w-sm">
               Experience and knowledge of International industrial systems,
               dedicated to provide the best economical solutions to our valued
               customers. We Won Many Factory Awards and Certified.
             </p>
 
-            {/* Social Media Icons */}
-            <div>
-              <p className="text-gray-300 text-xs sm:text-sm mb-2 sm:mb-3 transition-colors duration-300 group-hover:text-gray-200">
-                Follow us:
+            {/* Social Media Icons - Centered on Mobile */}
+            <div className="flex flex-col items-center lg:items-start w-full">
+              <p className="text-gray-300 text-[10px] uppercase font-bold tracking-widest mb-3 transition-colors duration-300 group-hover:text-gray-200 opacity-60">
+                Follow us
               </p>
-              <div className="flex space-x-3 sm:space-x-4 justify-center lg:justify-start">
-                {/* <a
-                  href="https://facebook.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-blue-400 hover:scale-110 transform transition-all duration-300 hover:rotate-3"
-                  data-testid="social-facebook"
-                  aria-label="Follow us on Facebook"
-                >
-                  <Facebook size={18} className="sm:w-5 sm:h-5" />
-                </a> */}
+              <div className="flex space-x-4 justify-center lg:justify-start">
                 <a
                   href="https://x.com/SteelMamta41559?t=Y_FKRApvGaL2j_H4OD6rug&s=08"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-sky-400 hover:scale-110 transform transition-all duration-300 hover:rotate-3"
-                  data-testid="social-twitter"
+                  className="text-gray-400 hover:text-sky-400 hover:scale-110 transform transition-all duration-300"
                   aria-label="Follow us on Twitter"
                 >
-                  <Twitter size={18} className="sm:w-5 sm:h-5" />
+                  <Twitter size={20} />
                 </a>
                 <a
                   href="https://www.instagram.com/mamta_steel_traders/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-pink-400 hover:scale-110 transform transition-all duration-300 hover:rotate-3"
-                  data-testid="social-instagram"
+                  className="text-gray-400 hover:text-pink-400 hover:scale-110 transform transition-all duration-300"
                   aria-label="Follow us on Instagram"
                 >
-                  <Instagram size={18} className="sm:w-5 sm:h-5" />
+                  <Instagram size={20} />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/mamta-steel-traders-09520717a/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-blue-500 hover:scale-110 transform transition-all duration-300 hover:rotate-3"
-                  data-testid="social-linkedin"
+                  className="text-gray-400 hover:text-blue-500 hover:scale-110 transform transition-all duration-300"
                   aria-label="Follow us on LinkedIn"
                 >
-                  <Linkedin size={18} className="sm:w-5 sm:h-5" />
+                  <Linkedin size={20} />
                 </a>
               </div>
             </div>
           </div>
 
-          {/* Quick Links Section */}
-          <div className="group w-full sm:w-auto">
-            <h3 className="text-orange-400 text-base sm:text-lg font-semibold mb-3 sm:mb-4 transform transition-all duration-300 group-hover:translate-x-1">
-              Quick Links
-            </h3>
-            <ul className="space-y-2 sm:space-y-3">
-              <li className="transform transition-all duration-200 hover:translate-x-2">
-                <Link
-                  href="/"
-                  className="text-gray-300 text-xs sm:text-sm hover:text-white hover:text-orange-300 transition-colors duration-200 relative before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-0 before:bg-orange-400 before:transition-all before:duration-300 hover:before:w-full"
-                >
-                  Home
-                </Link>
-              </li>
-              <li className="transform transition-all duration-200 hover:translate-x-2">
-                <Link
-                  href="/products"
-                  className="text-gray-300 text-xs sm:text-sm hover:text-white hover:text-orange-300 transition-colors duration-200 relative before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-0 before:bg-orange-400 before:transition-all before:duration-300 hover:before:w-full"
-                >
-                  Products
-                </Link>
-              </li>
-              <li className="transform transition-all duration-200 hover:translate-x-2">
-                <Link
-                  href="/about"
-                  className="text-gray-300 text-xs sm:text-sm hover:text-white hover:text-orange-300 transition-colors duration-200 relative before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-0 before:bg-orange-400 before:transition-all before:duration-300 hover:before:w-full"
-                >
-                  About
-                </Link>
-              </li>
-              <li className="transform transition-all duration-200 hover:translate-x-2">
-                <Link
-                  href="/technical-info"
-                  className="text-gray-300 text-xs sm:text-sm hover:text-white hover:text-orange-300 transition-colors duration-200 relative before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-0 before:bg-orange-400 before:transition-all before:duration-300 hover:before:w-full"
-                >
-                  Quality
-                </Link>
-              </li>
-              <li className="transform transition-all duration-200 hover:translate-x-2">
-                <Link
-                  href="/solutions"
-                  className="text-gray-300 text-xs sm:text-sm hover:text-white hover:text-orange-300 transition-colors duration-200 relative before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-0 before:bg-orange-400 before:transition-all before:duration-300 hover:before:w-full"
-                >
-                  Content
-                </Link>
-              </li>
-              <li className="transform transition-all duration-200 hover:translate-x-2">
-                <Link
-                  href="/contact"
-                  className="text-gray-300 text-xs sm:text-sm hover:text-white hover:text-orange-300 transition-colors duration-200 relative before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-0 before:bg-orange-400 before:transition-all before:duration-300 hover:before:w-full"
-                >
-                  Contact
-                </Link>
-              </li>
-              <li className="transform transition-all duration-200 hover:translate-x-2">
-                <Link
-                  href="/blog"
-                  className="text-gray-300 text-xs sm:text-sm hover:text-white hover:text-orange-300 transition-colors duration-200 relative before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-0 before:bg-orange-400 before:transition-all before:duration-300 hover:before:w-full"
-                  data-testid="link-blog"
-                >
-                  Blog
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact Info Section */}
-          <div className="group w-full sm:w-auto" itemProp="contactPoint" itemScope itemType="https://schema.org/ContactPoint">
-            <h3 className="text-orange-400 text-base sm:text-lg font-semibold mb-3 sm:mb-4 transform transition-all duration-300 group-hover:translate-x-1">
-              Contact Info
-            </h3>
-            <div className="space-y-2 sm:space-y-3">
-              <div className="transform transition-all duration-200 hover:translate-x-1">
-                <p className="text-white text-xs sm:text-sm font-medium mb-1 transition-colors duration-300 hover:text-orange-300">
-                  Prakash Pramar
-                </p>
-                <a
-                  href="tel:+919819322576"
-                  className="text-blue-400 text-xs sm:text-sm hover:text-blue-300 hover:underline transition-all duration-200 transform hover:scale-105"
-                  data-testid="contact-phone-1"
-                  itemProp="telephone"
-                >
-                  +91 9819322576
-                </a>
-              </div>
-              <div className="transform transition-all duration-200 hover:translate-x-1">
-                <a
-                  href="tel:+919819322576"
-                  className="text-blue-400 text-xs sm:text-sm hover:text-blue-300 hover:underline transition-all duration-200 transform hover:scale-105"
-                  data-testid="contact-phone-2"
-                  itemProp="telephone"
-                >
-                  +91 9867958210
-                </a>
-              </div>
-              <div className="transform transition-all duration-200 hover:translate-x-1">
-                <a
-                  href="mailto:mamtasteeltraders@gmail.com"
-                  className="text-blue-400 text-xs sm:text-sm hover:text-blue-300 hover:underline transition-all duration-200 transform hover:scale-105 break-all"
-                  data-testid="contact-email"
-                  itemProp="email"
-                >
-                  mamtasteeltraders@gmail.com
-                </a> <br />
-                <a
-                  href="mailto:mamtasteeltraders@gmail.com"
-                  className="text-blue-400 text-xs sm:text-sm hover:text-blue-300 hover:underline transition-all duration-200 transform hover:scale-105 break-all"
-                  data-testid="contact-email"
-                  itemProp="email"
-                >
-                  info@mamtasteeltraders.com
-                </a>
-              </div>
-              <div className="pt-1 sm:pt-2 transform transition-all duration-200 hover:translate-x-1">
-                <p className="text-gray-300 text-xs sm:text-sm transition-colors duration-300 hover:text-orange-300" itemProp="taxID">
-                  GST: 27DMIPR2047R1Z8
-                </p>
-              </div>
+          {/* Combined Links & Contact Area - Side-by-side on Mobile with custom widths */}
+          <div className="grid grid-cols-[1.5fr_2.5fr] gap-4 w-full sm:col-span-2 lg:col-span-2 lg:grid-cols-2 text-left">
+            
+            {/* Quick Links Section */}
+            <div className="group">
+              <h3 className="text-orange-400 text-sm sm:text-base font-bold mb-4 border-b border-white/5 pb-2">
+                Quick Links
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  { name: "Home", href: "/" },
+                  { name: "Products", href: "/products" },
+                  { name: "About", href: "/about" },
+                  { name: "Quality", href: "/technical-info" },
+                  { name: "Content", href: "/solutions" },
+                  { name: "Contact", href: "/contact" },
+                  { name: "Blog", href: "/blog" }
+                ].map((link, idx) => (
+                  <li key={idx}>
+                    <Link
+                      href={link.href}
+                      className="text-gray-400 text-[11px] sm:text-xs lg:text-sm hover:text-orange-300 transition-colors duration-200 block"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <meta itemProp="contactType" content="sales" />
-            <meta itemProp="areaServed" content="IN" />
+
+            {/* Contact Info Section */}
+            <div className="group" itemProp="contactPoint" itemScope itemType="https://schema.org/ContactPoint">
+              <h3 className="text-orange-400 text-sm sm:text-base font-bold mb-4 border-b border-white/5 pb-2">
+                Contact Info
+              </h3>
+              <div className="space-y-4">
+                <div className="space-y-2">
+                  {[
+                    "+91 9819322576",
+                    "+91 9152958210",
+                    "+91 7878568416"
+                  ].map((phone, idx) => (
+                    <a
+                      key={idx}
+                      href={`tel:${phone.replace(/\s/g, '')}`}
+                      className="text-blue-400 text-[11px] sm:text-xs lg:text-sm hover:text-blue-300 hover:underline transition-all duration-200 block font-medium"
+                      itemProp="telephone"
+                    >
+                      {phone}
+                    </a>
+                  ))}
+                </div>
+                <div className="space-y-2 border-t border-white/5 pt-4">
+                  {[
+                    "info@mamtasteeltraders.com",
+                    "sales@mamtasteeltraders.com",
+                    "mamtasteeltraders@gmail.com"
+                  ].map((email, idx) => (
+                    <a
+                      key={idx}
+                      href={`mailto:${email}`}
+                      className="text-blue-400 text-[10px] sm:text-xs lg:text-sm hover:text-blue-300 hover:underline transition-all duration-200 block break-all leading-tight italic"
+                      itemProp="email"
+                    >
+                      {email}
+                    </a>
+                  ))}
+                </div>
+                <div className="pt-2 border-t border-white/5">
+                  <p className="text-gray-400 text-[9px] sm:text-[10px] font-black uppercase tracking-tighter" itemProp="taxID">
+                    GST: 27DMIPR2047R1Z8
+                  </p>
+                </div>
+              </div>
+              <meta itemProp="contactType" content="sales" />
+              <meta itemProp="areaServed" content="IN" />
+            </div>
           </div>
 
-          {/* Location Section */}
-          <div className="group w-full sm:w-auto" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
-            <h3 className="text-orange-400 text-base sm:text-lg font-semibold mb-3 sm:mb-4 transform transition-all duration-300 group-hover:translate-x-1">
+          {/* Location Section - Centered on Mobile */}
+          <div className="group w-full flex flex-col items-center lg:items-start sm:col-span-2 lg:col-span-1" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+            <h3 className="text-orange-400 text-base sm:text-lg font-semibold mb-4 transform transition-all duration-300 group-hover:translate-x-1">
               Our Location
             </h3>
-            <address className="text-gray-300 text-xs sm:text-sm leading-relaxed not-italic transition-all duration-300 group-hover:text-gray-200 transform group-hover:translate-x-1">
+            <address className="text-gray-300 text-xs sm:text-sm leading-relaxed not-italic transition-all duration-300 group-hover:text-gray-200 text-center lg:text-left max-w-xs">
               <span itemProp="streetAddress">Office No. 20, 1st Floor<br />
               4549 Gulab Mohammad Building<br />
               Rangi Gali, 2nd Kumbharwada</span><br />
               <span itemProp="addressLocality">Mumbai</span> <span itemProp="postalCode">400004</span><br />
               <span itemProp="addressRegion">Maharashtra</span>, <span itemProp="addressCountry">India</span>
             </address>
-            <meta itemProp="latitude" content="18.9496" />
-            <meta itemProp="longitude" content="72.8320" />
           </div>
         </div>
 
@@ -305,7 +247,7 @@ export default function Footer() {
         <div className="text-center space-y-4 sm:space-y-6">
           {/* Copyright Text - Centered */}
           <div className="text-gray-400 text-xs sm:text-sm transition-colors duration-300 hover:text-gray-300 px-2" itemProp="copyrightNotice">
-            © 2019-2025 <span itemProp="copyrightHolder">Mamta Steel Traders</span>. All rights Reserved. Developed by{" "}
+            © 2017-{new Date().getFullYear()} <span itemProp="copyrightHolder">Mamta Steel Traders</span>. All rights Reserved. Developed by{" "}
             <span className="text-white font-medium hover:text-orange-300 transition-colors duration-300 cursor-pointer">
               Narendra Kumar
             </span>

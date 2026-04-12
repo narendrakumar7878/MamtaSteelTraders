@@ -1,7 +1,8 @@
 import ProductSEO from "@/components/ProductSEO";
-import { ArrowRight, Phone, Mail, MapPin, Star, CheckCircle, TrendingUp, Shield, Award } from "lucide-react";
+import { ArrowRight, Phone, Mail, MapPin, Star, CheckCircle, TrendingUp, Shield, Award, Zap, Info, Box } from "lucide-react";
 import ss_nots_bolts_mamta_steel_traders_img from "@/assets/SS NOTS BOLTS MAMTA STEEL TRADERS.jpg";
 import { Link } from "wouter";
+import { motion } from "framer-motion";
 
 export default function HighTensileFasteners() {
   const specifications = [
@@ -17,42 +18,107 @@ export default function HighTensileFasteners() {
     "Surface Finish: Plain, Zinc Plated, Hot Dip Galvanized"
   ];
 
+  const technicalGrades = [
+    {
+      grade: "ASTM A193 B7",
+      title: "High Temp Stud Bolts",
+      desc: "The global standard for pressure vessels, valves, and flanges in oil & gas.",
+      link: "/product/fasteners/high-tensile/b7-bolts",
+      color: "border-blue-500"
+    },
+    {
+      grade: "ASTM A193 B16",
+      title: "Ultra-High Temp",
+      desc: "Enhanced Chromium-Molybdenum-Vanadium steel for creep resistance up to 525°C.",
+      link: "/product/fasteners/high-tensile/b16-bolts",
+      color: "border-orange-500"
+    },
+    {
+      grade: "ASTM A320 L7",
+      title: "Low Temp Service",
+      desc: "Quenched & tempered alloy steel with mandatory Charpy impact testing for sub-zero use.",
+      link: "/product/fasteners/high-tensile/l7-bolts",
+      color: "border-cyan-500"
+    },
+    {
+      grade: "ISO 8.8",
+      title: "Structural Standard",
+      desc: "The 'High Tensile' baseline for structural steel and general engineering.",
+      link: "/product/fasteners/high-tensile/8-8-fasteners",
+      color: "border-green-500"
+    },
+    {
+      grade: "ISO 10.9",
+      title: "High-Load Fastening",
+      desc: "Optimized for automotive, heavy machinery, and high-vibration structural joints.",
+      link: "/product/fasteners/high-tensile/10-9-fasteners",
+      color: "border-purple-500"
+    },
+    {
+      grade: "ISO 12.9",
+      title: "Highest Strength",
+      desc: "1220 MPa tensile strength for precision engineering and engine components.",
+      link: "/product/fasteners/high-tensile/12-9-fasteners",
+      color: "border-red-500"
+    },
+    {
+      grade: "Stainless A4-80",
+      title: "Marine High Tensile",
+      desc: "316L high-strength stainless for offshore and chemical processing environments.",
+      link: "/product/fasteners/high-tensile/a4-80-fasteners",
+      color: "border-teal-500"
+    },
+    {
+      grade: "ASTM A194 2H",
+      title: "High Strength Nuts",
+      desc: "Heavy hex nuts quenched & tempered for high-pressure piping assemblies.",
+      link: "/product/fasteners/high-tensile/2h-nuts",
+      color: "border-gold-500"
+    }
+  ];
+
   const productCategories = [
     {
       name: "Hex Head Bolts",
       description: "High tensile hexagon head bolts in various grades",
       grades: ["8.8", "10.9", "12.9", "B7", "B16"],
-      image: ss_nots_bolts_mamta_steel_traders_img
+      image: ss_nots_bolts_mamta_steel_traders_img,
+      link: "/product/fasteners/high-tensile/8-8-fasteners"
     },
     {
       name: "Socket Head Cap Screws",
       description: "Allen key socket head cap screws for precision applications",
       grades: ["12.9", "A4-80", "A2-70"],
-      image: ss_nots_bolts_mamta_steel_traders_img
+      image: ss_nots_bolts_mamta_steel_traders_img,
+      link: "/product/fasteners/high-tensile/12-9-fasteners"
     },
     {
       name: "Stud Bolts",
       description: "Fully threaded stud bolts for flange applications",
       grades: ["B7", "B16", "L7", "316L"],
-      image: ss_nots_bolts_mamta_steel_traders_img
+      image: ss_nots_bolts_mamta_steel_traders_img,
+      link: "/product/fasteners/high-tensile/b7-bolts"
     },
     {
       name: "Hex Nuts",
       description: "High strength hex nuts matching bolt grades",
       grades: ["2H", "2HM", "A4-80", "A2-70"],
-      image: ss_nots_bolts_mamta_steel_traders_img
+      image: ss_nots_bolts_mamta_steel_traders_img,
+      link: "/product/fasteners/high-tensile/2h-nuts"
     },
     {
       name: "Washers",
       description: "Hardened washers for high tensile applications",
       grades: ["HV300", "A4", "A2", "Carbon Steel"],
-      image: ss_nots_bolts_mamta_steel_traders_img
+      image: ss_nots_bolts_mamta_steel_traders_img,
+      link: "/contact"
     },
     {
       name: "U-Bolts",
       description: "Heavy duty U-bolts for structural applications",
       grades: ["8.8", "10.9", "316L", "304L"],
-      image: ss_nots_bolts_mamta_steel_traders_img
+      image: ss_nots_bolts_mamta_steel_traders_img,
+      link: "/contact"
     }
   ];
 
@@ -77,275 +143,203 @@ export default function HighTensileFasteners() {
   return (
     <>
       <ProductSEO
-        title="High Tensile Fasteners - SS 316L, 304, Duplex Steel Bolts, Nuts & Washers | Mumbai Supplier"
-        description="Premium high tensile fasteners manufacturer in Mumbai. SS 316L, 304, Duplex steel bolts, nuts, washers. ASTM A193 B7/B16, ISO 898 Grade 8.8/10.9/12.9. Best prices & quality."
-        keywords="high tensile fasteners, stainless steel fasteners, SS 316L bolts, SS 304 fasteners, duplex steel fasteners, ASTM A193 B7 bolts, B16 bolts, ISO 898 fasteners, hex head bolts, socket head cap screws, stud bolts, hex nuts, washers, U-bolts, Mumbai fastener supplier, high tensile bolts manufacturer, stainless steel nuts supplier, marine grade fasteners, food grade fasteners, chemical resistant fasteners"
+        title="High Tensile Fasteners - SS 316L, 304, ASTM A193 B7/B16 Bolts | Mumbai Supplier"
+        description="Premium high tensile fasteners manufacturer. Specialist in ASTM A193 B7, B16, L7 bolts, ISO 8.8/10.9/12.9. High-performance bolting for UAE, Saudi, Europe, and Global Industry. Certified quality."
+        keywords="high tensile fasteners, ASTM A193 B7 bolts, B16 bolts, A320 L7 bolts, ISO 8.8 fasteners, ISO 10.9 bolts, ISO 12.9 fasteners, A4-80 stainless bolts, 2H nuts manufacturer, Mumbai fastener supplier, high strength bolting India, UAE fastener exporter, Saudi oil gas fasteners"
         category="Fasteners"
         productName="High Tensile Fasteners"
         specifications={specifications}
         canonicalUrl="/product/fasteners/high-tensile"
       />
 
-      <div className="min-h-screen bg-gray-50">
-        {/* Breadcrumb Navigation */}
-        <nav className="bg-white py-4 border-b border-gray-200" data-testid="breadcrumb-nav">
+      <div className="min-h-screen bg-[#F8FAFC]">
+        {/* Navigation */}
+        <nav className="bg-white py-4 border-b border-gray-100 shadow-sm">
           <div className="container mx-auto px-4">
-            <div className="flex items-center space-x-2 text-sm text-gray-600">
-              <Link href="/" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-home">Home</Link>
+            <div className="flex items-center space-x-2 text-sm text-gray-500 font-sans">
+              <Link href="/" className="hover:text-gold-primary transition-colors">Home</Link>
               <ArrowRight className="w-4 h-4" />
-              <Link href="/products" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-products">Products</Link>
+              <Link href="/products" className="hover:text-gold-primary transition-colors">Products</Link>
               <ArrowRight className="w-4 h-4" />
-              <Link href="/product/fasteners" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-fasteners">Fasteners</Link>
-              <ArrowRight className="w-4 h-4" />
-              <span className="text-navy-primary font-medium" data-testid="breadcrumb-current">High Tensile Fasteners</span>
+              <span className="text-navy-primary font-bold">High Tensile Fasteners</span>
             </div>
           </div>
         </nav>
 
-        {/* Hero Section */}
-        <section className="bg-gradient-to-r from-navy-primary to-navy-secondary text-white py-16" data-testid="hero-section">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-heading md:text-heading font-bold mb-6" data-testid="hero-title">
-                Premium High Tensile Fasteners
+        {/* Hero Section - Luxury Industrial Style */}
+        <section className="relative bg-[#0F172A] py-20 overflow-hidden font-sans">
+          <div className="absolute inset-0 opacity-20">
+            <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,_#f39c12_0%,_transparent_50%)]"></div>
+          </div>
+          <div className="container mx-auto px-4 relative z-10 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
+                High Performance <br/>
+                <span className="text-gold-primary italic font-serif">Tensile Fastening</span> Solutions
               </h1>
-              <p className="text-xl md:text-2xl mb-8 text-blue-100" data-testid="hero-subtitle">
-                Superior strength fasteners for critical structural and industrial applications
+              <p className="text-xl text-blue-100 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
+                Global distribution systems for critical industrial grades. Engineering safety through high-load structural integrity and certified material excellence.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/contact" className="bg-gold-primary hover:bg-gold-secondary text-navy-primary font-semibold py-3 px-8 rounded-lg transition-colors duration-300" data-testid="cta-get-quote">
-                  Get Quote Now
+              <div className="flex flex-wrap justify-center gap-6">
+                <Link href="/contact" className="bg-gold-primary hover:bg-gold-secondary text-navy-primary font-bold py-4 px-10 rounded-xl transition-all transform hover:scale-105 shadow-2xl flex items-center">
+                  Request Technical Quote <Zap className="ml-2 w-5 h-5" />
                 </Link>
-                <a href="tel:+919819322576" className="border-2 border-white text-white hover:bg-white hover:text-navy-primary font-semibold py-3 px-8 rounded-lg transition-colors duration-300" data-testid="cta-call-now">
-                  Call Now: +91 9819322576
+                <a href="tel:+919819322576" className="bg-white/10 hover:bg-white/20 text-white font-bold py-4 px-10 rounded-xl transition-all backdrop-blur-md border border-white/20 flex items-center">
+                  Consultation: +91 9819322576
                 </a>
               </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Technical Grade Gallery - THE CORE UPDATE */}
+        <section className="py-24 bg-white font-sans">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-bold text-navy-primary mb-4 tracking-tight">Technical Grade Gallery</h2>
+              <p className="text-gray-500 text-lg max-w-2xl mx-auto">Explore in-depth specifications, chemical compositions, and mechanical properties for our primary industrial fastener grades.</p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {technicalGrades.map((grade, index) => (
+                <Link key={index} href={grade.link}>
+                  <motion.div 
+                    whileHover={{ y: -8 }}
+                    className={`bg-white p-8 rounded-3xl border-l-4 ${grade.color} shadow-sm border-gray-100 hover:shadow-2xl transition-all cursor-pointer group flex flex-col h-full`}
+                  >
+                    <div className="mb-4 flex justify-between items-start">
+                      <span className="text-2xl font-black text-navy-primary tracking-tighter group-hover:text-gold-primary transition-colors">{grade.grade}</span>
+                      <ArrowRight className="w-5 h-5 text-gray-300 group-hover:text-gold-primary transition-colors transform group-hover:translate-x-1" />
+                    </div>
+                    <h3 className="text-sm font-bold uppercase tracking-widest text-gray-400 mb-3">{grade.title}</h3>
+                    <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">{grade.desc}</p>
+                    <div className="text-gold-primary font-bold text-xs uppercase tracking-widest flex items-center">
+                      View Details & Specs <ArrowRight className="ml-2 w-4 h-4" />
+                    </div>
+                  </motion.div>
+                </Link>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* Product Features */}
-        <section className="py-16 bg-white" data-testid="features-section">
+        {/* Product Categories Section */}
+        <section className="py-24 bg-[#F1F5F9] font-sans">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl font-bold text-center text-navy-primary mb-12" data-testid="features-title">
-              Why Choose Our High Tensile Fasteners?
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {features.map((feature, index) => (
-                <div key={index} className="text-center p-6 rounded-lg border border-gray-200 hover:shadow-lg transition-shadow duration-300" data-testid={`feature-${index}`}>
-                  <feature.icon className="w-12 h-12 text-gold-primary mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-navy-primary mb-2">{feature.title}</h3>
-                  <p className="text-gray-600">{feature.desc}</p>
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold text-navy-primary mb-4 uppercase tracking-widest text-sm">Industrial Catalog</h2>
+              <h3 className="text-4xl md:text-5xl font-black text-navy-primary tracking-tight">Fastener Configurations</h3>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+              {productCategories.map((category, index) => (
+                <div key={index} className="bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-xl transition-all border border-gray-100 font-sans">
+                  <div className="relative h-64 overflow-hidden group">
+                    <img 
+                      src={category.image} 
+                      alt={category.name}
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-navy-primary/80 to-transparent"></div>
+                    <div className="absolute bottom-6 left-6 text-white">
+                      <h4 className="text-2xl font-bold">{category.name}</h4>
+                    </div>
+                  </div>
+                  <div className="p-8">
+                    <p className="text-gray-600 mb-6 leading-relaxed text-sm">{category.description}</p>
+                    <div className="mb-8 font-sans">
+                      <span className="text-xs font-bold text-gray-400 uppercase tracking-widest block mb-3">Key Specification Grades</span>
+                      <div className="flex flex-wrap gap-2">
+                        {category.grades.map((grade, i) => (
+                          <span key={i} className="bg-slate-100 text-navy-primary px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter">
+                            {grade}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    <Link href={category.link} className="w-full py-4 bg-navy-primary hover:bg-gold-primary text-white hover:text-navy-primary font-bold rounded-xl transition-all flex items-center justify-center group uppercase text-xs tracking-widest">
+                      View Technical Specs <ArrowRight className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Product Categories Grid */}
-        <section className="py-16 bg-white" data-testid="product-categories-section">
+        {/* Performance Grid / Features */}
+        <section className="py-24 bg-white font-sans">
           <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-2xl font-bold text-center text-navy-primary mb-4" data-testid="categories-title">
-                High Tensile Fastener Categories
-              </h2>
-              <p className="text-center text-gray-600 mb-12 text-lg">
-                Complete range of high strength fasteners for critical applications
-              </p>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {productCategories.map((category, index) => (
-                  <div key={index} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-gray-200" data-testid={`category-${index}`}>
-                    <img 
-                      src={category.image} 
-                      alt={category.name}
-                      className="w-full h-48 object-cover"
-                      loading="lazy"
-                    />
-                    <div className="p-6">
-                      <h3 className="text-xl font-semibold text-navy-primary mb-2">{category.name}</h3>
-                      <p className="text-gray-600 mb-4">{category.description}</p>
-                      <div className="mb-4">
-                        <h4 className="text-sm font-medium text-gray-700 mb-2">Available Grades:</h4>
-                        <div className="flex flex-wrap gap-2">
-                          {category.grades.map((grade, gradeIndex) => (
-                            <span key={gradeIndex} className="bg-gold-primary/20 text-navy-primary px-2 py-1 rounded text-xs font-medium">
-                              {grade}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                      <Link href="/contact" className="text-gold-primary hover:text-gold-secondary font-medium text-sm">
-                        Get Quote →
-                      </Link>
-                    </div>
+            <div className="grid lg:grid-cols-4 gap-8">
+              {features.map((feature, index) => (
+                <div key={index} className="p-10 rounded-[2.5rem] bg-[#F8FAFC] border border-gray-100 hover:border-gold-primary/30 transition-all">
+                  <div className="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-6">
+                    <feature.icon className="w-7 h-7 text-gold-primary" />
                   </div>
-                ))}
-              </div>
+                  <h3 className="text-xl font-bold text-navy-primary mb-3 tracking-tight font-sans">{feature.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{feature.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* Specifications */}
-        <section className="py-16 bg-gray-50" data-testid="specifications-section">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-2xl font-bold text-center text-navy-primary mb-12" data-testid="specifications-title">
-                Technical Specifications & Applications
-              </h2>
-              <div className="grid md:grid-cols-2 gap-12">
-                <div className="bg-white p-8 rounded-lg shadow-md" data-testid="specifications-standards">
-                  <h3 className="text-2xl font-semibold text-navy-primary mb-6">Standards & Specifications</h3>
-                  <ul className="space-y-3">
-                    {specifications.map((spec, index) => (
-                      <li key={index} className="flex items-start" data-testid={`spec-${index}`}>
-                        <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">{spec}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="bg-white p-8 rounded-lg shadow-md" data-testid="specifications-applications">
-                  <h3 className="text-2xl font-semibold text-navy-primary mb-6">Industrial Applications</h3>
-                  <ul className="space-y-3">
-                    {applications.map((app, index) => (
-                      <li key={index} className="flex items-start" data-testid={`app-${index}`}>
-                        <Star className="w-5 h-5 text-gold-primary mr-3 mt-0.5 flex-shrink-0" />
-                        <span className="text-gray-700">{app}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+        {/* Global SEO Footer Highlights */}
+        <section className="bg-navy-primary py-24 text-white font-sans overflow-hidden relative">
+          <div className="absolute top-0 right-0 w-1/2 h-full bg-gold-primary/5 -skew-x-12 transform translate-x-1/4"></div>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold mb-4 italic font-serif text-gold-primary">Global Industrial Supply Integrity</h2>
+              <p className="text-blue-100 opacity-80 max-w-2xl mx-auto">Providing high-load fastening solutions across the world's most demanding sectors.</p>
+            </div>
+            
+            <div className="grid md:grid-cols-4 gap-8 text-sm opacity-90">
+              <div className="bg-white/5 p-6 rounded-2xl backdrop-blur-sm border border-white/5">
+                <h4 className="font-bold text-gold-primary mb-4 flex items-center"><MapPin className="w-4 h-4 mr-2" /> PAN INDIA REACH</h4>
+                <p className="leading-relaxed">Leading stockist in Mumbai, supplying industrial clusters in Pune, Gujarat, Chennai, Bangalore, and Delhi-NCR with daily logistics support.</p>
+              </div>
+              <div className="bg-white/5 p-6 rounded-2xl backdrop-blur-sm border border-white/5">
+                <h4 className="font-bold text-gold-primary mb-4 flex items-center"><Box className="w-4 h-4 mr-2" /> GCC & MIDDLE EAST</h4>
+                <p className="leading-relaxed">Approved exporter to UAE (Abu Dhabi, Dubai), Saudi Arabia (Jubail, Yanbu), Qatar, Kuwait, and Iraq for offshore gas & oil projects.</p>
+              </div>
+              <div className="bg-white/5 p-6 rounded-2xl backdrop-blur-sm border border-white/5">
+                <h4 className="font-bold text-gold-primary mb-4 flex items-center"><Shield className="w-4 h-4 mr-2" /> WESTERN MARKETS</h4>
+                <p className="leading-relaxed">Meeting exact EN and ASTM requirements for specialized refinery maintenance and renewable energy projects in France, Germany, and the USA.</p>
+              </div>
+              <div className="bg-white/5 p-6 rounded-2xl backdrop-blur-sm border border-white/5">
+                <h4 className="font-bold text-gold-primary mb-4 flex items-center"><Award className="w-4 h-4 mr-2" /> ASIAN MANUFACTURING</h4>
+                <p className="leading-relaxed">Supporting critical infrastructure development in Vietnam, Thailand, Singapore, and Japan with high-tensile precision components.</p>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Property Classes */}
-        <section className="py-16 bg-white" data-testid="property-classes-section">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-2xl font-bold text-center text-navy-primary mb-12" data-testid="property-classes-title">
-                Property Classes & Strength Ratings
-              </h2>
-              <div className="overflow-x-auto">
-                <table className="w-full bg-white border border-gray-200 rounded-lg shadow-md" data-testid="property-table">
-                  <thead className="bg-navy-primary text-white">
-                    <tr>
-                      <th className="px-6 py-4 text-left">Property Class / Grade</th>
-                      <th className="px-6 py-4 text-left">Tensile Strength (MPa)</th>
-                      <th className="px-6 py-4 text-left">Yield Strength (MPa)</th>
-                      <th className="px-6 py-4 text-left">Hardness (HRC)</th>
-                      <th className="px-6 py-4 text-left">Applications</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-200">
-                    <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-medium">Class 8.8</td>
-                      <td className="px-6 py-4">800 min</td>
-                      <td className="px-6 py-4">640 min</td>
-                      <td className="px-6 py-4">23-34</td>
-                      <td className="px-6 py-4">General structural</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-medium">Class 10.9</td>
-                      <td className="px-6 py-4">1000 min</td>
-                      <td className="px-6 py-4">900 min</td>
-                      <td className="px-6 py-4">32-39</td>
-                      <td className="px-6 py-4">Heavy machinery</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-medium">Class 12.9</td>
-                      <td className="px-6 py-4">1200 min</td>
-                      <td className="px-6 py-4">1080 min</td>
-                      <td className="px-6 py-4">39-44</td>
-                      <td className="px-6 py-4">Aerospace, Critical</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-medium">ASTM A193 B7</td>
-                      <td className="px-6 py-4">860 min</td>
-                      <td className="px-6 py-4">720 min</td>
-                      <td className="px-6 py-4">23-35</td>
-                      <td className="px-6 py-4">Pressure vessels</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-medium">ASTM A193 B16</td>
-                      <td className="px-6 py-4">700 min</td>
-                      <td className="px-6 py-4">520 min</td>
-                      <td className="px-6 py-4">22-32</td>
-                      <td className="px-6 py-4">High temp service</td>
-                    </tr>
-                    <tr className="hover:bg-gray-50">
-                      <td className="px-6 py-4 font-medium">SS 316L A4-80</td>
-                      <td className="px-6 py-4">800 min</td>
-                      <td className="px-6 py-4">600 min</td>
-                      <td className="px-6 py-4">-</td>
-                      <td className="px-6 py-4">Marine, Chemical</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Popular Search Keywords */}
-        <section className="py-16 bg-white" data-testid="keywords-section">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-2xl font-bold text-navy-primary mb-8" data-testid="keywords-title">
-                Popular Fastener Searches
-              </h2>
-              <div className="flex flex-wrap justify-center gap-3">
-                {[
-                  "SS 316L Bolts", "SS 304 Fasteners", "Duplex Steel Fasteners", "Marine Grade Bolts",
-                  "Food Grade Fasteners", "Chemical Resistant Bolts", "High Tensile Nuts", "Stainless Steel Washers",
-                  "ASTM A193 B7 Bolts", "ASTM A193 B16 Bolts", "ISO 898 Grade 8.8", "ISO 898 Grade 10.9",
-                  "Hex Head Bolts", "Socket Head Cap Screws", "Stud Bolts", "U-Bolts", "Foundation Bolts"
-                ].map((keyword, index) => (
-                  <span key={index} className="bg-gray-100 px-4 py-2 rounded-full text-sm font-medium text-navy-primary border border-gray-200 hover:shadow-md transition-shadow">
-                    {keyword}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Contact CTA */}
-        <section className="py-16 bg-navy-primary text-white" data-testid="contact-cta-section">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-2xl font-bold mb-6" data-testid="cta-title">
-                Need High Tensile Fasteners for Your Project?
-              </h2>
-              <p className="text-xl mb-8 text-blue-100" data-testid="cta-subtitle">
-                Get the exact grade and size with certified quality documentation
-              </p>
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
-                <div className="flex items-center justify-center space-x-3" data-testid="contact-phone">
-                  <Phone className="w-6 h-6 text-gold-primary" />
-                  <div>
-                    <p className="font-semibold">Call Us</p>
-                    <p className="text-blue-100">+91 9819322576</p>
+            
+            <div className="mt-20 pt-16 border-t border-white/10 text-center">
+              <h3 className="text-2xl font-bold mb-10">Ready to consult on your Fastening requirements?</h3>
+              <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-gold-primary rounded-full flex items-center justify-center text-navy-primary font-bold shadow-lg shadow-gold-primary/20">
+                    <Phone className="w-6 h-6" />
+                  </div>
+                  <div className="text-left">
+                    <p className="text-[10px] uppercase tracking-widest font-black text-blue-200">24/7 Technical Line</p>
+                    <p className="text-xl font-bold">+91 9819322576</p>
                   </div>
                 </div>
-                <div className="flex items-center justify-center space-x-3" data-testid="contact-email">
-                  <Mail className="w-6 h-6 text-gold-primary" />
-                  <div>
-                    <p className="font-semibold">Email Us</p>
-                    <p className="text-blue-100">mamtasteeltraders@gmail.com</p>
+                <div className="flex items-center space-x-4">
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-navy-primary font-bold shadow-lg shadow-white/20">
+                    <Mail className="w-6 h-6" />
                   </div>
-                </div>
-                <div className="flex items-center justify-center space-x-3" data-testid="contact-location">
-                  <MapPin className="w-6 h-6 text-gold-primary" />
-                  <div>
-                    <p className="font-semibold">Visit Us</p>
-                    <p className="text-blue-100">Mumbai, Maharashtra</p>
+                  <div className="text-left">
+                    <p className="text-[10px] uppercase tracking-widest font-black text-blue-200">Engineering Desk</p>
+                    <p className="text-xl font-bold underline decoration-gold-primary decoration-2 underline-offset-4 tracking-tight">mamtasteeltraders@gmail.com</p>
                   </div>
                 </div>
               </div>
-              <Link href="/contact" className="bg-gold-primary hover:bg-gold-secondary text-navy-primary font-semibold py-4 px-8 rounded-lg transition-colors duration-300 inline-block" data-testid="cta-contact-button">
-                Get Fastener Quote
+              <Link href="/contact" className="mt-16 inline-flex bg-gold-primary hover:bg-gold-secondary text-navy-primary font-black py-6 px-16 rounded-3xl transition-all shadow-2xl items-center text-lg tracking-widest uppercase group">
+                 Request Global Quote Request <ArrowRight className="ml-3 w-6 h-6 transform group-hover:translate-x-2 transition-transform" />
               </Link>
             </div>
           </div>

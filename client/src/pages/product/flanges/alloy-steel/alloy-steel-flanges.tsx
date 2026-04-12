@@ -73,7 +73,7 @@ export default function AlloySteelFlanges() {
     <>
       <ProductSEO
         title="India Best Alloy Steel Flanges Suppliers Mumbai | ASTM A182 F1 F5 F9 F11 F12 F22 F91 F92 | Mamta Steel Traders"
-        description="Leading Mumbai-based supplier of ASTM A182 alloy steel flanges in grades F1, F5, F9, F11, F22, F91, F92, F911. Serving power plants, refineries across India with 25+ years experience. Best prices, fastest delivery from Mumbai warehouses."
+        description="Leading Mumbai-based supplier of ASTM A182 alloy steel flanges in grades F1, F5, F9, F11, F22, F91, F92, F911. Serving power plants, refineries across India with 10+ years experience. Best prices, fastest delivery from Mumbai warehouses."
         keywords="India best alloy steel flanges suppliers Mumbai, ASTM A182 flanges manufacturer Mumbai, F91 F22 F11 F5 flanges supplier India, alloy steel flanges Mumbai stock, power plant flanges Mumbai, refinery flanges supplier Mumbai, high temperature flanges Mumbai, flanges manufacturer Mumbai India, Mumbai steel traders alloy flanges"
         category="Flanges"
         productName="Alloy Steel Flanges"

@@ -10,168 +10,192 @@ export default function StainlessSteelPipesAndTubes() {
       image: "SS-304-Pipes",
       description: "Austenitic stainless steel pipes with excellent corrosion resistance and formability",
       applications: ["Chemical Processing", "Food Industry", "Architecture"],
-      grades: "UNS S30400"
+      grades: "UNS S30400",
+      route: "/product/pipes-tubes/stainless-steel/304-pipes"
     },
     { 
       name: "ASTM A312 / SA312 TP 304L", 
       image: "SS-304L-Pipes",
       description: "Low carbon version of 304 with enhanced weldability and corrosion resistance",
       applications: ["Welded Applications", "Chemical Equipment", "Marine"],
-      grades: "UNS S30403"
+      grades: "UNS S30403",
+      route: "/product/pipes-tubes/stainless-steel/304l-pipes"
     },
     { 
       name: "ASTM A312 / SA312 TP 310", 
       image: "SS-310-Pipes",
       description: "High temperature resistant stainless steel for extreme heat applications",
       applications: ["Heat Exchangers", "Furnace Parts", "High Temperature"],
-      grades: "UNS S31000"
+      grades: "UNS S31000",
+      route: "/product/pipes-tubes/stainless-steel/310-pipes"
     },
     { 
       name: "ASTM A312 / SA312 TP 310S", 
       image: "SS-310S-Pipes",
       description: "Stabilized version of 310 grade with superior high temperature performance",
       applications: ["Petrochemical", "Power Plants", "Heat Treatment"],
-      grades: "UNS S31008"
+      grades: "UNS S31008",
+      route: "/product/pipes-tubes/stainless-steel/310s-pipes"
     },
     { 
       name: "ASTM A312 / SA312 TP 316L", 
       image: "SS-316L-Pipes",
       description: "Molybdenum-enhanced grade with superior corrosion resistance",
       applications: ["Marine Applications", "Pharmaceuticals", "Medical Devices"],
-      grades: "UNS S31603"
+      grades: "UNS S31603",
+      route: "/product/pipes-tubes/stainless-steel/316l-pipes"
     },
     { 
       name: "ASTM A312 / SA312 TP 317", 
       image: "SS-317-Pipes",
       description: "Enhanced molybdenum content for aggressive corrosive environments",
       applications: ["Chemical Processing", "Pulp & Paper", "Textile"],
-      grades: "UNS S31700"
+      grades: "UNS S31700",
+      route: "/product/pipes-tubes/stainless-steel/317-pipes"
     },
     { 
       name: "ASTM A312 / SA312 TP 317L", 
       image: "SS-317L-Pipes",
       description: "Low carbon version of 317 with excellent corrosion resistance",
       applications: ["Acidic Environments", "Chemical Plants", "Offshore"],
-      grades: "UNS S31703"
+      grades: "UNS S31703",
+      route: "/product/pipes-tubes/stainless-steel/317l-pipes"
     },
     { 
       name: "ASTM A312 / SA312 TP 321", 
       image: "SS-321-Pipes",
       description: "Titanium stabilized austenitic steel for high temperature service",
       applications: ["Aircraft Exhausts", "Boiler Tubes", "Heat Exchangers"],
-      grades: "UNS S32100"
+      grades: "UNS S32100",
+      route: "/product/pipes-tubes/stainless-steel/321-pipes"
     },
     { 
       name: "ASTM A312 / SA312 TP 347", 
       image: "SS-347-Pipes",
       description: "Niobium stabilized grade with excellent high temperature properties",
       applications: ["Jet Engine Parts", "Nuclear Applications", "High Temp"],
-      grades: "UNS S34700"
+      grades: "UNS S34700",
+      route: "/product/pipes-tubes/stainless-steel/347-pipes"
     },
     { 
       name: "ASTM A312 / SA312 TP 904L", 
       image: "SS-904L-Pipes",
       description: "Super austenitic grade with exceptional corrosion resistance",
       applications: ["Seawater Applications", "Acid Processing", "Pharmaceuticals"],
-      grades: "UNS N08904"
+      grades: "UNS N08904",
+      route: "/product/pipes-tubes/stainless-steel/904l-pipes"
     },
     { 
       name: "Monel 400 Pipes", 
       image: "Monel-400-Pipes",
       description: "Nickel-copper alloy with excellent marine corrosion resistance",
       applications: ["Marine Hardware", "Chemical Processing", "Valves"],
-      grades: "UNS N04400"
+      grades: "UNS N04400",
+      route: "/product/pipes-tubes/monel/400-pipes"
     },
     { 
       name: "Monel K500 Pipes", 
       image: "Monel-K500-Pipes",
       description: "Age-hardenable nickel-copper alloy with high strength",
       applications: ["Pump Shafts", "Valve Stems", "Marine Fasteners"],
-      grades: "UNS N05500"
+      grades: "UNS N05500",
+      route: "/product/pipes-tubes/monel/k500-pipes"
     },
     { 
       name: "Inconel 600 Pipes", 
       image: "Inconel-600-Pipes",
       description: "High temperature nickel-chromium alloy for extreme conditions",
       applications: ["Heat Treatment", "Chemical Processing", "Nuclear"],
-      grades: "UNS N06600"
+      grades: "UNS N06600",
+      route: "/product/pipes-tubes/inconel/600-pipes"
     },
     { 
       name: "Inconel 601 Pipes", 
       image: "Inconel-601-Pipes",
       description: "Nickel-chromium alloy with aluminum for oxidation resistance",
       applications: ["Thermal Processing", "Petrochemical", "Power Generation"],
-      grades: "UNS N06601"
+      grades: "UNS N06601",
+      route: "/product/pipes-tubes/inconel/601-pipes"
     },
     { 
       name: "Inconel 625 Pipes", 
       image: "Inconel-625-Pipes",
       description: "Nickel-chromium-molybdenum alloy for aggressive environments",
       applications: ["Aerospace", "Marine", "Chemical Processing"],
-      grades: "UNS N06625"
+      grades: "UNS N06625",
+      route: "/product/pipes-tubes/inconel/625-pipes"
     },
     { 
       name: "Inconel 718 Pipes", 
       image: "Inconel-718-Pipes",
       description: "Precipitation-hardening nickel alloy for high-stress applications",
       applications: ["Gas Turbines", "Rocket Motors", "Nuclear Reactors"],
-      grades: "UNS N07718"
+      grades: "UNS N07718",
+      route: "/product/pipes-tubes/inconel/718-pipes"
     },
     { 
       name: "Incoloy 800 Pipes", 
       image: "Incoloy-800-Pipes",
       description: "Iron-nickel-chromium alloy for high temperature service",
       applications: ["Heat Exchangers", "Steam Generators", "Petrochemical"],
-      grades: "UNS N08800"
+      grades: "UNS N08800",
+      route: "/product/pipes-tubes/incoloy/800-pipes"
     },
     { 
       name: "Incoloy 800H Pipes", 
       image: "Incoloy-800H-Pipes",
       description: "High carbon version of 800 for enhanced creep resistance",
       applications: ["Steam Superheater", "Petrochemical Tubes", "Heat Treatment"],
-      grades: "UNS N08810"
+      grades: "UNS N08810",
+      route: "/product/pipes-tubes/incoloy/800h-pipes"
     },
     { 
       name: "Hastelloy C276 Pipes", 
       image: "Hastelloy-C276-Pipes",
       description: "Nickel-molybdenum-chromium alloy for severe corrosive conditions",
       applications: ["Chemical Processing", "Pollution Control", "Pulp & Paper"],
-      grades: "UNS N10276"
+      grades: "UNS N10276",
+      route: "/product/pipes-tubes/hastelloy/c276-pipes"
     },
     { 
       name: "Hastelloy C22 Pipes", 
       image: "Hastelloy-C22-Pipes",
       description: "Versatile nickel-chromium-molybdenum alloy for diverse applications",
       applications: ["Chemical Processing", "Pharmaceutical", "Environmental"],
-      grades: "UNS N06022"
+      grades: "UNS N06022",
+      route: "/product/pipes-tubes/hastelloy/c22-pipes"
     },
     { 
       name: "Duplex 2205 Pipes", 
       image: "Duplex-2205-Pipes",
       description: "Duplex stainless steel with high strength and corrosion resistance",
       applications: ["Oil & Gas", "Chemical Tankers", "Desalination"],
-      grades: "UNS S31803"
+      grades: "UNS S31803",
+      route: "/product/pipes-tubes/duplex/2205-pipes"
     },
     { 
       name: "Super Duplex 2507 Pipes", 
       image: "Super-Duplex-2507-Pipes",
       description: "Super duplex steel for aggressive chloride environments",
       applications: ["Offshore Oil", "Seawater Systems", "Chemical Processing"],
-      grades: "UNS S32750"
+      grades: "UNS S32750",
+      route: "/product/pipes-tubes/duplex/2507-pipes"
     },
     { 
       name: "Titanium Grade 2 Pipes", 
       image: "Titanium-Gr2-Pipes",
       description: "Commercially pure titanium with excellent corrosion resistance",
       applications: ["Chemical Processing", "Marine", "Medical"],
-      grades: "UNS R50400"
+      grades: "UNS R50400",
+      route: "/product/pipes-tubes/titanium/grade-2-pipes"
     },
     { 
       name: "Alloy 20 Pipes", 
       image: "Alloy-20-Pipes",
       description: "Nickel-iron-chromium alloy for sulfuric acid environments",
       applications: ["Chemical Processing", "Pharmaceuticals", "Food Processing"],
-      grades: "UNS N08020"
+      grades: "UNS N08020",
+      route: "/product/pipes-tubes/alloy-20/pipes"
     }
   ];
 
@@ -266,7 +290,7 @@ export default function StainlessSteelPipesAndTubes() {
               <ArrowRight className="w-4 h-4" />
               <Link href="/products" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-products">Products</Link>
               <ArrowRight className="w-4 h-4" />
-              <Link href="/product/pipes-tubes" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-pipes-tubes">Pipes & Tubes</Link>
+              <Link href="/pipes-tubes" className="hover:text-navy-primary transition-colors" data-testid="breadcrumb-pipes-tubes">Pipes & Tubes</Link>
               <ArrowRight className="w-4 h-4" />
               <span className="text-navy-primary font-medium" data-testid="breadcrumb-current">Stainless Steel Pipes & Tubes</span>
             </div>
@@ -297,7 +321,7 @@ export default function StainlessSteelPipesAndTubes() {
                   <div className="text-sm">Product Grades</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                  <div className="text-2xl font-bold text-gold-primary">20+</div>
+                  <div className="text-2xl font-bold text-gold-primary">10+</div>
                   <div className="text-sm">Years Experience</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
@@ -337,8 +361,8 @@ export default function StainlessSteelPipesAndTubes() {
                     <div className="text-xs text-gray-500 mb-3">
                       <strong>Applications:</strong> {product.applications.join(", ")}
                     </div>
-                    <Link href="/contact" className="w-full bg-navy-primary text-white py-2 px-4 rounded text-center text-sm hover:bg-navy-secondary transition-colors duration-300 block">
-                      Get Quote
+                    <Link href={product.route} className="w-full bg-navy-primary text-white py-2 px-4 rounded text-center text-sm font-bold hover:bg-navy-secondary transition-colors duration-300 block">
+                      Product Details
                     </Link>
                   </div>
                 </div>
@@ -846,7 +870,7 @@ export default function StainlessSteelPipesAndTubes() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md text-center">
                 <Award className="w-12 h-12 text-gold-primary mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-navy-primary mb-3">20+ Years Experience</h3>
+                <h3 className="text-xl font-semibold text-navy-primary mb-3">10+ Years Experience</h3>
                 <p className="text-gray-600">Over two decades of expertise in stainless steel supply and distribution</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md text-center">

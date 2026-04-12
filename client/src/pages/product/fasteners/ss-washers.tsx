@@ -18,6 +18,7 @@ export default function StainlessSteelWashers() {
   const washerTypes = [
     {
       name: "Plain Washers (Flat Washers)",
+      slug: "plain-washers",
       description: "Standard flat washers for load distribution and surface protection in general applications",
       grades: ["SS 304", "SS 316L", "Duplex 2205", "A2", "A4"],
       sizes: "M3-M100, #6-4\"",
@@ -29,6 +30,7 @@ export default function StainlessSteelWashers() {
     },
     {
       name: "Spring Washers (Lock Washers)",
+      slug: "spring-washers",
       description: "Split ring washers providing spring tension and vibration resistance for threaded connections",
       grades: ["SS 304", "SS 316L", "A2-70", "A4-80"],
       sizes: "M3-M48, #4-2\"",
@@ -40,6 +42,7 @@ export default function StainlessSteelWashers() {
     },
     {
       name: "Lock Washers (Toothed)",
+      slug: "toothed-lock-washers",
       description: "Internal and external toothed washers for positive locking and torque transmission",
       grades: ["SS 304", "SS 316", "SS 321"],
       sizes: "M4-M30, #6-1.25\"",
@@ -51,6 +54,7 @@ export default function StainlessSteelWashers() {
     },
     {
       name: "Fender Washers (Large Diameter)",
+      slug: "fender-washers",
       description: "Oversized washers with large outer diameter for maximum load distribution",
       grades: ["SS 304", "SS 316L", "SS 321"],
       sizes: "M6-M20, 1/4\"-3/4\"",
@@ -62,6 +66,7 @@ export default function StainlessSteelWashers() {
     },
     {
       name: "Belleville Washers (Disc Springs)",
+      slug: "belleville-washers",
       description: "Conical spring washers providing high loads in minimal space with controlled deflection",
       grades: ["SS 316L", "SS 17-7 PH", "Duplex 2205"],
       sizes: "M4-M100, 3/16\"-4\"",
@@ -73,6 +78,7 @@ export default function StainlessSteelWashers() {
     },
     {
       name: "Wave Washers",
+      slug: "wave-washers",
       description: "Multi-wave spring washers for light to medium loads with controlled compression",
       grades: ["SS 304", "SS 316L", "SS 17-7 PH"],
       sizes: "M3-M48, #4-2\"",
@@ -279,8 +285,8 @@ export default function StainlessSteelWashers() {
                         </div>
                       </div>
                       
-                      <Link href="/contact" className="text-gold-primary hover:text-gold-secondary font-medium text-sm">
-                        Request Quote →
+                      <Link href={`/product/fasteners/ss-washers/${washer.slug}`} className="text-gold-primary hover:text-gold-secondary font-medium text-sm">
+                        Product Details →
                       </Link>
                     </div>
                   </div>
