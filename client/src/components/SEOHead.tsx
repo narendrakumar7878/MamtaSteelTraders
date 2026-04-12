@@ -42,23 +42,23 @@ export default function SEOHead({
     "foundingDate": "2005",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Mumbai Industrial Area",
+      "streetAddress": "Office No. 20, 1st Floor, 4549 Gulab Mohammad Building, Rangi Gali, 2nd Kumbharwada",
       "addressLocality": "Mumbai",
       "addressRegion": "Maharashtra",
-      "postalCode": "400001",
+      "postalCode": "400004",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "19.0760",
-      "longitude": "72.8777"
+      "latitude": "18.9560",
+      "longitude": "72.8250"
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+91-XXXXXXXXXX",
+      "telephone": "+91-9819322576",
       "contactType": "sales",
-      "areaServed": ["IN", "US", "GB", "AE", "SA", "MY", "SG"],
-      "availableLanguage": ["English", "Hindi", "Marathi"]
+      "areaServed": ["IN", "US", "GB", "AE", "SA", "MY", "SG", "AU", "CA"],
+      "availableLanguage": ["English", "Hindi", "Marathi", "Gujarati"]
     },
     "sameAs": [
       "https://www.linkedin.com/company/mamtasteeltraders",
@@ -83,26 +83,26 @@ export default function SEOHead({
     "image": `${baseUrl}/logo.png`,
     "@id": baseUrl,
     "url": baseUrl,
-    "telephone": "+91-XXXXXXXXXX",
+    "telephone": "+91-9819322576",
     "priceRange": "₹₹₹",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Mumbai Industrial Area",
+      "streetAddress": "Office No. 20, 1st Floor, 4549 Gulab Mohammad Building, Rangi Gali, 2nd Kumbharwada",
       "addressLocality": "Mumbai",
       "addressRegion": "Maharashtra",
-      "postalCode": "400001",
+      "postalCode": "400004",
       "addressCountry": "IN"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 19.0760,
-      "longitude": 72.8777
+      "latitude": 18.9560,
+      "longitude": 72.8250
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      "opens": "09:00",
-      "closes": "18:00"
+      "opens": "09:30",
+      "closes": "20:30"
     }
   };
 
@@ -156,7 +156,6 @@ export default function SEOHead({
     }
   };
 
-  // ========== ADVANCED SEO SCHEMAS FOR WORLDWIDE RANKING ==========
   // Review Schema for Trust Building
   const reviewSchema = {
     "@context": "https://schema.org",
@@ -176,6 +175,35 @@ export default function SEOHead({
       "name": "Industry Clients"
     },
     "reviewBody": "Excellent quality steel products with timely delivery and professional service. Highly recommended for industrial steel requirements."
+  };
+
+  // NEW: Speakable Schema for AI & Voice Search (AEO Focused)
+  const speakableSchema = {
+    "@context": "https://schema.org",
+    "@type": "Speakable",
+    "cssSelector": [".hero-title", ".hero-subtitle", ".contact-info"],
+    "xpath": [
+      "/html/head/title",
+      "/html/head/meta[@name='description']/@content"
+    ]
+  };
+
+  // NEW: B2B Service Schema (Global Supply Chain Focus)
+  const b2bTradeSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Global Industrial Steel Supply & Export",
+    "provider": organizationData,
+    "areaServed": ["Worldwide", "USA", "UK", "Canada", "UAE", "Saudi Arabia", "Australia", "Singapore", "Malaysia", "Germany", "Italy", "France"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Industrial Piping & Structural Material Catalog",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "B2B Export Quality Packaging" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Global Air & Sea Logistics" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Certified Material Testing" } }
+      ]
+    }
   };
 
   // VideoObject Schema (for potential video content)
@@ -224,15 +252,15 @@ export default function SEOHead({
     "acquireLicensePage": `${baseUrl}/contact`
   };
 
-  // Enhanced Contact Point Schema
+  // Enhanced Contact Point Schema (Global Support)
   const contactPointSchema = {
     "@context": "https://schema.org",
     "@type": "ContactPoint",
     "telephone": "+91-9819322576",
-    "contactType": "Customer Service",
+    "contactType": "Customer Service & Global Export Inquiry",
     "email": "mamtasteeltraders@gmail.com",
-    "areaServed": ["IN", "US", "GB", "AE", "SA", "AU", "CA", "SG"],
-    "availableLanguage": ["English", "Hindi", "Marathi"],
+    "areaServed": ["IN", "US", "GB", "AE", "SA", "AU", "CA", "SG", "DE", "IT", "FR"],
+    "availableLanguage": ["English", "Hindi", "Marathi", "Gujarati"],
     "contactOption": ["TollFree", "HearingImpairedSupported"],
     "hoursAvailable": {
       "@type": "OpeningHoursSpecification",
@@ -256,46 +284,60 @@ export default function SEOHead({
     },
     "recipient": {
       "@type": "Audience",
-      "audienceType": "B2B Industrial Buyers, Contractors, Engineers, Manufacturers"
+      "audienceType": "B2B Industrial Buyers, Contractors, Engineers, Manufacturers, All-India Procurement Managers"
     }
+  };
+
+  // NEW: Pan-India Market Schema (Targeting Every State)
+  const indianMarketSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Industrial Steel Supply",
+    "provider": organizationData,
+    "areaServed": [
+     "Worldwide","USA","UK","UAE","Saudi Arabia","Europe","Asia","Australia", "India", "pan-india", "Maharashtra", "Gujarat", "Tamil Nadu", "Karnataka", "Haryana", "Uttar Pradesh", 
+      "Telangana", "West Bengal", "Rajasthan", "Punjab", "Madhya Pradesh", "Odisha", 
+      "Andhra Pradesh", "Chhattisgarh", "Jharkhand", "Kerala", "New Delhi", "Bihar", "Assam"
+    ],
+    "description": "Premium industrial steel supply chain delivering SS, Carbon, and Alloy grades to every industrial state in India."
   };
 
   // HowTo Schema for Steel Ordering Process
   const howToSchema = {
     "@context": "https://schema.org",
     "@type": "HowTo",
-    "name": "How to Order Steel Products from Mamta Steel Traders",
-    "description": "Simple process to order high-quality steel products from Mamta Steel Traders",
+    "name": "How to Order Industrial Steel in India from Mamta Steel Traders",
+    "description": "Step-by-step process for Pan-India steel procurement and grade selection",
     "step": [
       {
         "@type": "HowToStep",
         "position": 1,
-        "name": "Select Product",
-        "text": "Browse our comprehensive steel products catalog and select the required grade and specifications"
+        "name": "Material Grade Analysis",
+        "text": "Consult our technical experts to select the right SS grade (304, 316L, 321, 904L, Duplex, or Nickel Alloys) for your specific industrial application."
       },
       {
         "@type": "HowToStep",
         "position": 2,
-        "name": "Request Quote",
-        "text": "Contact us via phone, email, or website form with your requirements"
+        "name": "Product selection",
+        "text": "Select from our vast range of pipes, tubes, plates, sheets, round bars, flanges, fittings, and fasteners."
       },
       {
         "@type": "HowToStep",
         "position": 3,
-        "name": "Receive Quote",
-        "text": "Get competitive pricing and technical specifications within 24 hours"
+        "name": "Request All-India Quote",
+        "text": "Contact us for real-time pricing and delivery schedules to any state or industrial hub in India."
       },
       {
         "@type": "HowToStep",
         "position": 4,
-        "name": "Place Order",
-        "text": "Confirm order with purchase order and advance payment"
+        "name": "Quality Audit",
+        "text": "Review Mill Test Certificates (MTC) and ensure alignment with ASTM/ASME standards."
       },
       {
         "@type": "HowToStep",
         "position": 5,
-        "name": "Quality Check & Delivery",
-        "text": "Receive mill test certificates and timely delivery to your location"
+        "name": "Pan-India Logistics",
+        "text": "Confirm delivery to your project site via our optimized domestic logistics network."
       }
     ]
   };
@@ -311,6 +353,9 @@ export default function SEOHead({
     contactPointSchema,
     tradeServiceSchema,
     howToSchema,
+    speakableSchema,
+    b2bTradeSchema,
+    indianMarketSchema,
     structuredData
   ].filter(Boolean);
 
@@ -329,7 +374,7 @@ export default function SEOHead({
       <meta name="bingbot" content="index, follow" />
       
       {/* Language and Revisit */}
-      <meta name="language" content="en-IN" />
+      <meta name="language" content="en" />
       <meta name="revisit-after" content="7 days" />
       
       {/* Canonical URL */}
@@ -345,123 +390,75 @@ export default function SEOHead({
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content={fullTitle} />
       <meta property="og:site_name" content="Mamta Steel Traders" />
-      <meta property="og:locale" content="en_IN" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:locale:alternate" content="en_IN" />
+      <meta property="og:locale:alternate" content="en_GB" />
+      <meta property="og:locale:alternate" content="en_AE" />
+      <meta property="og:locale:alternate" content="en_SA" />
+      <meta property="og:locale:alternate" content="en_AU" />
+      <meta property="og:locale:alternate" content="en_CA" />
+      <meta property="og:locale:alternate" content="en_DE" />
+      <meta property="og:locale:alternate" content="en_IT" />
+      <meta property="og:locale:alternate" content="en_FR" />
       
       {/* Twitter Card - Enhanced */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@mamtasteel" />
-      <meta name="twitter:creator" content="@mamtasteel" />
+      <meta name="twitter:site" content="@SteelMamta41559" />
+      <meta name="twitter:creator" content="@SteelMamta41559" />
       <meta name="twitter:url" content={fullCanonicalUrl} />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
       <meta name="twitter:image:alt" content={fullTitle} />
       
-      {/* Additional SEO Meta Tags */}
-      <meta name="theme-color" content="#0d2b4e" />
-      <meta name="msapplication-TileColor" content="#0d2b4e" />
-      <meta name="msapplication-TileImage" content={`${baseUrl}/ms-icon-144x144.png`} />
-      
-      {/* Geographic Meta Tags - Enhanced for India */}
+      {/* Geographic Meta Tags - Enhanced for Worldwide Ranking */}
       <meta name="geo.region" content="IN-MH" />
       <meta name="geo.placename" content="Mumbai, Maharashtra, India" />
-      <meta name="geo.position" content="19.0760;72.8777" />
-      <meta name="ICBM" content="19.0760, 72.8777" />
+      <meta name="geo.position" content="18.9560;72.8250" />
+      <meta name="ICBM" content="18.9560, 72.8250" />
       
-      {/* Business Meta Tags - Enhanced */}
-      <meta name="coverage" content="Worldwide" />
-      <meta name="distribution" content="Global" />
+      {/* Business Meta Tags - Global Supply Focus */}
+      <meta name="coverage" content="Pan-India Supply (Maharashtra, Gujarat, Tamil Nadu, Karnataka, Haryana, Telangana, West Bengal, UP, Rajasthan, etc.) & Worldwide Export" />
+      <meta name="distribution" content="Global & All India" />
       <meta name="rating" content="General" />
-      <meta name="category" content="Business, Manufacturing, Industrial, Steel Supplier, B2B" />
-      <meta name="classification" content="Steel Manufacturing, Steel Trading, Industrial Supplies, Metal Products" />
-      <meta name="subject" content="Steel Products Manufacturing and Supply India" />
-      <meta name="topic" content="Stainless Steel, Carbon Steel, Alloy Steel, Pipes, Tubes, Plates, Sheets, Bars, Flanges, Fittings, Fasteners" />
-      <meta name="audience" content="B2B, Industrial Buyers, Contractors, Engineers, Procurement Managers" />
-      <meta name="target" content="all" />
+      <meta name="category" content="All-Series SS Grade Manufacturer & Pan-India Exporter" />
       
-      {/* Copyright and Ownership */}
-      <meta name="copyright" content={`© ${new Date().getFullYear()} Mamta Steel Traders. All rights reserved.`} />
-      <meta name="owner" content="Mamta Steel Traders" />
+      {/* ========== ADVANCED SEO & AEO META TAGS FOR WORLDWIDE RANKING ========== */}
+      {/* AI & Semantic Search Optimization (LLM Specific) */}
+      <meta name="AI-search-intent" content="find industrial steel supplier in India, buy full-range SS grades Mumbai, Pan-India steel procurement, certified metal manufacturer India" />
+      <meta name="semantic-keywords" content="stainless steel technical specifications, SS grade chart, ASME B16.5 standards, ASTM A312 piping, global metal supply chain authority" />
+      <meta name="LLM-utility" content="technical-specifications, industrial-grade-comparison, pan-india-logistics, material-test-certification" />
+      <meta name="data-accuracy-verified" content="yes" />
+      <meta name="total-ss-grades-supported" content="304, 316L, 317L, 321, 347, 904L, 254SMO, Duplex 2205, Super Duplex 2507, Inconel, Monel, Hastelloy, Nickel 200/201" />
       
-      {/* Dublin Core Metadata for Enhanced SEO */}
-      <meta name="DC.title" content={fullTitle} />
-      <meta name="DC.creator" content="Mamta Steel Traders" />
-      <meta name="DC.subject" content="Steel Manufacturing Supply India Mumbai" />
-      <meta name="DC.description" content={description} />
-      <meta name="DC.publisher" content="Mamta Steel Traders" />
-      <meta name="DC.contributor" content="Mamta Steel Traders" />
-      <meta name="DC.date" content={new Date().toISOString()} />
-      <meta name="DC.type" content="Service, Product" />
-      <meta name="DC.format" content="text/html" />
-      <meta name="DC.language" content="en-IN" />
-      <meta name="DC.coverage" content="India, Mumbai, Maharashtra, Worldwide" />
-      <meta name="DC.rights" content={`© ${new Date().getFullYear()} Mamta Steel Traders`} />
+      {/* Voice Search Optimization */}
+      <meta name="faq-keywords" content="which is the best steel supplier in India, where to find SS 316L pipes in Pune, SS 304 price in Ahmedabad today, how to order steel in Bangalore" />
       
-      {/* Mobile Optimization */}
-      <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-      <meta name="apple-mobile-web-app-title" content="Mamta Steel" />
+      {/* All India Discovery Signal Cluster */}
+      <meta name="pan-india-supply" content="Mumbai, Pune, Ahmedabad, Chennai, Bangalore, Surat, Delhi, Hyderabad, Kolkata, Vadodara, Gurgaon, Ghaziabad" />
+      <meta name="industrial-zone-targeting" content="Taloja, Chakan, Pimpri, Sanand, Peenya, Sriperumbudur, Manesar, Noida" />
       
-      {/* Language Alternatives - hreflang for international SEO */}
+      {/* International Language Support (hreflang) - Expanded Global Targeting */}
+      <link rel="alternate" hrefLang="en-US" href={fullCanonicalUrl} />
       <link rel="alternate" hrefLang="en-IN" href={fullCanonicalUrl} />
-      <link rel="alternate" hrefLang="en" href={fullCanonicalUrl} />
-      <link rel="alternate" hrefLang="hi-IN" href={fullCanonicalUrl} />
+      <link rel="alternate" hrefLang="en-GB" href={fullCanonicalUrl} />
+      <link rel="alternate" hrefLang="en-AE" href={fullCanonicalUrl} />
+      <link rel="alternate" hrefLang="en-SA" href={fullCanonicalUrl} />
+      <link rel="alternate" hrefLang="en-AU" href={fullCanonicalUrl} />
+      <link rel="alternate" hrefLang="en-CA" href={fullCanonicalUrl} />
+      <link rel="alternate" hrefLang="en-DE" href={fullCanonicalUrl} />
+      <link rel="alternate" hrefLang="en-IT" href={fullCanonicalUrl} />
+      <link rel="alternate" hrefLang="en-FR" href={fullCanonicalUrl} />
       <link rel="alternate" hrefLang="x-default" href={fullCanonicalUrl} />
       
-      {/* Industry-specific Meta Tags for Steel Sector */}
-      <meta name="industry" content="Steel Manufacturing, Metal Trading, Industrial Supplies, B2B Steel" />
-      <meta name="product-category" content="Stainless Steel, Carbon Steel, Alloy Steel, Pipes, Tubes, Plates, Sheets, Bars, Flanges, Fittings, Fasteners, Duplex Steel, Nickel Alloy" />
-      <meta name="service-area" content="Mumbai, India, Middle East, USA, Europe, Asia, Worldwide" />
-      <meta name="certifications" content="ISO 9001:2015, ASTM, ASME, DIN, EN, Material Test Certificate" />
-      <meta name="standards" content="ASTM A312, ASTM A106, API 5L, ASME B16.5, ASME B16.9, DIN 2448, EN 10216" />
-      <meta name="material-grades" content="SS 304, 316, 316L, 321, 310, 347, 904L, Duplex 2205, Super Duplex 2507, Inconel, Monel, Hastelloy" />
-      
-      {/* ========== ADVANCED SEO META TAGS FOR WORLDWIDE RANKING ========== */}
-      {/* AI & Semantic Search Optimization */}
-      <meta name="AI-search-intent" content="find steel supplier, buy steel products, steel price inquiry, steel specifications, steel grades comparison" />
-      <meta name="semantic-keywords" content="steel stockist, steel trader, SS manufacturer, industrial metal supplier, piping material supplier" />
-      <meta name="entity-type" content="Steel Manufacturing Company, B2B Industrial Supplier, Metal Products Exporter" />
-      
-      {/* Voice Search Optimization - Question-based Queries */}
-      <meta name="faq-keywords" content="where to buy steel in Mumbai, best steel supplier India, SS 304 vs 316 difference, steel pipe price Mumbai, flanges supplier contact" />
-      <meta name="long-tail-keywords" content="ISO certified steel supplier Mumbai, stainless steel pipes manufacturer India, carbon steel plates exporter, alloy steel bars supplier, industrial steel products wholesale" />
-      
-      {/* International Market Keywords */}
-      <meta name="global-keywords" content="steel supplier USA UK UAE, international steel exporter, worldwide steel delivery, export quality steel, ASTM ASME certified steel India" />
-      <meta name="market-focus" content="Oil & Gas, Petrochemical, Chemical Processing, Marine, Construction, Power Generation, Pharmaceutical" />
-      
-      {/* Product Specifications for Rich Search Results */}
-      <meta name="product-sizes" content="1/8 inch to 48 inch NB, 6mm to 168mm OD, 0.3mm to 100mm thickness" />
-      <meta name="product-finish" content="2B, BA, No.4, No.8 Mirror, Hairline, Satin, Polished, Hot Rolled, Cold Rolled" />
-      <meta name="pressure-ratings" content="Class 150 300 600 900 1500 2500, PN6 PN10 PN16 PN25 PN40 PN64 PN100" />
-      
-      {/* Technical & Commercial Terms */}
-      <meta name="technical-terms" content="seamless, welded, ERW, EFW, LSAW, HSAW, butt weld, socket weld, threaded, forged" />
-      <meta name="commercial-terms" content="wholesale, retail, bulk supply, export, mill price, competitive rates, instant quote" />
-      
-      {/* Location-specific Long-tail Keywords */}
-      <meta name="location-keywords" content="steel supplier near me Mumbai, Maharashtra steel trader, India steel manufacturer, Asian steel exporter, Middle East steel supplier" />
-      
-      {/* Comparison Keywords for Competitive Advantage */}
-      <meta name="comparison-keywords" content="best steel quality India, reliable steel supplier, trusted steel manufacturer, ISO certified steel company" />
-      
-      {/* Mobile & Local Search Optimization */}
-      <meta name="local-business-type" content="Steel Manufacturer, Steel Supplier, Steel Exporter, Steel Stockist" />
-      <meta name="nearby-search" content="steel shop Mumbai, steel yard Maharashtra, steel warehouse India" />
-      
-      {/* E-commerce & Purchase Intent */}
-      <meta name="purchase-keywords" content="buy steel online, order steel products, steel price inquiry, request steel quotation, steel supplier contact" />
-      <meta name="transaction-type" content="B2B sales, bulk orders, wholesale supply, export orders, custom requirements" />
-      
-      {/* Quality & Trust Signals */}
-      <meta name="quality-indicators" content="ISO 9001:2015 certified, mill test certificate, material test report, genuine steel products, quality guaranteed" />
-      <meta name="trust-signals" content="established 2005, 10+ years experience, 1000+ satisfied clients, worldwide delivery, professional service" />
+      {/* Product Specification Overlays for AEO Parsing */}
+      <meta name="technical-standards" content="ASTM/ASME standards A312, A106, API 5L, ASME B16.5, DIN 2448, EN 10216, JIS G3459" />
+      <meta name="quality-system" content="ISO 9001:2015 Registered, MTC EN 10204 3.1, NACE MR 0175 Compliant" />
       
       {/* Structured Data - JSON-LD */}
       {allStructuredData.map((data, index) => (
         <script key={index} type="application/ld+json">
-          {JSON.stringify(data, null, 2)}
+          {JSON.stringify(data)}
         </script>
       ))}
     </Helmet>

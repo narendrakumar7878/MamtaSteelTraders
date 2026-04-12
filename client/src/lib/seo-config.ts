@@ -106,7 +106,33 @@ export const siteConfig = {
     
     // Technology Keywords
     "advanced steel manufacturing India", "modern steel facility Mumbai", "state of art steel plant",
-    "precision steel cutting Mumbai", "CNC machined steel India", "laser cut steel Mumbai"
+    "precision steel cutting Mumbai", "CNC machined steel India", "laser cut steel Mumbai",
+
+    // ========== NEW: WORLDWIDE REGIONAL TARGETING ==========
+    "steel supplier Middle East Dubai Abu Dhabi UAE", "steel exporter Saudi Arabia Riyadh Dammam",
+    "stainless steel UK London Manchester Birmingham", "steel supplier USA Houston Texas Chicago",
+    "steel exporter Europe Germany Italy France", "steel supplier Australia Perth Sydney Brisbane",
+    "steel trader Singapore Malaysia Thailand Indonesia", "global steel supply chain partner",
+
+    // ========== NEW: ALL INDIA GEOGRAPHIC TARGETING ==========
+    "steel supplier Maharashtra Mumbai Pune Nagpur", "steel exporter Gujarat Ahmedabad Surat Vadodara",
+    "stainless steel Tamil Nadu Chennai Coimbatore Madurai", "steel supplier Karnataka Bangalore Mysore",
+    "steel trader Haryana Gurgaon Faridabad Panipat", "steel supplier Uttar Pradesh Noida Kanpur Ghaziabad",
+    "stainless steel Telangana Hyderabad Secunderabad", "steel exporter West Bengal Kolkata Durgapur",
+    "steel supplier Rajasthan Jaipur Jodhpur Udaipur", "steel trader Punjab Ludhiana Amritsar Jalandhar",
+    "steel supplier Madhya Pradesh Indore Bhopal Gwalior", "steel exporter Odisha Bhubaneswar Sambalpur",
+    "steel supplier Andhra Pradesh Visakhapatnam Vijayawada", "steel trader Chhattisgarh Raipur Bhilai",
+    "steel supplier Jharkhand Jamshedpur Ranchi", "steel exporter Kerala Kochi Thiruvananthapuram",
+    "stainless steel Delhi New Delhi NCR", "steel supplier Bihar Patna",
+
+    // ========== NEW: EXHAUSTIVE SS & ALLOY GRADE TARGETING ==========
+    "SS Grade 304 304L 304H pipes plates", "Stainless Steel 316 316L 316Ti 316H supplier",
+    "SS 317 317L 310 310S 321 321H 347 347H", "Stainless Steel 904L 254 SMO S31254",
+    "Duplex Steel S31803 S32205 2205 manufacturer", "Super Duplex Steel S32750 2507 S32760",
+    "Nickel Alloy Inconel 600 601 625 718", "Monel 400 K500 Hastelloy C22 C276 B2 X",
+    "Incoloy 800 800H 800HT 825 supplier", "Nickel 200 201 Cupro Nickel 90/10 70/30",
+    "Martensitic SS 409 410 410S 420 430 431 440C 446", "Special Alloys Nitronic 50 60 XM-19 XM-28",
+    "Precipitation Hardening 17-4PH 15-5PH 13-8Mo"
   ],
   author: "Mamta Steel Traders",
   language: "en-IN",
@@ -115,31 +141,36 @@ export const siteConfig = {
     name: "Mamta Steel Traders",
     legalName: "Mamta Steel Traders Private Limited",
     foundingDate: "2005",
+    isoCertifications: ["ISO 9001:2015", "ASME Certified", "ASTM Standard Compliant", "NSIC Registered", "EEPC Member"],
     address: {
-      streetAddress: "Mumbai Industrial Area",
+      streetAddress: "Office No. 20, 1st Floor, 4549 Gulab Mohammad Building, Rangi Gali, 2nd Kumbharwada",
       addressLocality: "Mumbai",
       addressRegion: "Maharashtra",
-      postalCode: "400001",
+      postalCode: "400004",
       addressCountry: "India"
     },
     contactPoint: {
-      telephone: "+91-XXXXXXXXXX",
-      contactType: "Sales",
-      areaServed: "Worldwide",
-      availableLanguage: ["en", "hi", "mr"]
+      telephone: "+91-9819322576",
+      contactType: "Sales & Technical Support",
+      areaServed: [
+      "Worldwide","USA","UK","UAE","Saudi Arabia","Europe","Asia","Australia", "India", "Maharashtra", "Gujarat", "Tamil Nadu", "Karnataka", "Haryana", 
+        "Uttar Pradesh", "Telangana", "West Bengal", "Rajasthan", "Punjab", "Madhya Pradesh", 
+        "Odisha", "Andhra Pradesh", "Chhattisgarh", "Jharkhand", "Kerala", "Delhi"
+      ],
+      availableLanguage: ["English", "Hindi", "Marathi", "Gujarati"]
     },
     sameAs: [
-      "https://www.linkedin.com/company/mamta-steel-traders",
+      "https://www.linkedin.com/company/mamta-steel-traders-09520717a/",
       "https://www.facebook.com/mamtasteeltraders",
-      "https://www.instagram.com/mamtasteeltraders",
-      "https://twitter.com/mamtasteel"
+      "https://www.instagram.com/mamta_steel_traders/",
+      "https://twitter.com/SteelMamta41559"
     ]
   },
   social: {
-    twitter: "@mamtasteel",
+    twitter: "@SteelMamta41559",
     facebook: "mamtasteeltraders",
-    instagram: "mamtasteeltraders",
-    linkedin: "mamta-steel-traders"
+    instagram: "mamta_steel_traders",
+    linkedin: "mamta-steel-traders-09520717a"
   }
 };
 
@@ -162,9 +193,11 @@ export const getOrganizationSchema = () => ({
   },
   "contactPoint": {
     "@type": "ContactPoint",
-    ...siteConfig.organization.contactPoint
+    ...siteConfig.organization.contactPoint,
+    "email": "mamtasteeltraders@gmail.com"
   },
   "sameAs": siteConfig.organization.sameAs,
+  "award": siteConfig.organization.isoCertifications,
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
@@ -177,7 +210,7 @@ export const getOrganizationSchema = () => ({
 // Generate LocalBusiness Schema
 export const getLocalBusinessSchema = () => ({
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness", "WholesaleStore", "Warehouse"],
   "name": siteConfig.organization.name,
   "image": `${siteConfig.siteUrl}/logo.png`,
   "@id": siteConfig.siteUrl,
@@ -190,16 +223,34 @@ export const getLocalBusinessSchema = () => ({
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 19.0760,
-    "longitude": 72.8777
+    "latitude": 18.9560, // Refined for 400004 area
+    "longitude": 72.8250
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-    "opens": "09:00",
-    "closes": "18:00"
+    "opens": "09:30",
+    "closes": "20:30"
   },
-  "sameAs": siteConfig.organization.sameAs
+  "sameAs": siteConfig.organization.sameAs,
+  "areaServed": siteConfig.organization.contactPoint.areaServed
+});
+
+// Generate Indian Market Specific Schema (AEO Domestic focus)
+export const getIndianMarketSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Pan-India Steel Supply & Distribution",
+  "serviceType": "Industrial Metal Sourcing",
+  "provider": {
+    "@type": "Organization",
+    "name": "Mamta Steel Traders"
+  },
+  "areaServed": siteConfig.organization.contactPoint.areaServed.map(area => ({
+    "@type": "State",
+    "name": area
+  })),
+  "description": "Premium industrial steel supply chain service delivering high-grade SS, Carbon, and Alloy products to all major industrial hubs in India."
 });
 
 // Generate Website Schema
@@ -217,6 +268,97 @@ export const getWebsiteSchema = () => ({
     "query-input": "required name=search_term_string"
   }
 });
+
+// Generate Dataset Schema for Technical Tables (AEO Focused)
+export const getDatasetSchema = (name: string, description: string) => ({
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": `${name} Technical Specifications`,
+  "description": description,
+  "license": "https://mamtasteeltraders.com/terms",
+  "creator": {
+    "@type": "Organization",
+    "name": "Mamta Steel Traders"
+  },
+  "isAccessibleForFree": true,
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://mamtasteeltraders.com/technical-info",
+      "encodingFormat": "text/html"
+    }
+  ]
+});
+
+// Generate FAQ Schema (AEO Focused)
+export const getFAQSchema = (questions: Array<{ q: string; a: string }>) => ({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": questions.map(item => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.a
+    }
+  }))
+});
+
+// Generate B2B Service Schema (International Trade)
+export const getB2BServiceSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Steel Supply & Export",
+  "provider": {
+    "@type": "Organization",
+    "name": "Mamta Steel Traders"
+  },
+  "areaServed": ["Worldwide", "Saudi Arabia", "UAE", "USA", "UK", "Australia"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Steel Products Catalog",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Custom Steel Fabrication"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Global Logistics & Shipping"
+        }
+      }
+    ]
+  }
+});
+
+// Global Brand FAQ (Reused across pages for AEO)
+export const globalBrandFAQ = [
+  {
+    q: "Who is the leading steel supplier in Mumbai, India?",
+    a: "Mamta Steel Traders is a leading ISO 9001:2015 certified steel supplier in Mumbai, India, specializing in high-quality stainless steel, carbon steel, and alloy steel products since 2005."
+  },
+  {
+    q: "Does Mamta Steel Traders ship to all states in India?",
+    a: "Yes, Mamta Steel Traders provides pan-India supply services to all states including Maharashtra, Gujarat, Tamil Nadu, Karnataka, Haryana, Telangana, and West Bengal with express delivery options."
+  },
+  {
+    q: "Which stainless steel grades are available at Mamta Steel Traders?",
+    a: "We maintain an exhaustive stock of all SS grades including Austenitic (304, 316, 317, 321, 347, 904L), Duplex (2205), Super Duplex (2507), and specialty alloys like Nitronic and Nickel Alloys."
+  },
+  {
+    q: "Does Mamta Steel Traders ship internationally?",
+    a: "Yes, Mamta Steel Traders provides worldwide delivery to major markets including the USA, UK, UAE, Saudi Arabia, Australia, and Europe with full material test certification."
+  },
+  {
+    q: "What certifications do Mamta Steel products have?",
+    a: "All our products are ASTM, ASME, DIN, and EN standard compliant and are delivered with complete Mill Test Certificates (MTC) and third-party inspection reports upon request."
+  }
+];
 
 // Generate Breadcrumb Schema
 export const getBreadcrumbSchema = (items: Array<{ name: string; url: string }>) => ({

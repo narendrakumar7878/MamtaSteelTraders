@@ -94,6 +94,32 @@ export default function ProductSEO({
     }))
   };
 
+  // NEW: Dataset Schema for Technical Tables (AEO Focused)
+  const datasetSchema = {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": `${productName || title} Technical Specifications`,
+    "description": `Technical specification table, dimensions, and chemical composition for ${productName || title}`,
+    "license": `${siteUrl}/terms`,
+    "creator": {
+      "@type": "Organization",
+      "name": "Mamta Steel Traders"
+    },
+    "variableMeasured": specifications,
+    "isAccessibleForFree": true
+  };
+
+  // NEW: Speakable Schema for AI & Voice Search
+  const speakableSchema = {
+    "@context": "https://schema.org",
+    "@type": "Speakable",
+    "cssSelector": [".hero-title", ".hero-subtitle", ".specifications-section"],
+    "xpath": [
+      "/html/head/title",
+      "/html/head/meta[@name='description']/@content"
+    ]
+  };
+
   // BreadcrumbList Schema for Product Pages
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -127,34 +153,34 @@ export default function ProductSEO({
     "mainEntity": [
       {
         "@type": "Question",
-        "name": `What is ${productName || title}?`,
+        "name": `What are the typical applications for ${productName || title}?`,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": description
+          "text": `Common applications for ${productName || title} include oil and gas, petrochemical, chemical processing, pharmaceutical, and marine industries where high corrosion resistance and performance are critical.`
         }
       },
       {
         "@type": "Question",
-        "name": "What are the available sizes and specifications?",
+        "name": "Does Mamta Steel Traders provide worldwide delivery?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `${productName || title} is available in various sizes and specifications as per ASTM, ASME, DIN, and EN standards. Contact us for detailed specifications.`
+          "text": "Yes, Mamta Steel Traders provides worldwide export and delivery services to markets in the UAE, Saudi Arabia, USA, UK, Europe, Australia, and Singapore with full technical certification."
         }
       },
       {
         "@type": "Question",
-        "name": "Do you provide material test certificates?",
+        "name": "What is the price of SS 304/316 pipes in Mumbai today?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, we provide mill test certificates and material test certificates with all our steel products as per international standards."
+          "text": "Steel prices fluctuate daily. We provide competitive real-time quotations based on current market rates. Contact our sales team for an instant quote on SS 304, 316, and other specialty grades."
         }
       },
       {
         "@type": "Question",
-        "name": "What is the delivery time?",
+        "name": "Are all products delivered with MTC?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Delivery time varies based on quantity and location. Contact us for specific delivery schedules. We offer express delivery options for urgent requirements."
+          "text": "Yes, 100% of our supply is accompanied by Mill Test Certificates (MTC) as per EN 10204 3.1 standard, ensuring full material traceability."
         }
       }
     ]
@@ -162,7 +188,7 @@ export default function ProductSEO({
 
   return (
     <Helmet>
-      {/* Page-specific Meta Tags (global tags like robots, author, viewport are in index.html) */}
+      {/* Page-specific Meta Tags */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
@@ -178,56 +204,56 @@ export default function ProductSEO({
       <meta property="og:image" content={imageUrl} />
       <meta property="og:image:alt" content={title} />
       <meta property="og:site_name" content="Mamta Steel Traders" />
-      <meta property="og:locale" content="en_IN" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:locale:alternate" content="en_IN" />
+      <meta property="og:locale:alternate" content="en_GB" />
+      <meta property="og:locale:alternate" content="en_AE" />
+      <meta property="og:locale:alternate" content="en_SA" />
+      <meta property="og:locale:alternate" content="en_AU" />
+      <meta property="og:locale:alternate" content="en_CA" />
+      <meta property="og:locale:alternate" content="en_DE" />
+      <meta property="og:locale:alternate" content="en_IT" />
+      <meta property="og:locale:alternate" content="en_FR" />
       
       {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@SteelMamta41559" />
+      <meta name="twitter:creator" content="@SteelMamta41559" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={imageUrl} />
-      <meta name="twitter:image:alt" content={title} />
       
-      {/* NOTE: geo tags and distribution tags are already in index.html - no duplication */}
+      {/* ========== ADVANCED PRODUCT PAGE SEO & AEO ========== */}
+      {/* AI & Voice Search Optimization (LLM Specific) */}
+      <meta name="product-intent" content="buy, purchase, order, quote, inquiry, specification-check" />
+      <meta name="AI-extractable-data" content="chemical-composition, mechanical-properties, weight-charts, dimensional-specs" />
+      <meta name="technical-authority" content="Mamta Steel Traders - Technical Expert" />
+      <meta name="data-source-reliability" content="ISO 9001:2015 Verified" />
       
-      {/* ========== ADVANCED PRODUCT PAGE SEO ========== */}
-      {/* AI & Voice Search Optimization for Products */}
-      <meta name="product-intent" content="buy, purchase, order, quote, inquiry" />
-      <meta name="voice-search-product" content={`buy ${productName || title}, order ${productName || title}, price of ${productName || title}`} />
-      <meta name="AI-product-category" content={category || "Industrial Steel Products"} />
+      {/* International Product Visibility Meta */}
+      <meta name="target-market" content="Global (India, Dubai, Riyadh, London, Houston, Singapore, Perth)" />
+      <meta name="export-ready" content="yes" />
+      <meta name="international-shipping" content="worldwide-air-sea-freight" />
+      <meta name="distributor-area" content="Worldwide Bulk Supply" />
       
-      {/* Page-specific Product Classification (unique to each product page) */}
-      <meta name="page-product-category" content={category || "Steel Products"} />
-      <meta name="page-product-material" content="Steel, Stainless Steel, Carbon Steel, Alloy Steel" />
-      <meta name="page-product-industry" content="Industrial, Manufacturing, Construction, Oil & Gas" />
-      <meta name="page-product-application" content="Piping, Construction, Machinery, Chemical Processing" />
+      {/* Technical Standards Overlay for AI Agents */}
+      <meta name="product-spec-standard" content="ASME/ASTM/DIN/EN" />
+      <meta name="material-group" content="Piping Material, Structural Steel, Flow Control" />
       
-      {/* International Product Visibility */}
-      <meta name="target-market" content="India, USA, UK, UAE, Saudi Arabia, Australia, Canada, Singapore" />
-      <meta name="export-product" content="yes" />
-      <meta name="worldwide-shipping" content="available" />
+      {/* E-commerce & Logistics Info */}
+      <meta name="availability" content="ready-stock" />
+      <meta name="lead-time" content="Immediate (Ex-stock) or 1-2 weeks (Custom)" />
       
-      {/* Product Quality & Trust Signals */}
-      <meta name="product-certification" content="ISO 9001:2015, ASTM, ASME, DIN, EN" />
-      <meta name="quality-assurance" content="Mill Test Certificate, Material Test Report" />
-      <meta name="product-warranty" content="Quality Guaranteed" />
-      
-      {/* E-commerce & Purchase Signals */}
-      <meta name="availability" content="in stock" />
-      <meta name="delivery-options" content="Worldwide Delivery, Express Shipping, Bulk Orders" />
-      <meta name="payment-options" content="Bank Transfer, LC, Advance Payment" />
-      
-      {/* Product Comparison Keywords */}
-      <meta name="compare-products" content={`${productName || title} specifications, ${productName || title} vs alternatives, best ${productName || title} supplier`} />
-      
-      {/* NOTE: viewport and format-detection tags are already in index.html - no duplication */}
-      
-      {/* International Language Support */}
+      {/* International Language Support (hreflang) */}
       <link rel="alternate" hrefLang="en-IN" href={`${siteUrl}${canonicalUrl || ''}`} />
-      <link rel="alternate" hrefLang="en" href={`${siteUrl}${canonicalUrl || ''}`} />
+      <link rel="alternate" hrefLang="en-US" href={`${siteUrl}${canonicalUrl || ''}`} />
+      <link rel="alternate" hrefLang="en-GB" href={`${siteUrl}${canonicalUrl || ''}`} />
+      <link rel="alternate" hrefLang="en-AE" href={`${siteUrl}${canonicalUrl || ''}`} />
+      <link rel="alternate" hrefLang="en-SA" href={`${siteUrl}${canonicalUrl || ''}`} />
+      <link rel="alternate" hrefLang="en-AU" href={`${siteUrl}${canonicalUrl || ''}`} />
       <link rel="alternate" hrefLang="x-default" href={`${siteUrl}${canonicalUrl || ''}`} />
       
       {/* ========== ADVANCED STRUCTURED DATA ========== */}
-      {/* Enhanced Product Schema (single comprehensive schema, no duplicates) */}
+      {/* Enhanced Product Schema */}
       <script type="application/ld+json">
         {JSON.stringify(enhancedProductSchema)}
       </script>
@@ -240,6 +266,16 @@ export default function ProductSEO({
       {/* FAQ Schema */}
       <script type="application/ld+json">
         {JSON.stringify(faqSchema)}
+      </script>
+
+      {/* Dataset Schema (AEO Data Extraction) */}
+      <script type="application/ld+json">
+        {JSON.stringify(datasetSchema)}
+      </script>
+
+      {/* Speakable Schema (AI/Voice Search) */}
+      <script type="application/ld+json">
+        {JSON.stringify(speakableSchema)}
       </script>
     </Helmet>
   );

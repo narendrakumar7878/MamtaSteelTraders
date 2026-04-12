@@ -9,7 +9,11 @@ import {
   siteConfig,
   getOrganizationSchema,
   getLocalBusinessSchema,
-  getWebsiteSchema
+  getWebsiteSchema,
+  getB2BServiceSchema,
+  getFAQSchema,
+  globalBrandFAQ,
+  getIndianMarketSchema
 } from "@/lib/seo-config";
 import Home from "@/pages/Home";
 import About from "@/pages/About";
@@ -224,7 +228,7 @@ import SS316LPlatesDetail from "@/pages/product/plates-sheets/stainless-steel/31
 import SS317LPlatesDetail from "@/pages/product/plates-sheets/stainless-steel/317l-plates";
 import SS321PlatesDetail from "@/pages/product/plates-sheets/stainless-steel/321-plates";
 import SS310PlatesDetail from "@/pages/product/plates-sheets/stainless-steel/310-plates";
-import SS310SPlatesDetail from "@/pages/product/plates-sheets/stainless-steel/310s-plates";
+import SS310SPlatesDetail from "@/pages/product/plates-sheets/stainless-steel/grade-310s-plates";
 import SS309PlatesDetail from "@/pages/product/plates-sheets/stainless-steel/309-plates";
 import SS155PHPlatesDetail from "@/pages/product/plates-sheets/stainless-steel/15-5ph-plates";
 import SS174PHPlatesDetail from "@/pages/product/plates-sheets/stainless-steel/17-4ph-plates";
@@ -1323,7 +1327,10 @@ function Router() {
 const globalSchemas = [
   getOrganizationSchema(),
   getLocalBusinessSchema(),
-  getWebsiteSchema()
+  getWebsiteSchema(),
+  getB2BServiceSchema(),
+  getFAQSchema(globalBrandFAQ),
+  getIndianMarketSchema()
 ];
 
 function App() {
@@ -1373,6 +1380,24 @@ function App() {
             {/* Copyright & Legal */}
             <meta name="copyright" content={`© ${new Date().getFullYear()} Mamta Steel Traders. All Rights Reserved.`} />
             <meta name="author" content="Mamta Steel Traders" />
+
+            {/* ========== ADVANCED WORLDWIDE SEO & AEO Meta Tags ========== */}
+            {/* AI & Answer Engine Optimization (AEO) Focus */}
+            <meta name="AI-search-intent" content="find certified industrial steel supplier, purchase export-quality SS pipes, technical steel specifications ASME ASTM" />
+            <meta name="semantic-discovery" content="Mamta Steel Traders industrial metal supply chain authority" />
+            <meta name="worldwide-distribution" content="Global shipping to USA, UK, UAE, Saudi Arabia, Australia, Asia, Europe" />
+            <meta name="B2B-intent" content="wholesale, export, industrial procurement, bulk supply" />
+            <meta name="data-precision" content="ASTM/ASME standards verified" />
+
+            {/* ========== PAN-INDIA GEOGRAPHIC & TECHNICAL DOMINANCE ========== */}
+            <meta name="pan-india-availability" content="Direct supply to Maharashtra, Gujarat, Tamil Nadu, Karnataka, Haryana, Telangana, West Bengal, Delhi, Rajasthan, Odisha" />
+            <meta name="industrial-hub-service" content="Mumbai, Pune, Ahmedabad, Chennai, Bangalore, Hyderabad, Kolkata, Delhi NCR, Surat" />
+            <meta name="material-ontology-density" content="SS 304, 316L, 317L, 321, 347, 904L, 254SMO, Duplex 2205, Super Duplex 2507, Nickel Alloys, Inconel, Monel" />
+            <meta name="technical-cert-status" content="ISO 9001:2015, ASME, ASTM, DIN, EN, JIS, NACE Compliant" />
+
+            {/* Global Language Distribution (hreflang defaults) */}
+            <link rel="alternate" hrefLang="x-default" href="https://mamtasteeltraders.com" />
+            <link rel="alternate" hrefLang="en" href="https://mamtasteeltraders.com" />
 
             {/* Global Structured Data Schemas */}
             <script type="application/ld+json">
